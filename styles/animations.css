@@ -1,0 +1,17 @@
+/*@keyframes mask_layer_popup {*/
+/*    from {*/
+/*        transform: translateY(0);*/
+/*    }*/
+/*    to {*/
+/*        transform: translateY(-1000px);*/
+/*    }*/
+/*}*/
+
+@keyframes mask_layer_popup {
+    0% {
+        top: 10%;
+    }
+    100% {
+        top: -200%;
+    }
+}

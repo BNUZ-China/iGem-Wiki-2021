@@ -1,0 +1,30 @@
+@import "test_styles.css";
+@import "animations.css";
+
+:root {
+    --global_background_color: white;
+}
+
+body {
+    background-color: var(--global_background_color) !important;
+}
+
+#content {
+    background-color: var(--global_background_color) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+    border: none !important;
+    font-size: 100% !important;
+    font-family: sans-serif !important;
+    line-height: initial !important;
+}
+
+#top_title {
+    display: none !important;
+}
+
+#main {
+    font-size: 72px;
+}
+

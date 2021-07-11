@@ -1,0 +1,16 @@
+.mask_layer {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    animation-name: mask_layer_popup;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+}
+
+.mask_image {
+    width: 100%;
+    height: 100%;
+}
