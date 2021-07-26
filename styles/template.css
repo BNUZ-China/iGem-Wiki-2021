@@ -70,10 +70,15 @@ body {
     position: relative;
 }
 
+.bnuz-content-nav-bottom {
+    align-self: flex-end;
+}
+
 .bnuz-content-nav-float {
     position: fixed;
     top: 400px;
-    left: 100px
+    left: 100px;
+    width: calc(100vw / 33);
 }
 
 .content-nav-button {
@@ -111,6 +116,14 @@ body {
     order: 6;
 }
 
+.bnuz-content-nav-item {
+    width: 120px;
+    height: 120px;
+    background-color: #e2e3e5;
+    margin: 16px;
+}
+
+/* 内容导航栏激活样式 */
 .bnuz-content-nav-item-active {
     font-size: x-large;
     color: #0dcaf0;

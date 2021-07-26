@@ -10,17 +10,23 @@ var numToPx = function (number) {
 
 var anchors = document.getElementsByClassName('bnuz-content-anchor');
 var navItems = document.getElementsByClassName('bnuz-content-nav-item');
+var footer = document.getElementById('bnuz-footer');
 var anchors_distance = [];
 for (var anchor of anchors) {
-    anchors_distance.push(anchor.getBoundingClientRect().top);
+    anchors_distance.push(anchor.offsetTop);
 }
+
+var windowHeight = document.documentElement.clientHeight;
+var trigger_value = windowHeight / 3;   // 临界高度
+
+var footer_height = document.getElementsByTagName('footer')[0].clientHeight
 
 var updateNav = function () {
     var scroll_location = document.documentElement.scrollTop;
     var k = undefined; // 表示第几个应该高亮
     var k_defined = false;
     for (var i = 0; i < anchors.length; i++) {
-        if (scroll_location > anchors_distance[i]) {
+        if (scroll_location > anchors_distance[i] - windowHeight / 8) {
             k = i;
             k_defined = true;
         }
@@ -43,23 +49,27 @@ var moveNav = function() {
      */
     var contentNav = document.getElementById('bnuz-content-nav-container');
     var contentText = document.getElementById('bnuz-text-container');
-    var windowHeight = window.screen.height;
-    var trigger_value = windowHeight / 3;   // 临界高度
     var boundingRect = contentNav.getBoundingClientRect();
-    var width = boundingRect.width;
     var top = trigger_value;
     var left = boundingRect.x;
-    // 取400为临界值
+
+    // 到下方
     if (contentText.getBoundingClientRect().y < trigger_value) {
-        // 滚动到下方的样式
+        // 判断是否到底部
+        if (windowHeight > footer.getBoundingClientRect().y) {
+            // 底部
+            contentNav.className = 'col-4 bnuz-content-nav-bottom';
+            return;
+        }
         contentNav.className = 'bnuz-content-nav-float';
-        contentNav.style.width = numToPx(width);
         contentNav.style.top = numToPx(top);
         contentNav.style.left = numToPx(left);
     } else {
         // 返回的样式
         contentNav.className = 'col-4';
     }
+
+    // 底部临界250
 };
 
 window.addEventListener('scroll', function () {
@@ -67,3 +77,19 @@ window.addEventListener('scroll', function () {
     updateNav();
 })
 
+
+var contentNavJumptoFunctionGenerator = function (i) {
+    // i是该按钮的序号
+    return function () {
+        var destination_height = anchors_distance[i];
+        window.scrollTo({
+            top: destination_height - windowHeight / 8 + 10,
+            // top: destination_height,
+            behavior: 'smooth'
+        });
+    }
+}
+
+for (var i = 0; i < navItems.length; i++) {
+    navItems[i].onclick = contentNavJumptoFunctionGenerator(i);
+}
