@@ -60,14 +60,14 @@ body {
     font-size: 14px;
 }
 
-#bnuz-content-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: space-between;
-}
+/*#bnuz-content-nav {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    align-content: space-between;*/
+/*}*/
 
 .bnuz-content-nav-float {
     position: fixed;
