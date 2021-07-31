@@ -1,7 +1,13 @@
 "use strict";
 
 window.onload = function () {
-    $('.dropdown-toggle').dropdown();
+    $('.dropdown').mouseover(function () {
+        $(this).children('.dropdown-menu').show();
+        $(this).addClass('bnuz-nav-hover')
+    }).mouseout(function () {
+        $(this).children('.dropdown-menu').hide();
+        $(this).removeClass('bnuz-nav-hover')
+    });
 };
 
 var numToPx = function (number) {
