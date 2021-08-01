@@ -3,3 +3,4 @@ bootstrap-5.0.2-dist.zip
 styles/.sass-cache
 styles/template/template_parts/.sass-cache
 *.css.map
+styles/template/template.css
