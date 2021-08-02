@@ -34,9 +34,6 @@ import top_navigation_bar_dropdown from "@/components/top_navigation_bar_dropdow
 export default {
   name: "top-navigation-bar",
   components: {top_navigation_bar_dropdown},
-  methods: {
-
-  }
 }
 </script>
 

@@ -16,7 +16,7 @@ export default {
   name: "top-navigation-bar-dropdown",
   props: {
     title: String,
-    contents: Object
+    contents: Array
   },
   data() {
     return {
