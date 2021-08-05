@@ -11,7 +11,8 @@
         }">
         <Content_navigation v-if="anchors_length !== undefined"
                             :anchor_distances="anchor_distances"
-                            :active_item_index="active_navigation_item_index"></Content_navigation>
+                            :active_item_index="active_navigation_item_index"
+                            :multi-col="multiCol"></Content_navigation>
       </b-col>
       <b-col cols="7" ref="bnuz-content-container" class="bnuz-content-container">
         <div class="roundRect">
@@ -58,7 +59,9 @@ export default {
       anchor_distances: [],
 
       anchors_length: undefined,
-      first_scroll: true
+      first_scroll: true,
+
+      multiCol: false
     }
   },
   mounted() {
@@ -95,11 +98,11 @@ export default {
     },
     updateNav: function () {
       // updateNav
-      var scroll_location = document.documentElement.scrollTop;
-      var k = undefined; // 表示第几个应该高亮
-      var k_defined = false;
+      let scroll_location = document.documentElement.scrollTop;
+      let k = undefined; // 表示第几个应该高亮
+      let k_defined = false;
 
-      for (var i = 0; i < this.anchors_length; i++) {
+      for (let i = 0; i < this.anchors_length; i++) {
         if (scroll_location > this.anchor_distances[i] - this.windowHeight / 8) {
           k = i;
           k_defined = true;
@@ -110,21 +113,22 @@ export default {
     },
     moveNav: function () {
       // moveNav
-      var trigger_value = this.trigger_value;
-      var contentNav = this.$refs["bnuz-content-nav-container"]
-      var contentText = this.$refs.bnuz_content
-      var boundingRect = contentNav.getBoundingClientRect();
-      var top = trigger_value;
-      var left = boundingRect.x;
+      const trigger_value = this.trigger_value;
+      const contentNav = this.$refs["bnuz-content-nav-container"];
+      const contentText = this.$refs.bnuz_content;
+      const boundingRect = contentNav.getBoundingClientRect();
+      const top = trigger_value;
+      const left = boundingRect.x;
 
-      var numToPx = function (number) {
+      const numToPx = function (number) {
         return number.toString() + 'px';
       };
 
       // 到下方
       if (contentText.getBoundingClientRect().y < trigger_value) {
-        // 判断是否到底部
-        if (this.windowHeight > contentText.getBoundingClientRect().bottom) {
+        // 判断是否到底部，双列
+        const adder = this.multiCol ? contentNav.height : 0;
+        if (this.windowHeight > contentText.getBoundingClientRect().bottom + adder) {
           // 底部
           this.content_navigation_style = {
             isNormal: true,

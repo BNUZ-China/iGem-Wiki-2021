@@ -1,5 +1,5 @@
 <template>
-  <div @click="contentNavJumpto" :class="button_style">
+  <div @click="contentNavJumpto" :class="classString">
     <slot></slot>
   </div>
 </template>
@@ -7,7 +7,7 @@
 <script>
 export default {
   name: "content_navigation_item",
-  props: {activate: Boolean, click_link: Number},
+  props: {activate: Boolean, click_link: Number, multiCol: Boolean},
   methods: {
     contentNavJumpto: function () {
       // i是该按钮的序号
@@ -21,10 +21,17 @@ export default {
     }
   },
   computed: {
-    button_style: function () {
-      return this.activate ?
-        'bnuz-content-nav-item-active-kp6mdeaz bnuz-content-nav-item-kp6mdeaz' :
-        'bnuz-content-nav-item-kp6mdeaz'
+    classString: function () {
+      var result = 'bnuz-content-nav-item-kp6mdeaz';
+      if (this.activate) {
+        result += ' bnuz-content-nav-item-active-kp6mdeaz';
+      }
+      if (this.multiCol) {
+        result += ' bnuz-content-nav-item-grid-kp6mdeaz'
+      } else {
+        result += ' bnuz-content-nav-item-no-grid-kp6mdeaz'
+      }
+      return result;
     }
   }
 }
@@ -32,15 +39,25 @@ export default {
 
 <style scoped>
 .bnuz-content-nav-item-kp6mdeaz {
-  width: 120px;
-  height: 120px;
+  --nav_item_size: 80px;
+  width: var(--nav_item_size);
+  height: var(--nav_item_size);
   background-color: #e2e3e5;
-  margin: 16px;
   text-align: center;
   cursor: pointer;
 }
 
-/* 内容导航栏激活样式 */
+/* 单列样式 */
+.bnuz-content-nav-item-no-grid-kp6mdeaz {
+  margin: 8px;
+}
+
+/* 双列样式 */
+.bnuz-content-nav-item-grid-kp6mdeaz {
+
+}
+
+/* 激活样式 */
 .bnuz-content-nav-item-active-kp6mdeaz {
   font-size: x-large;
   color: #0dcaf0;
