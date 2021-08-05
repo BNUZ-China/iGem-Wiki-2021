@@ -27,11 +27,12 @@ export default {
 
 <style scoped>
 .bnuz-footer {
-  margin: 16px 32px;
+  margin: 16px 12%;
   padding: 24px 0;
-  background-color: darkseagreen;
+  background-color: #eed6d6d9; /*eed6d6d9*/
   border-radius: 30px;
-  border: 2px solid cadetblue;
+  /*border: 2px solid cadetblue;*/
+  box-shadow: 5px 5px 10px grey;
 }
 
 .bnuz-footer {

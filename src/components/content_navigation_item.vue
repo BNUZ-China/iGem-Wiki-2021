@@ -61,5 +61,6 @@ export default {
 .bnuz-content-nav-item-active-kp6mdeaz {
   font-size: x-large;
   color: #0dcaf0;
+  background-color: bisque;
 }
 </style>

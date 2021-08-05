@@ -1,7 +1,7 @@
 <template>
   <b-container class="bunz-content" ref="bnuz_content" v-scroll="onScrollBNUZ">
     <b-row align-h="end">
-      <b-col cols="4" ref="bnuz-content-nav-container" :class="{
+      <b-col cols="3" ref="bnuz-content-nav-container" :class="{
           'bnuz-content-nav': content_navigation_style.isNormal,
           'bnuz-content-nav-bottom': content_navigation_style.isBottom,
           'bnuz-content-nav-float': content_navigation_style.isFixed
@@ -14,14 +14,14 @@
                             :active_item_index="active_navigation_item_index"
                             :multi-col="multiCol"></Content_navigation>
       </b-col>
-      <b-col cols="7" ref="bnuz-content-container" class="bnuz-content-container">
+      <b-col cols="9" ref="bnuz-content-container" class="bnuz-content-container">
         <div class="roundRect">
           <div class="bnuz-text">
             <slot></slot>
           </div>
         </div>
       </b-col>
-      <b-col cols="1" class="col"></b-col>
+<!--      <b-col cols="1" class="col"></b-col>-->
     </b-row>
   </b-container>
 </template>
@@ -179,7 +179,7 @@ export default {
 
 .roundRect {
   padding: 20px;
-  background-color: darkseagreen;
+  background-color: rgba(238, 214, 214, 0.72);;
   border-radius: 20px;
 }
 
