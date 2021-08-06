@@ -44,7 +44,7 @@ export default {
   background-color: #ffffff;
   height: 1.2cm;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  z-index: 999;
+  z-index: 100;
   position: fixed;
   top: 18px;
   width: 100%;
