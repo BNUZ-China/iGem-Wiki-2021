@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Background_picture src="assets/homepage_hospital.png"></Background_picture>
     <top-navigation-bar/>
     <Head_image></Head_image>
     <BNUZ_Content>
@@ -99,10 +100,12 @@ import BNUZ_Content from "@/components/bnuz_content";
 import Head_image from "@/components/head_image";
 import Bottom from "@/components/bottom";
 import Content_navigation_anchor from "@/components/content_navigation_anchor";
+import Background_picture from "@/components/background_picture";
 
 export default {
   name: 'App',
   components: {
+    Background_picture,
     Bottom,
     Head_image,
     TopNavigationBar,
