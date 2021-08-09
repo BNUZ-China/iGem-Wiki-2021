@@ -30,3 +30,4 @@ pnpm-debug.log*
 *.sassc
 
 draft
+package-lock.json
