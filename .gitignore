@@ -2,6 +2,11 @@
 node_modules
 /dist
 
+development
+production
+production_local
+production_online_test
+
 
 # local env files
 .env.local

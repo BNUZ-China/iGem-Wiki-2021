@@ -6,28 +6,29 @@
     <Open_window>
 
     </Open_window>
-<!--    <b-container class="homepage_hospital_container">-->
-<!--      <b-col>-->
-        <img src="static/images/homepage_hospital.png" class="homepage_hospital">
-<!--      </b-col>-->
-<!--    </b-container>-->
-<!--    <Bottom></Bottom>-->
+
+    <img :src="homepage_hospital" class="homepage_hospital">
+
   </div>
 </template>
 
 <script>
 import Open_window from "@/components/open_window";
 import TopNavigationBar from "@/components/top_navigation_bar";
+import homepage_hospital from '@/assets/homepage_hospital.png';
+
 export default {
   name: "index",
-  components: {TopNavigationBar, Open_window}
+  components: {TopNavigationBar, Open_window},
+  data() {
+    return {
+      homepage_hospital
+    }
+  }
 }
 </script>
 
 <style scoped>
-/*.homepage_hospital_container {*/
-/*  z-index: 2;*/
-/*}*/
 .homepage_hospital {
   /*margin-top: 40px;*/
   position: relative;
