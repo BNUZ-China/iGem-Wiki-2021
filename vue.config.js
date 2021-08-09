@@ -101,7 +101,7 @@ let config = {
         limit: 1,
         publicPath: getStaticPath(),
         outputPath: 'img',
-        name: '[name].[hash:8].[ext]'
+        name: '[name].[ext]'
       })
       .end()
   }
