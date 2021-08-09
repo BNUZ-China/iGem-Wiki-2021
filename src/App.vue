@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <AppRoot id="app">
     <Background_picture src="assets/homepage_hospital.png"></Background_picture>
     <top-navigation-bar/>
     <Head_image></Head_image>
@@ -91,7 +91,7 @@
       After expression for 30mins. We repeated steps 6-7.
     </BNUZ_Content>
     <Bottom></Bottom>
-  </div>
+  </AppRoot>
 </template>
 
 <script>
@@ -101,10 +101,12 @@ import Head_image from "@/components/head_image";
 import Bottom from "@/components/bottom";
 import Content_navigation_anchor from "@/components/content_navigation_anchor";
 import Background_picture from "@/components/background_picture";
+import AppRoot from "@/AppRoot";
 
 export default {
   name: 'App',
   components: {
+    AppRoot,
     Background_picture,
     Bottom,
     Head_image,

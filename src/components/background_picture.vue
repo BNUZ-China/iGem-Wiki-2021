@@ -1,14 +1,21 @@
 <template>
 <!--  <div class="background_picture_style" :style="{backgroundImage: 'url('+src.toString()+')'}">-->
   <div class="background_picture_container">
-    <img src="static/images/homepage_hospital.png" class="background_picture">
+    <img :src="homepage_hospital" class="background_picture" alt="decoration">
   </div>
 </template>
 
 <script>
+import homepage_hospital from '@/assets/homepage_hospital.png'
+
 export default {
   name: "background_picture",
-  props: ['src']
+  props: ['src'],
+  data() {
+    return {
+      homepage_hospital
+    }
+  }
 }
 </script>
 
