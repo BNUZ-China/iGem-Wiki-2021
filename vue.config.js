@@ -67,13 +67,13 @@ var igemWikiWebpackPluginConfigGenerator = function (conf) {
 
 var getStaticPath = function () {
   switch (process.env.NODE_ENV) {
-    case 'development':
+    case ENV.DEVELOPMENT:
       return './';
-    case 'production':
+    case ENV.PRODUCTION:
       return `https://${year}.igem.org/File:T--${teamname_replace}--`;
-    case 'production_local':
+    case ENV.PRODUCTION_LOCAL:
       return './';
-    case 'production_online_test':
+    case ENV.PRODUCTION_ONLINE_TEST:
       return `https://${year}.igem.org/File:T--${teamname_replace}--`;
     default:
       return null;
