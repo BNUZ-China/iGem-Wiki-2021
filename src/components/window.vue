@@ -7,14 +7,14 @@
 </template>
 
 <script>
-import window_pic from "@/assets/window.png";
+import window_pic from '@/assets/window.png';
 
 export default {
   name: "window",
   data() {
     return {
       isLeft: this.window_side.toLowerCase() === 'left',
-      window_pic
+      window_pic: window.isDev ? window_pic : 'https://2021.igem.org/wiki/images/2/2e/T--BNUZ-China--homepage_hospital.png'
     }
   },
   mounted() {

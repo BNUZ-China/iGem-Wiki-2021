@@ -17,6 +17,7 @@ import AppRoot from "@/AppRoot";
 
 export default {
   name: "index",
+  // eslint-disable-next-line vue/no-unused-components
   components: {AppRoot, TopNavigationBar, Open_window},
   data() {
     return {

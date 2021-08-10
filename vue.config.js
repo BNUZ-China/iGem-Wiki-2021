@@ -1,4 +1,5 @@
 const igemWikiWebpackPlugin = require('igem-wiki-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const igemConfig = {
   year: 2021,
   team_name: 'BNUZ-China'
@@ -14,13 +15,28 @@ const ENV = {
 var javascriptSrc = function (origin) {
   switch (process.env.NODE_ENV) {
     case ENV.PRODUCTION:
-      return origin.replace('js/', `https://${year}.igem.org/wiki/index.php?title=Template:${teamname}/scripts/`)
+      return origin.replace('js/', `https://${year}.igem.org/wiki/index.php?title=Template:${teamname}/js/`)
           .replace('.js', '')
         + '&action=raw&ctype=text/javascript';
     case ENV.PRODUCTION_ONLINE_TEST:
-      return origin.replace('js/', `https://${year}.igem.org/wiki/index.php?title=Template:${teamname}/scripts/test/`)
+      return origin.replace('js/', `https://${year}.igem.org/wiki/index.php?title=Template:${teamname}/js/test/`)
           .replace('.js', '')
         + '&action=raw&ctype=text/javascript';
+    default:
+      return origin
+  }
+}
+
+var stylesheetSrc = function (origin) {
+  switch (process.env.NODE_ENV) {
+    case ENV.PRODUCTION:
+      return origin.replace('css/', `https://${year}.igem.org/wiki/index.php?title=Template:${teamname}/css/`)
+          .replace('.css', '')
+        + '&action=raw&ctype=text/css';
+    case ENV.PRODUCTION_ONLINE_TEST:
+      return origin.replace('css/', `https://${year}.igem.org/wiki/index.php?title=Template:${teamname}/css/test/`)
+          .replace('.css', '')
+        + '&action=raw&ctype=text/css';
     default:
       return origin
   }
@@ -32,12 +48,18 @@ var preprocessor = function (tagDefinition) {
     result.attributes.src = javascriptSrc(result.attributes.src);
     return result;
   }
+
+  if (tagDefinition.tagName === 'link') {
+    let result = tagDefinition;
+    result.attributes.href = stylesheetSrc(result.attributes.href)
+    return result
+  }
+
   return tagDefinition
 }
 
 const year = igemConfig.year;
 const teamname = igemConfig.team_name;
-const teamname_replace = teamname.replace('-', '_'); // 文件路径中的短横线替换完下划线
 
 var igemWikiWebpackPluginConfigGenerator = function (conf) {
   const entry = conf.configureWebpack.entry;
@@ -50,6 +72,7 @@ var igemWikiWebpackPluginConfigGenerator = function (conf) {
         BASE_URL: './'
       },
       chunks: [name],
+      minify: true,
       tagDefinitionPreprocessor: preprocessor
     })
   }
@@ -66,18 +89,19 @@ var igemWikiWebpackPluginConfigGenerator = function (conf) {
 }
 
 var getStaticPath = function () {
-  switch (process.env.NODE_ENV) {
-    case ENV.DEVELOPMENT:
-      return './';
-    case ENV.PRODUCTION:
-      return `https://${year}.igem.org/File:T--${teamname_replace}--`;
-    case ENV.PRODUCTION_LOCAL:
-      return './';
-    case ENV.PRODUCTION_ONLINE_TEST:
-      return `https://${year}.igem.org/File:T--${teamname_replace}--`;
-    default:
-      return null;
-  }
+  // switch (process.env.NODE_ENV) {
+  //   case ENV.DEVELOPMENT:
+  //     return './';
+  //   case ENV.PRODUCTION:
+  //     return `https://${year}.igem.org/File:T--${teamname_replace}--`;
+  //   case ENV.PRODUCTION_LOCAL:
+  //     return './';
+  //   case ENV.PRODUCTION_ONLINE_TEST:
+  //     return `https://${year}.igem.org/File:T--${teamname_replace}--`;
+  //   default:
+  //     return null;
+  // }
+  return './'
 }
 
 let config = {
@@ -88,6 +112,27 @@ let config = {
     entry: {
       index: './src/index.js',
       sample: './src/main.js'
+    },
+    plugins: [
+      // new Ug
+      new UglifyJsPlugin({
+        uglifyOptions: {
+          output: {
+            comments: false
+          }
+        }
+      })
+    ],
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          default: {
+            name: 'common'
+          }
+        },
+        minSize: 20000,
+        maxSize: 1000000
+      }
     }
   },
   chainWebpack: config => {
