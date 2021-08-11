@@ -17,7 +17,7 @@ def runOnSingleFolder(folder):
         with open(os.path.join(location, folder, file), encoding='utf-8') as f:
             content = f.read()
             pyperclip.copy(content)
-        print('等待……')
+        print('相应js代码已经复制，请粘贴至打开的网页，完成后请回车')
         input()
 
 runOnSingleFolder('js')
