@@ -7,14 +7,17 @@
 </template>
 
 <script>
+// import window_p from '@/assets/window.png';
 import window_pic from '@/assets/window.png';
+import conf from '@/wiki_config'
 
 export default {
   name: "window",
   data() {
     return {
       isLeft: this.window_side.toLowerCase() === 'left',
-      window_pic: window.isDev ? window_pic : 'https://2021.igem.org/wiki/images/2/2e/T--BNUZ-China--homepage_hospital.png'
+      // TODO: window URI
+      window_pic: conf.isDev ? window_pic : ''
     }
   },
   mounted() {

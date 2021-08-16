@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve --mode development",
     "development": "vue-cli-service build --mode development",
-    "production": "vue-cli-service build --mode production",
+    "production": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -13,7 +13,6 @@
     "console": "^0.7.2",
     "core-js": "^3.6.5",
     "module": "^1.2.5",
-    "page": "^1.11.6",
     "vue": "^2.6.11"
   },
   "devDependencies": {

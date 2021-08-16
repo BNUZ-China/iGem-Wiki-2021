@@ -7,19 +7,13 @@ const igemConfig = {
 
 const ENV = {
   DEVELOPMENT: 'development',
-  PRODUCTION: 'production',
-  PRODUCTION_LOCAL: 'production_local',
-  PRODUCTION_ONLINE_TEST: 'production_online_test'
+  PRODUCTION: 'production'
 }
 
 var javascriptSrc = function (origin) {
   switch (process.env.NODE_ENV) {
     case ENV.PRODUCTION:
       return origin.replace('js/', `https://${year}.igem.org/wiki/index.php?title=Template:${teamname}/js/`)
-          .replace('.js', '')
-        + '&action=raw&ctype=text/javascript';
-    case ENV.PRODUCTION_ONLINE_TEST:
-      return origin.replace('js/', `https://${year}.igem.org/wiki/index.php?title=Template:${teamname}/js/test/`)
           .replace('.js', '')
         + '&action=raw&ctype=text/javascript';
     default:
@@ -31,10 +25,6 @@ var stylesheetSrc = function (origin) {
   switch (process.env.NODE_ENV) {
     case ENV.PRODUCTION:
       return origin.replace('css/', `https://${year}.igem.org/wiki/index.php?title=Template:${teamname}/css/`)
-          .replace('.css', '')
-        + '&action=raw&ctype=text/css';
-    case ENV.PRODUCTION_ONLINE_TEST:
-      return origin.replace('css/', `https://${year}.igem.org/wiki/index.php?title=Template:${teamname}/css/test/`)
           .replace('.css', '')
         + '&action=raw&ctype=text/css';
     default:
@@ -61,6 +51,7 @@ var preprocessor = function (tagDefinition) {
 const year = igemConfig.year;
 const teamname = igemConfig.team_name;
 
+// eslint-disable-next-line no-unused-vars
 var igemWikiWebpackPluginConfigGenerator = function (conf) {
   const entry = conf.configureWebpack.entry;
   const keys = Object.keys(entry);
@@ -88,24 +79,9 @@ var igemWikiWebpackPluginConfigGenerator = function (conf) {
   return conf
 }
 
-var getStaticPath = function () {
-  // switch (process.env.NODE_ENV) {
-  //   case ENV.DEVELOPMENT:
-  //     return './';
-  //   case ENV.PRODUCTION:
-  //     return `https://${year}.igem.org/File:T--${teamname_replace}--`;
-  //   case ENV.PRODUCTION_LOCAL:
-  //     return './';
-  //   case ENV.PRODUCTION_ONLINE_TEST:
-  //     return `https://${year}.igem.org/File:T--${teamname_replace}--`;
-  //   default:
-  //     return null;
-  // }
-  return './'
-}
-
-let config = {
-  publicPath: process.env.PUBLIC_PATH,
+// eslint-disable-next-line no-unused-vars
+let prod_config = igemWikiWebpackPluginConfigGenerator({
+  publicPath: './',
   outputDir: process.env.OUTPUT_PATH,
   productionSourceMap: false,
   configureWebpack: {
@@ -139,17 +115,41 @@ let config = {
     config
       .module
       .rule("images")
-      .test(/\.(jpe?g|png|gif|svg)$/i)
-      .use("url-loader")
-      .loader("url-loader")
+      .test(/\.(jpe?g|png|gif|svg)$/)
+      .use("file-loader")
+      .loader("file-loader")
       .options({
         limit: 1,
-        publicPath: getStaticPath(),
+        publicPath: './',
         outputPath: 'img',
-        name: '[name].[ext]'
+        name: '[name].[hash:8].[ext]',
       })
       .end()
   }
+});
+
+const dev_config = {
+  publicPath: './',
+  outputDir: process.env.OUTPUT_PATH,
+  productionSourceMap: false,
+  pages: {
+    sample: {
+      entry: 'src/main.js',
+      template: 'public/sample.html',
+      filename: 'sample.html',
+      title: 'Sample Page'
+    },
+    index_page: {
+      entry: 'src/index.js',
+      template: 'public/index.html',
+      filename: 'index.html',
+      title: 'Home Page'
+    }
+  }
 };
 
-module.exports = igemWikiWebpackPluginConfigGenerator(config);
+let getConfig = function () {
+  return process.env.NODE_ENV === 'production' ? prod_config : dev_config;
+};
+
+module.exports = getConfig();

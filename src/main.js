@@ -7,6 +7,7 @@ import App from './App.vue'
 
 Vue.use(BootstrapVue)
 
+Vue.prototype.$isDev = true
 Vue.config.productionTip = false
 
 new Vue({

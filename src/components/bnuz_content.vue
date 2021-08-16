@@ -21,7 +21,7 @@
           </div>
         </div>
       </b-col>
-<!--      <b-col cols="1" class="col"></b-col>-->
+
     </b-row>
   </b-container>
 </template>
@@ -61,7 +61,7 @@ export default {
       anchors_length: undefined,
       first_scroll: true,
 
-      multiCol: false
+      multiCol: true
     }
   },
   mounted() {
@@ -186,6 +186,7 @@ export default {
 .bunz-content {
   padding: 16px;
   margin-top: 64px;
+  width: 85vw;
 }
 
 .bnuz-content-nav {

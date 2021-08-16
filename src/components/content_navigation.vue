@@ -1,19 +1,31 @@
 <template>
-<div :class="multiCol ? 'navigation_grid_style' : ''">
+<div :class="multiCol ? 'navigation_grid_style' : ''"
+     class="content-navigation-background">
+<!--     :style="{backgroundImage: 'url('+Nav_background+')'}">-->
   <Content_navigation_item v-for="(dis, item) in anchor_distances"
                            :activate="item === active_item_index"
                            :key="item"
                            :click_link="dis"
-                           :multiCol="multiCol === 'true'">{{item}}</Content_navigation_item>
+                           :multiCol="multiCol === 'true'"
+                           >{{item}}</Content_navigation_item>
 </div>
 </template>
 
 <script>
 import Content_navigation_item from "@/components/content_navigation_item";
+import Nav_background from '@/assets/content_navigation/nav_background.jpg';
+// eslint-disable-next-line no-unused-vars
+import conf from '@/wiki_config';
 
 export default {
   name: "content_navigation",
   components: {Content_navigation_item},
+  data() {
+    return {
+      // TODO: set image URI
+      Nav_background: conf.isDev ? Nav_background : ''
+    }
+  },
   props: {
     active_item_index: Number,
     anchor_distances: Array,
@@ -29,5 +41,9 @@ export default {
   column-gap: 24px;
   row-gap: 24px;
   width: 160px;
+}
+
+.content-navigation-background {
+  background-image: url("~@/assets/content_navigation/nav_background.jpg");
 }
 </style>
