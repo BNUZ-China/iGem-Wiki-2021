@@ -12,7 +12,8 @@
         <Content_navigation v-if="anchors_length !== undefined"
                             :anchor_distances="anchor_distances"
                             :active_item_index="active_navigation_item_index"
-                            :multi-col="multiCol"></Content_navigation>
+                            :multi-col="multiCol"
+                            ref="content_navigation"></Content_navigation>
       </b-col>
       <b-col cols="9" ref="bnuz-content-container" class="bnuz-content-container">
         <div class="roundRect">
@@ -61,7 +62,8 @@ export default {
       anchors_length: undefined,
       first_scroll: true,
 
-      multiCol: true
+      multiCol: true,
+      content_width: 300
     }
   },
   mounted() {
@@ -70,6 +72,7 @@ export default {
   methods: {
     initScroll: function () {
       if (this.trigger_value !== undefined) return
+      this.content_width = this.$refs.bnuz_content.width;
       this.anchors = this.$refs.bnuz_content.getElementsByClassName('bnuz-content-anchor-maq3zrn6');
       this.anchors_length = this.anchors.length;
 
@@ -94,7 +97,9 @@ export default {
       }
 
       this.windowHeight = document.documentElement.clientHeight;
-      this.trigger_value = this.windowHeight / 3;
+
+      // TODO 这里修改内容导航顶部的锁定高度
+      this.trigger_value = this.windowHeight / 7.2; // 相当于100px(1920*10*))
     },
     updateNav: function () {
       // updateNav
@@ -116,6 +121,7 @@ export default {
       const trigger_value = this.trigger_value;
       const contentNav = this.$refs["bnuz-content-nav-container"];
       const contentText = this.$refs.bnuz_content;
+      // const contentNavigatoin = this.$refs.content_navigation;
       const boundingRect = contentNav.getBoundingClientRect();
       const top = trigger_value;
       const left = boundingRect.x;
@@ -127,8 +133,9 @@ export default {
       // 到下方
       if (contentText.getBoundingClientRect().y < trigger_value) {
         // 判断是否到底部，双列
+        // eslint-disable-next-line no-unused-vars
         const adder = this.multiCol ? contentNav.height : 0;
-        if (this.windowHeight > contentText.getBoundingClientRect().bottom + adder) {
+        if (this.windowHeight > contentText.getBoundingClientRect().bottom - 50) {
           // 底部
           this.content_navigation_style = {
             isNormal: true,
@@ -187,6 +194,7 @@ export default {
   padding: 16px;
   margin-top: 64px;
   width: 85vw;
+  max-width: 85vw;
 }
 
 .bnuz-content-nav {
@@ -199,8 +207,8 @@ export default {
 
 .bnuz-content-nav-float {
   position: fixed;
-  top: 400px;
+  top: 200px;
   left: 100px;
-  width: calc(100vw / 33);
+  /*width: calc(100vw / 33);*/
 }
 </style>

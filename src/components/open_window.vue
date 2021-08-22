@@ -64,6 +64,7 @@ export default {
   position: absolute;
   width: 100%;
   height: 100%;
+  background-image: url("~@/assets/wall.png");
   z-index: 10;
 }
 

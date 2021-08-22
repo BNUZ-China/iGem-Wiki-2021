@@ -1,14 +1,17 @@
 <template>
-<div :class="multiCol ? 'navigation_grid_style' : ''"
-     class="content-navigation-background">
-<!--     :style="{backgroundImage: 'url('+Nav_background+')'}">-->
-  <Content_navigation_item v-for="(dis, item) in anchor_distances"
-                           :activate="item === active_item_index"
-                           :key="item"
-                           :click_link="dis"
-                           :multiCol="multiCol === 'true'"
-                           >{{item}}</Content_navigation_item>
-</div>
+  <div class="content-navigation-background">
+    <!--    <img :src="Nav_background">-->
+    <div :class="multiCol ? 'navigation_grid_style' : ''"
+         class="navigation_style">
+      <Content_navigation_item v-for="(dis, item) in anchor_distances"
+                               :activate="item === active_item_index"
+                               :key="item"
+                               :click_link="dis"
+                               :multiCol="multiCol === 'true'"
+      >{{ item }}
+      </Content_navigation_item>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -40,10 +43,19 @@ export default {
   grid-template-columns: repeat(2, 76px);
   column-gap: 24px;
   row-gap: 24px;
-  width: 160px;
+  /*width: 160px;*/
 }
 
 .content-navigation-background {
   background-image: url("~@/assets/content_navigation/nav_background.jpg");
+  width: 285px;
+  height: 534px; /* TODO 这里填写电梯背景图高度 */
+  background-size: 285px;
+  background-repeat: no-repeat;
+}
+
+/* TODO 在这里调整按钮的边距等数据 */
+.navigation_style {
+
 }
 </style>
