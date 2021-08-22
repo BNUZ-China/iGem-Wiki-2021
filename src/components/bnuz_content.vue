@@ -1,20 +1,24 @@
 <template>
-  <b-container class="bunz-content" ref="bnuz_content" v-scroll="onScrollBNUZ">
+  <b-container class="bunz-content" ref="bnuz_content">
     <b-row align-h="end">
-      <b-col cols="3" ref="bnuz-content-nav-container" :class="{
-          'bnuz-content-nav': content_navigation_style.isNormal,
-          'bnuz-content-nav-bottom': content_navigation_style.isBottom,
-          'bnuz-content-nav-float': content_navigation_style.isFixed
-        }" :style="{
-          top: fixed_top,
-          left: fixed_left
-        }">
+      <b-col cols="3">
         <Content_navigation v-if="anchors_length !== undefined"
                             :anchor_distances="anchor_distances"
                             :active_item_index="active_navigation_item_index"
                             :multi-col="multiCol"
-                            ref="content_navigation"></Content_navigation>
+                            ref="content_navigation"
+                            class="bnuz-content-nav-sticky"></Content_navigation>
       </b-col>
+<!--      <b-col cols="3" ref="bnuz-content-nav-container" :class="{-->
+<!--          'bnuz-content-nav': content_navigation_style.isNormal,-->
+<!--          'bnuz-content-nav-bottom': content_navigation_style.isBottom,-->
+<!--          'bnuz-content-nav-float': content_navigation_style.isFixed-->
+<!--        }" :style="{-->
+<!--          top: fixed_top,-->
+<!--          left: fixed_left-->
+<!--        }">-->
+<!--        -->
+<!--      </b-col>-->
       <b-col cols="9" ref="bnuz-content-container" class="bnuz-content-container">
         <div class="roundRect">
           <div class="bnuz-text">
@@ -95,84 +99,6 @@ export default {
       for (var anchor of this.anchors) {
         this.anchor_distances.push(anchor.offsetTop + baseTop)
       }
-
-      this.windowHeight = document.documentElement.clientHeight;
-
-      // TODO 这里修改内容导航顶部的锁定高度
-      this.trigger_value = this.windowHeight / 7.2; // 相当于100px(1920*10*))
-    },
-    updateNav: function () {
-      // updateNav
-      let scroll_location = document.documentElement.scrollTop;
-      let k = undefined; // 表示第几个应该高亮
-      let k_defined = false;
-
-      for (let i = 0; i < this.anchors_length; i++) {
-        if (scroll_location > this.anchor_distances[i] - this.windowHeight / 8) {
-          k = i;
-          k_defined = true;
-        }
-      }
-      if (!k_defined) return;
-      this.active_navigation_item_index = k;
-    },
-    moveNav: function () {
-      // moveNav
-      const trigger_value = this.trigger_value;
-      const contentNav = this.$refs["bnuz-content-nav-container"];
-      const contentText = this.$refs.bnuz_content;
-      // const contentNavigatoin = this.$refs.content_navigation;
-      const boundingRect = contentNav.getBoundingClientRect();
-      const top = trigger_value;
-      const left = boundingRect.x;
-
-      const numToPx = function (number) {
-        return number.toString() + 'px';
-      };
-
-      // 到下方
-      if (contentText.getBoundingClientRect().y < trigger_value) {
-        // 判断是否到底部，双列
-        // eslint-disable-next-line no-unused-vars
-        const adder = this.multiCol ? contentNav.height : 0;
-        if (this.windowHeight > contentText.getBoundingClientRect().bottom - 50) {
-          // 底部
-          this.content_navigation_style = {
-            isNormal: true,
-            isFixed: false,
-            isBottom: true
-          }
-          this.fixed_top = 'auto';
-          this.fixed_left = 'auto';
-          return;
-        }
-        this.content_navigation_style = {
-          isNormal: false,
-          isFixed: true,
-          isBottom: false
-        }
-        this.fixed_top = numToPx(top);
-        this.fixed_left = numToPx(left);
-      } else {
-        // 返回的样式
-        this.content_navigation_style = {
-          isNormal: true,
-          isFixed: false,
-          isBottom: false
-        }
-        this.fixed_top = 'auto';
-        this.fixed_left = 'auto';
-      }
-    },
-    onScrollBNUZ: function () {
-      //第一次运行
-      if (this.first_scroll) {
-        this.initScroll();
-        this.first_scroll = false;
-      }
-
-      this.updateNav();
-      this.moveNav();
     }
   }
 }
@@ -195,6 +121,7 @@ export default {
   margin-top: 64px;
   width: 85vw;
   max-width: 85vw;
+  overflow: visible;
 }
 
 .bnuz-content-nav {
@@ -210,5 +137,12 @@ export default {
   top: 200px;
   left: 100px;
   /*width: calc(100vw / 33);*/
+}
+
+.bnuz-content-nav-sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 100px;
+  overflow: visible;
 }
 </style>
