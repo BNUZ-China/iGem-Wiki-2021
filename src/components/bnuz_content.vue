@@ -1,5 +1,5 @@
 <template>
-  <b-container class="bunz-content" ref="bnuz_content">
+  <b-container class="bunz-content" ref="bnuz_content" v-scroll="onScrollBNUZ">
     <b-row align-h="end">
       <b-col cols="3">
         <Content_navigation v-if="anchors_length !== undefined"
@@ -9,16 +9,6 @@
                             ref="content_navigation"
                             class="bnuz-content-nav-sticky"></Content_navigation>
       </b-col>
-<!--      <b-col cols="3" ref="bnuz-content-nav-container" :class="{-->
-<!--          'bnuz-content-nav': content_navigation_style.isNormal,-->
-<!--          'bnuz-content-nav-bottom': content_navigation_style.isBottom,-->
-<!--          'bnuz-content-nav-float': content_navigation_style.isFixed-->
-<!--        }" :style="{-->
-<!--          top: fixed_top,-->
-<!--          left: fixed_left-->
-<!--        }">-->
-<!--        -->
-<!--      </b-col>-->
       <b-col cols="9" ref="bnuz-content-container" class="bnuz-content-container">
         <div class="roundRect">
           <div class="bnuz-text">
@@ -99,6 +89,30 @@ export default {
       for (var anchor of this.anchors) {
         this.anchor_distances.push(anchor.offsetTop + baseTop)
       }
+    },
+    updateNav: function () {
+      // updateNav
+      let scroll_location = document.documentElement.scrollTop;
+      let k = undefined; // 表示第几个应该高亮
+      let k_defined = false;
+
+      for (let i = 0; i < this.anchors_length; i++) {
+        if (scroll_location > this.anchor_distances[i] - 100) {
+          k = i;
+          k_defined = true;
+        }
+      }
+      if (!k_defined) return;
+      this.active_navigation_item_index = k;
+    },
+    onScrollBNUZ: function () {
+      //第一次运行
+      if (this.first_scroll) {
+        this.initScroll();
+        this.first_scroll = false;
+      }
+
+      this.updateNav();
     }
   }
 }
@@ -141,7 +155,6 @@ export default {
 
 .bnuz-content-nav-sticky {
   position: sticky;
-  position: -webkit-sticky;
   top: 100px;
   overflow: visible;
 }

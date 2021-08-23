@@ -25,6 +25,8 @@ export default {
       var result = 'bnuz-content-nav-item-kp6mdeaz';
       if (this.activate) {
         result += ' bnuz-content-nav-item-active-kp6mdeaz';
+      } else {
+        result += ' bnuz-content-nav-item-no-active-kp6mdeaz'
       }
       if (this.multiCol) {
         result += ' bnuz-content-nav-item-grid-kp6mdeaz'
@@ -39,28 +41,38 @@ export default {
 
 <style scoped>
 .bnuz-content-nav-item-kp6mdeaz {
-  --nav_item_size: 80px;
+  --nav_item_size: 67px;
   width: var(--nav_item_size);
   height: var(--nav_item_size);
   background-color: #e2e3e5;
   text-align: center;
   cursor: pointer;
+  line-height: var(--nav_item_size);
+  font-size: 2em;
 }
 
-/* 单列样式 */
+/* 单列独占样式 */
 .bnuz-content-nav-item-no-grid-kp6mdeaz {
   margin: 8px;
 }
 
-/* 双列样式 */
+/* 双列独占样式 */
 .bnuz-content-nav-item-grid-kp6mdeaz {
 
 }
 
 /* 激活样式 */
 .bnuz-content-nav-item-active-kp6mdeaz {
-  font-size: x-large;
-  color: #0dcaf0;
-  background-color: bisque;
+  /*font-size: x-lar */
+  /*background-image: url("~@/assets/content_navigation/navitem_on.jpg");*/
+  background-color: #2fc0ff;
+  color: black;
+}
+
+/*未激活样式*/
+.bnuz-content-nav-item-no-active-kp6mdeaz {
+  /*background-image: url("~@/assets/content_navigation/navitem_off.jpg");*/
+  background-color: #588fa2;
+  color: white;
 }
 </style>
