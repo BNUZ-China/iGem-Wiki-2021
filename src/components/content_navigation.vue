@@ -41,18 +41,19 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 166px;
+  width: 170px;
 }
 
 .content-navigation-background {
+  --width: 250px;
   background-image: url("~@/assets/content_navigation/nav_background.jpg");
-  width: 285px;
+  width: var(--width);
   height: 534px; /* TODO 这里填写电梯背景图高度 */
-  background-size: 285px;
+  background-size: var(--width);
   background-repeat: no-repeat;
 
   /* 有关按钮对齐 */
-  padding-top: 58%;
+  padding-top: 54%;
 }
 
 /* TODO 在这里调整按钮的边距等数据 */

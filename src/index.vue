@@ -33,8 +33,10 @@ export default {
   },
   methods: {
     zoomEnd: function () {
-      document.getElementsByTagName('body')[0].style.overflow = 'auto'
       this.TopNavBarVisible = true;
+      setTimeout(function () {
+        document.getElementsByTagName('body')[0].style.overflow = 'auto';
+      }, 2000)
     }
   }
 }
@@ -47,9 +49,10 @@ export default {
 }
 
 .homepage_hospital {
+  width: 100%;
 }
 
 .index-content {
-  margin: 0 12vw;
+  margin: 0 6vw;
 }
 </style>

@@ -21,7 +21,7 @@ export default {
     }
   },
   mounted() {
-    this.$refs.window.addEventListener('animationend', this.emitOpenWindowEnd);
+    this.$refs.window.addEventListener('animationstart', this.emitOpenWindowEnd);
 
   },
   methods: {

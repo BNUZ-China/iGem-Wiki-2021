@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 .bnuz-content-nav-item-kp6mdeaz {
-  --nav_item_size: 67px;
+  --nav_item_size: 64px;
   width: var(--nav_item_size);
   height: var(--nav_item_size);
   background-color: #e2e3e5;
@@ -49,11 +49,12 @@ export default {
   cursor: pointer;
   line-height: var(--nav_item_size);
   font-size: 2em;
+  border-radius: 18px;
 }
 
 /* 单列独占样式 */
 .bnuz-content-nav-item-no-grid-kp6mdeaz {
-  margin: 8px;
+  margin: 10px;
 }
 
 /* 双列独占样式 */
@@ -65,14 +66,14 @@ export default {
 .bnuz-content-nav-item-active-kp6mdeaz {
   /*font-size: x-lar */
   /*background-image: url("~@/assets/content_navigation/navitem_on.jpg");*/
-  background-color: #2fc0ff;
+  background-color: #90c1c2;
   color: black;
 }
 
 /*未激活样式*/
 .bnuz-content-nav-item-no-active-kp6mdeaz {
   /*background-image: url("~@/assets/content_navigation/navitem_off.jpg");*/
-  background-color: #588fa2;
+  background-color: #667e80;
   color: white;
 }
 </style>
