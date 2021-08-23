@@ -4,18 +4,23 @@
          ref="zoom_container"
          :class="{zoom_window: zoom}"
          :style="{transform: 'scale('+ (zoom_scale/10).toString()+ ')'}">
+      <!--      <img :src="wall" class="framework">-->
       <div @click="window_opened = true">
         <div class="mask_layer_container">
-          <Window :opened="window_opened" window_side="left" v-on:window-open-end="windowsOpenEnd"></Window>
-          <Window :opened="window_opened" window_side="right"></Window>
+          <div class="window_container">
+            <Window :opened="window_opened" window_side="left" v-on:window-open-end="windowsOpenEnd"></Window>
+            <Window :opened="window_opened" window_side="right"></Window>
+          </div>
         </div>
       </div>
+      <img :src="wall" class="wall" alt="decoration">
     </div>
   </div>
 </template>
 
 <script>
 import Window from "@/components/window";
+import wall from "@/assets/wall2.png"
 
 export default {
   name: "open_window",
@@ -25,6 +30,7 @@ export default {
       zoom: false,
       window_opened: false,
       zoom_scale: 10,
+      wall
     }
   },
   mounted() {
@@ -37,8 +43,7 @@ export default {
     },
     windowZoomEnd: function () {
       this.$refs.zoom_container.hidden = true;
-      document.body.style.overflowX = 'auto';
-      document.body.style.overflowY = 'auto';
+      this.$emit('zoom-end')
     }
   }
 }
@@ -64,13 +69,34 @@ export default {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("~@/assets/wall.png");
-  z-index: 10;
+  /*background-image: url("~@/assets/wall.png");*/
+  /*z-index: 400;*/
 }
 
 .mask_layer_container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /*z-index: 500;*/
+}
+
+.window_container {
+  display: flex;
+  flex-wrap: nowrap;
+  border: 30px solid transparent;
+  border-image: url("~@/assets/framework.png") 47;
+  z-index: 700;
+}
+
+.wall {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 600;
+  top: 0;
+  left: 0;
+  /*opacity: 0.3;*/
 }
 </style>

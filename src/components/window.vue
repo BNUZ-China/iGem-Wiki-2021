@@ -79,18 +79,13 @@ export default {
   }
 }
 
-.mask_layer_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .window {
   animation-fill-mode: forwards;
+  height: 80vh;
 }
 
 .rotate-container {
   perspective: 2100px;
-  height: 50%;
+  z-index: 800;
 }
 </style>

@@ -1,6 +1,5 @@
 <template>
   <div class="content-navigation-background">
-    <!--    <img :src="Nav_background">-->
     <div :class="multiCol ? 'navigation_flex_style' : ''"
          class="navigation_style">
       <Content_navigation_item v-for="(dis, item) in anchor_distances"
@@ -9,6 +8,7 @@
                                :click_link="dis"
                                :multiCol="multiCol === 'true'"
       >{{ item + 1}}
+        <!-- TODO 这里设置电梯按钮文本 -->
       </Content_navigation_item>
     </div>
   </div>
@@ -17,7 +17,6 @@
 <script>
 import Content_navigation_item from "@/components/content_navigation_item";
 import Nav_background from '@/assets/content_navigation/nav_background.jpg';
-// eslint-disable-next-line no-unused-vars
 import conf from '@/wiki_config';
 
 export default {
