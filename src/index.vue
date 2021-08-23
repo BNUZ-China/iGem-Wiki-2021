@@ -1,11 +1,17 @@
 <template>
   <AppRoot>
-    <TopNavigationBar v-if="TopNavBarVisible">
+    <transition enter-active-class="animate__animated animate__bounceInDown animate__slow">
+      <TopNavigationBar v-if="TopNavBarVisible">
 
-    </TopNavigationBar>
+      </TopNavigationBar>
+    </transition>
     <Open_window @zoom-end="zoomEnd">
 
     </Open_window>
+    <div class="navbar_space"></div>
+    <div class="index-content">
+      <img :src="homepage_hospital" alt="homepage hospital" class="homepage_hospital">
+    </div>
   </AppRoot>
 </template>
 
@@ -35,10 +41,15 @@ export default {
 </script>
 
 <style scoped>
+.navbar_space {
+  width: 1px;
+  height: 64px;
+}
+
 .homepage_hospital {
-  /*margin-top: 40px;*/
-  position: relative;
-  z-index: 2;
-  width: 100vw;
+}
+
+.index-content {
+  margin: 0 12vw;
 }
 </style>

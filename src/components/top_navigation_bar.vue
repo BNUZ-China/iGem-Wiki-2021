@@ -1,29 +1,29 @@
 <template>
   <nav id="bnuz-nav">
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
+    <div class="nav justify-content-end">
+      <div class="nav-item">
         <a class="nav-link" href="#">HOME</a>
-      </li>
+      </div>
       <top_navigation_bar_dropdown title="PROJECT" :contents="[
         {text: 'A', link: 'www.baidu.com'},
         {text: 'B', link: 'cn.bing.com'}
       ]"></top_navigation_bar_dropdown>
-      <li class="nav-item">
+      <div class="nav-item">
         <a class="nav-link" href="#">MODEL</a>
-      </li>
-      <li class="nav-item">
+      </div>
+      <div class="nav-item">
         <a class="nav-link" href="#">SAFETY</a>
-      </li>
-      <li class="nav-item">
+      </div>
+      <div class="nav-item">
         <a class="nav-link" href="#">HUMAN PRACTICES</a>
-      </li>
-      <li class="nav-item">
+      </div>
+      <div class="nav-item">
         <a class="nav-link" href="#">PARTS</a>
-      </li>
-      <li class="nav-item">
+      </div>
+      <div class="nav-item">
         <a class="nav-link" href="#">TEAM</a>
-      </li>
-    </ul>
+      </div>
+    </div>
   </nav>
 </template>
 

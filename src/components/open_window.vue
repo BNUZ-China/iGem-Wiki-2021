@@ -4,7 +4,6 @@
          ref="zoom_container"
          :class="{zoom_window: zoom}"
          :style="{transform: 'scale('+ (zoom_scale/10).toString()+ ')'}">
-      <!--      <img :src="wall" class="framework">-->
       <div @click="window_opened = true">
         <div class="mask_layer_container">
           <div class="window_container">
@@ -20,7 +19,7 @@
 
 <script>
 import Window from "@/components/window";
-import wall from "@/assets/wall2.png"
+import wall from "@/assets/wall3.png"
 
 export default {
   name: "open_window",
@@ -61,6 +60,7 @@ export default {
 }
 
 .zoom_window {
+  /* FIXME zoom time set to 3s. only debug */
   animation: zoom 3s;
   animation-fill-mode: forwards;
 }

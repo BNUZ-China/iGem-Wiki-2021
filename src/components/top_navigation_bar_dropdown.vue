@@ -1,11 +1,13 @@
 <template>
   <div @mouseover="mouseover" @mouseout="mouseout">
-    <b-nav-item-dropdown :text="title" toggle-class="nav-link-custom" right ref="dropdown">
+    <b-nav-item-dropdown :text="title"
+                         toggle-class="nav-link-custom"
+                         right ref="dropdown">
       <b-dropdown-item class="dropdown-item"
                        v-for="content in contents"
                        :href="content.link"
                        :key="content.id">
-        {{content.text}}
+        {{ content.text }}
       </b-dropdown-item>
     </b-nav-item-dropdown>
   </div>
@@ -20,15 +22,21 @@ export default {
   },
   data() {
     return {
-      isHovered: false
+      dropdown_visible: false
     }
   },
   methods: {
-    mouseover() {
+    mouseover: function () {
       this.$refs.dropdown.visible = true;
+      if (this.closeDropdown !== undefined) {
+        clearTimeout(this.closeDropdown)
+      }
     },
-    mouseout() {
-      this.$refs.dropdown.visible = false;
+    mouseout: function () {
+      let vue = this
+      this.closeDropdown = setTimeout(function () {
+        vue.$refs.dropdown.visible = false;
+      }, 300);
     }
   }
 }

@@ -52,6 +52,7 @@ export default {
 
 <style scoped>
 .rorateWindow-left {
+  /* FIXME rotate time set to 3s. only for debug */
   animation: rotateWindowLeft 3s;
   transform-origin: left;
 }
@@ -66,6 +67,7 @@ export default {
 }
 
 .rorateWindow-right {
+  /* FIXME rotate time set to 3s. only for debug */
   animation: rotateWindowRight 3s;
   transform-origin: right;
 }
