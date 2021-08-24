@@ -48,7 +48,7 @@ export default {
   --width: 250px;
   background-image: url("~@/assets/content_navigation/nav_background.jpg");
   width: var(--width);
-  height: 534px; /* TODO 这里填写电梯背景图高度 */
+  height: 467px; /* TODO 这里填写电梯背景图高度 */
   background-size: var(--width);
   background-repeat: no-repeat;
 
