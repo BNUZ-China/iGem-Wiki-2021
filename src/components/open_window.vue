@@ -4,11 +4,23 @@
          ref="zoom_container"
          :class="{zoom_window: zoom}"
          :style="{transform: 'scale('+ (zoom_scale/10).toString()+ ')'}">
-      <div @click="window_opened = true">
+      <div @click="windowClicked" ref="windows">
+        <!-- 被点击后立刻消失 -->
+        <transition enter-active-class="animate__fadeIn animate__animated animate__fast"
+                    leave-active-class="animate__fadeOut animate__animated animate_duration_500ms">
+          <div class="click-hint" v-if="!isWindowClicked">
+            <div class="click-hint-circle animate__animated animate__zoomIn">
+
+            </div>
+            <div class="click-hint-text">
+              CLICK
+            </div>
+          </div>
+        </transition>
         <div class="mask_layer_container">
           <div class="window_container">
-            <Window :opened="window_opened" window_side="left" v-on:window-open-end="windowsOpenEnd"></Window>
-            <Window :opened="window_opened" window_side="right"></Window>
+            <Window :opened="isWindowOpened" window_side="left" v-on:window-open-end="windowsOpenEnd"></Window>
+            <Window :opened="isWindowOpened" window_side="right"></Window>
           </div>
         </div>
       </div>
@@ -27,16 +39,32 @@ export default {
   data() {
     return {
       zoom: false,
-      window_opened: false,
+      isWindowOpened: false,
       zoom_scale: 10,
+      isWindowClicked: false,
       wall
     }
   },
   mounted() {
+    this.$refs.windows.addEventListener('animationend', function (e) {
+      //若不中止冒泡则会触发下方的animationend事件
+      e.stopPropagation()
+    });
     this.$refs.zoom_container.addEventListener('animationend', this.windowZoomEnd);
-    // this.onScrolling();
   },
   methods: {
+    windowClicked: function () {
+      if (!this.isWindowOpened && (!this.isWindowClicked)) {
+        this.isWindowClicked = true;
+        let vue = this;
+
+        // 延迟500ms开始开窗
+        setTimeout(function () {
+          vue.isWindowOpened = true;
+          vue.$emit('window-open-start')
+        }, 500)
+      }
+    },
     windowsOpenEnd: function () {
       this.zoom = true;
     },
@@ -98,5 +126,37 @@ export default {
   top: 0;
   left: 0;
   /*opacity: 0.3;*/
+}
+
+.click-hint {
+  position: absolute;
+  top: 70%;
+  left: calc(50% - 50px);
+  z-index: 900;
+  width: 100px;
+}
+
+.click-hint-circle {
+  --size: 24px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: calc(var(--size) / 2);
+  background-color: rgba(17, 17, 17, 0.2);
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  margin: 0 auto;
+}
+
+.click-hint-text {
+  text-align: center;
+  font-size: large;
+  /*background-color: rgba(222, 221, 222, 0.5);*/
+  text-shadow: white 0 0 10px;;
+}
+
+.animate_duration_500ms {
+  animation-duration: 500ms;
 }
 </style>

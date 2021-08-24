@@ -1,5 +1,5 @@
 <template>
-  <nav id="bnuz-nav">
+  <nav class="bnuz-top-nav" :class="{'right-padding': rightPaddingForScrollbar}">
     <div class="nav justify-content-end">
       <div class="nav-item">
         <a class="nav-link" href="#">HOME</a>
@@ -34,11 +34,17 @@ import top_navigation_bar_dropdown from "@/components/top_navigation_bar_dropdow
 export default {
   name: "top-navigation-bar",
   components: {top_navigation_bar_dropdown},
+  props: {
+    rightPaddingForScrollbar: {
+      type: Boolean,
+      default: false
+    }
+  }
 }
 </script>
 
 <style scoped>
-#bnuz-nav {
+.bnuz-top-nav {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -48,5 +54,9 @@ export default {
   position: fixed;
   top: 18px;
   width: 100%;
+}
+
+.right-padding {
+  padding-right: 17px;
 }
 </style>

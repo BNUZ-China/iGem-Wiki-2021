@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 .bnuz-content-nav-item-kp6mdeaz {
-  --nav_item_size: 64px;
+  --nav_item_size: 54px;
   width: var(--nav_item_size);
   height: var(--nav_item_size);
   background-color: #e2e3e5;
@@ -49,7 +49,7 @@ export default {
   cursor: pointer;
   line-height: var(--nav_item_size);
   font-size: 2em;
-  border-radius: 18px;
+  border-radius: 15px;
 }
 
 /* 单列独占样式 */
