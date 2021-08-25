@@ -155,7 +155,7 @@ export default {
 
 .bnuz-content-nav-sticky {
   position: sticky;
-  top: 180px;
+  top: 25%;
   overflow: visible;
 }
 </style>

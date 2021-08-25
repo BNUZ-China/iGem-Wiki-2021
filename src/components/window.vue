@@ -9,7 +9,7 @@
 <script>
 // import window_p from '@/assets/window.png';
 import window_pic from '@/assets/window.png';
-import conf from '@/wiki_config'
+// import conf from '@/wiki_config'
 
 export default {
   name: "window",
@@ -17,7 +17,7 @@ export default {
     return {
       isLeft: this.window_side.toLowerCase() === 'left',
       // TODO: window URI
-      window_pic: conf.isDev ? window_pic : ''
+      window_pic: window_pic
     }
   },
   mounted() {

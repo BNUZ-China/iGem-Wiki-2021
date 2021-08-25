@@ -31,7 +31,8 @@
 
 <script>
 import Window from "@/components/window";
-import wall from "@/assets/wall3.png"
+import wall_pic from "@/assets/wall3.png"
+import conf from '@/wiki_config';
 
 export default {
   name: "open_window",
@@ -42,7 +43,9 @@ export default {
       isWindowOpened: false,
       zoom_scale: 10,
       isWindowClicked: false,
-      wall
+
+      // TODO set img url
+      wall: conf.isDev ? wall_pic : ''
     }
   },
   mounted() {

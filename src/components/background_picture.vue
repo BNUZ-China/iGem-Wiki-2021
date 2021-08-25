@@ -7,7 +7,7 @@
 
 <script>
 import homepage_hospital from '@/assets/homepage_hospital.png'
-import conf from '@/wiki_config'
+// import conf from '@/wiki_config'
 
 export default {
   name: "background_picture",
@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       // TODO homepage_hospital URI
-      homepage_hospital: conf.isDev ? homepage_hospital : ''
+      homepage_hospital: homepage_hospital
     }
   }
 }

@@ -3,6 +3,7 @@ node_modules
 /dist
 
 development
+development-*
 production
 
 # local env files

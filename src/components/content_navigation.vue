@@ -17,7 +17,7 @@
 <script>
 import Content_navigation_item from "@/components/content_navigation_item";
 import Nav_background from '@/assets/content_navigation/nav_background.jpg';
-import conf from '@/wiki_config';
+// import conf from '@/wiki_config';
 
 export default {
   name: "content_navigation",
@@ -25,7 +25,7 @@ export default {
   data() {
     return {
       // TODO: set image URI
-      Nav_background: conf.isDev ? Nav_background : ''
+      Nav_background: Nav_background
     }
   },
   props: {
@@ -55,7 +55,7 @@ export default {
   background-repeat: no-repeat;
 
   /* 有关按钮垂直对齐 */
-  padding-top: 44%;
+  padding-top: 130px;
 }
 
 /* TODO 在这里调整按钮的边距等数据 */

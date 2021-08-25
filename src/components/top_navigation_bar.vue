@@ -54,6 +54,7 @@ export default {
   position: fixed;
   top: 18px;
   width: 100%;
+  font-size: 16px;
 }
 
 .right-padding {

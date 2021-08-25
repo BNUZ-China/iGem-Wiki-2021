@@ -119,7 +119,7 @@ let prod_config = igemWikiWebpackPluginConfigGenerator({
       .use("file-loader")
       .loader("file-loader")
       .options({
-        limit: 1,
+        limit: 10000,
         publicPath: './',
         outputPath: 'img',
         name: '[name].[hash:8].[ext]',
