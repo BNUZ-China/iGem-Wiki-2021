@@ -197,15 +197,15 @@ export default {
 }
 
 .homepage_hospital {
-  width: 84vw;
+  width: 100vw;
   position: sticky;
-  top: -200px;
+  top: -100px;
   left: 8vw;
   z-index: -1;
 }
 
 .index-content {
-  margin: -500px 8vw 0;
+  margin: -400px 8vw 0;
 }
 
 .text {
