@@ -1285,9 +1285,9 @@
   resolved "https://registry.npmjs.org/@vue/cli-overlay/-/cli-overlay-4.5.13.tgz"
   integrity sha512-jhUIg3klgi5Cxhs8dnat5hi/W2tQJvsqCxR0u6hgfSob0ORODgUBlN+F/uwq7cKIe/pzedVUk1y07F13GQvPqg==
 
-"@vue/cli-plugin-babel@~4.5.0":
+"@vue/cli-plugin-babel@~4.5.13":
   version "4.5.13"
-  resolved "https://registry.nlark.com/@vue/cli-plugin-babel/download/@vue/cli-plugin-babel-4.5.13.tgz"
+  resolved "https://registry.nlark.com/@vue/cli-plugin-babel/download/@vue/cli-plugin-babel-4.5.13.tgz?cache=0&sync_timestamp=1628579321178&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fcli-plugin-babel%2Fdownload%2F%40vue%2Fcli-plugin-babel-4.5.13.tgz#a89c482edcc4ea1d135645cec502a7f5fd4c30e7"
   integrity sha1-qJxILtzE6h0TVkXOxQKn9f1MMOc=
   dependencies:
     "@babel/core" "^7.11.0"
@@ -1298,10 +1298,10 @@
     thread-loader "^2.1.3"
     webpack "^4.0.0"
 
-"@vue/cli-plugin-eslint@~4.5.0":
+"@vue/cli-plugin-eslint@~4.5.13":
   version "4.5.13"
-  resolved "https://registry.npmjs.org/@vue/cli-plugin-eslint/-/cli-plugin-eslint-4.5.13.tgz"
-  integrity sha512-yc2uXX6aBiy3vEf5TwaueaDqQbdIXIhk0x0KzEtpPo23jBdLkpOSoU5NCgE06g/ZiGAcettpmBSv73Hfp4wHEw==
+  resolved "https://registry.nlark.com/@vue/cli-plugin-eslint/download/@vue/cli-plugin-eslint-4.5.13.tgz?cache=0&sync_timestamp=1628579325292&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fcli-plugin-eslint%2Fdownload%2F%40vue%2Fcli-plugin-eslint-4.5.13.tgz#8baf22d0d96d76720c7506646b96f4f62c05bdfa"
+  integrity sha1-i68i0NltdnIMdQZka5b09iwFvfo=
   dependencies:
     "@vue/cli-shared-utils" "^4.5.13"
     eslint-loader "^2.2.1"
@@ -1322,10 +1322,10 @@
   resolved "https://registry.npmjs.org/@vue/cli-plugin-vuex/-/cli-plugin-vuex-4.5.13.tgz"
   integrity sha512-I1S9wZC7iI0Wn8kw8Zh+A2Qkf6s1M6vTGBkx8boXjuzfwEEyEHRxadsVCecZc8Mkpydo0nykj+MyYF96TKFuVA==
 
-"@vue/cli-service@~4.5.0":
+"@vue/cli-service@~4.5.13":
   version "4.5.13"
-  resolved "https://registry.npmjs.org/@vue/cli-service/-/cli-service-4.5.13.tgz"
-  integrity sha512-CKAZN4iokMMsaUyJRU22oUAz3oS/X9sVBSKAF2/shFBV5xh3jqAlKl8OXZYz4cXGFLA6djNuYrniuLAo7Ku97A==
+  resolved "https://registry.nlark.com/@vue/cli-service/download/@vue/cli-service-4.5.13.tgz?cache=0&sync_timestamp=1628579323125&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fcli-service%2Fdownload%2F%40vue%2Fcli-service-4.5.13.tgz#a09e684a801684b6e24e5414ad30650970eec9ed"
+  integrity sha1-oJ5oSoAWhLbiTlQUrTBlCXDuye0=
   dependencies:
     "@intervolga/optimize-cssnano-plugin" "^1.0.5"
     "@soda/friendly-errors-webpack-plugin" "^1.7.1"
@@ -1586,10 +1586,10 @@
   dependencies:
     envinfo "^7.7.3"
 
-"@webpack-cli/serve@^1.5.1":
-  version "1.5.1"
-  resolved "https://repo.huaweicloud.com/repository/npm/@webpack-cli/serve/-/serve-1.5.1.tgz"
-  integrity sha512-4vSVUiOPJLmr45S8rMGy7WDvpWxfFxfP/Qx/cxZFCfvoypTYpPPL1X8VIZMe0WTA+Jr7blUxwUSEZNkjoMTgSw==
+"@webpack-cli/serve@^1.5.2":
+  version "1.5.2"
+  resolved "https://registry.nlark.com/@webpack-cli/serve/download/@webpack-cli/serve-1.5.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40webpack-cli%2Fserve%2Fdownload%2F%40webpack-cli%2Fserve-1.5.2.tgz#ea584b637ff63c5a477f6f21604b5a205b72c9ec"
+  integrity sha1-6lhLY3/2PFpHf28hYEtaIFtyyew=
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
@@ -2872,6 +2872,11 @@ core-js-compat@^3.14.0, core-js-compat@^3.15.0, core-js-compat@^3.6.5:
     browserslist "^4.16.6"
     semver "7.0.0"
 
+core-js@^3.16.3:
+  version "3.16.3"
+  resolved "https://registry.nlark.com/core-js/download/core-js-3.16.3.tgz#1f2d43c51a9ed014cc6c83440af14697ae4b75f2"
+  integrity sha1-Hy1DxRqe0BTMbINECvFGl65LdfI=
+
 core-js@^3.6.5:
   version "3.16.0"
   resolved "https://registry.nlark.com/core-js/download/core-js-3.16.0.tgz"
@@ -3673,9 +3678,9 @@ eslint-visitor-keys@^1.0.0, eslint-visitor-keys@^1.1.0:
   resolved "https://registry.nlark.com/eslint-visitor-keys/download/eslint-visitor-keys-1.3.0.tgz"
   integrity sha1-MOvR73wv3/AcOk8VEESvJfqwUj4=
 
-eslint@^6.7.2:
+eslint@^6.8.0:
   version "6.8.0"
-  resolved "https://registry.nlark.com/eslint/download/eslint-6.8.0.tgz?cache=0&sync_timestamp=1627685236231&other_urls=https%3A%2F%2Fregistry.nlark.com%2Feslint%2Fdownload%2Feslint-6.8.0.tgz"
+  resolved "https://registry.nlark.com/eslint/download/eslint-6.8.0.tgz#62262d6729739f9275723824302fb227c8c93ffb"
   integrity sha1-YiYtZylzn5J1cjgkMC+yJ8jJP/s=
   dependencies:
     "@babel/code-frame" "^7.0.0"
@@ -9137,9 +9142,9 @@ vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-template-compiler@^2.6.11:
+vue-template-compiler@^2.6.14:
   version "2.6.14"
-  resolved "https://registry.nlark.com/vue-template-compiler/download/vue-template-compiler-2.6.14.tgz?cache=0&sync_timestamp=1623059640396&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue-template-compiler%2Fdownload%2Fvue-template-compiler-2.6.14.tgz"
+  resolved "https://registry.nlark.com/vue-template-compiler/download/vue-template-compiler-2.6.14.tgz?cache=0&sync_timestamp=1623059640396&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue-template-compiler%2Fdownload%2Fvue-template-compiler-2.6.14.tgz#a2f0e7d985670d42c9c9ee0d044fed7690f4f763"
   integrity sha1-ovDn2YVnDULJye4NBE/tdpD092M=
   dependencies:
     de-indent "^1.0.2"
@@ -9214,15 +9219,15 @@ webpack-chain@^6.4.0:
     deepmerge "^1.5.2"
     javascript-stringify "^2.0.1"
 
-webpack-cli@^4.7.2:
-  version "4.7.2"
-  resolved "https://repo.huaweicloud.com/repository/npm/webpack-cli/-/webpack-cli-4.7.2.tgz"
-  integrity sha512-mEoLmnmOIZQNiRl0ebnjzQ74Hk0iKS5SiEEnpq3dRezoyR3yPaeQZCMCe+db4524pj1Pd5ghZXjT41KLzIhSLw==
+webpack-cli@^4.8.0:
+  version "4.8.0"
+  resolved "https://registry.nlark.com/webpack-cli/download/webpack-cli-4.8.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fwebpack-cli%2Fdownload%2Fwebpack-cli-4.8.0.tgz#5fc3c8b9401d3c8a43e2afceacfa8261962338d1"
+  integrity sha1-X8PIuUAdPIpD4q/OrPqCYZYjONE=
   dependencies:
     "@discoveryjs/json-ext" "^0.5.0"
     "@webpack-cli/configtest" "^1.0.4"
     "@webpack-cli/info" "^1.3.0"
-    "@webpack-cli/serve" "^1.5.1"
+    "@webpack-cli/serve" "^1.5.2"
     colorette "^1.2.1"
     commander "^7.0.0"
     execa "^5.0.0"
