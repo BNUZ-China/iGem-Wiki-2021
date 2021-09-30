@@ -12,12 +12,13 @@
 3. 在组件中导入图片时，使用
 ```javascript
 import window_pic from '@/assets/window.png';
+import conf from "@/wiki_config"; // 快捷键vconf
 
 export default {
   name: "window",
   data() {
     return {
-      window_pic: window.isDev ? window_pic : 'https://2021.igem.org/wiki/images/2/2e/T--BNUZ-China--homepage_hospital.png'
+      window_pic: conf.isDev ? window_pic : 'https://2021.igem.org/wiki/images/2/2e/T--BNUZ-China--homepage_hospital.png'
     }
   }
 }

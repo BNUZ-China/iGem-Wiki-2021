@@ -176,14 +176,14 @@ export default {
   },
   methods: {
     openStart: function () {
-      this.openStarted = true
+      this.openStarted = true;
     },
     zoomEnd: function () {
       this.TopNavBarVisible = true;
       let vue = this;
       setTimeout(function () {
         vue.scrollbarSpace = false;
-        document.getElementsByTagName('body')[0].style.overflow = 'auto';
+        document.getElementsByTagName('body')[0].style.overflowY = 'auto';
       }, 2000)
     }
   }
@@ -209,6 +209,7 @@ export default {
 }
 
 .text {
+  /*TODO homepage 字体*/
   margin: 0 7vw;
   background-color: rgba(255, 255, 255, 1);
   font-size: large;

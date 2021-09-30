@@ -1,10 +1,10 @@
 <template>
   <AppRoot id="app">
-    <!--    <Background_picture src="assets/homepage_hospital.png"></Background_picture>-->
+<!--    <Background_picture src="assets/homepage_hospital.png"></Background_picture>-->
     <top-navigation-bar/>
     <Head_image></Head_image>
     <BNUZ_Content>
-      <Content_navigation_anchor hint_text="111">
+      <Content_navigation_anchor>
         <h4>First Heading</h4>
         Build a periodic expression module of Cas9
         To verify that our design enables Cas9 to be expressed periodically, we built a module for the periodic
@@ -20,7 +20,7 @@
         4.Obtain and analyze data. Draw the image of Cas9 protein levels over time.
       </Content_navigation_anchor>
 
-      <Content_navigation_anchor hint_text="222">
+      <Content_navigation_anchor>
         <h4>Second Heading</h4>
         Degradation of Cas9 at a proper rate
         In order to verify the function of Clb2 (N124aa) as a degradation tag, we constructed the plasmids for an
@@ -44,7 +44,7 @@
         modified by Clb2 N124aa through modeling.
       </Content_navigation_anchor>
 
-      <Content_navigation_anchor hint_text="333">
+      <Content_navigation_anchor>
         <h4>Third Heading</h4>
         Degradation of Cas9 at a proper rate
         In order to verify the function of Clb2 (N124aa) as a degradation tag, we constructed the plasmids for an
@@ -68,7 +68,7 @@
         modified by Clb2 N124aa through modeling.
       </Content_navigation_anchor>
 
-      <Content_navigation_anchor hint_text="444">
+      <Content_navigation_anchor>
         <h4>Forth Heading</h4>
         Degradation of Cas9 at a proper rate
         In order to verify the function of Clb2 (N124aa) as a degradation tag, we constructed the plasmids for an

@@ -137,6 +137,7 @@ export default {
   left: calc(50% - 50px);
   z-index: 900;
   width: 100px;
+  font-family: Arial,sans-serif;
 }
 
 .click-hint-circle {

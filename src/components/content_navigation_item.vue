@@ -1,5 +1,5 @@
 <template>
-  <div @click="contentNavJumpto" :class="classString">
+  <div v-b-tooltip.hover :title="hint_text" @click="contentNavJumpto" :class="classString">
     <slot></slot>
   </div>
 </template>
@@ -7,7 +7,7 @@
 <script>
 export default {
   name: "content_navigation_item",
-  props: {activate: Boolean, click_link: Number, multiCol: Boolean},
+  props: {activate: Boolean, click_link: Number, multiCol: Boolean, hint_text: String},
   methods: {
     contentNavJumpto: function () {
       // i是该按钮的序号

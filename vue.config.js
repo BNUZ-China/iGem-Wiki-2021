@@ -144,6 +144,12 @@ const dev_config = {
       template: 'public/index.html',
       filename: 'index.html',
       title: 'Home Page'
+    },
+    design_page: {
+      entry: 'src/design.js',
+      template: 'public/project/design.html',
+      filename: 'design.html',
+      title: 'design'
     }
   }
 };

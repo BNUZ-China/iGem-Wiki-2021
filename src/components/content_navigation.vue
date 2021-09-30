@@ -7,6 +7,7 @@
                                :key="item"
                                :click_link="dis"
                                :multiCol="multiCol === 'true'"
+                               :hint_text="hint_text_array[item]"
       >{{ item + 1}}
         <!-- TODO 这里设置电梯按钮文本 -->
       </Content_navigation_item>
@@ -32,6 +33,16 @@ export default {
     active_item_index: Number,
     anchor_distances: Array,
     multiCol: Boolean
+  },
+  computed: {
+    hint_text_array: function () {
+      let anchors = document.getElementsByClassName('bnuz-content-anchor-maq3zrn6');
+      let result = [];
+      for (let anchor of anchors) {
+        result.push(anchor.attributes['hint_text'].value)
+      }
+      return result;
+    }
   }
 }
 </script>

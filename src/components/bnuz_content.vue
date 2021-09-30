@@ -56,7 +56,7 @@ export default {
       anchors_length: undefined,
       first_scroll: true,
 
-      multiCol: true,
+      multiCol: false,
       content_width: 300
     }
   },
@@ -121,13 +121,9 @@ export default {
 <style scoped>
 .bnuz-text {
   font-size: 20px;
-  font-family: Arial, sans-serif;
-}
-
-.roundRect {
-  padding: 20px;
-  background-color: rgba(238, 214, 214, 0.72);;
-  border-radius: 20px;
+  /* TODO 正文字体*/
+  /*font-family: Arial, sans-serif;*/
+  /*color: #6c7c9b;*/
 }
 
 .bunz-content {
