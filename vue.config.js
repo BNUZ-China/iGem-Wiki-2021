@@ -145,12 +145,114 @@ const dev_config = {
       filename: 'index.html',
       title: 'Home Page'
     },
+    description_page: {
+      entry: 'src/description.js',
+      template: 'public/project/description.html',
+      filename: 'description.html',
+      title: 'description'
+    },
     design_page: {
       entry: 'src/design.js',
       template: 'public/project/design.html',
       filename: 'design.html',
       title: 'design'
-    }
+    },
+    experiment_page: {
+      entry: 'src/experiment.js',
+      template: 'public/project/experiment.html',
+      filename: 'experiment.html',
+      title: 'experiment'
+    },
+    result_page: {
+      entry: 'src/result.js',
+      template: 'public/project/result.html',
+      filename: 'result.html',
+      title: 'result'
+    },
+    engineering_page: {
+      entry: 'src/engineering.js',
+      template: 'public/project/engineering.html',
+      filename: 'engineering.html',
+      title: 'engineering'
+    },
+    implementation_page: {
+      entry: 'src/implementation.js',
+      template: 'public/project/implementation.html',
+      filename: 'implementation.html',
+      title: 'implementation'
+    },
+    introduction_page: {
+      entry: 'src/introduction.js',
+      template: 'public/model/introduction.html',
+      filename: 'introduction.html',
+      title: 'introduction'
+    },
+    models_and_results_page: {
+      entry: 'src/models_and_results.js',
+      template: 'public/model/models_and_results.html',
+      filename: 'models_and_results.html',
+      title: 'models_and_results'
+    },
+    discussion_page: {
+      entry: 'src/discussion.js',
+      template: 'public/model/discussion.html',
+      filename: 'discussion.html',
+      title: 'discussion'
+    },
+    safety_page: {
+      entry: 'src/safety.js',
+      template: 'public/safety/safety.html',
+      filename: 'safety.html',
+      title: 'safety'
+    },
+    human_practice_page: {
+      entry: 'src/human_practice.js',
+      template: 'public/human_practice/human_practice.html',
+      filename: 'human_practice.html',
+      title: 'human_practice'
+    },
+    partnership_page: {
+      entry: 'src/partnership.js',
+      template: 'public/human_practice/partnership.html',
+      filename: 'partnership.html',
+      title: 'partnership'
+    },
+    communication_page: {
+      entry: 'src/communication.js',
+      template: 'public/human_practice/communication.html',
+      filename: 'communication.html',
+      title: 'communication'
+    },
+    parts_page: {
+      entry: 'src/parts.js',
+      template: 'public/parts/parts.html',
+      filename: 'parts.html',
+      title: 'parts'
+    },
+    contribution_page: {
+      entry: 'src/contribution.js',
+      template: 'public/parts/contribution.html',
+      filename: 'contribution.html',
+      title: 'contribution'
+    },
+    members_page: {
+      entry: 'src/members.js',
+      template: 'public/team/members.html',
+      filename: 'members.html',
+      title: 'members'
+    },
+    attributions_page: {
+      entry: 'src/attributions.js',
+      template: 'public/team/attributions.html',
+      filename: 'attributions.html',
+      title: 'attributions'
+    },
+    notebook_page: {
+      entry: 'src/notebook.js',
+      template: 'public/team/notebook.html',
+      filename: 'notebook.html',
+      title: 'notebook'
+    },
   }
 };
 

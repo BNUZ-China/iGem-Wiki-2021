@@ -86,7 +86,8 @@ export default {
 }
 
 .bnuz-logo {
-  --logo-size: 100px;
+  margin-top: 2.5px;
+  --logo-size: 40px;
   width: var(--logo-size);
   height: var(--logo-size);
   margin-left: 100px;

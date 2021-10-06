@@ -5,7 +5,7 @@
     <Head_image></Head_image>
     <BNUZ_Content>
       <Content_navigation_anchor hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
-        <h4>First Heading</h4>
+        <h4>HP1</h4>
         Build a periodic expression module of Cas9
         To verify that our design enables Cas9 to be expressed periodically, we built a module for the periodic
         expression of Cas9, and the experiments were carried out as follows.
