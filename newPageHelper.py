@@ -35,17 +35,17 @@ class newPageHelper():
         self.model_name = model_name
 
     def newPage(self, page_name):
-        self.newHTML(page_name)
-        self.newMainJS(page_name)
+        # self.newHTML(page_name)
+        # self.newMainJS(page_name)
         self.newTemplate(page_name)
-        conf_string = f'''
-        {page_name}_page: {{
-            entry: 'src/{page_name}.js',
-            template: 'public/{self.model_name}/{page_name}.html',
-            filename: '{page_name}.html',
-            title: '{page_name}'
-        }},'''
-        self.new_page_conf_string += conf_string
+        # conf_string = f'''
+        # {page_name}_page: {{
+        #     entry: 'src/{page_name}.js',
+        #     template: 'public/{self.model_name}/{page_name}.html',
+        #     filename: '{page_name}.html',
+        #     title: '{page_name}'
+        # }},'''
+        # self.new_page_conf_string += conf_string
         
 
 if __name__ == '__main__':

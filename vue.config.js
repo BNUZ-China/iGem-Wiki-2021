@@ -148,109 +148,109 @@ const dev_config = {
     description_page: {
       entry: 'src/description.js',
       template: 'public/project/description.html',
-      filename: 'description.html',
+      filename: 'Description.html',
       title: 'description'
     },
     design_page: {
       entry: 'src/design.js',
       template: 'public/project/design.html',
-      filename: 'design.html',
+      filename: 'Design.html',
       title: 'design'
     },
     experiment_page: {
       entry: 'src/experiment.js',
       template: 'public/project/experiment.html',
-      filename: 'experiment.html',
+      filename: 'Experiment.html',
       title: 'experiment'
     },
     result_page: {
       entry: 'src/result.js',
       template: 'public/project/result.html',
-      filename: 'result.html',
+      filename: 'Result.html',
       title: 'result'
     },
     engineering_page: {
       entry: 'src/engineering.js',
       template: 'public/project/engineering.html',
-      filename: 'engineering.html',
+      filename: 'Engineering.html',
       title: 'engineering'
     },
     implementation_page: {
       entry: 'src/implementation.js',
       template: 'public/project/implementation.html',
-      filename: 'implementation.html',
+      filename: 'Implementation.html',
       title: 'implementation'
     },
     introduction_page: {
       entry: 'src/introduction.js',
       template: 'public/model/introduction.html',
-      filename: 'introduction.html',
-      title: 'introduction'
+      filename: 'Introduction.html',
+      title: 'Introduction'
     },
     models_and_results_page: {
       entry: 'src/models_and_results.js',
       template: 'public/model/models_and_results.html',
-      filename: 'models_and_results.html',
+      filename: 'Models_and_results.html',
       title: 'models_and_results'
     },
     discussion_page: {
       entry: 'src/discussion.js',
       template: 'public/model/discussion.html',
-      filename: 'discussion.html',
+      filename: 'Discussion.html',
       title: 'discussion'
     },
     safety_page: {
       entry: 'src/safety.js',
       template: 'public/safety/safety.html',
-      filename: 'safety.html',
+      filename: 'Safety.html',
       title: 'safety'
     },
     human_practice_page: {
       entry: 'src/human_practice.js',
       template: 'public/human_practice/human_practice.html',
-      filename: 'human_practice.html',
-      title: 'human_practice'
+      filename: 'Human_practice.html',
+      title: 'Human_practice'
     },
     partnership_page: {
       entry: 'src/partnership.js',
       template: 'public/human_practice/partnership.html',
-      filename: 'partnership.html',
+      filename: 'Partnership.html',
       title: 'partnership'
     },
     communication_page: {
       entry: 'src/communication.js',
       template: 'public/human_practice/communication.html',
-      filename: 'communication.html',
+      filename: 'Pommunication.html',
       title: 'communication'
     },
     parts_page: {
       entry: 'src/parts.js',
       template: 'public/parts/parts.html',
-      filename: 'parts.html',
+      filename: 'Parts.html',
       title: 'parts'
     },
     contribution_page: {
       entry: 'src/contribution.js',
       template: 'public/parts/contribution.html',
-      filename: 'contribution.html',
+      filename: 'Contribution.html',
       title: 'contribution'
     },
     members_page: {
       entry: 'src/members.js',
       template: 'public/team/members.html',
-      filename: 'members.html',
+      filename: 'Members.html',
       title: 'members'
     },
     attributions_page: {
       entry: 'src/attributions.js',
       template: 'public/team/attributions.html',
-      filename: 'attributions.html',
-      title: 'attributions'
+      filename: 'Attributions.html',
+      title: 'Attributions'
     },
     notebook_page: {
       entry: 'src/notebook.js',
       template: 'public/team/notebook.html',
-      filename: 'notebook.html',
+      filename: 'Notebook.html',
       title: 'notebook'
     },
   }

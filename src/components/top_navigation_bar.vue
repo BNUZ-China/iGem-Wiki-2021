@@ -9,31 +9,36 @@
           <a class="nav-link" href="#">HOME</a>
         </div>
         <top_navigation_bar_dropdown title="PROJECT" :contents="[
-        {text: 'Description', link: '/description.html'},
-        {text: 'Design', link: '/design.html'},
-        {text: 'Experiment', link: ''},
-        {text: 'Results', link: ''},
-        {text: 'Contribution', link: ''},
-        {text: 'Notebook', link: ''}
+        {text: 'Description', link: '/Description.html'},
+        {text: 'Design', link: '/Design.html'},
+        {text: 'Experiment', link: '/Experiment.html'},
+        {text: 'Results', link: '/Results.html'},
+        {text: 'Contribution', link: 'Contribution.html'},
+        {text: 'Notebook', link: 'Notebook.html'}
       ]"></top_navigation_bar_dropdown>
         <top_navigation_bar_dropdown title="MODEL" :contents="[
-        {text: '', link: ''},
-        {text: '', link: ''},
-        {text: '', link: ''}
+        {text: 'Introduction', link: 'Introduction.html'},
+        {text: 'Models & Results', link: 'Models_and_results.html'},
+        {text: 'Discussion', link: 'Discussion.html'}
       ]">
         </top_navigation_bar_dropdown>
         <div class="nav-item">
-          <a class="nav-link" href="#">SAFETY</a>
+          <a class="nav-link" href="/Safety.html">SAFETY</a>
         </div>
-        <div class="nav-item">
-          <a class="nav-link" href="#">HUMAN PRACTICES</a>
-        </div>
-        <div class="nav-item">
-          <a class="nav-link" href="#">PARTS</a>
-        </div>
-        <div class="nav-item">
-          <a class="nav-link" href="#">TEAM</a>
-        </div>
+        <top_navigation_bar_dropdown title="HUMAN PRACTICE" :contents="[
+        {text: 'Human practice', link: 'Human_practice.html'},
+        {text: 'Partnership', link: 'Partnership.html'},
+        {text: 'Communication', link: 'Communication.html'}
+      ]"></top_navigation_bar_dropdown>
+        <top_navigation_bar_dropdown title="PARTS" :contents="[
+        {text: 'Parts', link: 'Parts.html'},
+        {text: 'Contribution', link: 'Contribution.html'}
+      ]"></top_navigation_bar_dropdown>
+        <top_navigation_bar_dropdown title="TEAM" :contents="[
+        {text: 'Members', link: 'Members.html'},
+        {text: 'Attributions', link: 'Attributions.html'},
+        {text: 'Notebook', link: 'Notebook.html'}
+      ]"></top_navigation_bar_dropdown>
       </div>
     </div>
   </nav>

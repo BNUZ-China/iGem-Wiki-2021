@@ -12,10 +12,5 @@ export default {
 </script>
 
 <style scoped>
-.roundRect {
-  padding: 20px;
-  background-color: rgba(238, 214, 214, 0.72);;
-  border-radius: 20px;
-  margin: 16px 0;
-}
+
 </style>

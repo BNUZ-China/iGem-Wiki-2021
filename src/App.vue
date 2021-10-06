@@ -2,7 +2,7 @@
   <AppRoot id="app">
     <!--    <Background_picture src="assets/homepage_hospital.png"></Background_picture>-->
     <top-navigation-bar/>
-    <Head_image></Head_image>
+    <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678">
     <BNUZ_Content>
       <Content_navigation_anchor hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
         <h4>First Heading</h4>
@@ -99,24 +99,39 @@
 <script>
 import TopNavigationBar from "@/components/top_navigation_bar";
 import BNUZ_Content from "@/components/bnuz_content";
-import Head_image from "@/components/head_image";
 import Bottom from "@/components/bottom";
 import Content_navigation_anchor from "@/components/bnuz-content-paragraph";
 import AppRoot from "@/AppRoot";
+
+import head_image from '@/assets/head_images/human_practice.png'
 
 export default {
   name: 'App',
   components: {
     AppRoot,
     Bottom,
-    Head_image,
     TopNavigationBar,
     BNUZ_Content,
     Content_navigation_anchor
+  },
+  data() {
+    return {
+      head_image
+    }
   }
 }
 </script>
 
-<style>
+<style scoped>
+.bnuz-header-image {
+  width: 100%;
+  height: 40%;
+}
 
+.roundRect {
+  padding: 20px;
+  background-color: rgb(220, 230, 237);
+  border-radius: 20px;
+  margin: 16px 0;
+}
 </style>

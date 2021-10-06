@@ -2,10 +2,11 @@
   <AppRoot id="app">
     <!--    <Background_picture src="assets/homepage_hospital.png"></Background_picture>-->
     <top-navigation-bar/>
-    <Head_image></Head_image>
-    <BNUZ_Content>
+    <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678">
+    <BNUZ_Content_no_nav>
+<!--   TODO no content nav   -->
       <Content_navigation_anchor hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
-        <h4>HP1</h4>
+        <h4>First Heading</h4>
         Build a periodic expression module of Cas9
         To verify that our design enables Cas9 to be expressed periodically, we built a module for the periodic
         expression of Cas9, and the experiments were carried out as follows.
@@ -91,32 +92,47 @@
         time, as well as the protein concentration and time. Finally, we calculated the degradation rate of protein
         modified by Clb2 N124aa through modeling.
       </Content_navigation_anchor>
-    </BNUZ_Content>
+    </BNUZ_Content_no_nav>
     <Bottom></Bottom>
   </AppRoot>
 </template>
 
 <script>
 import TopNavigationBar from "@/components/top_navigation_bar";
-import BNUZ_Content from "@/components/bnuz_content";
-import Head_image from "@/components/head_image";
 import Bottom from "@/components/bottom";
 import Content_navigation_anchor from "@/components/bnuz-content-paragraph";
 import AppRoot from "@/AppRoot";
+import BNUZ_Content_no_nav from "@/components/bnuz_content_no_nav";
+
+import head_image from '@/assets/head_images/human_practice.png'
 
 export default {
   name: 'App',
   components: {
     AppRoot,
     Bottom,
-    Head_image,
     TopNavigationBar,
-    BNUZ_Content,
+    BNUZ_Content_no_nav,
     Content_navigation_anchor
+  },
+  data() {
+    return {
+      head_image
+    }
   }
 }
 </script>
 
-<style>
+<style scoped>
+.bnuz-header-image {
+  width: 100%;
+  height: 40%;
+}
 
+.roundRect {
+  padding: 20px;
+  background-color: rgb(220, 230, 237);
+  border-radius: 20px;
+  margin: 16px 0;
+}
 </style>
