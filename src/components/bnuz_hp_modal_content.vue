@@ -49,6 +49,7 @@ export default {
 
 .bnuz_hp_content {
   position: relative;
+  margin-top: 48px;
 }
 
 .modal_button_container {
@@ -61,5 +62,11 @@ export default {
   width: 64px;
   background-color: blue;
   border-radius: 32px;
+  outline: none !important;
+  border-color: blue;
+}
+
+.modal_button:hover .modal_button:focus {
+  outline: none !important;
 }
 </style>
