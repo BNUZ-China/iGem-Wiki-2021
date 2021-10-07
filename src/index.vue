@@ -152,7 +152,7 @@
 <script>
 import Open_window from "@/components/open_window";
 import TopNavigationBar from "@/components/top_navigation_bar";
-import homepage_hospital from '@/assets/homepage_hospital.png';
+import homepage_hospital from '@/assets/homepage.png';
 import AppRoot from "@/AppRoot";
 import conf from "@/wiki_config"
 import Bottom from "@/components/bottom"
@@ -167,6 +167,11 @@ export default {
       scrollbarSpace: true,
       homepage_hospital: conf.isDev ? homepage_hospital : 'https://2021.igem.org/wiki/images/2/2e/T--BNUZ-China--homepage_hospital.png'
     }
+  },
+  beforeCreate() {
+    var img = require(homepage_hospital)
+    let image = new Image()
+    image.src = img
   },
   mounted() {
     window.scrollTo({
@@ -198,14 +203,11 @@ export default {
 
 .homepage_hospital {
   width: 100vw;
-  position: absolute;
-  /*top: -100px;*/
-  /*left: 8vw;*/
   z-index: -1;
 }
 
 .index-content {
-  margin: 40vh 8vw 0;
+  margin: 10vh 8vw 0;
 }
 
 .text {

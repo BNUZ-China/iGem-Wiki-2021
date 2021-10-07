@@ -14,12 +14,17 @@
         <b-col cols="10">
           <div class="accordion" role="tablist">
             <b-card no-body class="mb-1">
-              <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-1 variant="info" class="notebook_button_style">Accordion 1</b-button>
+              <b-card-header header-tag="header" class="p-1" role="tab" header-class="card-header-invisible">
+                <b-button block v-b-toggle.accordion-1 variant="info" class="notebook_button_style">7.1-7.7</b-button>
               </b-card-header>
               <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
                 <b-card-body>
-                  <b-card-text>{{ text }}</b-card-text>
+                  <b-card-text>
+                    <h5>IPA metabolic pathway(fld)</h5>
+                    GDXL synthesis<br><br>
+                    <h5>Suicide switch(PMF)</h5>
+                    pBad promoter and MazF(PMF) synthesis
+                  </b-card-text>
                 </b-card-body>
               </b-collapse>
             </b-card>
@@ -99,5 +104,10 @@ export default {
   height: 1.5cm;
   background-color: #b3c9ed;
   border-color: #b3c9ed;
+}
+
+.card-header-invisible {
+  background-color: #FFFFFF00;
+  border-color: #FFFFFF00;
 }
 </style>

@@ -6,7 +6,7 @@
       </div>
       <div class="nav justify-content-end">
         <div class="nav-item">
-          <a class="nav-link" href="#">HOME</a>
+          <a class="nav-link" href="/">HOME</a>
         </div>
         <top_navigation_bar_dropdown title="PROJECT" :contents="[
         {text: 'Description', link: '/Description.html'},
@@ -28,7 +28,8 @@
         <top_navigation_bar_dropdown title="HUMAN PRACTICE" :contents="[
         {text: 'Human practice', link: 'Human_practice.html'},
         {text: 'Partnership', link: 'Partnership.html'},
-        {text: 'Communication', link: 'Communication.html'}
+        {text: 'Communication', link: 'Communication.html'},
+        {text: 'Collaboration', link: 'Collaboration.html'}
       ]"></top_navigation_bar_dropdown>
         <top_navigation_bar_dropdown title="PARTS" :contents="[
         {text: 'Parts', link: 'Parts.html'},

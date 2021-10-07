@@ -3,12 +3,12 @@
     <div class="container bnuz-footer-container">
       <div class="align-items-center row">
         <div class="bnuz-contact-title col-2">
-          Contact
+          <img :src="team_logo" class="team-logo">
         </div>
         <div class="col-5 bnuz-contact">
           Address: 18th, Jinfeng St. Xiangzhou District, Zhuhai, Guangdong, P.R.C.<br>
           Postcode: 519080<br>
-          Email: aaa@bbb.com<br>
+          Email: bnuz_china@163.com<br>
           ©2021. All Rights Reserved. Designed by BNUZ-China.
         </div>
         <div class="col-5 bnuz-friends">
@@ -20,8 +20,17 @@
 </template>
 
 <script>
+import conf from '@/wiki_config';
+import team_logo from '@/assets/team_logo.png'
+
 export default {
-  name: "bottom"
+  name: "bottom",
+  data() {
+    return {
+      // TODO: set image URI
+      team_logo: conf.isDev ? team_logo : ''
+    }
+  }
 }
 </script>
 
@@ -29,10 +38,11 @@ export default {
 .bnuz-footer {
   margin: 16px 12%;
   padding: 24px 0;
-  background-color: #eed6d6d9; /*eed6d6d9*/
+  border: 2px solid rgb(0 41 113);
+  /*background-color: #eed6d6d9; !*eed6d6d9*!*/
   border-radius: 30px;
-  /*border: 2px solid cadetblue;*/
-  box-shadow: 5px 5px 10px grey;
+  /*!*border: 2px solid cadetblue;*!*/
+  /*box-shadow: 5px 5px 10px grey;*/
 }
 
 .bnuz-footer {
@@ -53,5 +63,11 @@ export default {
 
 .bnuz-contact {
   font-size: 14px;
+}
+
+.team-logo {
+  --team-logo-size: 160px;
+  width: var(--team-logo-size);
+  height: var(--team-logo-size);
 }
 </style>

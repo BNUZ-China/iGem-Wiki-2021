@@ -253,6 +253,12 @@ const dev_config = {
       filename: 'Notebook.html',
       title: 'notebook'
     },
+    collaboration_page: {
+      entry: 'src/collaboration.js',
+      template: 'public/human_practice/collaboration.html',
+      filename: 'Collaboration.html',
+      title: 'collaboration'
+    }
   }
 };
 

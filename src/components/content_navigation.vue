@@ -59,7 +59,7 @@ export default {
 
 .content-navigation-background {
   --width: 220px;
-  background-image: url("~@/assets/content_navigation/nav_background.jpg");
+  /*background-image: url("~@/assets/content_navigation/nav_background.jpg");*/
   width: var(--width);
   height: 418px; /* TODO 这里填写电梯背景图高度 */
   background-size: var(--width);

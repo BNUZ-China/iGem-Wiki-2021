@@ -3,21 +3,32 @@
     <!--    <Background_picture src="assets/homepage_hospital.png"></Background_picture>-->
     <top-navigation-bar/>
     <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678">
-    <BNUZ_Content>
+    <BNUZ_Content_no_nav>
       <bnuz_content_paragraph hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
-        <h4>First Heading</h4>
-        Build a periodic expression module of Cas9
-        To verify that our design enables Cas9 to be expressed periodically, we built a module for the periodic
-        expression of Cas9, and the experiments were carried out as follows.
-        1. Construct the recombinant plasmid pRH003-URA3-CLB2 promoter-Cas9 by in-fusion cloning. Then transform it
-        into E. coli DH5α. Extract plasmids from transformants. The recombinant plasmids were confirmed by colony
-        PCR and sequencing, then transformed into S. cerevisiae BY4741. Screen for transformants by SD-ura culture
-        medium.
-        2.Synchronize the cell cycle of S. cerevisiae population to G1 phase.
-        3.Release yeast cells from synchronization. Remove a time-zero fraction. Collect fractions of culture every
-        10 min for 150 min. Extract total protein for Western Blot. Strain without being transformed was used as a
-        negative control. GAPDH was chosen as an internal reference.
-        4.Obtain and analyze data. Draw the image of Cas9 protein levels over time.
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Biobrick</th>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>BBa_K3784000</th>
+              <th>coding</th>
+              <th>acdA</th>
+              <th>Encoding acyl-CoA dehydrogenase</th>
+            </tr>
+            <tr>
+              <th>BBa_K3784001</th>
+              <th>coding</th>
+              <th>fldB</th>
+              <th>Encoding phenyllactate dehydratase subunit</th>
+            </tr>
+          </tbody>
+        </table>
       </bnuz_content_paragraph>
 
       <bnuz_content_paragraph hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
@@ -91,14 +102,14 @@
         time, as well as the protein concentration and time. Finally, we calculated the degradation rate of protein
         modified by Clb2 N124aa through modeling.
       </bnuz_content_paragraph>
-    </BNUZ_Content>
+    </BNUZ_Content_no_nav>
     <Bottom></Bottom>
   </AppRoot>
 </template>
 
 <script>
 import TopNavigationBar from "@/components/top_navigation_bar";
-import BNUZ_Content from "@/components/bnuz_content";
+import BNUZ_Content_no_nav from "@/components/bnuz_content_no_nav";
 import Bottom from "@/components/bottom";
 import bnuz_content_paragraph from "@/components/bnuz-content-paragraph";
 import AppRoot from "@/AppRoot";
@@ -111,7 +122,7 @@ export default {
     AppRoot,
     Bottom,
     TopNavigationBar,
-    BNUZ_Content,
+    BNUZ_Content_no_nav,
     bnuz_content_paragraph
   },
   data() {
@@ -133,5 +144,6 @@ export default {
   background-color: rgb(220, 230, 237);
   border-radius: 20px;
   margin: 16px 0;
+  /*border: 2px solid rgb(0 41 113);*/
 }
 </style>

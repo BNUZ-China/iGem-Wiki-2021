@@ -35,8 +35,8 @@ class newPageHelper():
         self.model_name = model_name
 
     def newPage(self, page_name):
-        # self.newHTML(page_name)
-        # self.newMainJS(page_name)
+        self.newHTML(page_name)
+        self.newMainJS(page_name)
         self.newTemplate(page_name)
         # conf_string = f'''
         # {page_name}_page: {{
@@ -50,13 +50,17 @@ class newPageHelper():
 
 if __name__ == '__main__':
     helper = newPageHelper()
+#     c = {
+#         'project': ['description', 'design', 'experiment', 'result', 'engineering', 'implementation'],
+#         'model': ['introduction', 'models_and_results', 'discussion'],
+#         'safety': ['safety'],
+#         'human_practice': ['human_practice', 'partnership', 'communication'],
+#         'parts': ['parts', 'contribution'],
+#         'team': ['members', 'attributions', 'notebook']
+#     }
+
     c = {
-        'project': ['description', 'design', 'experiment', 'result', 'engineering', 'implementation'],
-        'model': ['introduction', 'models_and_results', 'discussion'],
-        'safety': ['safety'],
-        'human_practice': ['human_practice', 'partnership', 'communication'],
-        'parts': ['parts', 'contribution'],
-        'team': ['members', 'attributions', 'notebook']
+        'human_practice': ['collaboration']
     }
 
     for model_name in c.keys():
