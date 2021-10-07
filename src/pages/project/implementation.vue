@@ -4,7 +4,7 @@
     <top-navigation-bar/>
     <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678">
     <BNUZ_Content>
-      <Content_navigation_anchor hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
+      <bnuz_content_paragraph hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
         <h4>First Heading</h4>
         Build a periodic expression module of Cas9
         To verify that our design enables Cas9 to be expressed periodically, we built a module for the periodic
@@ -18,9 +18,9 @@
         10 min for 150 min. Extract total protein for Western Blot. Strain without being transformed was used as a
         negative control. GAPDH was chosen as an internal reference.
         4.Obtain and analyze data. Draw the image of Cas9 protein levels over time.
-      </Content_navigation_anchor>
+      </bnuz_content_paragraph>
 
-      <Content_navigation_anchor hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
+      <bnuz_content_paragraph hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
         <h4>Second Heading</h4>
         Degradation of Cas9 at a proper rate
         In order to verify the function of Clb2 (N124aa) as a degradation tag, we constructed the plasmids for an
@@ -42,9 +42,9 @@
         5.We used SPSS26.0 to process the data and determined the relationship between fluorescence intensity and
         time, as well as the protein concentration and time. Finally, we calculated the degradation rate of protein
         modified by Clb2 N124aa through modeling.
-      </Content_navigation_anchor>
+      </bnuz_content_paragraph>
 
-      <Content_navigation_anchor hint_text="333">
+      <bnuz_content_paragraph hint_text="333">
         <h4>Third Heading</h4>
         Degradation of Cas9 at a proper rate
         In order to verify the function of Clb2 (N124aa) as a degradation tag, we constructed the plasmids for an
@@ -66,9 +66,9 @@
         5.We used SPSS26.0 to process the data and determined the relationship between fluorescence intensity and
         time, as well as the protein concentration and time. Finally, we calculated the degradation rate of protein
         modified by Clb2 N124aa through modeling.
-      </Content_navigation_anchor>
+      </bnuz_content_paragraph>
 
-      <Content_navigation_anchor hint_text="444">
+      <bnuz_content_paragraph hint_text="444">
         <h4>Forth Heading</h4>
         Degradation of Cas9 at a proper rate
         In order to verify the function of Clb2 (N124aa) as a degradation tag, we constructed the plasmids for an
@@ -90,7 +90,7 @@
         5.We used SPSS26.0 to process the data and determined the relationship between fluorescence intensity and
         time, as well as the protein concentration and time. Finally, we calculated the degradation rate of protein
         modified by Clb2 N124aa through modeling.
-      </Content_navigation_anchor>
+      </bnuz_content_paragraph>
     </BNUZ_Content>
     <Bottom></Bottom>
   </AppRoot>
@@ -100,7 +100,7 @@
 import TopNavigationBar from "@/components/top_navigation_bar";
 import BNUZ_Content from "@/components/bnuz_content";
 import Bottom from "@/components/bottom";
-import Content_navigation_anchor from "@/components/bnuz-content-paragraph";
+import bnuz_content_paragraph from "@/components/bnuz-content-paragraph";
 import AppRoot from "@/AppRoot";
 
 import head_image from '@/assets/head_images/human_practice.png'
@@ -112,7 +112,7 @@ export default {
     Bottom,
     TopNavigationBar,
     BNUZ_Content,
-    Content_navigation_anchor
+    bnuz_content_paragraph
   },
   data() {
     return {

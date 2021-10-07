@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "content_navigation_anchor",
+  name: "bnuz_content_paragraph",
   props: ['hint_text']
 }
 </script>

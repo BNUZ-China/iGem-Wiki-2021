@@ -2,7 +2,7 @@
   <b-container class="bunz-content" ref="bnuz_content" v-scroll="onScrollBNUZ">
     <b-row align-h="end">
       <b-col cols="3">
-        <Content_navigation v-if="(anchors_length !== undefined) && (isNavEnabled === true)"
+        <Content_navigation v-if="(anchors_length !== undefined)"
                             :anchor_distances="anchor_distances"
                             :active_item_index="active_navigation_item_index"
                             :multi-col="multiCol"
@@ -39,12 +39,6 @@ Vue.directive('scroll', {
 export default {
   name: "BNUZ_Content",
   components: {Content_navigation},
-  props: {
-    isNavEnabled: {
-      type: Boolean,
-      default: true
-    }
-  },
   data() {
     return {
       active_navigation_item_index: 0,

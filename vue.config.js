@@ -220,7 +220,7 @@ const dev_config = {
     communication_page: {
       entry: 'src/communication.js',
       template: 'public/human_practice/communication.html',
-      filename: 'Pommunication.html',
+      filename: 'Communication.html',
       title: 'communication'
     },
     parts_page: {
