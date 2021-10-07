@@ -6,6 +6,7 @@
     <BNUZ_Content>
       <bnuz_content_paragraph hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
         <h4>First Heading</h4>
+        <BNUZ_content_modal></BNUZ_content_modal>
         Build a periodic expression module of Cas9
         To verify that our design enables Cas9 to be expressed periodically, we built a module for the periodic
         expression of Cas9, and the experiments were carried out as follows.
@@ -102,6 +103,7 @@ import BNUZ_Content from "@/components/bnuz_content";
 import Bottom from "@/components/bottom";
 import bnuz_content_paragraph from "@/components/bnuz-content-paragraph";
 import AppRoot from "@/AppRoot";
+import BNUZ_content_modal from "@/components/bnuz_content_modal";
 
 import head_image from '@/assets/head_images/human_practice.png'
 
@@ -112,7 +114,8 @@ export default {
     Bottom,
     TopNavigationBar,
     BNUZ_Content,
-    bnuz_content_paragraph
+    bnuz_content_paragraph,
+    BNUZ_content_modal
   },
   data() {
     return {

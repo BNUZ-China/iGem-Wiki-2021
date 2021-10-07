@@ -113,8 +113,9 @@ import BNUZ_Content_no_nav from "@/components/bnuz_content_no_nav";
 import Bottom from "@/components/bottom";
 import bnuz_content_paragraph from "@/components/bnuz-content-paragraph";
 import AppRoot from "@/AppRoot";
+import conf from '@/wiki_config';
 
-import head_image from '@/assets/head_images/human_practice.png'
+import head_image from '@/assets/head_images/parts.png'
 
 export default {
   name: 'App',
@@ -127,7 +128,8 @@ export default {
   },
   data() {
     return {
-      head_image
+      // TODO: set image URI
+      head_image: conf.isDev ? head_image : ''
     }
   }
 }
