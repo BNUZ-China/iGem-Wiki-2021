@@ -2,105 +2,189 @@
   <AppRoot id="app">
     <!--    <Background_picture src="assets/homepage_hospital.png"></Background_picture>-->
     <top-navigation-bar/>
-    <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678">
+    <img :src="head_image" alt="head image" class="bnuz-header-image">
     <BNUZ_Content_no_nav>
       <bnuz_content_paragraph hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
         <table class="table table-striped">
           <thead>
-            <tr>
-              <th>Biobrick</th>
-              <th>Type</th>
-              <th>Name</th>
-              <th>Description</th>
-            </tr>
+          <tr>
+            <th>Biobrick</th>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
           </thead>
           <tbody>
-            <tr>
-              <th>BBa_K3784000</th>
-              <th>coding</th>
-              <th>acdA</th>
-              <th>Encoding acyl-CoA dehydrogenase</th>
-            </tr>
-            <tr>
-              <th>BBa_K3784001</th>
-              <th>coding</th>
-              <th>fldB</th>
-              <th>Encoding phenyllactate dehydratase subunit</th>
-            </tr>
+          <tr>
+            <td>BBa_K3784000</td>
+            <td>coding</td>
+            <td>acdA</td>
+            <td>Encoding acyl-CoA dehydrogenase</td>
+          </tr>
+          <tr>
+            <td>BBa_K3784001</td>
+            <td>coding</td>
+            <td>fldB</td>
+            <td>Encoding phenyllactate dehydratase subunit</td>
+          </tr>
+          <tr>
+            <td>
+              <p>BBa_K3784002</p>
+            </td>
+            <td>
+              <p>coding</p>
+            </td>
+            <td>
+              <p>fldC</p>
+            </td>
+            <td>
+              <p>Encoding phenyllactate dehydratase subunit</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>BBa_K3784003</p>
+            </td>
+            <td>
+              <p>coding</p>
+            </td>
+            <td>
+              <p>fldH</p>
+            </td>
+            <td>
+              <p>Encoding phenyllactate dehydrogenase</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>BBa_K3784004</p>
+            </td>
+            <td>
+              <p>coding</p>
+            </td>
+            <td>
+              <p>TAA1</p>
+            </td>
+            <td>
+              <p>tryptophan aminotransferase of Arabidopsis thaliana</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>BBa_K206000</p>
+            </td>
+            <td>
+              <p>promoter</p>
+            </td>
+            <td>
+              <p>pBAD(MazF promoter)</p>
+            </td>
+            <td>
+              <p>L-arabinose induced promoter</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>BBa_K302033</p>
+            </td>
+            <td>
+              <p>coding</p>
+            </td>
+            <td>
+              <p>MazF</p>
+            </td>
+            <td>
+              <p>Encoding protein that mediates suicide of cells</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>BBa_K2717000</p>
+            </td>
+            <td>
+              <p>coding</p>
+            </td>
+            <td>
+              <p>GDH</p>
+            </td>
+            <td>
+              <p>Sequence of glucose dehydrogenase</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>BBa_K3784005</p>
+            </td>
+            <td>
+              <p>coding</p>
+            </td>
+            <td>
+              <p>lacZ</p>
+            </td>
+            <td>
+              <p>Encoding &beta;-galactosidase</p>
+            </td>
+          </tr>
           </tbody>
         </table>
       </bnuz_content_paragraph>
 
       <bnuz_content_paragraph hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
-        <h4>Second Heading</h4>
-        Degradation of Cas9 at a proper rate
-        In order to verify the function of Clb2 (N124aa) as a degradation tag, we constructed the plasmids for an
-        experimental and a control group. We hoped to characterize the protein degradation by determining the
-        fluorescence intensity curve.
-        1.The two plasmids were constructed with pYES2, containing GAL1 galactose inducible promoter and URA3 marker
-        gene. The vector in the experimental group contains CLB2 (N124aa)- Linker-GFP, while the control group only
-        contains GFP. The successfully constructed vectors were transformed into E.coli DH5α strain.
-        2.After the plasmids were extracted and linearized, they were transformed into Saccharomyces cerevisiae
-        BY4741. We used the fluorescence microscope and differential interference microscope to verify the
-        transformants.
-        3.Both experimental and control groups were cultured in SC medium at 30 ℃ until OD600 value reached about
-        3.000, and then the expression was induced by galactose with a final concentration of 2%. After induction,
-        the fluorescence intensity was measured by flow cytometry at half an hour interval.
-        4.Cells were then inoculated into the medium containing glucose instead of galactose. In addition to being a
-        carbon source, glucose also inhibits the expression of GFP by inhibiting the GAL1 promoter. Within 7 hours
-        after inoculation, the fluorescence intensity was measured by flow cytometry at the same interval of half an
-        hour.
-        5.We used SPSS26.0 to process the data and determined the relationship between fluorescence intensity and
-        time, as well as the protein concentration and time. Finally, we calculated the degradation rate of protein
-        modified by Clb2 N124aa through modeling.
+        Since we knocked out genes related to indole metabolism, to consume the remaining tryptophan, we cloned a
+        tryptophan aminotransferase gene (BBa_K3784005) from Arabidopsis thaliana, which encodes tryptophan
+        aminotransferase to catalyze tryptophan to produce indolepyruvate. Next, we cloned four genes in the Fld gene
+        cluster (BBa_K3784001, BBa_K3784002, BBa_K3784003, BBa_K3784004) from Clostridium sporogenes, which can encode a
+        variety of enzymes to catalyze the production of indolepyruvate to indolepropionic acid, a beneficial substance
+        that enhances the intestinal mucosal barrier.
+
+        <img :src="pic1">
+
+        CKD patients are often accompanied by intestinal flora imbalance, which is manifested as the decrease of
+        beneficial bacteria, and the abnormal proliferation of pathogenic bacteria and conditional pathogenic bacteria.
+        Therefore, we cloned the β-galactosidase gene (BBa_K3784006) that can efficiently catalyze the formation of
+        galactooligosaccharides to promote the proliferation of Lactobacillus and Bifidobacteria in the patient’s
+        intestinal tract.
       </bnuz_content_paragraph>
 
-      <bnuz_content_paragraph hint_text="333">
-        <h4>Third Heading</h4>
-        Degradation of Cas9 at a proper rate
-        In order to verify the function of Clb2 (N124aa) as a degradation tag, we constructed the plasmids for an
-        experimental and a control group. We hoped to characterize the protein degradation by determining the
-        fluorescence intensity curve.
-        1.The two plasmids were constructed with pYES2, containing GAL1 galactose inducible promoter and URA3 marker
-        gene. The vector in the experimental group contains CLB2 (N124aa)- Linker-GFP, while the control group only
-        contains GFP. The successfully constructed vectors were transformed into E.coli DH5α strain.
-        2.After the plasmids were extracted and linearized, they were transformed into Saccharomyces cerevisiae
-        BY4741. We used the fluorescence microscope and differential interference microscope to verify the
-        transformants.
-        3.Both experimental and control groups were cultured in SC medium at 30 ℃ until OD600 value reached about
-        3.000, and then the expression was induced by galactose with a final concentration of 2%. After induction,
-        the fluorescence intensity was measured by flow cytometry at half an hour interval.
-        4.Cells were then inoculated into the medium containing glucose instead of galactose. In addition to being a
-        carbon source, glucose also inhibits the expression of GFP by inhibiting the GAL1 promoter. Within 7 hours
-        after inoculation, the fluorescence intensity was measured by flow cytometry at the same interval of half an
-        hour.
-        5.We used SPSS26.0 to process the data and determined the relationship between fluorescence intensity and
-        time, as well as the protein concentration and time. Finally, we calculated the degradation rate of protein
-        modified by Clb2 N124aa through modeling.
-      </bnuz_content_paragraph>
-
-      <bnuz_content_paragraph hint_text="444">
-        <h4>Forth Heading</h4>
-        Degradation of Cas9 at a proper rate
-        In order to verify the function of Clb2 (N124aa) as a degradation tag, we constructed the plasmids for an
-        experimental and a control group. We hoped to characterize the protein degradation by determining the
-        fluorescence intensity curve.
-        1.The two plasmids were constructed with pYES2, containing GAL1 galactose inducible promoter and URA3 marker
-        gene. The vector in the experimental group contains CLB2 (N124aa)- Linker-GFP, while the control group only
-        contains GFP. The successfully constructed vectors were transformed into E.coli DH5α strain.
-        2.After the plasmids were extracted and linearized, they were transformed into Saccharomyces cerevisiae
-        BY4741. We used the fluorescence microscope and differential interference microscope to verify the
-        transformants.
-        3.Both experimental and control groups were cultured in SC medium at 30 ℃ until OD600 value reached about
-        3.000, and then the expression was induced by galactose with a final concentration of 2%. After induction,
-        the fluorescence intensity was measured by flow cytometry at half an hour interval.
-        4.Cells were then inoculated into the medium containing glucose instead of galactose. In addition to being a
-        carbon source, glucose also inhibits the expression of GFP by inhibiting the GAL1 promoter. Within 7 hours
-        after inoculation, the fluorescence intensity was measured by flow cytometry at the same interval of half an
-        hour.
-        5.We used SPSS26.0 to process the data and determined the relationship between fluorescence intensity and
-        time, as well as the protein concentration and time. Finally, we calculated the degradation rate of protein
-        modified by Clb2 N124aa through modeling.
+      <bnuz_content_paragraph>
+        <h4>Composite Parts</h4>
+        <table class="table table-striped">
+          <tbody>
+          <tr>
+            <th>
+              <p>Biobrick</p>
+            </th>
+            <th>
+              <p>Type</p>
+            </th>
+            <th>
+              <p>Name</p>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <p>BBa_K3036005</p>
+            </td>
+            <td>
+              <p>Arabinose-induced suicide switch</p>
+            </td>
+            <td>
+              <p>PMF</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>BBa_K3784006</p>
+            </td>
+            <td>
+              <p>Using tryptophan as a metabolic material to produce IPA</p>
+            </td>
+            <td>
+              <p>Fld</p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
       </bnuz_content_paragraph>
     </BNUZ_Content_no_nav>
     <Bottom></Bottom>
@@ -114,6 +198,7 @@ import Bottom from "@/components/bottom";
 import bnuz_content_paragraph from "@/components/bnuz-content-paragraph";
 import AppRoot from "@/AppRoot";
 import conf from '@/wiki_config';
+import pic1 from '@/assets/parts/pic1.png'
 
 import head_image from '@/assets/head_images/parts.png'
 
@@ -129,7 +214,8 @@ export default {
   data() {
     return {
       // TODO: set image URI
-      head_image: conf.isDev ? head_image : ''
+      head_image: conf.isDev ? head_image : '',
+      pic1: conf.isDev ? pic1 : ''
     }
   }
 }
@@ -147,5 +233,9 @@ export default {
   border-radius: 20px;
   margin: 16px 0;
   /*border: 2px solid rgb(0 41 113);*/
+}
+
+th, td {
+  text-align: center;
 }
 </style>
