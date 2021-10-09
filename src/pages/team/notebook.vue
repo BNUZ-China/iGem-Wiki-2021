@@ -7,7 +7,7 @@
     <b-container>
       <b-row align-h="end">
         <b-col cols="2">
-          <div class="roundRect">
+          <div class="notebook-date roundRect">
             Oct.
           </div>
         </b-col>
@@ -25,28 +25,6 @@
                     <h5>Suicide switch(PMF)</h5>
                     pBad promoter and MazF(PMF) synthesis
                   </b-card-text>
-                </b-card-body>
-              </b-collapse>
-            </b-card>
-
-            <b-card no-body class="mb-1">
-              <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-2 variant="info" class="notebook_button_style">Accordion 2</b-button>
-              </b-card-header>
-              <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
-                <b-card-body>
-                  <b-card-text>{{ text }}</b-card-text>
-                </b-card-body>
-              </b-collapse>
-            </b-card>
-
-            <b-card no-body class="mb-1">
-              <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button block v-b-toggle.accordion-3 variant="info" class="notebook_button_style">Accordion 3</b-button>
-              </b-card-header>
-              <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
-                <b-card-body>
-                  <b-card-text>{{ text }}</b-card-text>
                 </b-card-body>
               </b-collapse>
             </b-card>
@@ -109,5 +87,9 @@ export default {
 .card-header-invisible {
   background-color: #FFFFFF00;
   border-color: #FFFFFF00;
+}
+
+.notebook-date {
+  margin-top: 42px;
 }
 </style>

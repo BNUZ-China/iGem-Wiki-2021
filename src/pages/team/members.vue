@@ -222,9 +222,52 @@
             </div>
           </b-col>
         </b-row>
+        <h3 class="members-title">Model Group</h3>
+        <b-row>
+          <b-col>
+            <div class="card">
+              <img class="card-img-top" src="" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Feiyang Lu</h5>
+                <p class="card-text">Modeling Group Leader, Project&Parts Design, Collaboration, Software</p></div>
+            </div>
+          </b-col>
+          <b-col>
+            <div class="card">
+              <img class="card-img-top" src="" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Wanying Xue</h5>
+                <p class="card-text">Modeling Group Member, Literature Research, Software</p></div>
+            </div>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col>
+            <div class="card">
+              <img class="card-img-top" src="" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Jingyi Wu</h5>
+                <p class="card-text">Modeling Group Member, Literature Research, Collaboration</p></div>
+            </div>
+          </b-col>
+          <b-col>
+            <div class="card">
+              <img class="card-img-top" src="" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Tianyu Gao</h5>
+                <p class="card-text">Wiki&Art Group member, Animation &poster maker, illustrator</p></div>
+            </div>
+          </b-col>
+          <b-col>
+            <div class="card">
+              <img class="card-img-top" src="" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Jianzhong Li</h5>
+                <p class="card-text">Wiki&Art Group member, Animation &poster maker, illustrator</p></div>
+            </div>
+          </b-col>
+        </b-row>
       </b-container>
-
-
     </BNUZ_content_no_nav>
     <Bottom></Bottom>
   </AppRoot>

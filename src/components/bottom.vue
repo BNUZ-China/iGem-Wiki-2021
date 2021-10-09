@@ -68,6 +68,6 @@ export default {
 .team-logo {
   --team-logo-size: 160px;
   width: var(--team-logo-size);
-  height: var(--team-logo-size);
+  /*height: var(--team-logo-size);*/
 }
 </style>

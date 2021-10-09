@@ -5,7 +5,6 @@
 
       </TopNavigationBar>
     </transition>
-    <!--    <div v-if="!TopNavBarVisible" class="top-nav-bar-space"></div>-->
     <Open_window @zoom-end="zoomEnd" @window-open-start="openStart">
 
     </Open_window>
@@ -16,131 +15,54 @@
       <transition enter-active-class="animate__fadeIn animate__animated animate__fast animate__delay-2s">
         <div class="index-content" v-if="TopNavBarVisible">
           <div class="text">
-            Obtaining the lineage information out of the transcriptomic information
-            In order to read the lineage information out of the transcriptomic information, we design two double
-            promoter modules. And we conducted the experiment to test the function of the cassette. To make results
-            visible, we use gRNA that targets ADE2 gene. Cryptococcus neoformans will turn red if gRNA works. The
-            experiments were carried as follows.
-            1.Construct recombinant plasmids. Get pGAP from the genome of Cryptococcus neoformans. Insert it upstream
-            of
-            pU6 on PRH003 plasmid. Use the plasmid without pGAP as the control group.
-            2.Transform the product (2.5μL) into DH5α competent cells (50μL), grow cells on agar plates (containing
-            Ampicillin). Incubate plates at 37°C overnight. Colonies were screened by colony PCR and then grown at
-            37℃,
-            200rpm. Plasmids were extracted and sent for sequencing.
-            3.Use Kpn1 to linearize the plasmids and transform them into Cryptococcus neoformans by electroporation.
-            4.The C. neoformans was spread on YNBA selection medium, and transformants grew after being cultured in an
-            incubator kept at 30℃ for 4 days. Then the culture was transferred to a refrigerator at 4℃.
-            5.Red colonies were selected and inoculated into YPD medium, then placed in an incubator kept at 30℃ for 4
-            days. Finally, it was kept in at 4℃ refrigerator.
-            6.For both the experimental and the control groups, we first extracted the total mRNA of these red
-            colonies
-            by Trizol. Then the mRNA was reverse transcribed using oligo dT as the primer.
-            7.To test whether gRNA can be transcribed, we performed PCR on the reverse transcription products by two
-            specific primers. Then sequence the PCR product.
-            We exchanged pGAL7 with pGAP and repeated steps 1-5. Then we selected red colonies and induced the
-            expression by galactose.
-            After expression for 30mins. We repeated steps 6-7.
-            Obtaining the lineage information out of the transcriptomic information
-            In order to read the lineage information out of the transcriptomic information, we design two double
-            promoter modules. And we conducted the experiment to test the function of the cassette. To make results
-            visible, we use gRNA that targets ADE2 gene. Cryptococcus neoformans will turn red if gRNA works. The
-            experiments were carried as follows.
-            1.Construct recombinant plasmids. Get pGAP from the genome of Cryptococcus neoformans. Insert it upstream
-            of
-            pU6 on PRH003 plasmid. Use the plasmid without pGAP as the control group.
-            2.Transform the product (2.5μL) into DH5α competent cells (50μL), grow cells on agar plates (containing
-            Ampicillin). Incubate plates at 37°C overnight. Colonies were screened by colony PCR and then grown at
-            37℃,
-            200rpm. Plasmids were extracted and sent for sequencing.
-            3.Use Kpn1 to linearize the plasmids and transform them into Cryptococcus neoformans by electroporation.
-            4.The C. neoformans was spread on YNBA selection medium, and transformants grew after being cultured in an
-            incubator kept at 30℃ for 4 days. Then the culture was transferred to a refrigerator at 4℃.
-            5.Red colonies were selected and inoculated into YPD medium, then placed in an incubator kept at 30℃ for 4
-            days. Finally, it was kept in at 4℃ refrigerator.
-            6.For both the experimental and the control groups, we first extracted the total mRNA of these red
-            colonies
-            by Trizol. Then the mRNA was reverse transcribed using oligo dT as the primer.
-            7.To test whether gRNA can be transcribed, we performed PCR on the reverse transcription products by two
-            specific primers. Then sequence the PCR product.
-            We exchanged pGAL7 with pGAP and repeated steps 1-5. Then we selected red colonies and induced the
-            expression by galactose.
-            After expression for 30mins. We repeated steps 6-7.Obtaining the lineage information out of the
-            transcriptomic information
-            In order to read the lineage information out of the transcriptomic information, we design two double
-            promoter modules. And we conducted the experiment to test the function of the cassette. To make results
-            visible, we use gRNA that targets ADE2 gene. Cryptococcus neoformans will turn red if gRNA works. The
-            experiments were carried as follows.
-            1.Construct recombinant plasmids. Get pGAP from the genome of Cryptococcus neoformans. Insert it upstream
-            of
-            pU6 on PRH003 plasmid. Use the plasmid without pGAP as the control group.
-            2.Transform the product (2.5μL) into DH5α competent cells (50μL), grow cells on agar plates (containing
-            Ampicillin). Incubate plates at 37°C overnight. Colonies were screened by colony PCR and then grown at
-            37℃,
-            200rpm. Plasmids were extracted and sent for sequencing.
-            3.Use Kpn1 to linearize the plasmids and transform them into Cryptococcus neoformans by electroporation.
-            4.The C. neoformans was spread on YNBA selection medium, and transformants grew after being cultured in an
-            incubator kept at 30℃ for 4 days. Then the culture was transferred to a refrigerator at 4℃.
-            5.Red colonies were selected and inoculated into YPD medium, then placed in an incubator kept at 30℃ for 4
-            days. Finally, it was kept in at 4℃ refrigerator.
-            6.For both the experimental and the control groups, we first extracted the total mRNA of these red
-            colonies
-            by Trizol. Then the mRNA was reverse transcribed using oligo dT as the primer.
-            7.To test whether gRNA can be transcribed, we performed PCR on the reverse transcription products by two
-            specific primers. Then sequence the PCR product.
-            We exchanged pGAL7 with pGAP and repeated steps 1-5. Then we selected red colonies and induced the
-            expression by galactose.
-            After expression for 30mins. We repeated steps 6-7.Obtaining the lineage information out of the
-            transcriptomic information
-            In order to read the lineage information out of the transcriptomic information, we design two double
-            promoter modules. And we conducted the experiment to test the function of the cassette. To make results
-            visible, we use gRNA that targets ADE2 gene. Cryptococcus neoformans will turn red if gRNA works. The
-            experiments were carried as follows.
-            1.Construct recombinant plasmids. Get pGAP from the genome of Cryptococcus neoformans. Insert it upstream
-            of
-            pU6 on PRH003 plasmid. Use the plasmid without pGAP as the control group.
-            2.Transform the product (2.5μL) into DH5α competent cells (50μL), grow cells on agar plates (containing
-            Ampicillin). Incubate plates at 37°C overnight. Colonies were screened by colony PCR and then grown at
-            37℃,
-            200rpm. Plasmids were extracted and sent for sequencing.
-            3.Use Kpn1 to linearize the plasmids and transform them into Cryptococcus neoformans by electroporation.
-            4.The C. neoformans was spread on YNBA selection medium, and transformants grew after being cultured in an
-            incubator kept at 30℃ for 4 days. Then the culture was transferred to a refrigerator at 4℃.
-            5.Red colonies were selected and inoculated into YPD medium, then placed in an incubator kept at 30℃ for 4
-            days. Finally, it was kept in at 4℃ refrigerator.
-            6.For both the experimental and the control groups, we first extracted the total mRNA of these red
-            colonies
-            by Trizol. Then the mRNA was reverse transcribed using oligo dT as the primer.
-            7.To test whether gRNA can be transcribed, we performed PCR on the reverse transcription products by two
-            specific primers. Then sequence the PCR product.
-            We exchanged pGAL7 with pGAP and repeated steps 1-5. Then we selected red colonies and induced the
-            expression by galactose.
-            After expression for 30mins. We repeated steps 6-7.Obtaining the lineage information out of the
-            transcriptomic information
-            In order to read the lineage information out of the transcriptomic information, we design two double
-            promoter modules. And we conducted the experiment to test the function of the cassette. To make results
-            visible, we use gRNA that targets ADE2 gene. Cryptococcus neoformans will turn red if gRNA works. The
-            experiments were carried as follows.
-            1.Construct recombinant plasmids. Get pGAP from the genome of Cryptococcus neoformans. Insert it upstream
-            of
-            pU6 on PRH003 plasmid. Use the plasmid without pGAP as the control group.
-            2.Transform the product (2.5μL) into DH5α competent cells (50μL), grow cells on agar plates (containing
-            Ampicillin). Incubate plates at 37°C overnight. Colonies were screened by colony PCR and then grown at
-            37℃,
-            200rpm. Plasmids were extracted and sent for sequencing.
-            3.Use Kpn1 to linearize the plasmids and transform them into Cryptococcus neoformans by electroporation.
-            4.The C. neoformans was spread on YNBA selection medium, and transformants grew after being cultured in an
-            incubator kept at 30℃ for 4 days. Then the culture was transferred to a refrigerator at 4℃.
-            5.Red colonies were selected and inoculated into YPD medium, then placed in an incubator kept at 30℃ for 4
-            days. Finally, it was kept in at 4℃ refrigerator.
-            6.For both the experimental and the control groups, we first extracted the total mRNA of these red
-            colonies
-            by Trizol. Then the mRNA was reverse transcribed using oligo dT as the primer.
-            7.To test whether gRNA can be transcribed, we performed PCR on the reverse transcription products by two
-            specific primers. Then sequence the PCR product.
-            We exchanged pGAL7 with pGAP and repeated steps 1-5. Then we selected red colonies and induced the
-            expression by galactose.
-            After expression for 30mins. We repeated steps 6-7.
+            <p class="para1 roundRect">
+              Chronic kidney disease (CKD) is a major chronic disease with high incidence, poor prognosis and
+              complicated
+              complications, which has become a major public health problem endangering global public health.
+            </p>
+
+            <div class="article-image-container">
+              <img :src="pic1" class="article-image">
+            </div>
+            <p>
+              The treatment methods for clinical application include treatment of the causes of CKD, such as
+              hypertension,
+              diabetes and other diseases, while strictly controlling blood glucose, blood pressure and blood lipids,
+              and
+              adjusting the dietary structure of patients. Advanced CKD often take renal dialysis, renal transplantation
+              and other methods of alternative treatment.
+              With the development of CKD, renal function is gradually lost. Coupled with drug interference, intestinal
+              flora homeostasis is imbalance and the structure of flora has changed greatly. The change of flora
+              structure
+              further leads to great changes in flora metabolism, a large number of enterogenous urotoxins and their
+              precursors are synthesized. The change of this metabolic pathway leads to the further deterioration of
+              intestinal environment and the severe impairment of intestinal mucosal barrier function.
+            </p>
+            <div class="article-image-container">
+              <img :src="pic2" class="article-image">
+            </div>
+            <p>
+              Previous studies have shown that indoxyl sulfate(IS), whose content is positively correlated with the
+              amount
+              of indole, is a key urinary toxin that promotes the progression of CKD. Tryptophan in food is first
+              metabolized into indoles under the action of enteric E. coli. After indoles enter host cells, under the
+              action of cytochrome P450 enzyme and sulfotransferase, they are metabolized into IS in liver cells.
+            </p>
+            <div class="article-image-container">
+              <img :src="pic3" class="article-image">
+            </div>
+            <p>
+              Aiming at the metabolic pathway of IS, our team knocked out the tnaa gene of E. coli that metabolizes
+              tryptophan to produce indole, blocking the generation of IS from the source. In order to repair the
+              intestinal mucosal barrier and consume the remaining tryptophan, we reconstructed a pathway to metabolize
+              tryptophan to produce indole propionic acid. To promote the proliferation of probiotics and delay and
+              treat
+              CKD, we overexpressed β- Galactosidase that efficiently catalyzes the formation of galactooligosaccharides
+              from lactose β- Galactosidase.
+            </p>
+            <div class="article-image-container" style="transform: translateX(-50px)">
+              <img :src="pic4" class="article-image">
+            </div>
           </div>
         </div>
       </transition>
@@ -156,6 +78,13 @@ import homepage_hospital from '@/assets/homepage.png';
 import AppRoot from "@/AppRoot";
 import conf from "@/wiki_config"
 import Bottom from "@/components/bottom"
+import ScrollReveal from "scrollreveal";
+import font from '@/assets/IndieFlower-Regular.ttf'
+
+import pic1 from '@/assets/homepage/pic1.png';
+import pic2 from '@/assets/homepage/pic2.png';
+import pic3 from '@/assets/homepage/pic3.png';
+import pic4 from '@/assets/homepage/pic4.png';
 
 export default {
   name: "index",
@@ -165,19 +94,45 @@ export default {
       TopNavBarVisible: false,
       openStarted: false,
       scrollbarSpace: true,
-      homepage_hospital: conf.isDev ? homepage_hospital : 'https://2021.igem.org/wiki/images/2/2e/T--BNUZ-China--homepage_hospital.png'
+      scrollReveal: ScrollReveal(),
+      homepage_hospital: conf.isDev ? homepage_hospital :
+        'https://2021.igem.org/wiki/images/2/2e/T--BNUZ-China--homepage_hospital.png',
+      // TODO: set image URI
+      font: conf.isDev ? font : '',
+
+      // TODO: set image URI
+      pic1: conf.isDev ? pic1 : '',
+      // TODO: set image URI
+      pic2: conf.isDev ? pic2 : '',
+      // TODO: set image URI
+      pic3: conf.isDev ? pic3 : '',
+      // TODO: set image URI
+      pic4: conf.isDev ? pic4 : ''
     }
   },
+
   beforeCreate() {
-    var img = require(homepage_hospital)
-    let image = new Image()
-    image.src = img
+    // var img = require(homepage_hospital)
+    // let image = new Image()
+    // image.src = img
   },
   mounted() {
+
+
+    console.log('start')
+    this.scrollReveal.reveal('.para1', {
+      reset: true,
+      origin: 'bottom',
+      easing: 'ease-in-out',
+      distance: '50px',
+      opacity: 0.5,
+      delay: 10000
+    });
+    console.log('end')
     window.scrollTo({
       top: 0,
       behavior: "auto"
-    })
+    });
   },
   methods: {
     openStart: function () {
@@ -216,6 +171,8 @@ export default {
   background-color: rgba(255, 255, 255, 1);
   font-size: large;
   padding: 24px;
+  font-family: Arial, sans-serif;
+  line-height: 1.7em;
 }
 
 .top-nav-bar-space {
@@ -225,5 +182,29 @@ export default {
 
 .scrollbar-space {
   margin-right: 17px;
+}
+
+.article-image-container {
+  width: 100%;
+  text-align: center;
+}
+
+.article-image {
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+}
+
+p {
+  --marginTopBottom: 24px;
+  margin-top: var(--marginTopBottom);
+  margin-bottom: var(--marginTopBottom);
+}
+
+.roundRect {
+  padding: 20px;
+  background-color: rgb(220, 230, 237);
+  border-radius: 20px;
+  margin: 16px 0;
 }
 </style>
