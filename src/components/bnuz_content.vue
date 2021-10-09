@@ -6,6 +6,7 @@
                             :anchor_distances="anchor_distances"
                             :active_item_index="active_navigation_item_index"
                             :multi-col="multiCol"
+                            :nav_item_color="nav_item_color"
                             ref="content_navigation"
                             class="bnuz-content-nav-sticky"></Content_navigation>
       </b-col>
@@ -39,6 +40,9 @@ Vue.directive('scroll', {
 export default {
   name: "BNUZ_Content",
   components: {Content_navigation},
+  props: {
+    nav_item_color: String
+  },
   data() {
     return {
       active_navigation_item_index: 0,

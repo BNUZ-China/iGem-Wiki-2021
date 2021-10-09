@@ -3,7 +3,7 @@
     <!--    <Background_picture src="assets/homepage_hospital.png"></Background_picture>-->
     <top-navigation-bar/>
     <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678">
-    <BNUZ_Content>
+    <BNUZ_Content nav_item_color="#0E4993">
       <bnuz_content_paragraph hint_text="Attending the 5th Southern China Regional Meeting">
         <h4>Attending the 5th Southern China Regional Meeting</h4>
         In 2021.08.06, our team attended the 5th Southern China Regional Meeting. A total of 18 teams participated. In

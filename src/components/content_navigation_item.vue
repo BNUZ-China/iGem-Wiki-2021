@@ -1,13 +1,27 @@
 <template>
-  <div v-b-tooltip.hover :title="hint_text" @click="contentNavJumpto" :class="classString">
-    <slot></slot>
+  <div>
+    <transition
+      enter-active-class="animate__animated animate__fadeIn"
+      leave-active-class="animate__animated animate__fadeOut">
+
+      <div v-b-tooltip.hover :title="hint_text" @click="contentNavJumpto" :class="classString"
+           :style="{backgroundColor: nav_item_color}">
+        <slot></slot>
+      </div>
+    </transition>
   </div>
 </template>
 
 <script>
 export default {
   name: "content_navigation_item",
-  props: {activate: Boolean, click_link: Number, multiCol: Boolean, hint_text: String},
+  props: {
+    activate: Boolean,
+    click_link: Number,
+    multiCol: Boolean,
+    hint_text: String,
+    nav_item_color: String
+  },
   methods: {
     contentNavJumpto: function () {
       // i是该按钮的序号
@@ -41,20 +55,21 @@ export default {
 
 <style scoped>
 .bnuz-content-nav-item-kp6mdeaz {
-  --nav_item_size: 54px;
+  --nav_item_size: 32.55px;
   width: var(--nav_item_size);
   height: var(--nav_item_size);
-  background-color: #e2e3e5;
+  background-color: #000;
   text-align: center;
   cursor: pointer;
   line-height: var(--nav_item_size);
   font-size: 2em;
-  border-radius: 15px;
+  border-radius: calc(var(--nav_item_size) / 2);
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* 单列独占样式 */
 .bnuz-content-nav-item-no-grid-kp6mdeaz {
-  margin: 10px;
 }
 
 /* 双列独占样式 */
@@ -64,16 +79,13 @@ export default {
 
 /* 激活样式 */
 .bnuz-content-nav-item-active-kp6mdeaz {
-  /*font-size: x-lar */
-  /*background-image: url("~@/assets/content_navigation/navitem_on.jpg");*/
-  background-color: #90c1c2;
-  color: black;
+  /*opacity: 0;*/
+  /*visibility: hidden;*/
+  /*display: block !important;*/
 }
 
 /*未激活样式*/
 .bnuz-content-nav-item-no-active-kp6mdeaz {
-  /*background-image: url("~@/assets/content_navigation/navitem_off.jpg");*/
-  background-color: #667e80;
-  color: white;
+  /*opacity: 1;*/
 }
 </style>

@@ -137,7 +137,9 @@
         variety of enzymes to catalyze the production of indolepyruvate to indolepropionic acid, a beneficial substance
         that enhances the intestinal mucosal barrier.
 
-        <img :src="pic1">
+        <div style="text-align: center; width: 100%">
+          <img :src="pic1">
+        </div>
 
         CKD patients are often accompanied by intestinal flora imbalance, which is manifested as the decrease of
         beneficial bacteria, and the abnormal proliferation of pathogenic bacteria and conditional pathogenic bacteria.
