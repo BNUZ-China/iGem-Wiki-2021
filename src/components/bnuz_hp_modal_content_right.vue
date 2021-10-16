@@ -62,4 +62,17 @@ export default {
   line-height: 15vh;
 }
 
+@font-face {
+  font-family: "General_hp_title";
+  /*TODO change url*/
+  src: url('https://fonts.gstatic.com/s/merienda/v9/gNMAW3x8Qoy5_mf8uWu-FZ-13MY.woff2');
+}
+
+.bnuz-hp-content-modal-item-text {
+  line-height: 54px;
+  font-family: General_hp_title,serif;
+  font-size: 32px;
+  transform: translateX(-40px);
+  text-align: start;
+}
 </style>

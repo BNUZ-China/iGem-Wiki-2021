@@ -30,6 +30,8 @@ export default {
 </script>
 
 <style scoped>
+
+
 .roundRect {
   padding: 20px;
   background-color: rgb(220, 230, 237);
@@ -57,8 +59,18 @@ export default {
   height: 14vh;
 }
 
+@font-face {
+  font-family: "General_hp_title";
+  /*TODO change url*/
+  src: url('https://fonts.gstatic.com/s/merienda/v9/gNMAW3x8Qoy5_mf8uWu-FZ-13MY.woff2');
+}
+
 .bnuz-hp-content-modal-item-text {
-  line-height: 15vh;
+  line-height: 54px;
+  font-family: General_hp_title,serif;
+  font-size: 32px;
+  transform: translateX(30px);
+  text-align: end;
 }
 
 </style>

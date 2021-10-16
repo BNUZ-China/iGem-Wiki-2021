@@ -224,6 +224,11 @@ export default {
 </script>
 
 <style scoped>
+:root {
+  --dark-color: rgb(0, 115, 0);
+  --light-color: #f7fff1;
+}
+
 .bnuz-header-image {
   width: 100%;
   height: 40%;
@@ -231,13 +236,29 @@ export default {
 
 .roundRect {
   padding: 20px;
-  background-color: rgb(220, 230, 237);
+  /*border-width: 2px;*/
   border-radius: 20px;
-  margin: 16px 0;
-  /*border: 2px solid rgb(0 41 113);*/
+  margin: 32px 0;
+  border: 2px solid rgb(0, 115, 0);
 }
 
 th, td {
   text-align: center;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f7fff1;
+}
+
+.table td {
+  border-top: none;
+}
+
+.table thead th {
+  border-bottom: none;
+}
+
+.table th {
+  border-top: none;
 }
 </style>

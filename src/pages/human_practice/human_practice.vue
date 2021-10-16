@@ -39,21 +39,27 @@
               </template>
               <template slot="modal-body">
                 <p class="modal-text">
-                  To begin with, as one of our team member’s grandma is suffering from CKD, we paid our attention to CKD.
-                  Then we conducted a survey, but we were surprisingly to find that many people knew little about CKD even
-                  though its prevalence is getting higher and higher. And in our survey, people with CKD are not aware of
+                  To begin with, as one of our team member’s grandma is suffering from CKD, we paid our attention to
+                  CKD.
+                  Then we conducted a survey, but we were surprisingly to find that many people knew little about CKD
+                  even
+                  though its prevalence is getting higher and higher. And in our survey, people with CKD are not aware
+                  of
                   their CKD staging, which indicates that the “slient killer” hasn’t attracted enough attention yet. But
-                  actually CKD is the 6th fastest growing cause of death globally, causing at least 2.4 milion deaths per
+                  actually CKD is the 6th fastest growing cause of death globally, causing at least 2.4 milion deaths
+                  per
                   year. We also learned that there is currently still no cure for CKD and no means to revert it.
                   Therefore, we decided to focus our project on the treatment of CKD. And we also investigated people’s
-                  understanding of synthetic biology, which encouraged us to do more with methods people are more willing
-                  to (see Fig. 4) accept to raise the public’s knowledge. <a href="www.baidu.com" target="_blank">(you can find
+                  understanding of synthetic biology, which encouraged us to do more with methods people are more
+                  willing
+                  to (see Fig. 4) accept to raise the public’s knowledge.
+                  <!--    TODO  change link -->
+                  <a href="Education" target="_blank">(you
+                  can find
                   it in
                   our science
                   communication)</a>
                 </p>
-
-
                 <img :src="p1_pic1">
                 <img :src="p1_pic2">
                 <img :src="p1_pic3">
@@ -92,38 +98,25 @@
                 </svg>
               </template>
               <template v-slot:modal-body>
-                Prof. Xvdong Zhu, Editor of Chinese Journal of Biotechnology, Research Fields & Emphasis: Fungal
-                secondary metabolism and Synthetic Biology, Studies on RNAi and endogenous siRNA biology of fungi
+                <p>
+
+                Prof. Xiaoyan Wang
+                Distinguished Associate Researcher, Centre for Biotechnology Research, Beijing Normal University At Zhuhai; Research fields: Regulation of plant small molecule RNA metabolism and mechanisms of action
+                </p>
 
 
-                When we first started the design of our project, we were so confused and couldn’t work out quite a few
-                questions. That’s when Prof. Xudong Zhu offered us a lot of help. After hearing the initial design of
-                our project, Prof Zhu asked us one question: For the treatment of CKD, why not directly adjust the
-                colony but directly regulate radon? The answer of this question is: colonies are not statistical, it is
-                difficult to quantitative verification of the results of the program.
-                Then Prof. Zhu gave us suggestions and answered our puzzles in terms of project design, modeling, and
-                human practice.
-
-                When talking about project design, Mr. Zhu first introduced us to two series of plasmids used in E.
-                coli; then he told us about the issues that need to be paid attention to in strain selection; after
-                that, he discussed with us about the detection of knockout ; Then he raised the problem that the fld
-                gene cluster we want to insert may be too large to express; finally he reminded us that innovative
-                elements are needed in the project design.
-                On hearing our confusion in modeling part, Mr. Zhu suggested us that the content of the quorum sensing
-                mechanism can be studied using modeling;
-                The last part we discussed about is human practice. Prof. Zhu told us to "go out and investigate", that
-                is, to get in touch with people from all walks of life in society, especially doctors and employees of
-                biomedical companies. We need to investigate and understand the following two questions: 1. Whether the
-                chronic kidney disease is serious and whether our project is important; 2. Whether our research can be
-                put into production and own a market.
-
-
-                After hearing the guidance from Prof. Zhu, we have a more accurate understanding about the IGEM
-                competition, and from this we refined our plan and supplemented the deficiencies.
               </template>
             </BNUZ_content_modal>
           </template>
         </BNUZ_hp_modal_content_right>
+        <BNUZ_hp_modal_content_left>
+          <template v-slot:text>
+
+          </template>
+          <template v-slot:icon>
+
+          </template>
+        </BNUZ_hp_modal_content_left>
       </b-container>
     </BNUZ_Content_no_nav>
     <Bottom></Bottom>
@@ -144,6 +137,12 @@ import head_image from '@/assets/head_images/human_practice.png'
 import p1_pic1 from '@/assets/hp/general_hp/part1/pic1.png'
 import p1_pic2 from '@/assets/hp/general_hp/part1/pic2.png'
 import p1_pic3 from '@/assets/hp/general_hp/part1/pic3.png'
+import p2_pic1 from '@/assets/hp/general_hp/part2/p2_pic1.jpg'
+import p2_pic2 from '@/assets/hp/general_hp/part2/p2_pic2.jpg'
+import p2_pic3 from '@/assets/hp/general_hp/part2/p2_pic3.jpg'
+import p2_pic4 from '@/assets/hp/general_hp/part2/p2_pic4.jpg'
+import p2_pic5 from '@/assets/hp/general_hp/part2/p2_pic5.jpg'
+import p2_pic6 from '@/assets/hp/general_hp/part2/p2_pic6.jpg'
 
 import conf from '@/wiki_config';
 
@@ -168,7 +167,14 @@ export default {
       // TODO: set image URI
       p1_pic2: conf.isDev ? p1_pic2 : '',
       // TODO: set image URI
-      p1_pic3: conf.isDev ? p1_pic3 : ''
+      p1_pic3: conf.isDev ? p1_pic3 : '',
+      // TODO: set image URI
+      p2_pic1: conf.isDev ? p2_pic1 : '',
+      p2_pic2: conf.isDev ? p2_pic2 : '',
+      p2_pic3: conf.isDev ? p2_pic3 : '',
+      p2_pic4: conf.isDev ? p2_pic4 : '',
+      p2_pic5: conf.isDev ? p2_pic5 : '',
+      p2_pic6: conf.isDev ? p2_pic6 : '',
     }
   }
 }
@@ -182,7 +188,7 @@ export default {
 
 .roundRect {
   padding: 20px;
-  background-color: rgb(220, 230, 237);
+  border: 2px solid #002971;
   border-radius: 20px;
   margin: 16px 0;
 }

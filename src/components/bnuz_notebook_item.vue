@@ -65,10 +65,12 @@ export default {
 
 .notebook-date {
   margin-top: 42px !important;
+  font-size: 32px;
+  text-align: center;
 }
 
 .roundRect {
-  padding: 20px;
+  padding: 8px;
   background-color: rgb(220, 230, 237);
   border-radius: 20px;
   margin: 16px 0;
