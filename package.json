@@ -13,6 +13,7 @@
     "bootstrap-vue": "^2.21.2",
     "console": "^0.7.2",
     "core-js": "^3.16.3",
+    "jquery": "^3.6.0",
     "module": "^1.2.5",
     "scrollreveal": "^4.0.9",
     "vue": "^2.6.11",

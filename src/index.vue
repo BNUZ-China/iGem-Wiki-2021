@@ -9,13 +9,13 @@
 
     </Open_window>
     <div class="navbar_space"></div>
-    <img :src="homepage_hospital" alt="homepage hospital" class="homepage_hospital" v-if="openStarted">
+    <img :src="homepage_hospital" alt="homepage hospital" class="homepage_hospital" v-show="openStarted">
 
     <div :class="{'scrollbar-space': scrollbarSpace}">
       <transition enter-active-class="animate__fadeIn animate__animated animate__fast animate__delay-2s">
-        <div class="index-content" v-if="TopNavBarVisible">
+        <div class="index-content" v-show="TopNavBarVisible">
           <div class="text">
-            <p class="para1 roundRect">
+            <p>
               Chronic kidney disease (CKD) is a major chronic disease with high incidence, poor prognosis and
               complicated
               complications, which has become a major public health problem endangering global public health.
@@ -66,7 +66,7 @@
           </div>
         </div>
       </transition>
-      <Bottom v-if="TopNavBarVisible"></Bottom>
+      <Bottom v-show="TopNavBarVisible"></Bottom>
     </div>
   </AppRoot>
 </template>
@@ -110,16 +110,12 @@ export default {
       pic4: conf.isDev ? pic4 : ''
     }
   },
-
   beforeCreate() {
     // var img = require(homepage_hospital)
     // let image = new Image()
     // image.src = img
   },
   mounted() {
-
-
-    console.log('start')
     this.scrollReveal.reveal('.para1', {
       reset: true,
       origin: 'bottom',
@@ -156,19 +152,19 @@ export default {
   height: 1px;
 }
 
-.homepage_hospital {
-  width: 100vw;
-  z-index: -1;
-}
+/*.homepage_hospital {*/
+/*  width: 100vw;*/
+/*  z-index: -1;*/
+/*}*/
 
-.index-content {
-  margin: 10vh 8vw 0;
-}
+/*.index-content {*/
+/*  margin: 10vh 8vw 0;*/
+/*}*/
 
 .text {
   /*TODO homepage 字体*/
-  margin: 0 7vw;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 80vh 7vw 0;
   font-size: large;
   padding: 24px;
   font-family: Arial, sans-serif;
@@ -199,6 +195,8 @@ p {
   --marginTopBottom: 24px;
   margin-top: var(--marginTopBottom);
   margin-bottom: var(--marginTopBottom);
+  font-size: 22px;
+  line-height: 32px;
 }
 
 .roundRect {
@@ -206,5 +204,21 @@ p {
   background-color: rgb(220, 230, 237);
   border-radius: 20px;
   margin: 16px 0;
+}
+
+.homepage_hospital {
+  width: 100vw;
+  position: sticky;
+  /*top: -100px;*/
+  /*left: 8vw;*/
+  position: absolute;
+  /*top: -100px;*/
+  /*left: 8vw;*/
+  z-index: -1;
+}
+
+.index-content {
+  margin: -400px 8vw 0;
+  margin: 40vh 8vw 0;
 }
 </style>
