@@ -3,7 +3,7 @@ import Vue from 'vue'
     import 'bootstrap/dist/css/bootstrap.min.css';
     import 'bootstrap-vue/dist/bootstrap-vue.min.css';
 
-    import App from './pages/model/introduction';
+    import App from './pages/model/model';
 
     Vue.use(BootstrapVue);
 

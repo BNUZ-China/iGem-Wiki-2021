@@ -3,7 +3,7 @@
     <!--    <Background_picture src="assets/homepage_hospital.png"></Background_picture>-->
     <top-navigation-bar/>
     <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678">
-    <BNUZ_Content>
+    <BNUZ_Content nav_item_color="#9b2b28">
       <bnuz_content_paragraph hint_text="Laboratory safety">
         <h4>Laboratory safety</h4>
         <p>
@@ -73,7 +73,7 @@
         </bnuz_image_container>
       </bnuz_content_paragraph>
 
-      <bnuz_content_paragraph hint_text="3.	Security module">
+      <bnuz_content_paragraph hint_text="Security module">
         <h4>Security module</h4>
         <h5>[Arabinose]</h5>
         <p>
@@ -123,18 +123,17 @@
         </bnuz_image_container>
       </bnuz_content_paragraph>
 
-      <bnuz_content_paragraph hint_text="4.	Regulations">
+      <bnuz_content_paragraph hint_text="Regulations">
         <h4>Regulations</h4>
         <p>
-          General requirements for laboratory biosafety
-          (GB19489-2008)：<a href="https://ssc.bnu.edu.cn/gzzd/sysaqglgz/94795.html">https://ssc.bnu.edu          .cn/gzzd/sysaqglgz/94795.html</a><br>
-          Laboratory Biosafety Manual：<a href="https://www.who.int/publications/i/item/9789240011311">https://www.who          .int/publications/i/item/9789240011311</a><br>
-          Laboratories - General requirements for
-          biosafety：<a href="http://www.gb688.cn/bzgk/gb/newGbInfo?hcno=EB3B94B543F6E4CD18C044DE6AB64CEC">http://www          .gb688.cn/bzgk/gb/newGbInfo?hcno=EB3B94B543F6E4CD18C044DE6AB64CEC</a><br>
-          Technical Specifications for Laboratory Hazardous Waste Pollution Prevention and Control
-          (2017)：<a href="http://sthjj.beijing.gov.cn/bjhrb/resource/cms/2017/01/2017011014225176234.pdf">http          ://sthjj.beijing.gov.cn/bjhrb/resource/cms/2017/01/2017011014225176234.pdf</a><br>
-          Regulations on Biosafety Management of Pathogenic Microorganism Laboratories
-          (2004)：<a href="http://www.gov.cn/zwgk/2005-05/23/content_256.htm">http://www.gov.cn/zwgk/2005-05/23/content_256.htm</a>
+          <a href="https://ssc.bnu.edu.cn/gzzd/sysaqglgz/94795.html">General requirements for laboratory biosafety
+          (GB19489-2008)</a><br>
+         <a href="https://www.who.int/publications/i/item/9789240011311"> Laboratory Biosafety Manual</a><br>
+          <a href="http://www.gb688.cn/bzgk/gb/newGbInfo?hcno=EB3B94B543F6E4CD18C044DE6AB64CEC">Laboratories -
+            General requirements for biosafety</a><br>
+          <a href="http://sthjj.beijing.gov.cn/bjhrb/resource/cms/2017/01/2017011014225176234.pdf">Technical Specifications for Laboratory Hazardous Waste Pollution Prevention and Control
+            (2017)</a><br>
+          <a href="http://www.gov.cn/zwgk/2005-05/23/content_256.htm">Regulations on Biosafety Management of Pathogenic Microorganism Laboratories            (2004)</a>
 
         </p>
       </bnuz_content_paragraph>

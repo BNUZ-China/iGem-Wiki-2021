@@ -16,12 +16,9 @@
         {text: 'Contribution', link: 'Contribution.html'},
         {text: 'Notebook', link: 'Notebook.html'}
       ]"></top_navigation_bar_dropdown>
-        <top_navigation_bar_dropdown title="MODEL" :contents="[
-        {text: 'Introduction', link: 'Introduction.html'},
-        {text: 'Models & Results', link: 'Models_and_results.html'},
-        {text: 'Discussion', link: 'Discussion.html'}
-      ]">
-        </top_navigation_bar_dropdown>
+        <div class="nav-item">
+          <a class="nav-link" href="/Model.html">MODEL</a>
+        </div>
         <div class="nav-item">
           <a class="nav-link" href="/Safety.html">SAFETY</a>
         </div>

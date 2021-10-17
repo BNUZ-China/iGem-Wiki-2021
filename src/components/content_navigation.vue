@@ -10,15 +10,12 @@
                                :hint_text="hint_text_array[item]"
                                :nav_item_color="nav_item_color"
       >
-        <!-- TODO 这里设置电梯按钮文本 -->
       </Content_navigation_item>
-
-      <div class="bnuz-cursor" :style="{
+        <div class="bnuz-cursor" :style="{
         maskImage: `url('${require('../assets/content_navigation/cursor.png')}')`,
         backgroundColor: nav_item_color,
         transform: `translateY(calc(-62px * ${hint_text_array.length - active_item_index} - 10px)) translateX(-50px)`
       }">
-
       </div>
     </div>
 

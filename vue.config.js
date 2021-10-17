@@ -181,11 +181,11 @@ const dev_config = {
       filename: 'Implementation.html',
       title: 'implementation'
     },
-    introduction_page: {
-      entry: 'src/introduction.js',
-      template: 'public/model/introduction.html',
-      filename: 'Introduction.html',
-      title: 'Introduction'
+    model_page: {
+      entry: 'src/model.js',
+      template: 'public/model/model.html',
+      filename: 'Model.html',
+      title: 'Model'
     },
     models_and_results_page: {
       entry: 'src/models_and_results.js',
