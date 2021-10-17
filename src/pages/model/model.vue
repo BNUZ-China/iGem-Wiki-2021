@@ -3,7 +3,7 @@
     <!--    <Background_picture src="assets/homepage_hospital.png"></Background_picture>-->
     <top-navigation-bar/>
     <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678">
-    <BNUZ_Content>
+    <BNUZ_Content top_distance="10" nav_item_color="#27196f">
       <bnuz_content_paragraph hint_text="Overview">
         <h1>Overview</h1>
         <h2>What is our model?</h2>
@@ -61,7 +61,7 @@
 
         </ol>
         <p>&nbsp;</p>
-        <h2 id='model-1'>*Model</h2>
+        <h2 id='model-1'>Model</h2>
         <p>Since human intestinal resources are limited, we chose to use the Logistic model to represent the changes in
           the
           number of strains over time in the body environment satisfying the hypothesis. </p>
@@ -1669,7 +1669,7 @@
           <li>The reaction process can be treated continuously.</li>
         </ol>
         <p>&nbsp;</p>
-        <h2 id='model-2'>*Model</h2>
+        <h2 id='model-2'>Model</h2>
         <p>When the engineered bacteria reached a certain number, according to the following quorum sensing system
           designed
           by us, the engineered bacteria would begin to express β-galactosidase and formally begin to regulate the
@@ -3532,7 +3532,7 @@
           </div>
         </div>
       </bnuz_content_paragraph>
-      <bnuz_content_paragraph hint_text="333">
+      <bnuz_content_paragraph hint_text="Model EXTRA 4-step enzymatic reaction">
         <h1 id='model-extra-4-step-enzymatic-reaction'>Model EXTRA 4-step enzymatic reaction</h1>
         <h2 id='assumption-3'>Assumption</h2>
         <ol start=''>
@@ -5469,28 +5469,1228 @@
         </div>
       </bnuz_content_paragraph>
 
-      <bnuz_content_paragraph hint_text="444">
-        <h1>Forth Heading</h1>
-        Degradation of Cas9 at a proper rate
-        In order to verify the function of Clb2 (N124aa) as a degradation tag, we constructed the plasmids for an
-        experimental and a control group. We hoped to characterize the protein degradation by determining the
-        fluorescence intensity curve.
-        1.The two plasmids were constructed with pYES2, containing GAL1 galactose inducible promoter and URA3 marker
-        gene. The vector in the experimental group contains CLB2 (N124aa)- Linker-GFP, while the control group only
-        contains GFP. The successfully constructed vectors were transformed into E.coli DH5α strain.
-        2.After the plasmids were extracted and linearized, they were transformed into Saccharomyces cerevisiae
-        BY4741. We used the fluorescence microscope and differential interference microscope to verify the
-        transformants.
-        3.Both experimental and control groups were cultured in SC medium at 30 ℃ until OD600 value reached about
-        3.000, and then the expression was induced by galactose with a final concentration of 2%. After induction,
-        the fluorescence intensity was measured by flow cytometry at half an hour interval.
-        4.Cells were then inoculated into the medium containing glucose instead of galactose. In addition to being a
-        carbon source, glucose also inhibits the expression of GFP by inhibiting the GAL1 promoter. Within 7 hours
-        after inoculation, the fluorescence intensity was measured by flow cytometry at the same interval of half an
-        hour.
-        5.We used SPSS26.0 to process the data and determined the relationship between fluorescence intensity and
-        time, as well as the protein concentration and time. Finally, we calculated the degradation rate of protein
-        modified by Clb2 N124aa through modeling.
+      <bnuz_content_paragraph hint_text="Biological Parameters">
+        <h1 id='biological-parameters'>Biological Parameters</h1>
+        <figure>
+          <table>
+            <thead>
+            <tr>
+              <th style="width: 200px">Parm</th>
+              <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.282ex" height="1.339ex" role="img"
+                  focusable="false" viewBox="0 -442 1008.6 592" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: -0.339ex;">
+                  <defs>
+                    <path id="MJX-125-TEX-I-1D462"
+                          d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z">
+                    </path>
+                    <path id="MJX-125-TEX-N-31"
+                          d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D462" xlink:href="#MJX-125-TEX-I-1D462"></use>
+                        </g>
+                        <g data-mml-node="mn" transform="translate(605,-150) scale(0.707)">
+                          <use data-c="31" xlink:href="#MJX-125-TEX-N-31"></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">u_1</script>
+              </td>
+              <td>the population density of Escherichia coli</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.282ex" height="1.339ex" role="img"
+                  focusable="false" viewBox="0 -442 1008.6 592" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: -0.339ex;">
+                  <defs>
+                    <path id="MJX-126-TEX-I-1D462"
+                          d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z">
+                    </path>
+                    <path id="MJX-126-TEX-N-32"
+                          d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D462" xlink:href="#MJX-126-TEX-I-1D462"></use>
+                        </g>
+                        <g data-mml-node="mn" transform="translate(605,-150) scale(0.707)">
+                          <use data-c="32" xlink:href="#MJX-126-TEX-N-32"></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">u_2</script>
+              </td>
+              <td>the population density of protoescherichia coli</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.282ex" height="1.375ex" role="img"
+                  focusable="false" viewBox="0 -442 1008.6 607.6"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  style="vertical-align: -0.375ex;">
+                  <defs>
+                    <path id="MJX-127-TEX-I-1D462"
+                          d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z">
+                    </path>
+                    <path id="MJX-127-TEX-N-33"
+                          d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D462" xlink:href="#MJX-127-TEX-I-1D462"></use>
+                        </g>
+                        <g data-mml-node="mn" transform="translate(605,-150) scale(0.707)">
+                          <use data-c="33" xlink:href="#MJX-127-TEX-N-33"></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">u_3</script>
+              </td>
+              <td>the population density of pathogenic bacteria</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.62ex" role="img"
+                  focusable="false" viewBox="0 -716 833 716" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: 0px;">
+                  <defs>
+                    <path id="MJX-128-TEX-N-394"
+                          d="M51 0Q46 4 46 7Q46 9 215 357T388 709Q391 716 416 716Q439 716 444 709Q447 705 616 357T786 7Q786 4 781 0H51ZM507 344L384 596L137 92L383 91H630Q630 93 507 344Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="mi">
+                        <use data-c="394" xlink:href="#MJX-128-TEX-N-394"></use>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">\Delta</script>
+              </td>
+              <td>the Laplacian operator</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.164ex" height="1.91ex" role="img"
+                  focusable="false" viewBox="0 -694 956.6 844" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: -0.339ex;">
+                  <defs>
+                    <path id="MJX-129-TEX-I-1D451"
+                          d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z">
+                    </path>
+                    <path id="MJX-129-TEX-N-31"
+                          d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D451" xlink:href="#MJX-129-TEX-I-1D451"></use>
+                        </g>
+                        <g data-mml-node="mn" transform="translate(553,-150) scale(0.707)">
+                          <use data-c="31" xlink:href="#MJX-129-TEX-N-31"></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">d_1</script>
+              </td>
+              <td>the diffusion rate of Escherichia coli species</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.164ex" height="1.91ex" role="img"
+                  focusable="false" viewBox="0 -694 956.6 844" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: -0.339ex;">
+                  <defs>
+                    <path id="MJX-130-TEX-I-1D451"
+                          d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z">
+                    </path>
+                    <path id="MJX-130-TEX-N-32"
+                          d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D451" xlink:href="#MJX-130-TEX-I-1D451"></use>
+                        </g>
+                        <g data-mml-node="mn" transform="translate(553,-150) scale(0.707)">
+                          <use data-c="32" xlink:href="#MJX-130-TEX-N-32"></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">d_2</script>
+              </td>
+              <td>the diffusion rate of protoescherichia coli species</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.164ex" height="1.945ex" role="img"
+                  focusable="false" viewBox="0 -694 956.6 859.6"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  style="vertical-align: -0.375ex;">
+                  <defs>
+                    <path id="MJX-131-TEX-I-1D451"
+                          d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z">
+                    </path>
+                    <path id="MJX-131-TEX-N-33"
+                          d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D451" xlink:href="#MJX-131-TEX-I-1D451"></use>
+                        </g>
+                        <g data-mml-node="mn" transform="translate(553,-150) scale(0.707)">
+                          <use data-c="33" xlink:href="#MJX-131-TEX-N-33"></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">d_3</script>
+              </td>
+              <td>the diffusion rate of pathogenic bacteria species</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.185ex" height="1.337ex" role="img"
+                  focusable="false" viewBox="0 -441 965.6 591" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: -0.339ex;">
+                  <defs>
+                    <path id="MJX-132-TEX-I-1D44E"
+                          d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z">
+                    </path>
+                    <path id="MJX-132-TEX-N-31"
+                          d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D44E" xlink:href="#MJX-132-TEX-I-1D44E"></use>
+                        </g>
+                        <g data-mml-node="mn" transform="translate(562,-150) scale(0.707)">
+                          <use data-c="31" xlink:href="#MJX-132-TEX-N-31"></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">a_1</script>
+              </td>
+              <td>the intrinsic growth rate of Escherichia coli species</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.185ex" height="1.337ex" role="img"
+                  focusable="false" viewBox="0 -441 965.6 591" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: -0.339ex;">
+                  <defs>
+                    <path id="MJX-133-TEX-I-1D44E"
+                          d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z">
+                    </path>
+                    <path id="MJX-133-TEX-N-32"
+                          d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D44E" xlink:href="#MJX-133-TEX-I-1D44E"></use>
+                        </g>
+                        <g data-mml-node="mn" transform="translate(562,-150) scale(0.707)">
+                          <use data-c="32" xlink:href="#MJX-133-TEX-N-32"></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">a_2</script>
+              </td>
+              <td>the intrinsic growth rate of protoescherichia coli species</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.185ex" height="1.372ex" role="img"
+                  focusable="false" viewBox="0 -441 965.6 606.6"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  style="vertical-align: -0.375ex;">
+                  <defs>
+                    <path id="MJX-134-TEX-I-1D44E"
+                          d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z">
+                    </path>
+                    <path id="MJX-134-TEX-N-33"
+                          d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D44E" xlink:href="#MJX-134-TEX-I-1D44E"></use>
+                        </g>
+                        <g data-mml-node="mn" transform="translate(562,-150) scale(0.707)">
+                          <use data-c="33" xlink:href="#MJX-134-TEX-N-33"></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">a_3</script>
+              </td>
+              <td>the intrinsic growth rate of pathogenic bacteria species</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.758ex" height="1.91ex" role="img"
+                  focusable="false" viewBox="0 -694 1219.1 844" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: -0.339ex;">
+                  <defs>
+                    <path id="MJX-135-TEX-I-1D44F"
+                          d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z">
+                    </path>
+                    <path id="MJX-135-TEX-N-31"
+                          d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D44F" xlink:href="#MJX-135-TEX-I-1D44F"></use>
+                        </g>
+                        <g data-mml-node="TeXAtom" transform="translate(462,-150) scale(0.707)"
+                           data-mjx-texclass="ORD">
+                          <g data-mml-node="mn">
+                            <use data-c="31" xlink:href="#MJX-135-TEX-N-31"></use>
+                            <use data-c="31" xlink:href="#MJX-135-TEX-N-31"
+                                 transform="translate(500,0)"></use>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">b_{11}</script>
+              </td>
+              <td>the coefficient of intraspecific competition in Escherichia coli</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.758ex" height="1.91ex" role="img"
+                  focusable="false" viewBox="0 -694 1219.1 844" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: -0.339ex;">
+                  <defs>
+                    <path id="MJX-136-TEX-I-1D44F"
+                          d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z">
+                    </path>
+                    <path id="MJX-136-TEX-N-31"
+                          d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z">
+                    </path>
+                    <path id="MJX-136-TEX-N-32"
+                          d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D44F" xlink:href="#MJX-136-TEX-I-1D44F"></use>
+                        </g>
+                        <g data-mml-node="TeXAtom" transform="translate(462,-150) scale(0.707)"
+                           data-mjx-texclass="ORD">
+                          <g data-mml-node="mn">
+                            <use data-c="31" xlink:href="#MJX-136-TEX-N-31"></use>
+                            <use data-c="32" xlink:href="#MJX-136-TEX-N-32"
+                                 transform="translate(500,0)"></use>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">b_{12}</script>
+              </td>
+              <td>the coefficient of interspecific competition between Escherichia coli and protoescherichia coli
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.758ex" height="1.945ex" role="img"
+                  focusable="false" viewBox="0 -694 1219.1 859.6"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  style="vertical-align: -0.375ex;">
+                  <defs>
+                    <path id="MJX-137-TEX-I-1D44F"
+                          d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z">
+                    </path>
+                    <path id="MJX-137-TEX-N-31"
+                          d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z">
+                    </path>
+                    <path id="MJX-137-TEX-N-33"
+                          d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D44F" xlink:href="#MJX-137-TEX-I-1D44F"></use>
+                        </g>
+                        <g data-mml-node="TeXAtom" transform="translate(462,-150) scale(0.707)"
+                           data-mjx-texclass="ORD">
+                          <g data-mml-node="mn">
+                            <use data-c="31" xlink:href="#MJX-137-TEX-N-31"></use>
+                            <use data-c="33" xlink:href="#MJX-137-TEX-N-33"
+                                 transform="translate(500,0)"></use>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">b_{13}</script>
+              </td>
+              <td>the coefficient of interspecific competition between Escherichia coli and pathogenic bacteria
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.758ex" height="1.91ex" role="img"
+                  focusable="false" viewBox="0 -694 1219.1 844" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: -0.339ex;">
+                  <defs>
+                    <path id="MJX-138-TEX-I-1D44F"
+                          d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z">
+                    </path>
+                    <path id="MJX-138-TEX-N-32"
+                          d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z">
+                    </path>
+                    <path id="MJX-138-TEX-N-31"
+                          d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D44F" xlink:href="#MJX-138-TEX-I-1D44F"></use>
+                        </g>
+                        <g data-mml-node="TeXAtom" transform="translate(462,-150) scale(0.707)"
+                           data-mjx-texclass="ORD">
+                          <g data-mml-node="mn">
+                            <use data-c="32" xlink:href="#MJX-138-TEX-N-32"></use>
+                            <use data-c="31" xlink:href="#MJX-138-TEX-N-31"
+                                 transform="translate(500,0)"></use>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">b_{21}</script>
+              </td>
+              <td>the coefficient of interspecific competition between protoescherichia coli and Escherichia coli
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.758ex" height="1.91ex" role="img"
+                  focusable="false" viewBox="0 -694 1219.1 844" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: -0.339ex;">
+                  <defs>
+                    <path id="MJX-139-TEX-I-1D44F"
+                          d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z">
+                    </path>
+                    <path id="MJX-139-TEX-N-32"
+                          d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D44F" xlink:href="#MJX-139-TEX-I-1D44F"></use>
+                        </g>
+                        <g data-mml-node="TeXAtom" transform="translate(462,-150) scale(0.707)"
+                           data-mjx-texclass="ORD">
+                          <g data-mml-node="mn">
+                            <use data-c="32" xlink:href="#MJX-139-TEX-N-32"></use>
+                            <use data-c="32" xlink:href="#MJX-139-TEX-N-32"
+                                 transform="translate(500,0)"></use>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">b_{22}</script>
+              </td>
+              <td>the coefficient of intraspecific competition in protoescherichia coli</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.758ex" height="1.945ex" role="img"
+                  focusable="false" viewBox="0 -694 1219.1 859.6"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  style="vertical-align: -0.375ex;">
+                  <defs>
+                    <path id="MJX-140-TEX-I-1D44F"
+                          d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z">
+                    </path>
+                    <path id="MJX-140-TEX-N-32"
+                          d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z">
+                    </path>
+                    <path id="MJX-140-TEX-N-33"
+                          d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D44F" xlink:href="#MJX-140-TEX-I-1D44F"></use>
+                        </g>
+                        <g data-mml-node="TeXAtom" transform="translate(462,-150) scale(0.707)"
+                           data-mjx-texclass="ORD">
+                          <g data-mml-node="mn">
+                            <use data-c="32" xlink:href="#MJX-140-TEX-N-32"></use>
+                            <use data-c="33" xlink:href="#MJX-140-TEX-N-33"
+                                 transform="translate(500,0)"></use>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">b_{23}</script>
+              </td>
+              <td>the coefficient of interspecific competition between protoescherichia coli and pathogenic
+                bacteria</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.758ex" height="1.945ex" role="img"
+                  focusable="false" viewBox="0 -694 1219.1 859.6"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  style="vertical-align: -0.375ex;">
+                  <defs>
+                    <path id="MJX-141-TEX-I-1D44F"
+                          d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z">
+                    </path>
+                    <path id="MJX-141-TEX-N-33"
+                          d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z">
+                    </path>
+                    <path id="MJX-141-TEX-N-31"
+                          d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D44F" xlink:href="#MJX-141-TEX-I-1D44F"></use>
+                        </g>
+                        <g data-mml-node="TeXAtom" transform="translate(462,-150) scale(0.707)"
+                           data-mjx-texclass="ORD">
+                          <g data-mml-node="mn">
+                            <use data-c="33" xlink:href="#MJX-141-TEX-N-33"></use>
+                            <use data-c="31" xlink:href="#MJX-141-TEX-N-31"
+                                 transform="translate(500,0)"></use>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">b_{31}</script>
+              </td>
+              <td>the coefficient of interspecific competition between pathogenic bacteria and Escherichia coli
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.758ex" height="1.945ex" role="img"
+                  focusable="false" viewBox="0 -694 1219.1 859.6"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  style="vertical-align: -0.375ex;">
+                  <defs>
+                    <path id="MJX-142-TEX-I-1D44F"
+                          d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z">
+                    </path>
+                    <path id="MJX-142-TEX-N-33"
+                          d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z">
+                    </path>
+                    <path id="MJX-142-TEX-N-32"
+                          d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D44F" xlink:href="#MJX-142-TEX-I-1D44F"></use>
+                        </g>
+                        <g data-mml-node="TeXAtom" transform="translate(462,-150) scale(0.707)"
+                           data-mjx-texclass="ORD">
+                          <g data-mml-node="mn">
+                            <use data-c="33" xlink:href="#MJX-142-TEX-N-33"></use>
+                            <use data-c="32" xlink:href="#MJX-142-TEX-N-32"
+                                 transform="translate(500,0)"></use>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">b_{32}</script>
+              </td>
+              <td>the coefficient of interspecific competition between pathogenic bacteria and protoescherichia
+                coli</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.758ex" height="1.945ex" role="img"
+                  focusable="false" viewBox="0 -694 1219.1 859.6"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  style="vertical-align: -0.375ex;">
+                  <defs>
+                    <path id="MJX-143-TEX-I-1D44F"
+                          d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z">
+                    </path>
+                    <path id="MJX-143-TEX-N-33"
+                          d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D44F" xlink:href="#MJX-143-TEX-I-1D44F"></use>
+                        </g>
+                        <g data-mml-node="TeXAtom" transform="translate(462,-150) scale(0.707)"
+                           data-mjx-texclass="ORD">
+                          <g data-mml-node="mn">
+                            <use data-c="33" xlink:href="#MJX-143-TEX-N-33"></use>
+                            <use data-c="33" xlink:href="#MJX-143-TEX-N-33"
+                                 transform="translate(500,0)"></use>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">b_{33}</script>
+              </td>
+              <td>the coefficient of intraspecific competition in pathogenic bacteria</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="5.247ex" height="1.62ex" role="img"
+                  focusable="false" viewBox="0 -716 2319 716" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: 0px;">
+                  <defs>
+                    <path id="MJX-144-TEX-I-1D434"
+                          d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z">
+                    </path>
+                    <path id="MJX-144-TEX-I-1D43B"
+                          d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 219 683Q260 681 355 681Q389 681 418 681T463 682T483 682Q499 682 499 672Q499 670 497 658Q492 641 487 638H485Q483 638 480 638T473 638T464 637T455 637Q416 636 405 634T387 623Q384 619 355 500Q348 474 340 442T328 395L324 380Q324 378 469 378H614L615 381Q615 384 646 504Q674 619 674 627T617 637Q594 637 587 639T580 648Q580 650 582 660Q586 677 588 679T604 682Q609 682 646 681T740 680Q802 680 835 681T871 682Q888 682 888 672Q888 645 876 638H874Q872 638 869 638T862 638T853 637T844 637Q805 636 794 634T776 623Q773 618 704 340T634 58Q634 51 638 51Q646 48 692 46H723Q729 38 729 37T726 19Q722 6 716 0H701Q664 2 567 2Q533 2 504 2T458 2T437 1Q420 1 420 10Q420 15 423 24Q428 43 433 45Q437 46 448 46H454Q481 46 514 49Q520 50 522 50T528 55T534 64T540 82T547 110T558 153Q565 181 569 198Q602 330 602 331T457 332H312L279 197Q245 63 245 58Q245 51 253 49T303 46H334Q340 38 340 37T337 19Q333 6 327 0H312Q275 2 178 2Q144 2 115 2T69 2T48 1Q31 1 31 10Q31 12 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z">
+                    </path>
+                    <path id="MJX-144-TEX-I-1D43F"
+                          d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="mi">
+                        <use data-c="1D434" xlink:href="#MJX-144-TEX-I-1D434"></use>
+                      </g>
+                      <g data-mml-node="mi" transform="translate(750,0)">
+                        <use data-c="1D43B" xlink:href="#MJX-144-TEX-I-1D43B"></use>
+                      </g>
+                      <g data-mml-node="mi" transform="translate(1638,0)">
+                        <use data-c="1D43F" xlink:href="#MJX-144-TEX-I-1D43F"></use>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">AHL</script>
+              </td>
+              <td>acyl homoserine lactones</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="11.846ex" height="1.667ex" role="img"
+                  focusable="false" viewBox="0 -716 5236 737" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: -0.048ex;">
+                  <defs>
+                    <path id="MJX-145-TEX-I-1D434"
+                          d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z">
+                    </path>
+                    <path id="MJX-145-TEX-I-1D43B"
+                          d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 219 683Q260 681 355 681Q389 681 418 681T463 682T483 682Q499 682 499 672Q499 670 497 658Q492 641 487 638H485Q483 638 480 638T473 638T464 637T455 637Q416 636 405 634T387 623Q384 619 355 500Q348 474 340 442T328 395L324 380Q324 378 469 378H614L615 381Q615 384 646 504Q674 619 674 627T617 637Q594 637 587 639T580 648Q580 650 582 660Q586 677 588 679T604 682Q609 682 646 681T740 680Q802 680 835 681T871 682Q888 682 888 672Q888 645 876 638H874Q872 638 869 638T862 638T853 637T844 637Q805 636 794 634T776 623Q773 618 704 340T634 58Q634 51 638 51Q646 48 692 46H723Q729 38 729 37T726 19Q722 6 716 0H701Q664 2 567 2Q533 2 504 2T458 2T437 1Q420 1 420 10Q420 15 423 24Q428 43 433 45Q437 46 448 46H454Q481 46 514 49Q520 50 522 50T528 55T534 64T540 82T547 110T558 153Q565 181 569 198Q602 330 602 331T457 332H312L279 197Q245 63 245 58Q245 51 253 49T303 46H334Q340 38 340 37T337 19Q333 6 327 0H312Q275 2 178 2Q144 2 115 2T69 2T48 1Q31 1 31 10Q31 12 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z">
+                    </path>
+                    <path id="MJX-145-TEX-I-1D43F"
+                          d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z">
+                    </path>
+                    <path id="MJX-145-TEX-N-2D" d="M11 179V252H277V179H11Z"></path>
+                    <path id="MJX-145-TEX-I-1D462"
+                          d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z">
+                    </path>
+                    <path id="MJX-145-TEX-I-1D465"
+                          d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z">
+                    </path>
+                    <path id="MJX-145-TEX-I-1D445"
+                          d="M230 637Q203 637 198 638T193 649Q193 676 204 682Q206 683 378 683Q550 682 564 680Q620 672 658 652T712 606T733 563T739 529Q739 484 710 445T643 385T576 351T538 338L545 333Q612 295 612 223Q612 212 607 162T602 80V71Q602 53 603 43T614 25T640 16Q668 16 686 38T712 85Q717 99 720 102T735 105Q755 105 755 93Q755 75 731 36Q693 -21 641 -21H632Q571 -21 531 4T487 82Q487 109 502 166T517 239Q517 290 474 313Q459 320 449 321T378 323H309L277 193Q244 61 244 59Q244 55 245 54T252 50T269 48T302 46H333Q339 38 339 37T336 19Q332 6 326 0H311Q275 2 180 2Q146 2 117 2T71 2T50 1Q33 1 33 10Q33 12 36 24Q41 43 46 45Q50 46 61 46H67Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628Q287 635 230 637ZM630 554Q630 586 609 608T523 636Q521 636 500 636T462 637H440Q393 637 386 627Q385 624 352 494T319 361Q319 360 388 360Q466 361 492 367Q556 377 592 426Q608 449 619 486T630 554Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="mi">
+                        <use data-c="1D434" xlink:href="#MJX-145-TEX-I-1D434"></use>
+                      </g>
+                      <g data-mml-node="mi" transform="translate(750,0)">
+                        <use data-c="1D43B" xlink:href="#MJX-145-TEX-I-1D43B"></use>
+                      </g>
+                      <g data-mml-node="mi" transform="translate(1638,0)">
+                        <use data-c="1D43F" xlink:href="#MJX-145-TEX-I-1D43F"></use>
+                      </g>
+                      <g data-mml-node="mtext" transform="translate(2319,0)">
+                        <use data-c="2D" xlink:href="#MJX-145-TEX-N-2D"></use>
+                      </g>
+                      <g data-mml-node="mi" transform="translate(2652,0)">
+                        <use data-c="1D43F" xlink:href="#MJX-145-TEX-I-1D43F"></use>
+                      </g>
+                      <g data-mml-node="mi" transform="translate(3333,0)">
+                        <use data-c="1D462" xlink:href="#MJX-145-TEX-I-1D462"></use>
+                      </g>
+                      <g data-mml-node="mi" transform="translate(3905,0)">
+                        <use data-c="1D465" xlink:href="#MJX-145-TEX-I-1D465"></use>
+                      </g>
+                      <g data-mml-node="mi" transform="translate(4477,0)">
+                        <use data-c="1D445" xlink:href="#MJX-145-TEX-I-1D445"></use>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">AHL\text{-}LuxR</script>
+              </td>
+              <td>LuxR and AHL complex</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="7.201ex" height="1.92ex" role="img"
+                  focusable="false" viewBox="0 -683 3182.9 848.6"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  style="vertical-align: -0.375ex;">
+                  <defs>
+                    <path id="MJX-146-TEX-I-1D443"
+                          d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z">
+                    </path>
+                    <path id="MJX-146-TEX-I-1D43F"
+                          d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z">
+                    </path>
+                    <path id="MJX-146-TEX-I-1D462"
+                          d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z">
+                    </path>
+                    <path id="MJX-146-TEX-I-1D465"
+                          d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z">
+                    </path>
+                    <path id="MJX-146-TEX-I-1D442"
+                          d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z">
+                    </path>
+                    <path id="MJX-146-TEX-I-1D441"
+                          d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D443" xlink:href="#MJX-146-TEX-I-1D443"></use>
+                        </g>
+                        <g data-mml-node="TeXAtom" transform="translate(675,-150) scale(0.707)"
+                           data-mjx-texclass="ORD">
+                          <g data-mml-node="mi">
+                            <use data-c="1D43F" xlink:href="#MJX-146-TEX-I-1D43F"></use>
+                          </g>
+                          <g data-mml-node="mi" transform="translate(681,0)">
+                            <use data-c="1D462" xlink:href="#MJX-146-TEX-I-1D462"></use>
+                          </g>
+                          <g data-mml-node="mi" transform="translate(1253,0)">
+                            <use data-c="1D465" xlink:href="#MJX-146-TEX-I-1D465"></use>
+                          </g>
+                          <g data-mml-node="mi" transform="translate(1825,0)">
+                            <use data-c="1D442" xlink:href="#MJX-146-TEX-I-1D442"></use>
+                          </g>
+                          <g data-mml-node="mi" transform="translate(2588,0)">
+                            <use data-c="1D441" xlink:href="#MJX-146-TEX-I-1D441"></use>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">P_{LuxON}</script>
+              </td>
+              <td>receptor that has been bound</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="8.177ex" height="1.92ex" role="img"
+                  focusable="false" viewBox="0 -683 3614.2 848.6"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  style="vertical-align: -0.375ex;">
+                  <defs>
+                    <path id="MJX-147-TEX-I-1D443"
+                          d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z">
+                    </path>
+                    <path id="MJX-147-TEX-I-1D43F"
+                          d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z">
+                    </path>
+                    <path id="MJX-147-TEX-I-1D462"
+                          d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z">
+                    </path>
+                    <path id="MJX-147-TEX-I-1D465"
+                          d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z">
+                    </path>
+                    <path id="MJX-147-TEX-I-1D442"
+                          d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z">
+                    </path>
+                    <path id="MJX-147-TEX-I-1D439"
+                          d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D443" xlink:href="#MJX-147-TEX-I-1D443"></use>
+                        </g>
+                        <g data-mml-node="TeXAtom" transform="translate(675,-150) scale(0.707)"
+                           data-mjx-texclass="ORD">
+                          <g data-mml-node="mi">
+                            <use data-c="1D43F" xlink:href="#MJX-147-TEX-I-1D43F"></use>
+                          </g>
+                          <g data-mml-node="mi" transform="translate(681,0)">
+                            <use data-c="1D462" xlink:href="#MJX-147-TEX-I-1D462"></use>
+                          </g>
+                          <g data-mml-node="mi" transform="translate(1253,0)">
+                            <use data-c="1D465" xlink:href="#MJX-147-TEX-I-1D465"></use>
+                          </g>
+                          <g data-mml-node="mi" transform="translate(1825,0)">
+                            <use data-c="1D442" xlink:href="#MJX-147-TEX-I-1D442"></use>
+                          </g>
+                          <g data-mml-node="mi" transform="translate(2588,0)">
+                            <use data-c="1D439" xlink:href="#MJX-147-TEX-I-1D439"></use>
+                          </g>
+                          <g data-mml-node="mi" transform="translate(3337,0)">
+                            <use data-c="1D439" xlink:href="#MJX-147-TEX-I-1D439"></use>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">P_{LuxOFF}</script>
+              </td>
+              <td>receptor that hasn&#39;t been bound</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="4.486ex" height="1.595ex" role="img"
+                  focusable="false" viewBox="0 -694 1983 705" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: -0.025ex;">
+                  <defs>
+                    <path id="MJX-148-TEX-I-1D459"
+                          d="M117 59Q117 26 142 26Q179 26 205 131Q211 151 215 152Q217 153 225 153H229Q238 153 241 153T246 151T248 144Q247 138 245 128T234 90T214 43T183 6T137 -11Q101 -11 70 11T38 85Q38 97 39 102L104 360Q167 615 167 623Q167 626 166 628T162 632T157 634T149 635T141 636T132 637T122 637Q112 637 109 637T101 638T95 641T94 647Q94 649 96 661Q101 680 107 682T179 688Q194 689 213 690T243 693T254 694Q266 694 266 686Q266 675 193 386T118 83Q118 81 118 75T117 65V59Z">
+                    </path>
+                    <path id="MJX-148-TEX-I-1D44E"
+                          d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z">
+                    </path>
+                    <path id="MJX-148-TEX-I-1D450"
+                          d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z">
+                    </path>
+                    <path id="MJX-148-TEX-I-1D44D"
+                          d="M58 8Q58 23 64 35Q64 36 329 334T596 635L586 637Q575 637 512 637H500H476Q442 637 420 635T365 624T311 598T266 548T228 469Q227 466 226 463T224 458T223 453T222 450L221 448Q218 443 202 443Q185 443 182 453L214 561Q228 606 241 651Q249 679 253 681Q256 683 487 683H718Q723 678 723 675Q723 673 717 649Q189 54 188 52L185 49H274Q369 50 377 51Q452 60 500 100T579 247Q587 272 590 277T603 282H607Q628 282 628 271Q547 5 541 2Q538 0 300 0H124Q58 0 58 8Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="mi">
+                        <use data-c="1D459" xlink:href="#MJX-148-TEX-I-1D459"></use>
+                      </g>
+                      <g data-mml-node="mi" transform="translate(298,0)">
+                        <use data-c="1D44E" xlink:href="#MJX-148-TEX-I-1D44E"></use>
+                      </g>
+                      <g data-mml-node="mi" transform="translate(827,0)">
+                        <use data-c="1D450" xlink:href="#MJX-148-TEX-I-1D450"></use>
+                      </g>
+                      <g data-mml-node="mi" transform="translate(1260,0)">
+                        <use data-c="1D44D" xlink:href="#MJX-148-TEX-I-1D44D"></use>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">lacZ</script>
+              </td>
+              <td>β-galactosidase</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="10.77ex" height="1.977ex" role="img"
+                  focusable="false" viewBox="0 -716 4760.2 873.8"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  style="vertical-align: -0.357ex;">
+                  <defs>
+                    <path id="MJX-149-TEX-I-1D45A"
+                          d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z">
+                    </path>
+                    <path id="MJX-149-TEX-I-1D445"
+                          d="M230 637Q203 637 198 638T193 649Q193 676 204 682Q206 683 378 683Q550 682 564 680Q620 672 658 652T712 606T733 563T739 529Q739 484 710 445T643 385T576 351T538 338L545 333Q612 295 612 223Q612 212 607 162T602 80V71Q602 53 603 43T614 25T640 16Q668 16 686 38T712 85Q717 99 720 102T735 105Q755 105 755 93Q755 75 731 36Q693 -21 641 -21H632Q571 -21 531 4T487 82Q487 109 502 166T517 239Q517 290 474 313Q459 320 449 321T378 323H309L277 193Q244 61 244 59Q244 55 245 54T252 50T269 48T302 46H333Q339 38 339 37T336 19Q332 6 326 0H311Q275 2 180 2Q146 2 117 2T71 2T50 1Q33 1 33 10Q33 12 36 24Q41 43 46 45Q50 46 61 46H67Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628Q287 635 230 637ZM630 554Q630 586 609 608T523 636Q521 636 500 636T462 637H440Q393 637 386 627Q385 624 352 494T319 361Q319 360 388 360Q466 361 492 367Q556 377 592 426Q608 449 619 486T630 554Z">
+                    </path>
+                    <path id="MJX-149-TEX-I-1D441"
+                          d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z">
+                    </path>
+                    <path id="MJX-149-TEX-I-1D434"
+                          d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z">
+                    </path>
+                    <path id="MJX-149-TEX-I-1D459"
+                          d="M117 59Q117 26 142 26Q179 26 205 131Q211 151 215 152Q217 153 225 153H229Q238 153 241 153T246 151T248 144Q247 138 245 128T234 90T214 43T183 6T137 -11Q101 -11 70 11T38 85Q38 97 39 102L104 360Q167 615 167 623Q167 626 166 628T162 632T157 634T149 635T141 636T132 637T122 637Q112 637 109 637T101 638T95 641T94 647Q94 649 96 661Q101 680 107 682T179 688Q194 689 213 690T243 693T254 694Q266 694 266 686Q266 675 193 386T118 83Q118 81 118 75T117 65V59Z">
+                    </path>
+                    <path id="MJX-149-TEX-I-1D44E"
+                          d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z">
+                    </path>
+                    <path id="MJX-149-TEX-I-1D450"
+                          d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z">
+                    </path>
+                    <path id="MJX-149-TEX-I-1D44D"
+                          d="M58 8Q58 23 64 35Q64 36 329 334T596 635L586 637Q575 637 512 637H500H476Q442 637 420 635T365 624T311 598T266 548T228 469Q227 466 226 463T224 458T223 453T222 450L221 448Q218 443 202 443Q185 443 182 453L214 561Q228 606 241 651Q249 679 253 681Q256 683 487 683H718Q723 678 723 675Q723 673 717 649Q189 54 188 52L185 49H274Q369 50 377 51Q452 60 500 100T579 247Q587 272 590 277T603 282H607Q628 282 628 271Q547 5 541 2Q538 0 300 0H124Q58 0 58 8Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="mi">
+                        <use data-c="1D45A" xlink:href="#MJX-149-TEX-I-1D45A"></use>
+                      </g>
+                      <g data-mml-node="mi" transform="translate(878,0)">
+                        <use data-c="1D445" xlink:href="#MJX-149-TEX-I-1D445"></use>
+                      </g>
+                      <g data-mml-node="mi" transform="translate(1637,0)">
+                        <use data-c="1D441" xlink:href="#MJX-149-TEX-I-1D441"></use>
+                      </g>
+                      <g data-mml-node="msub" transform="translate(2525,0)">
+                        <g data-mml-node="mi">
+                          <use data-c="1D434" xlink:href="#MJX-149-TEX-I-1D434"></use>
+                        </g>
+                        <g data-mml-node="TeXAtom" transform="translate(783,-150) scale(0.707)"
+                           data-mjx-texclass="ORD">
+                          <g data-mml-node="mi">
+                            <use data-c="1D459" xlink:href="#MJX-149-TEX-I-1D459"></use>
+                          </g>
+                          <g data-mml-node="mi" transform="translate(298,0)">
+                            <use data-c="1D44E" xlink:href="#MJX-149-TEX-I-1D44E"></use>
+                          </g>
+                          <g data-mml-node="mi" transform="translate(827,0)">
+                            <use data-c="1D450" xlink:href="#MJX-149-TEX-I-1D450"></use>
+                          </g>
+                          <g data-mml-node="mi" transform="translate(1260,0)">
+                            <use data-c="1D44D" xlink:href="#MJX-149-TEX-I-1D44D"></use>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">mRNA_{lacZ}</script>
+              </td>
+              <td>mRNA of the lacZ</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="1.729ex" height="1.538ex" role="img"
+                  focusable="false" viewBox="0 -680 764 680" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: 0px;">
+                  <defs>
+                    <path id="MJX-150-TEX-I-1D438"
+                          d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="mi">
+                        <use data-c="1D438" xlink:href="#MJX-150-TEX-I-1D438"></use>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">E</script>
+              </td>
+              <td>enzyme</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="1.459ex" height="1.645ex" role="img"
+                  focusable="false" viewBox="0 -705 645 727" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: -0.05ex;">
+                  <defs>
+                    <path id="MJX-151-TEX-I-1D446"
+                          d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="mi">
+                        <use data-c="1D446" xlink:href="#MJX-151-TEX-I-1D446"></use>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">S</script>
+              </td>
+              <td>substrate</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="3.188ex" height="1.645ex" role="img"
+                  focusable="false" viewBox="0 -705 1409 727" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: -0.05ex;">
+                  <defs>
+                    <path id="MJX-152-TEX-I-1D438"
+                          d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z">
+                    </path>
+                    <path id="MJX-152-TEX-I-1D446"
+                          d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="mi">
+                        <use data-c="1D438" xlink:href="#MJX-152-TEX-I-1D438"></use>
+                      </g>
+                      <g data-mml-node="mi" transform="translate(764,0)">
+                        <use data-c="1D446" xlink:href="#MJX-152-TEX-I-1D446"></use>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">ES</script>
+              </td>
+              <td>enzyme-substrate complex</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="1.699ex" height="1.545ex" role="img"
+                  focusable="false" viewBox="0 -683 751 683" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" style="vertical-align: 0px;">
+                  <defs>
+                    <path id="MJX-153-TEX-I-1D443"
+                          d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="mi">
+                        <use data-c="1D443" xlink:href="#MJX-153-TEX-I-1D443"></use>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">P</script>
+              </td>
+              <td>product</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="2.117ex" height="1.926ex" role="img"
+                  focusable="false" viewBox="0 -694 935.6 851.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  style="vertical-align: -0.355ex;">
+                  <defs>
+                    <path id="MJX-154-TEX-I-1D458"
+                          d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z">
+                    </path>
+                    <path id="MJX-154-TEX-I-1D460"
+                          d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D458" xlink:href="#MJX-154-TEX-I-1D458"></use>
+                        </g>
+                        <g data-mml-node="mi" transform="translate(554,-150) scale(0.707)">
+                          <use data-c="1D460" xlink:href="#MJX-154-TEX-I-1D460"></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">k_s</script>
+              </td>
+              <td>the equilibrium constant of dissociation</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="4.073ex" height="1.927ex" role="img"
+                  focusable="false" viewBox="0 -694 1800.2 851.8"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  style="vertical-align: -0.357ex;">
+                  <defs>
+                    <path id="MJX-155-TEX-I-1D458"
+                          d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z">
+                    </path>
+                    <path id="MJX-155-TEX-I-1D450"
+                          d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z">
+                    </path>
+                    <path id="MJX-155-TEX-I-1D44E"
+                          d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z">
+                    </path>
+                    <path id="MJX-155-TEX-I-1D461"
+                          d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D458" xlink:href="#MJX-155-TEX-I-1D458"></use>
+                        </g>
+                        <g data-mml-node="mi" transform="translate(554,-150) scale(0.707)">
+                          <use data-c="1D450" xlink:href="#MJX-155-TEX-I-1D450"></use>
+                        </g>
+                      </g>
+                      <g data-mml-node="mi" transform="translate(910.2,0)">
+                        <use data-c="1D44E" xlink:href="#MJX-155-TEX-I-1D44E"></use>
+                      </g>
+                      <g data-mml-node="mi" transform="translate(1439.2,0)">
+                        <use data-c="1D461" xlink:href="#MJX-155-TEX-I-1D461"></use>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">k_cat</script>
+              </td>
+              <td>turnover number</td>
+            </tr>
+            <tr>
+              <td>
+                <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="3.513ex" height="1.902ex" role="img"
+                  focusable="false" viewBox="0 -683 1552.8 840.8"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                  style="vertical-align: -0.357ex;">
+                  <defs>
+                    <path id="MJX-156-TEX-I-1D43E"
+                          d="M285 628Q285 635 228 637Q205 637 198 638T191 647Q191 649 193 661Q199 681 203 682Q205 683 214 683H219Q260 681 355 681Q389 681 418 681T463 682T483 682Q500 682 500 674Q500 669 497 660Q496 658 496 654T495 648T493 644T490 641T486 639T479 638T470 637T456 637Q416 636 405 634T387 623L306 305Q307 305 490 449T678 597Q692 611 692 620Q692 635 667 637Q651 637 651 648Q651 650 654 662T659 677Q662 682 676 682Q680 682 711 681T791 680Q814 680 839 681T869 682Q889 682 889 672Q889 650 881 642Q878 637 862 637Q787 632 726 586Q710 576 656 534T556 455L509 418L518 396Q527 374 546 329T581 244Q656 67 661 61Q663 59 666 57Q680 47 717 46H738Q744 38 744 37T741 19Q737 6 731 0H720Q680 3 625 3Q503 3 488 0H478Q472 6 472 9T474 27Q478 40 480 43T491 46H494Q544 46 544 71Q544 75 517 141T485 216L427 354L359 301L291 248L268 155Q245 63 245 58Q245 51 253 49T303 46H334Q340 37 340 35Q340 19 333 5Q328 0 317 0Q314 0 280 1T180 2Q118 2 85 2T49 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Z">
+                    </path>
+                    <path id="MJX-156-TEX-I-1D45A"
+                          d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z">
+                    </path>
+                  </defs>
+                  <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                    <g data-mml-node="math">
+                      <g data-mml-node="msub">
+                        <g data-mml-node="mi">
+                          <use data-c="1D43E" xlink:href="#MJX-156-TEX-I-1D43E"></use>
+                        </g>
+                        <g data-mml-node="mi" transform="translate(882,-150) scale(0.707)">
+                          <use data-c="1D45A" xlink:href="#MJX-156-TEX-I-1D45A"></use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg></mjx-container>
+                <script type="math/tex">K_m</script>
+              </td>
+              <td>Michaelis constant</td>
+            </tr>
+            </tbody>
+          </table>
+        </figure>
+      </bnuz_content_paragraph>
+
+      <bnuz_content_paragraph hint_text="Reference">
+        <h1 id='reference'>Reference</h1>
+        <ol start=''>
+          <li>Vaziri N D, Wong J, Pahl M, et al. Chronic kidney disease alters intestinal microbial flora[J]. Kidney
+            international, 2013, 83(2): 308-315.</li>
+          <li>Dodd D, Spitzer M H, Van Treuren W, et al. A gut bacterial pathway metabolizes aromatic amino acids into
+            nine circulating metabolites[J]. Nature, 2017, 551(7682): 648-652.</li>
+          <li>Rutherford S T, Bassler B L. Bacterial quorum sensing: its role in virulence and possibilities for its
+            control[J]. Cold Spring Harbor perspectives in medicine, 2012, 2(11): a012427.</li>
+          <li>Wilkinson D J. Stochastic modelling for systems biology[M]. Chapman and Hall/CRC, 2018.</li>
+          <li>Petrovskii S, Kawasaki K, Takasu F, et al. Diffusive waves, dynamical stabilization and spatio-temporal
+            chaos in a community of three competitive species[J]. Japan journal of industrial and applied mathematics,
+            2001, 18(2): 459-481.</li>
+        </ol>
       </bnuz_content_paragraph>
     </BNUZ_Content>
     <Bottom></Bottom>
@@ -5553,5 +6753,19 @@ export default {
 
 .mathjax-block {
   text-align: center;
+}
+
+.bnuz-content-nav-sticky {
+  top: 10% !important;
+}
+
+@font-face {
+  font-family: text_font;
+  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+}
+
+p, li {
+  font-size: 20px;
+  font-family: text_font, serif;
 }
 </style>

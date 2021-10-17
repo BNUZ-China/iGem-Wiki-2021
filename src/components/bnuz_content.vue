@@ -8,7 +8,8 @@
                             :multi-col="multiCol"
                             :nav_item_color="nav_item_color"
                             ref="content_navigation"
-                            class="bnuz-content-nav-sticky"></Content_navigation>
+                            class="bnuz-content-nav-sticky"
+                            :style="{top: `${top_distance}%`}"></Content_navigation>
       </b-col>
       <b-col cols="11" ref="bnuz-content-container" class="bnuz-content-container">
         <div class="roundRect">
@@ -41,7 +42,11 @@ export default {
   name: "BNUZ_Content",
   components: {Content_navigation},
   props: {
-    nav_item_color: String
+    nav_item_color: String,
+    top_distance: {
+      type: Number,
+      default: 25
+    }
   },
   data() {
     return {
@@ -155,7 +160,7 @@ export default {
 
 .bnuz-content-nav-sticky {
   position: sticky;
-  top: 25%;
+  /*top: 25%;*/
   overflow: visible;
 }
 </style>
