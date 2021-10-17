@@ -56,6 +56,7 @@
         iGEM Engineering Committee, and iGEM Human Practices Committee were invited. The thematic reports on different
         topics and workshops were also carried out to answer the problems encountered in various iGEM projects. There
         are also a number of top experts from academia, industry and social science.
+        <!-- TODO 链接到肠道手册 -->
 
         <div class="image-container">
           <div>
@@ -107,9 +108,6 @@
         the parameters through a more appropriate parameter estimation method.
         You can click this link to know more about the lecture.
       </bnuz_content_paragraph>
-      <!-- TODO Links  -->
-
-
     </BNUZ_Content>
     <Bottom></Bottom>
   </AppRoot>

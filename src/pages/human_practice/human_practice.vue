@@ -2,7 +2,7 @@
   <AppRoot id="app">
     <!--    <Background_picture src="assets/homepage_hospital.png"></Background_picture>-->
     <top-navigation-bar/>
-    <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678">
+    <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678" style="margin: 0">
     <BNUZ_Content_no_nav>
       <BNUZ_content_paragraph>
         <h4>Overview</h4>
@@ -49,7 +49,9 @@
                   year. We also learned that there is still no cure for CKD and no means to revert it. Therefore, we
                   decided to focus our project on the treatment of CKD. We also investigated people’s understanding
                   of synthetic biology, which encouraged us to do more with the methods people are more willing to
-                  accept to raise the public’s knowledge (Fig. 4), which can be found in <a href="communication"> our
+                  accept to raise the public’s knowledge (Fig. 4), which can be found in
+<!--                 TODO 链接到communication -->
+                  <a href="communication"> our
                   science communication </a>.
                 </p>
                 <img :src="p1_pic1">
@@ -309,23 +311,18 @@
             <BNUZ_content_modal name="Implementationtoexperiment"
                                 title="Implementation to experiment">
               <template v-slot:modal-icon>
-                <!--               TODO 换图标 -->
-                <svg t="1634283752753" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                     xmlns="http://www.w3.org/2000/svg" p-id="4158"
+                <svg t="1634449883933" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" p-id="3713"
                      xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
                   <path
-                    d="M376.19 833.94c-32.09 0-58.67-9.64-77.79-28.75-33.37-33.38-37.85-89.48-12.62-158 23-62.54 68.69-129.94 128.54-189.79s127.25-105.46 189.79-128.5c68.49-25.24 124.59-20.76 158 12.62s37.85 89.47 12.62 158C751.65 562 706 629.42 646.15 689.27S518.9 794.76 456.37 817.8c-29.26 10.78-56.25 16.14-80.18 16.14z"
-                    fill="#E9F1FF" p-id="4159"></path>
+                    d="M235.542395 748.593079a216.36 382.44 55.62 1 0 631.263616-431.911635 216.36 382.44 55.62 1 0-631.263616 431.911635Z"
+                    fill="#E9F1FF" p-id="3714"></path>
                   <path
-                    d="M564.28 678.63a0.23 0.23 0 0 0-0.07 0.07zM437.9 188.9l-0.5-0.23zM834.78 588.25c-0.13-0.29-0.26-0.58-0.4-0.87 0.15 0.28 0.27 0.62 0.4 0.87z"
-                    fill="#2C5CCB" p-id="4160"></path>
-                  <path d="M510.39 511.42m-48 0a48 48 0 1 0 96 0 48 48 0 1 0-96 0Z" fill="#2C5CCB" p-id="4161"></path>
+                    d="M392 951.65a33.4 33.4 0 0 1-4.09-0.26 32 32 0 0 1-27.7-35.79l107.43-843a32 32 0 0 1 31.74-28h0.19a32 32 0 0 1 31.6 28.4L623 867.77a32 32 0 0 1-63.58 7.34L497.83 342 423.7 923.69a32 32 0 0 1-31.7 27.96z"
+                    fill="#2C5CCB" p-id="3715"></path>
                   <path
-                    d="M827.17 828.2c-45.6 45.6-122.26 51.72-215.85 17.24a535.12 535.12 0 0 1-57.05-25.07 674.45 674.45 0 0 1-63-36.57q-9.58-6.25-19.15-12.9c-18.74-13-37.38-27.22-55.75-42.42-21.95-18.15-43.52-37.78-64.41-58.67-20.68-20.68-40.13-42-58.13-63.76q-22.65-27.3-42.15-55.25-5-7.09-9.7-14.22a687.09 687.09 0 0 1-37.38-62.86 538 538 0 0 1-28.27-63.24c-14.73-40-22.05-76.86-22.05-109.56 0-43.85 13.17-80.17 39.29-106.29 45.6-45.6 122.26-51.72 215.85-17.24q13.4 4.94 27 10.87l0.81 0.35 0.15 0.07 0.5 0.23a32 32 0 1 1-27.68 57.72q-11.54-5-22.89-9.19c-67.81-25-121.93-24.09-148.46 2.45s-27.43 80.65-2.45 148.46q4.5 12.22 10 24.67a551 551 0 0 0 33.06 63.26q5.06 8.37 10.48 16.77c11.89 18.42 25.07 36.84 39.39 55.08a855.21 855.21 0 0 0 67.94 76.42 854 854 0 0 0 78 69.2c18.38 14.36 36.94 27.55 55.49 39.44q10 6.38 19.92 12.26a535 535 0 0 0 63.5 32.31q9.69 4.11 19.25 7.63c67.81 25 121.93 24.09 148.46-2.45 13.7-13.69 20.57-34.74 20.57-61.23 0-24.82-6-54.42-18.12-87.23q-3.58-9.74-7.79-19.6a32 32 0 1 1 57.82-27.48c0.14 0.29 0.27 0.58 0.4 0.87s0.14 0.32 0.2 0.48q5.12 11.88 9.43 23.62c34.49 93.57 28.37 170.23-17.23 215.83z"
-                    fill="#2C5CCB" p-id="4162"></path>
-                  <path
-                    d="M844.41 410.48C812.93 495.93 750.55 588 668.78 669.81c-20.14 20.14-40.9 39.1-62 56.71l-0.09 0.08-0.24 0.2a32 32 0 1 1-42.2-48.1 0.23 0.23 0 0 1 0.07-0.07l0.58-0.49c19.93-16.58 39.57-34.5 58.66-53.59 75.33-75.37 132.44-159.25 160.8-236.2 25-67.81 24.09-121.93-2.44-148.46-13.7-13.7-34.75-20.57-61.23-20.57-24.83 0-54.43 6-87.24 18.12-77 28.35-160.83 85.47-236.2 160.84A854.9 854.9 0 0 0 329.09 475c-14.31 18.24-27.47 36.67-39.36 55.1q-4.17 6.46-8.13 12.93a559.47 559.47 0 0 0-33.41 62.73q-6.54 14.5-11.78 28.75c-25 67.81-24.09 121.93 2.45 148.46s80.65 27.43 148.46 2.45q12.82-4.73 25.89-10.51h0.06A32 32 0 1 1 440 833q-15.37 6.86-30.52 12.43c-40 14.73-76.86 22-109.56 22-43.85 0-80.17-13.17-106.29-39.29-45.6-45.6-51.72-122.26-17.24-215.85a543.47 543.47 0 0 1 30.25-67A699.22 699.22 0 0 1 244.22 483q3.57-5.31 7.28-10.62 19.44-27.88 42.13-55.28c18.07-21.82 37.59-43.26 58.36-64 81.78-81.77 173.88-144.15 259.33-175.63 93.59-34.48 170.25-28.36 215.85 17.24s51.72 122.18 17.24 215.77z"
-                    fill="#2C5CCB" p-id="4163"></path>
+                    d="M577.3 770.71a32 32 0 0 1-14.86-60.36 725.94 725.94 0 0 0 68-40.49c46.09-31 87.32-66.06 122.54-104.3 33.63-36.51 60.3-74.24 79.27-112.13 18.31-36.58 28.41-71.19 30-102.86 1.52-30.36-5-56.6-19.38-78-18.22-27.12-48-45.3-88.44-54-42.07-9.07-93.55-7.05-148.9 5.83A32 32 0 1 1 591 162c64.49-15 125.66-17.11 176.9-6.06 56.4 12.16 100.69 40.14 128.07 80.91 22.26 33.12 32.41 72.46 30.18 116.91-2 40.58-14.39 83.75-36.69 128.3C845.25 570.37 765.92 655.92 666.1 723a791.37 791.37 0 0 1-74 44.08 31.85 31.85 0 0 1-14.8 3.63zM327 441.56L341.12 457a19.39 19.39 0 0 0 15.26 6l22.55-1.16c11.81-0.61 19.44 10.78 12.92 19.27l-12.46 16.23a13.69 13.69 0 0 0-1.65 14.34l8.48 18.24c4.44 9.54-5.63 19.23-17 16.4l-21.79-5.42a20 20 0 0 0-16.28 2.92l-17.36 12.38c-9.06 6.51-22.91 1.11-23.44-9.13l-1-19.58c-0.26-5.1-3.41-9.79-8.4-12.54l-19.21-10.55c-10-5.53-8.53-18.55 2.55-22l21.17-6.68c5.51-1.74 9.66-5.73 11.08-10.67L302 446c2.86-9.88 17.64-12.53 25-4.44zM224.52 382.92l3.08 10.24a7.3 7.3 0 0 0 6.09 5l11.57 1.84c6.05 0.95 6.94 8.19 1.5 12.26L236.37 420a10.67 10.67 0 0 0-4.51 7.89l-0.45 11.19c-0.23 5.86-7.75 10.2-12.72 7.36L209.2 441a10.08 10.08 0 0 0-8.89-0.15L188.47 446c-6.19 2.67-11.73-1.89-9.36-7.71l4.52-11.13a7.64 7.64 0 0 0-1-8l-6.87-8c-3.59-4.21 0.5-11.37 6.93-12.12l12.31-1.49a12.34 12.34 0 0 0 8.28-4.79l7.6-10.06c3.97-5.27 12.04-5.14 13.64 0.22zM145.83 578.26l3.91 12a8.45 8.45 0 0 0 6.9 5.8l12.65 1.94c6.62 1 8 9.52 2.32 14.41l-10.85 9.32a12.46 12.46 0 0 0-4.45 9.37l0.14 13.19c0.07 6.89-7.84 12.15-13.39 8.89l-10.61-6.23a10.15 10.15 0 0 0-9.65 0l-12.57 6.21c-6.58 3.26-12.84-2-10.59-8.9l4.28-13.18a9.7 9.7 0 0 0-1.51-9.38l-7.9-9.34c-4.14-4.89-0.1-13.4 6.84-14.4l13.26-1.96a12.74 12.74 0 0 0 8.72-5.79l7.68-12c3.99-6.21 12.78-6.21 14.82 0.05zM304.47 715.32l5.95 14.6a11.51 11.51 0 0 0 9.1 7.05l15.9 2.34c8.33 1.22 10.8 11.58 4.19 17.52L327 768.19a13.9 13.9 0 0 0-4.69 11.41l1.38 16c0.72 8.39-8.64 14.8-15.84 10.83l-13.76-7.57a12.9 12.9 0 0 0-12 0L267 806.47c-7.87 4-16.14-2.44-14-10.83l4.13-16a12.09 12.09 0 0 0-2.73-11.41l-10.68-11.36c-5.58-5.94-1.33-16.3 7.2-17.52l16.36-2.35a14.45 14.45 0 0 0 10.31-7.05l8.45-14.6c4.43-7.66 15.32-7.66 18.43-0.03zM353.26 263.82l1.41 6.69a4.17 4.17 0 0 0 3.71 3.24l7.5 1.1c3.93 0.57 4.08 5.32 0.26 8l-7.29 5.18a8 8 0 0 0-3.44 5.22l-1 7.35c-0.5 3.84-5.7 6.76-8.8 4.93l-5.92-3.48a6.59 6.59 0 0 0-5.84 0l-8.09 3.45c-4.23 1.8-7.6-1.14-5.7-5l3.63-7.34a4.86 4.86 0 0 0-0.17-5.23l-4-5.22c-2.12-2.73 1-7.46 5.28-8l8.17-1.05a9.28 9.28 0 0 0 5.73-3.21l5.59-6.68c2.93-3.47 8.23-3.45 8.97 0.05z"
+                    fill="#2C5CCB" p-id="3716"></path>
                 </svg>
               </template>
               <template v-slot:modal-body>
@@ -457,7 +454,6 @@
                   41-50. The majority has received high school-level education at the very least. These are the samples
                   we collected.
                 </p>
-                <img :src="p7_pic1" width="85%">
                 <p>
                   The most well-known treatment for CKD is the medical treatment and kidney transplant, while diet
                   control may be easily ignored (Fig. 1). When asked about a new treatment method using genetic
@@ -465,6 +461,13 @@
                   considered that precise therapy is the most important method, and then the cost if it can be put into
                   clincal use in henceforth (Fig.3). Excitingly, most people were supportive of the new treatment and
                   thought it promising (Fig. 4).
+                </p>
+                <p>
+                  However, when gene editing treatment is verified firmly to be safety, most people were considerably
+                  neutral.(Fig. 5). We can conclude that there is still a long way to go before gene-edited
+                  pharmaceutical products is able to hit the market. But we are still optimistic that given enough time
+                  and education, new techniques can become a staple in medical treatments because gene-editing has real
+                  potential.
                 </p>
                 <div class="left-right-div">
                   <img :src="p7_pic2" width="45%">
@@ -474,15 +477,8 @@
                   <img :src="p7_pic4" width="45%">
                   <img :src="p7_pic5" width="45%">
                 </div>
-                <p>
-                  However, when gene editing treatment is verified firmly to be safety, most people were considerably
-                  neutral.(Fig. 5). We can conclude that there is still a long way to go before gene-edited
-                  pharmaceutical products is able to hit the market. But we are still optimistic that given enough time
-                  and education, new techniques can become a staple in medical treatments because gene-editing has real
-                  potential.
-                </p>
                 <div class="left-right-div">
-                  <img :src="p7_pic6">
+                  <img :src="p7_pic6" width="60%">
                 </div>
               </template>
             </BNUZ_content_modal>

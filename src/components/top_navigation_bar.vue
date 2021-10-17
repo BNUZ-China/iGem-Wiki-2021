@@ -12,7 +12,8 @@
         {text: 'Description', link: '/Description.html'},
         {text: 'Design', link: '/Design.html'},
         {text: 'Experiment', link: '/Experiment.html'},
-        {text: 'Results', link: '/Results.html'},
+        {text: 'Results', link: '/Proof_Of_Concept.html'},
+        {text: 'Implementation', link: '/Implementation.html'},
         {text: 'Contribution', link: 'Contribution.html'},
         {text: 'Notebook', link: 'Notebook.html'}
       ]"></top_navigation_bar_dropdown>
@@ -34,8 +35,7 @@
       ]"></top_navigation_bar_dropdown>
         <top_navigation_bar_dropdown title="TEAM" :contents="[
         {text: 'Members', link: 'Members.html'},
-        {text: 'Attributions', link: 'Attributions.html'},
-        {text: 'Notebook', link: 'Notebook.html'}
+        {text: 'Attributions', link: 'Attributions.html'}
       ]"></top_navigation_bar_dropdown>
       </div>
     </div>

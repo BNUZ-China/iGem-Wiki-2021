@@ -1,5 +1,5 @@
 <template>
-  <div class="bnuz-footer" id="bnuz-footer">
+  <div class="bnuz-footer roundRect" id="bnuz-footer">
     <div class="container bnuz-footer-container">
       <div class="align-items-center row">
         <div class="bnuz-contact-title col-2">
@@ -36,11 +36,14 @@ export default {
 
 <style scoped>
 .bnuz-footer {
-  margin: 16px 12%;
-  padding: 24px 0;
-  border: 2px solid rgb(0 41 113);
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+  margin-left: 14.5833vw !important;
+  width: 77.9166vw;
+  padding: 24px 0 !important;
+  /*border: 2px solid rgb(0 41 113);*/
   /*background-color: #eed6d6d9; !*eed6d6d9*!*/
-  border-radius: 30px;
+  border-radius: 30px !important;
   /*!*border: 2px solid cadetblue;*!*/
   /*box-shadow: 5px 5px 10px grey;*/
 }

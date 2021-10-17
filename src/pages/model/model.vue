@@ -6746,9 +6746,10 @@ export default {
 
 .roundRect {
   padding: 20px;
-  background-color: rgb(220, 230, 237);
+  /*background-color: rgb(220, 230, 237);*/
   border-radius: 20px;
-  margin: 16px 0;
+  margin: 32px 0;
+  border: 2px solid #271272;
 }
 
 .mathjax-block {

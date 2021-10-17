@@ -35,7 +35,7 @@
             Fig.1 Part of the Laboratory equipment
           </template>
           <template v-slot:image>
-            <img :src="pic1" width="85%">
+            <img :src="pic1" width="65%">
           </template>
         </bnuz_image_container>
         <p>
@@ -63,12 +63,11 @@
           rules to ensure the smooth and safe conduct of the experiment.
         </p>
         <bnuz_image_container>
-
           <template v-slot:caption>
             Fig.2 Members of the experimental group took laboratory safety and environmental protection courses
           </template>
           <template v-slot:image>
-            <img :src="pic2" width="85%">
+            <img :src="pic2" width="65%">
           </template>
         </bnuz_image_container>
       </bnuz_content_paragraph>
@@ -118,7 +117,7 @@
             Fig.4 Red recombination knock out of Can gene
           </template>
           <template v-slot:image>
-            <img :src="pic4" width="85%">
+            <img :src="pic4" width="65%">
           </template>
         </bnuz_image_container>
       </bnuz_content_paragraph>
@@ -174,7 +173,7 @@ export default {
       pic1: conf.isDev ? pic1 : '',
       pic2: conf.isDev ? pic2 : '',
       pic3: conf.isDev ? pic3 : '',
-      pic4: conf.isDev ? pic4 : '',
+      pic4: conf.isDev ? pic4 : ''
     }
   }
 }
@@ -193,13 +192,18 @@ export default {
 
 .roundRect {
   padding: 20px;
-  background-color: rgb(220, 230, 237);
+  /*background-color: rgb(220, 230, 237);*/
   border-radius: 20px;
-  margin: 16px 0;
+  margin: 32px 0;
+  border: 2px solid #a62420;
 }
 
 p {
   font-size: 20px;
   font-family: text_font, serif;
+}
+
+p > a {
+  color: #a62420;
 }
 </style>

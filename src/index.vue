@@ -152,19 +152,10 @@ export default {
   height: 1px;
 }
 
-/*.homepage_hospital {*/
-/*  width: 100vw;*/
-/*  z-index: -1;*/
-/*}*/
-
-/*.index-content {*/
-/*  margin: 10vh 8vw 0;*/
-/*}*/
-
 .text {
   /*TODO homepage 字体*/
-  background-color: rgba(255, 255, 255, 0.6);
-  margin: 80vh 7vw 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 120vh 7vw 0;
   font-size: large;
   padding: 24px;
   font-family: Arial, sans-serif;
