@@ -56,6 +56,7 @@
         iGEM Engineering Committee, and iGEM Human Practices Committee were invited. The thematic reports on different
         topics and workshops were also carried out to answer the problems encountered in various iGEM projects. There
         are also a number of top experts from academia, industry and social science.
+
         <div class="image-container">
           <div>
             <img :src="pic2" width="800px">
@@ -70,14 +71,14 @@
         in the subsequent part of the experiment, we added a part about the effect of engineering bacteria expressing
         galactosidase on the population of lactic acid bacteria. In addition, our modeling group learned some
         experiences of parameter values in the model workshop, and read the papers recommended by CCIC.<br>
-        <div class="image-container">
-          <div>
-            <img :src="pic1" width="800px">
-            <p>
+        <bnuz_image_container>
+          <template v-slot:caption>
               Figure4. Receive the Active Participation Award
-            </p>
-          </div>
-        </div>
+          </template>
+          <template v-slot:image>
+            <img :src="pic1" width="800px">
+          </template>
+        </bnuz_image_container>
       </bnuz_content_paragraph>
       <!--   TODO (!!!put the hp wiki link here)  图片见hp文案中五校联合的文案   -->
       <bnuz_content_paragraph hint_text="Host lecture and seminar on synthetic biology">
@@ -119,6 +120,7 @@ import TopNavigationBar from "@/components/top_navigation_bar";
 import BNUZ_Content from "@/components/bnuz_content";
 import Bottom from "@/components/bottom";
 import bnuz_content_paragraph from "@/components/bnuz-content-paragraph";
+import bnuz_image_container from "@/components/bnuz_image_container";
 import AppRoot from "@/AppRoot";
 
 import head_image from '@/assets/head_images/human_practice.png'
@@ -135,7 +137,8 @@ export default {
     Bottom,
     TopNavigationBar,
     BNUZ_Content,
-    bnuz_content_paragraph
+    bnuz_content_paragraph,
+    bnuz_image_container
   },
   data() {
     return {

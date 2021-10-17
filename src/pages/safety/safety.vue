@@ -18,6 +18,7 @@
           regulation with disinfection and sterilization procedures to prevent the escape. Seeing the module safety
           section for details.
         </p>
+
         <p>
           The safety manager of our laboratory is Wang Bo, who is also the manager of many laboratories in the school.
           He has many years of laboratory management experience and can do a good job in safety management. Our
@@ -29,78 +30,113 @@
           safety. Our laboratory also has perfect safety emergency facilities, which meet the safety protection
           requirements of biosafety level 1 laboratory.
         </p>
+        <bnuz_image_container>
+          <template v-slot:caption>
+            Fig.1 Part of the Laboratory equipment
+          </template>
+          <template v-slot:image>
+            <img :src="pic1" width="85%">
+          </template>
+        </bnuz_image_container>
+        <p>
+          We also have strict laboratory rules: No eating and drinking in laboratory，Wearing lab coats and gloves when
+          working in the lab, and wear protective gloves when operating strains. All clean bench shall be sterilized
+          with 75% ethanol before and after bacterial experiment. All containers must be sterilized at high temperature
+          before and after use; All unnecessary equipment should be powered off after use. Autoclave can't run all
+          night, and the laboratory oven must be checked every 15 minutes when it is used. The use of any chemical and
+          instrument should be well documented and so on.
+        </p>
       </bnuz_content_paragraph>
 
-      <bnuz_content_paragraph hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
-        <h4>Second Heading</h4>
-        Degradation of Cas9 at a proper rate
-        In order to verify the function of Clb2 (N124aa) as a degradation tag, we constructed the plasmids for an
-        experimental and a control group. We hoped to characterize the protein degradation by determining the
-        fluorescence intensity curve.
-        1.The two plasmids were constructed with pYES2, containing GAL1 galactose inducible promoter and URA3 marker
-        gene. The vector in the experimental group contains CLB2 (N124aa)- Linker-GFP, while the control group only
-        contains GFP. The successfully constructed vectors were transformed into E.coli DH5α strain.
-        2.After the plasmids were extracted and linearized, they were transformed into Saccharomyces cerevisiae
-        BY4741. We used the fluorescence microscope and differential interference microscope to verify the
-        transformants.
-        3.Both experimental and control groups were cultured in SC medium at 30 ℃ until OD600 value reached about
-        3.000, and then the expression was induced by galactose with a final concentration of 2%. After induction,
-        the fluorescence intensity was measured by flow cytometry at half an hour interval.
-        4.Cells were then inoculated into the medium containing glucose instead of galactose. In addition to being a
-        carbon source, glucose also inhibits the expression of GFP by inhibiting the GAL1 promoter. Within 7 hours
-        after inoculation, the fluorescence intensity was measured by flow cytometry at the same interval of half an
-        hour.
-        5.We used SPSS26.0 to process the data and determined the relationship between fluorescence intensity and
-        time, as well as the protein concentration and time. Finally, we calculated the degradation rate of protein
-        modified by Clb2 N124aa through modeling.
+      <bnuz_content_paragraph hint_text="Laboratory safety training">
+        <h4>Laboratory safety training</h4>
+        <p>
+          All members of the experimental group have completed the "Laboratory Safety and Environmental Protection"
+          course, learned the basic safety operations of biological laboratories, safety management requirements and
+          emergency response to accidents. Team members also gave a presentation on the theme of synthetic biology
+          safety in class, popularizing the basic knowledge of synthetic biology and the safety rules that need to be
+          followed.
+        </p>
+        <p>
+          In addition, all members of the experimental group have had basic training in the operation of molecular
+          biology experiments, and they understand the basic experimental operation methods and experimental safety
+          rules to ensure the smooth and safe conduct of the experiment.
+        </p>
+        <bnuz_image_container>
+
+          <template v-slot:caption>
+            Fig.2 Members of the experimental group took laboratory safety and environmental protection courses
+          </template>
+          <template v-slot:image>
+            <img :src="pic2" width="85%">
+          </template>
+        </bnuz_image_container>
       </bnuz_content_paragraph>
 
-      <bnuz_content_paragraph hint_text="333">
-        <h4>Third Heading</h4>
-        Degradation of Cas9 at a proper rate
-        In order to verify the function of Clb2 (N124aa) as a degradation tag, we constructed the plasmids for an
-        experimental and a control group. We hoped to characterize the protein degradation by determining the
-        fluorescence intensity curve.
-        1.The two plasmids were constructed with pYES2, containing GAL1 galactose inducible promoter and URA3 marker
-        gene. The vector in the experimental group contains CLB2 (N124aa)- Linker-GFP, while the control group only
-        contains GFP. The successfully constructed vectors were transformed into E.coli DH5α strain.
-        2.After the plasmids were extracted and linearized, they were transformed into Saccharomyces cerevisiae
-        BY4741. We used the fluorescence microscope and differential interference microscope to verify the
-        transformants.
-        3.Both experimental and control groups were cultured in SC medium at 30 ℃ until OD600 value reached about
-        3.000, and then the expression was induced by galactose with a final concentration of 2%. After induction,
-        the fluorescence intensity was measured by flow cytometry at half an hour interval.
-        4.Cells were then inoculated into the medium containing glucose instead of galactose. In addition to being a
-        carbon source, glucose also inhibits the expression of GFP by inhibiting the GAL1 promoter. Within 7 hours
-        after inoculation, the fluorescence intensity was measured by flow cytometry at the same interval of half an
-        hour.
-        5.We used SPSS26.0 to process the data and determined the relationship between fluorescence intensity and
-        time, as well as the protein concentration and time. Finally, we calculated the degradation rate of protein
-        modified by Clb2 N124aa through modeling.
+      <bnuz_content_paragraph hint_text="3.	Security module">
+        <h4>Security module</h4>
+        <h5>[Arabinose]</h5>
+        <p>
+          Our project intends to partly treat chronic kidney disease by colonizing relatively complete engineered
+          bacteria in the intestines. During the colonization of engineered bacteria, patients may wish to terminate
+          treatment voluntarily due to the existence of various factors. In response to this possible situation, our
+          team designed an arabinose promoter to control the expression of mazf. Mazf, a toxin protein, can specifically
+          cleave the ACA sequence of free mRNA, thereby inhibiting the release of ribosomes and protein synthesis. The
+          abnormally encoded polypeptide is released and degraded by intracellular proteases, which in turn causes cell
+          death. And arabinose is a kind of sugar that the general population in life will not take under normal
+          circumstances. There will not be too many accidents when the arabinose promoter induces the expression of mazf
+          to kill the engineered bacteria. Therefore, patients can choose to take arabinose actively according to their
+          own conditions to achieve the effect of killing engineered bacteria in the intestinal tract.
+        </p>
+        <bnuz_image_container>
+          <template v-slot:caption>
+            Fig.3 Arabinose induced expression of translation inhibitors to kill engineered bacteria
+          </template>
+          <template v-slot:image>
+            <img :src="pic3" width="65%">
+          </template>
+        </bnuz_image_container>
+        <h5>[CO2 induced suicide system]</h5>
+        <p>
+          By consulting related literature, we learned that the human intestinal environment is a high CO2
+          concentration environment, so we decided to use this feature to prevent the escape of
+          engineered E.coli.
+        </p>
+        <p>
+          The engineered E.coli we designed uses Crisp-Cas9 to achieve the knockdown of Can, making the E.coli unable to
+          survive after leaving the human intestinal environment. The CAN of E.coli encodes carbonic anhydrase (CA), an
+          enzyme that helps CO2 and H2O quickly convert into carbonate ions, hydrogen ions, and bicarbonate ions. E.
+          coli requires bicarbonate as a metabolic substrate during its growth. Therefore, CAN knockdown E. coli will
+          not be able to convert CO2 into bicarbonate fast enough to prevent it from spreading in a low carbon dioxide
+          environment(natural environment) and eventually causes cell death. In the intestinal environment where E. coli
+          survives, the concentration of CO2 is high enough (from 5% to 29%) to spontaneously convert CO2 into
+          bicarbonate ions. However, when E. coli leaves the human body, the decrease in CO2 concentration will cause
+          its death.
+        </p>
+        <bnuz_image_container>
+          <template v-slot:caption>
+            Fig.4 Red recombination knock out of Can gene
+          </template>
+          <template v-slot:image>
+            <img :src="pic4" width="85%">
+          </template>
+        </bnuz_image_container>
       </bnuz_content_paragraph>
 
-      <bnuz_content_paragraph hint_text="444">
-        <h4>Forth Heading</h4>
-        Degradation of Cas9 at a proper rate
-        In order to verify the function of Clb2 (N124aa) as a degradation tag, we constructed the plasmids for an
-        experimental and a control group. We hoped to characterize the protein degradation by determining the
-        fluorescence intensity curve.
-        1.The two plasmids were constructed with pYES2, containing GAL1 galactose inducible promoter and URA3 marker
-        gene. The vector in the experimental group contains CLB2 (N124aa)- Linker-GFP, while the control group only
-        contains GFP. The successfully constructed vectors were transformed into E.coli DH5α strain.
-        2.After the plasmids were extracted and linearized, they were transformed into Saccharomyces cerevisiae
-        BY4741. We used the fluorescence microscope and differential interference microscope to verify the
-        transformants.
-        3.Both experimental and control groups were cultured in SC medium at 30 ℃ until OD600 value reached about
-        3.000, and then the expression was induced by galactose with a final concentration of 2%. After induction,
-        the fluorescence intensity was measured by flow cytometry at half an hour interval.
-        4.Cells were then inoculated into the medium containing glucose instead of galactose. In addition to being a
-        carbon source, glucose also inhibits the expression of GFP by inhibiting the GAL1 promoter. Within 7 hours
-        after inoculation, the fluorescence intensity was measured by flow cytometry at the same interval of half an
-        hour.
-        5.We used SPSS26.0 to process the data and determined the relationship between fluorescence intensity and
-        time, as well as the protein concentration and time. Finally, we calculated the degradation rate of protein
-        modified by Clb2 N124aa through modeling.
+      <bnuz_content_paragraph hint_text="4.	Regulations">
+        <h4>Regulations</h4>
+        <p>
+          General requirements for laboratory biosafety
+          (GB19489-2008)：<a href="https://ssc.bnu.edu.cn/gzzd/sysaqglgz/94795.html">https://ssc.bnu.edu          .cn/gzzd/sysaqglgz/94795.html</a><br>
+          Laboratory Biosafety Manual：<a href="https://www.who.int/publications/i/item/9789240011311">https://www.who          .int/publications/i/item/9789240011311</a><br>
+          Laboratories - General requirements for
+          biosafety：<a href="http://www.gb688.cn/bzgk/gb/newGbInfo?hcno=EB3B94B543F6E4CD18C044DE6AB64CEC">http://www          .gb688.cn/bzgk/gb/newGbInfo?hcno=EB3B94B543F6E4CD18C044DE6AB64CEC</a><br>
+          Technical Specifications for Laboratory Hazardous Waste Pollution Prevention and Control
+          (2017)：<a href="http://sthjj.beijing.gov.cn/bjhrb/resource/cms/2017/01/2017011014225176234.pdf">http          ://sthjj.beijing.gov.cn/bjhrb/resource/cms/2017/01/2017011014225176234.pdf</a><br>
+          Regulations on Biosafety Management of Pathogenic Microorganism Laboratories
+          (2004)：<a href="http://www.gov.cn/zwgk/2005-05/23/content_256.htm">http://www.gov.cn/zwgk/2005-05/23/content_256.htm</a>
+
+        </p>
       </bnuz_content_paragraph>
     </BNUZ_Content>
     <Bottom></Bottom>
@@ -112,10 +148,15 @@ import TopNavigationBar from "@/components/top_navigation_bar";
 import BNUZ_Content from "@/components/bnuz_content";
 import Bottom from "@/components/bottom";
 import bnuz_content_paragraph from "@/components/bnuz-content-paragraph";
+import bnuz_image_container from "@/components/bnuz_image_container";
 import AppRoot from "@/AppRoot";
 import conf from '@/wiki_config';
 
 import head_image from '@/assets/head_images/safety.png'
+import pic1 from '@/assets/safety/pic1.png'
+import pic2 from '@/assets/safety/pic2.jpg'
+import pic3 from '@/assets/safety/pic3.png'
+import pic4 from '@/assets/safety/pic4.png'
 
 export default {
   name: 'App',
@@ -124,12 +165,17 @@ export default {
     Bottom,
     TopNavigationBar,
     BNUZ_Content,
-    bnuz_content_paragraph
+    bnuz_content_paragraph,
+    bnuz_image_container
   },
   data() {
     return {
       // TODO: set image URI
-      head_image: conf.isDev ? head_image : ''
+      head_image: conf.isDev ? head_image : '',
+      pic1: conf.isDev ? pic1 : '',
+      pic2: conf.isDev ? pic2 : '',
+      pic3: conf.isDev ? pic3 : '',
+      pic4: conf.isDev ? pic4 : '',
     }
   }
 }
