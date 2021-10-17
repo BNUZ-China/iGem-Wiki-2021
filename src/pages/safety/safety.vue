@@ -4,20 +4,31 @@
     <top-navigation-bar/>
     <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678">
     <BNUZ_Content>
-      <bnuz_content_paragraph hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
-        <h4>First Heading</h4>
-        Build a periodic expression module of Cas9
-        To verify that our design enables Cas9 to be expressed periodically, we built a module for the periodic
-        expression of Cas9, and the experiments were carried out as follows.
-        1. Construct the recombinant plasmid pRH003-URA3-CLB2 promoter-Cas9 by in-fusion cloning. Then transform it
-        into E. coli DH5α. Extract plasmids from transformants. The recombinant plasmids were confirmed by colony
-        PCR and sequencing, then transformed into S. cerevisiae BY4741. Screen for transformants by SD-ura culture
-        medium.
-        2.Synchronize the cell cycle of S. cerevisiae population to G1 phase.
-        3.Release yeast cells from synchronization. Remove a time-zero fraction. Collect fractions of culture every
-        10 min for 150 min. Extract total protein for Western Blot. Strain without being transformed was used as a
-        negative control. GAPDH was chosen as an internal reference.
-        4.Obtain and analyze data. Draw the image of Cas9 protein levels over time.
+      <bnuz_content_paragraph hint_text="Laboratory safety">
+        <h4>Laboratory safety</h4>
+        <p>
+          During the competition, we will conduct experiments in a biosafety level 1 laboratory. All the bacterial
+          strain we use include Escherichia coli Nissle 1917（Biosafety Level 1）, E.coli DH5α（Biosafety Level 1）, E.coli
+          BL21（Biosafety Level 1）, Clostridium sporogenes（Biosafety Level 2）, Bifidobacterium adolensentis（Biosafety
+          Level 1） and Lactobacillus delbrueckii subsp. （Biosafety Level 1），which are all well studied and do not pose
+          known serious threat to human health or the environment. In addition, our engineered E. coli has been designed
+          safety modules that allow users to actively kill the E. coli any time. What’s more, to prevent pollution of
+          the environment, we designed E. coli that unable to live without the human body. When they escape the human
+          body, they will trigger a kill switch and be killed at once. All our experiments are carried out in strict
+          regulation with disinfection and sterilization procedures to prevent the escape. Seeing the module safety
+          section for details.
+        </p>
+        <p>
+          The safety manager of our laboratory is Wang Bo, who is also the manager of many laboratories in the school.
+          He has many years of laboratory management experience and can do a good job in safety management. Our
+          laboratory also has a complete attendance registration system, which can quickly determine the responsible
+          person after finding any problems.
+        </p>
+        <p>
+          The laboratory is equipped with emergency sprinklers, eye washers, fume hoods and other devices to ensure our
+          safety. Our laboratory also has perfect safety emergency facilities, which meet the safety protection
+          requirements of biosafety level 1 laboratory.
+        </p>
       </bnuz_content_paragraph>
 
       <bnuz_content_paragraph hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
@@ -125,6 +136,11 @@ export default {
 </script>
 
 <style scoped>
+@font-face {
+  font-family: text_font;
+  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+}
+
 .bnuz-header-image {
   width: 100%;
   height: 40%;
@@ -135,5 +151,10 @@ export default {
   background-color: rgb(220, 230, 237);
   border-radius: 20px;
   margin: 16px 0;
+}
+
+p {
+  font-size: 20px;
+  font-family: text_font, serif;
 }
 </style>

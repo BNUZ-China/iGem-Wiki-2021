@@ -1,5 +1,5 @@
 <template>
-  <b-container class="bunz-content" ref="bnuz_content" v-scroll="onScrollBNUZ">
+  <b-container class="bunz-content" ref="bnuz_content">
     <b-row align-h="end">
       <b-col cols="12" ref="bnuz-content-container" class="bnuz-content-container">
         <div class="roundRect">

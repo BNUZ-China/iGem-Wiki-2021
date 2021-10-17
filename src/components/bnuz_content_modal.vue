@@ -3,7 +3,7 @@
   <b-button v-b-modal="`${name}-bnuz-content-modal-wfrjv7eit2`" class="bnuz-content-modal-button">
     <slot name="modal-icon"></slot>
   </b-button>
-  <b-modal size="xl" :id="`${name}-bnuz-content-modal-wfrjv7eit2`" :title="title">
+  <b-modal size="xl" :id="`${name}-bnuz-content-modal-wfrjv7eit2`" :title="title" ok-only>
     <slot name="modal-body"></slot>
   </b-modal>
 </div>
