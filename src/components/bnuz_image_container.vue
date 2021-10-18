@@ -29,5 +29,7 @@ export default {
 .image-container >  p {
   font-size: 18px;
   color: #5e615a;
+  width: 60%;
+  text-align: center;
 }
 </style>

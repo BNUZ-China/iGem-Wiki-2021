@@ -3,7 +3,7 @@
     <!--    <Background_picture src="assets/homepage_hospital.png"></Background_picture>-->
     <top-navigation-bar/>
     <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678">
-    <BNUZ_Content nav_item_color="#ffd89f">
+    <BNUZ_Content nav_item_color="#ffd89f" top_distance="15">
       <bnuz_content_paragraph hint_text="CKD">
         <h4>CKD</h4>
         <p>

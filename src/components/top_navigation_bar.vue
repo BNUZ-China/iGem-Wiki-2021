@@ -11,11 +11,14 @@
         <top_navigation_bar_dropdown title="PROJECT" :contents="[
         {text: 'Description', link: '/Description.html'},
         {text: 'Design', link: '/Design.html'},
+        {text: 'Engineering', link: '/Engineering.html'},
         {text: 'Experiment', link: '/Experiment.html'},
-        {text: 'Results', link: '/Proof_Of_Concept.html'},
+        {text: 'Result', link: '/Result.html'},
+        {text: 'Proof of Concept', link: '/Proof_Of_Concept.html'},
         {text: 'Implementation', link: '/Implementation.html'},
         {text: 'Contribution', link: 'Contribution.html'},
-        {text: 'Notebook', link: 'Notebook.html'}
+        {text: 'Notebook', link: 'Notebook.html'},
+        {text: 'Future', link: 'Future.html'}
       ]"></top_navigation_bar_dropdown>
         <div class="nav-item">
           <a class="nav-link" href="/Model.html">MODEL</a>
