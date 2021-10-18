@@ -19,13 +19,13 @@
             <td>BBa_K3784000</td>
             <td>coding</td>
             <td>acdA</td>
-            <td>Encoding acyl-CoA dehydrogenase</td>
+            <td>Encoding 3-(aryl) acrylate reductase</td>
           </tr>
           <tr>
             <td>BBa_K3784001</td>
             <td>coding</td>
             <td>fldB</td>
-            <td>Encoding phenyllactate dehydratase subunit</td>
+            <td>Encoding 2-hydroxyacyl-CoA dehydratase protein family</td>
           </tr>
           <tr>
             <td>
@@ -38,7 +38,7 @@
               <p>fldC</p>
             </td>
             <td>
-              <p>Encoding phenyllactate dehydratase subunit</p>
+              <p>Encoding 2-hydroxyacyl-CoA dehydratase protein family</p>
             </td>
           </tr>
           <tr>
@@ -66,7 +66,7 @@
               <p>TAA1</p>
             </td>
             <td>
-              <p>tryptophan aminotransferase of Arabidopsis thaliana</p>
+              <p>Encoding tryptophan aminotransferase of Arabidopsis thaliana</p>
             </td>
           </tr>
           <tr>
@@ -94,7 +94,7 @@
               <p>MazF</p>
             </td>
             <td>
-              <p>Encoding protein that mediates suicide of cells</p>
+              <p>Encoding a translational inhibitor</p>
             </td>
           </tr>
           <tr>
@@ -119,7 +119,7 @@
               <p>coding</p>
             </td>
             <td>
-              <p>lacZ</p>
+              <p>bga2</p>
             </td>
             <td>
               <p>Encoding &beta;-galactosidase</p>

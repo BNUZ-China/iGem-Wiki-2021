@@ -1,5 +1,5 @@
 <template>
-  <div class="image-container">
+  <div class="bnuz-table-container">
     <slot name="image"></slot>
     <p>
       <slot name="caption"></slot>
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style scoped>
-.image-container {
+.bnuz-table-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,11 +22,11 @@ export default {
   flex-direction: column;
 }
 
-.image-container > img {
+.bnuz-table-container > img {
   display: block;
 }
 
-.image-container >  p {
+.bnuz-table-container >  p {
   font-size: 18px;
   color: #5e615a;
   width: 60%;

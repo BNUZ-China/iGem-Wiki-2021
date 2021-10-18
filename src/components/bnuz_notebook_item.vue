@@ -18,7 +18,7 @@
           </b-card-header>
           <b-collapse :id="`bnuz-notebook-item-${name}-bt7hvqfe`" accordion="my-accordion" role="tabpanel">
             <b-card-body>
-              <b-card-text>
+              <b-card-text style="line-height: 24px">
                 <slot name="text"></slot>
               </b-card-text>
             </b-card-body>
@@ -71,8 +71,9 @@ export default {
 
 .roundRect {
   padding: 8px;
-  background-color: rgb(220, 230, 237);
   border-radius: 20px;
   margin: 16px 0;
+  border: 2px solid #ed8555;
 }
+
 </style>

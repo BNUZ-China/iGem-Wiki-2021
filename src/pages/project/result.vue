@@ -66,7 +66,7 @@
             Fig.4 IPA synthesis plasmid map
           </template>
           <template v-slot:image>
-            <img :src="pic4" width="65%">
+            <img :src="pic4" width="40%">
           </template>
         </bnuz_image_container>
       </bnuz_content_paragraph>
@@ -128,7 +128,7 @@ import pic1 from '@/assets/project/result/pic1.png'
 import pic2 from '@/assets/project/result/pic2.png'
 import pic3 from '@/assets/project/result/pic3.png'
 import pic4 from '@/assets/project/result/pic4.png'
-import pic5 from '@/assets/project/result/pic5.jpg'
+import pic5 from '@/assets/project/result/pic5.png'
 
 
 import head_image from '@/assets/head_images/PROJECT/bannerproject-result.png'

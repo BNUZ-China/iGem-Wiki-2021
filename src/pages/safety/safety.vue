@@ -6,25 +6,9 @@
     <BNUZ_Content nav_item_color="#9b2b28">
       <bnuz_content_paragraph hint_text="Laboratory safety">
         <h4>Laboratory safety</h4>
-        <p>
-          During the competition, we will conduct experiments in a biosafety level 1 laboratory. All the bacterial
-          strain we use include Escherichia coli Nissle 1917（Biosafety Level 1）, E.coli DH5α（Biosafety Level 1）, E.coli
-          BL21（Biosafety Level 1）, Clostridium sporogenes（Biosafety Level 2）, Bifidobacterium adolensentis（Biosafety
-          Level 1） and Lactobacillus delbrueckii subsp. （Biosafety Level 1），which are all well studied and do not pose
-          known serious threat to human health or the environment. In addition, our engineered E. coli has been designed
-          safety modules that allow users to actively kill the E. coli any time. What’s more, to prevent pollution of
-          the environment, we designed E. coli that unable to live without the human body. When they escape the human
-          body, they will trigger a kill switch and be killed at once. All our experiments are carried out in strict
-          regulation with disinfection and sterilization procedures to prevent the escape. Seeing the module safety
-          section for details.
-        </p>
+        <p>During the competition, we will conduct experiments in a biosafety level 1 laboratory. All the bacterial strains we use include <em>Escherichia coli</em> Nissle 1917 (Biosafety Level 1), <em>E. coli</em> DH5α (Biosafety Level 1), <em>E. coli</em> BL21 (Biosafety Level 1), <em>Clostridium sporogenes</em> (Biosafety Level 2), <em>Bifidobacterium adolensentis</em> (Biosafety Level 1) and <em>Lactobacillus delbrueckii</em> which are all well studied and do not pose known serious threat to human health or the environment. Our lab is not a level 2 lab, so we have worked in depth with the BNU-China team, who will help us to extract the genome of <em>Clostridium sporogenes</em>. In addition, our engineered <em>E. coli</em> has been designed the safety modules which allow users to actively kill the <em>E. coli</em> at any time. Moreover, to prevent pollution of the environment, we designed <em>E. coli</em> that is unable to live without the human body. When they escape from the human body, they will trigger a kill switch and be killed at once. All our experiments are carried out in strict regulation with disinfection and sterilization procedures to prevent the escape. This is described in the module safety section for details.</p>
 
-        <p>
-          The safety manager of our laboratory is Wang Bo, who is also the manager of many laboratories in the school.
-          He has many years of laboratory management experience and can do a good job in safety management. Our
-          laboratory also has a complete attendance registration system, which can quickly determine the responsible
-          person after finding any problems.
-        </p>
+        <p>The safety manager of our laboratory is Wang Bo, who is also the manager of many laboratories in the school. He has experienced the laboratory management for many years and can do a great job in the safety management. Our laboratory also has a complete attendance registration system, which can quickly determine the responsible person if there are any problems. </p>
         <p>
           The laboratory is equipped with emergency sprinklers, eye washers, fume hoods and other devices to ensure our
           safety. Our laboratory also has perfect safety emergency facilities, which meet the safety protection
@@ -32,35 +16,24 @@
         </p>
         <bnuz_image_container>
           <template v-slot:caption>
-            Fig.1 Part of the Laboratory equipment
+            Fig.1 Parts of the laboratory equipment
           </template>
           <template v-slot:image>
             <img :src="pic1" width="65%">
           </template>
         </bnuz_image_container>
         <p>
-          We also have strict laboratory rules: No eating and drinking in laboratory，Wearing lab coats and gloves when
-          working in the lab, and wear protective gloves when operating strains. All clean bench shall be sterilized
-          with 75% ethanol before and after bacterial experiment. All containers must be sterilized at high temperature
-          before and after use; All unnecessary equipment should be powered off after use. Autoclave can't run all
-          night, and the laboratory oven must be checked every 15 minutes when it is used. The use of any chemical and
-          instrument should be well documented and so on.
+          We also have strict laboratory rules, for example, no eating and drinking in the laboratory, wearing lab coats and gloves when working in the lab, and wearing protective gloves when operating strains. All clean bench shall be sterilized with 75% ethanol before and after bacterial experiment. All containers must be sterilized at high temperature before and after use. All unnecessary equipment should be powered off after use. Autoclave sterilizer does not allowed to run over night, and the laboratory oven must be checked every 15 min when in use. The use of any chemicals and instruments should be well documented.
         </p>
       </bnuz_content_paragraph>
 
       <bnuz_content_paragraph hint_text="Laboratory safety training">
         <h4>Laboratory safety training</h4>
         <p>
-          All members of the experimental group have completed the "Laboratory Safety and Environmental Protection"
-          course, learned the basic safety operations of biological laboratories, safety management requirements and
-          emergency response to accidents. Team members also gave a presentation on the theme of synthetic biology
-          safety in class, popularizing the basic knowledge of synthetic biology and the safety rules that need to be
-          followed.
+          All members of the experimental group have completed the "Laboratory Safety and Environmental Protection" course, learned the basic safety operations of biological laboratories, safety management requirements and emergency response to accidents. The team members also attended a presentation on the theme of synthetic biology safety in class, popularizing the basic knowledge of synthetic biology and the safety rules that must be followed.
         </p>
         <p>
-          In addition, all members of the experimental group have had basic training in the operation of molecular
-          biology experiments, and they understand the basic experimental operation methods and experimental safety
-          rules to ensure the smooth and safe conduct of the experiment.
+          In addition, all members of the experimental group have had basic training in the operation of molecular biology experiments, and they understand the basic experimental operation methods and experimental safety rules to ensure the smooth and safe conduct of the experiment.
         </p>
         <bnuz_image_container>
           <template v-slot:caption>
@@ -79,42 +52,28 @@
           Our project intends to partly treat chronic kidney disease by colonizing relatively complete engineered
           bacteria in the intestines. During the colonization of engineered bacteria, patients may wish to terminate
           treatment voluntarily due to the existence of various factors. In response to this possible situation, our
-          team designed an arabinose promoter to control the expression of mazf. Mazf, a toxin protein, can specifically
-          cleave the ACA sequence of free mRNA, thereby inhibiting the release of ribosomes and protein synthesis. The
-          abnormally encoded polypeptide is released and degraded by intracellular proteases, which in turn causes cell
-          death. And arabinose is a kind of sugar that the general population in life will not take under normal
-          circumstances. There will not be too many accidents when the arabinose promoter induces the expression of mazf
-          to kill the engineered bacteria. Therefore, patients can choose to take arabinose actively according to their
-          own conditions to achieve the effect of killing engineered bacteria in the intestinal tract.
+          team designed an arabinose promoter to control the expression of <em>mazf. Mazf</em>, a toxin protein, can
+          specifically cleave the ACA sequence of free mRNA, thereby inhibiting the release of ribosomes and protein synthesis. The abnormally encoded polypeptide is released and degraded by intracellular proteases, which, in turn, causes cell death. Arabinose is a kind of sugar that will not take under normal circumstances in life of the general population. There will not be too many accidents when the arabinose promoter induces the expression of mazf to kill the engineered bacteria. Therefore, patients can choose to take arabinose actively according to their own conditions to achieve the effect of killing engineered bacteria in the intestinal tract.
         </p>
         <bnuz_image_container>
           <template v-slot:caption>
             Fig.3 Arabinose induced expression of translation inhibitors to kill engineered bacteria
           </template>
           <template v-slot:image>
-            <img :src="pic3" width="65%">
+            <img :src="pic3" width="45%">
           </template>
         </bnuz_image_container>
         <h5>[CO2 induced suicide system]</h5>
-        <p>
-          By consulting related literature, we learned that the human intestinal environment is a high CO2
-          concentration environment, so we decided to use this feature to prevent the escape of
-          engineered E.coli.
-        </p>
-        <p>
-          The engineered E.coli we designed uses Crisp-Cas9 to achieve the knockdown of Can, making the E.coli unable to
-          survive after leaving the human intestinal environment. The CAN of E.coli encodes carbonic anhydrase (CA), an
-          enzyme that helps CO2 and H2O quickly convert into carbonate ions, hydrogen ions, and bicarbonate ions. E.
-          coli requires bicarbonate as a metabolic substrate during its growth. Therefore, CAN knockdown E. coli will
-          not be able to convert CO2 into bicarbonate fast enough to prevent it from spreading in a low carbon dioxide
-          environment(natural environment) and eventually causes cell death. In the intestinal environment where E. coli
-          survives, the concentration of CO2 is high enough (from 5% to 29%) to spontaneously convert CO2 into
-          bicarbonate ions. However, when E. coli leaves the human body, the decrease in CO2 concentration will cause
-          its death.
-        </p>
+        <p>From the related literature, we learned that the human intestinal environment is a high CO2 concentration environment, so we decided to use this feature to prevent the escape of engineered <em>E. coli</em>.</p>
+        <p>The engineered <em>E. coli</em> we designed uses the Crisp-Cas9 technique to achieve the knockdown of <em>
+          Can</em>, making the <em>E. coli</em> unable to survive after leaving the human intestinal environment. The
+          <em>Can</em> of <em>E. coli</em> encodes carbonic anhydrase (CA), an enzyme that helps quick conversion of
+          CO2 and H2O into carbonate ions, hydrogen ions, and bicarbonate ions. <em>E. coli</em> requires bicarbonate
+          as a metabolic substrate during its growth. Therefore, the <em>Can</em>-knock out <em>E. coli</em> will not
+          be able to convert CO2 into bicarbonate fast enough to prevent it from spreading in a low carbon dioxide environment (natural environment) and eventually causes cell death. In the intestinal environment where <em>E. coli</em> survives, the concentration of CO2 is high enough (from 5% to 29%) to spontaneously convert CO2 into bicarbonate ions. However, when <em>E. coli</em> leaves the human body, the decrease in CO2 concentration will cause its death.</p>
         <bnuz_image_container>
           <template v-slot:caption>
-            Fig.4 Red recombination knock out of Can gene
+            Fig.4 Red recombination knock out of <em>Can</em> gene
           </template>
           <template v-slot:image>
             <img :src="pic4" width="65%">

@@ -16,7 +16,6 @@
         {text: 'Result', link: '/Result.html'},
         {text: 'Proof of Concept', link: '/Proof_Of_Concept.html'},
         {text: 'Implementation', link: '/Implementation.html'},
-        {text: 'Contribution', link: 'Contribution.html'},
         {text: 'Notebook', link: 'Notebook.html'},
         {text: 'Future', link: 'Future.html'}
       ]"></top_navigation_bar_dropdown>

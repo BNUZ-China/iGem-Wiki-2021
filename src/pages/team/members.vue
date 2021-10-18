@@ -6,64 +6,13 @@
       <img :src="himg2" class="bnuz-switch-header-image" ref="himg1">
       <img :src="himg1" class="bnuz-switch-header-image bnuz-team-head-image-2" ref="himg2">
     </div>
-    <BNUZ_content>
-      <bnuz_content_paragraph hint_text="PI">
-        <b-container>
-          <b-row>
-            <b-col cols="5">
-
-            </b-col>
-            <b-col cols="7">
-              <h3 class="teachers-title">Professor Genfa Zhang</h3>
-              Primary PI, School of Life Sciences, Beijing Normal University. Professor Genfa
-              Zhang is a well-known geneticist with international influence, an excellent educator and scientific
-              researcher, a doctoral supervisor in the School of Life Sciences, Beijing Normal University, has served as
-              a council member of the Chinese Society of Genetics for many times, and a council member of the 11th and
-              12th Chinese Society of Botany. Served as the editorial board and reviewer of many important academic
-              journals at home and abroad. Active in related genetics teaching and research, plant molecular genetics,
-              and plant resistance molecular biology research fields.
-            </b-col>
-          </b-row>
-        </b-container>
-      </bnuz_content_paragraph>
-      <bnuz_content_paragraph hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
-        <b-container>
-          <b-row>
-            <b-col cols="5">
-
-            </b-col>
-            <b-col cols="7">
-              <h3 class="teachers-title">Professor Benqiong Xiang</h3>
-              Secondary PI, is currently the Deputy Dean of the School of Life Science and
-              director of the Experimental Teaching Center for Life Science and Technology at Beijing Normal University.
-              She is also a member of the 11th Council of The Chinese Society of Biochemistry and Molecular Biology.
-              Mainly responsible for the teaching of "biochemistry", "Genetic engineering" and "Introduction to
-              Biotechnology" and other courses, compiled 6 textbooks, published 15 teaching research papers, and won 5
-              provincial and ministerial level or above teaching awards. Supervised more than 20 postgraduate students
-              and published more than 10 academic research papers in important journals at home and abroad.
-            </b-col>
-          </b-row>
-        </b-container>
-      </bnuz_content_paragraph>
-      <bnuz_content_paragraph hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
-        <b-container>
-          <b-row>
-            <b-col cols="5">
-
-            </b-col>
-            <b-col cols="7">
-              <h3 class="teachers-title">Associate Professor Bo Wang</h3>
-              Instructors, head of the Biological Laboratory of Beijing Normal University,
-              and class teacher of the 2020 biological science class. Mainly engaged in the development and application
-              of biological resources, food nutrition and safety research. At present, he has presided over the
-              completion of 11 scientific research projects at all levels and various types; 1 provincial-level teaching
-              reform project, 2 school-level quality engineering projects; 1 national patent authorized; published more
-              than 20 first author core papers, including 4 SCI papers . He has won awards such as "School-level
-              Excellent Communist Party Member" and "School-level Class Teacher".
-            </b-col>
-          </b-row>
-        </b-container>
-      </bnuz_content_paragraph>
+    <BNUZ_Content_No_Nav>
+      <h3 class="members-title">PI</h3><br>
+      <div class="pi-div" style="width: 100%">
+          <img :src="zgf" class="pi-image">
+          <img :src="xbq" class="pi-image">
+          <img :src="wb" class="pi-image">
+        </div>
 
       <b-container>
         <h3 class="members-title">Student leader</h3><br>
@@ -184,17 +133,16 @@
           </b-col>
         </b-row>
       </b-container>
-    </BNUZ_content>
-    <Bottom></Bottom>
+    </BNUZ_Content_No_Nav>
+    <Bottom_center></Bottom_center>
   </AppRoot>
 </template>
 
 <script>
 import TopNavigationBar from "@/components/top_navigation_bar";
-import Bottom from "@/components/bottom";
+import Bottom_center from "@/components/bottom_center";
 import bnuz_content_paragraph from "@/components/bnuz-content-paragraph";
 import AppRoot from "@/AppRoot";
-import BNUZ_content from "@/components/bnuz_content";
 import conf from '@/wiki_config';
 
 import head_image from '@/assets/head_images/human_practice.png';
@@ -218,16 +166,21 @@ import yby from '@/assets/members/yby.png'
 import ysd from '@/assets/members/ysd.png'
 import ywj from '@/assets/members/ywj.png'
 
+import zgf from '@/assets/members/zgf.png'
+import xbq from '@/assets/members/xbq.png'
+import wb from '@/assets/members/wb.png'
+
 import himg1 from '@/assets/head_images/team/team1.png';
 import himg2 from '@/assets/head_images/team/team2.png';
+import BNUZ_Content_No_Nav from "@/components/bnuz_content_no_nav";
 
 export default {
   name: 'App',
   components: {
     AppRoot,
-    Bottom,
+    Bottom_center,
     TopNavigationBar,
-    BNUZ_content,
+    BNUZ_Content_No_Nav,
     // eslint-disable-next-line vue/no-unused-components
     bnuz_content_paragraph
   },
@@ -256,6 +209,9 @@ export default {
       ywj: conf.isDev ? ywj : '',
       himg1: conf.isDev ? himg1 : '',
       himg2: conf.isDev ? himg2 : '',
+      zgf: conf.isDev ? zgf : '',
+      wb: conf.isDev ? wb : '',
+      xbq: conf.isDev ? xbq : '',
       isHeadImage1: true
     }
   },
@@ -284,9 +240,9 @@ export default {
 
 .roundRect {
   padding: 20px;
-  background-color: rgb(220, 230, 237);
   border-radius: 20px;
-  margin: 16px 0;
+  margin: 32px 0;
+  border: 2px solid rgba(0,0,115,0.79)
 }
 
 .members-title {
@@ -372,5 +328,21 @@ export default {
 
 .bnuz-team-head-image-2 {
   opacity: 0;
+}
+
+.left-right-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pi-image {
+  width: 30%;
+}
+
+.pi-div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 </style>

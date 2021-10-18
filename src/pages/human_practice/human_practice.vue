@@ -41,15 +41,7 @@
               </template>
               <template slot="modal-body">
                 <p class="modal-text">
-                  As one of our team member’s grandma is suffering from CKD, we paid our attention to CKD. After
-                  conducting a survey, we surprisingly found that many people knew little about CKD even though its
-                  prevalence is getting higher and higher. In our survey, people with CKD are not aware of their CKD
-                  staging, which indicates that the “slient killer” has not attracted enough attention yet. In fact,
-                  CKD is the 6th fastest growing cause of death globally, causing at least 2.4 milion deaths per
-                  year. We also learned that there is still no cure for CKD and no means to revert it. Therefore, we
-                  decided to focus our project on the treatment of CKD. We also investigated people’s understanding
-                  of synthetic biology, which encouraged us to do more with the methods people are more willing to
-                  accept to raise the public’s knowledge (Fig. 4), which can be found in
+                  As one of our team member’s grandma is suffering from CKD, we paid our attention to CKD. After conducting a survey, we surprisingly found that many people knew little about CKD(Fig. 1) even though its prevalence is getting higher and higher. In our survey, people with CKD are not aware of their CKD staging, which indicates that the “slient killer” has not attracted enough attention yet. In fact, CKD is the 6th fastest growing cause of death globally, causing at least 2.4 milion deaths per year. We also learned that there is still no cure for CKD and no means to revert it. Therefore, we decided to focus our project on the treatment of CKD. We also investigated people’s understanding of synthetic biology(Fig. 2), which encouraged us to do more with the methods people are more willing to accept to raise the public’s knowledge (Fig. 3), which can be found in
                   <!--                 TODO 链接到communication -->
                   <a href="communication"> our
                     science communication </a>.
@@ -396,29 +388,17 @@
               </template>
               <template v-slot:modal-body>
                 <p>
-                  Xiaolei Ze, Microeconomic Research and Applied Scientist of BYHEALTH Science and Technology Center
+                  Xiaolei Ze, R&D Head on Microbiome and Probiotics，Science and Technology Center of By-Health.
                 </p>
                 <div class="left-right-div">
                   <img :src="p6_pic1" width="85%">
                 </div>
                 <p>
-                  We also hope that our idea can eventually be applied and put on the market to serve the public and
-                  truly meet their needs. So, we have to think about whether our idea of regulating enterotoxins through
-                  gut flora make sense. Is it responsible and good for the world? Does it have any potential risk? And
-                  how can we make sure the product to be safe? Considering Dr. Xiaolei Ze has rich experience in
-                  probiotic product r & d, we held an online meeting with him and learned more about product
-                  development, which helped us design better.
+                  We also hope that our idea can eventually be applied and put on the market to serve the public and truly meet their needs. So, we have to consider about whether our idea of regulating enterotoxins through gut flora make sense. Is it responsible and good for the world? Does it have any potential risk? And how can we guarantee the safety of the product? Considering Dr. Xiaolei Ze has rich experience in probiotic product R & D, we held an online meeting with him and learned more about product development, which helped us to make a better strategy.
                 </p>
                 <p>
-                  Considering more problems that may occur in practical applications, we added a new induced suicide
-                  part to specifically eliminate the engineered microbe in the intestine at any time we want by
-                  ingesting arabinos. Arabinos is a kind of sugar that is rarely found in the human diet, so it won’t
-                  cause accidental killing of bacteria. He emphsised that laws and regulations, especially when it comes
-                  to GMO products, are quite strict and there are some laws under discussion. So, we should pay more
-                  attention to the laws to make sure we are not breaking any rules. Dr. Ze also enriched our
-                  understanding that there are many factors from human body affecting intestinal microbiome and it will
-                  be very difficulty to make products that can be applied to humans, so the foundation of our project
-                  had to be solid enough to be continue to develop.
+                  Considering more problems that may occur in practical applications, we added a new induced suicide part to specifically eliminate the engineered microbe in the intestine at any time we want by ingesting arabinos. Arabinos is a kind of sugar that is rarely found in the human diet, so it won’t cause accidental killing of bacteria. He emphasized that laws and regulations, especially when it comes to GMO products, are quite strict. Some regulations on this topic are still under discussion and not clear. So, we should pay more attention to the regulations to make sure we are able to manage the risks. Dr. Ze also enriched our understanding about the complexity of interactions between gut microbiota and host, and pointed out the potential challenges to develop products for human application. So deep investigate on the science and technology background of this idea is necessary to allow us to move on with a better strategy.
+
                 </p>
               </template>
             </BNUZ_content_modal>

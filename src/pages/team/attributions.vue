@@ -2,94 +2,54 @@
   <AppRoot id="app">
     <!--    <Background_picture src="assets/homepage_hospital.png"></Background_picture>-->
     <top-navigation-bar/>
-    <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678">
-    <BNUZ_Content>
-      <bnuz_content_paragraph hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
-        <h4>First Heading</h4>
-        Build a periodic expression module of Cas9
-        To verify that our design enables Cas9 to be expressed periodically, we built a module for the periodic
-        expression of Cas9, and the experiments were carried out as follows.
-        1. Construct the recombinant plasmid pRH003-URA3-CLB2 promoter-Cas9 by in-fusion cloning. Then transform it
-        into E. coli DH5α. Extract plasmids from transformants. The recombinant plasmids were confirmed by colony
-        PCR and sequencing, then transformed into S. cerevisiae BY4741. Screen for transformants by SD-ura culture
-        medium.
-        2.Synchronize the cell cycle of S. cerevisiae population to G1 phase.
-        3.Release yeast cells from synchronization. Remove a time-zero fraction. Collect fractions of culture every
-        10 min for 150 min. Extract total protein for Western Blot. Strain without being transformed was used as a
-        negative control. GAPDH was chosen as an internal reference.
-        4.Obtain and analyze data. Draw the image of Cas9 protein levels over time.
+    <div class="bnuz-header-image-container" @mouseover="headImageMouseOver" @mouseout="headImageMouseOut">
+      <img :src="himg2" class="bnuz-switch-header-image" ref="himg1">
+      <img :src="himg1" class="bnuz-switch-header-image bnuz-team-head-image-2" ref="himg2">
+    </div>
+    <BNUZ_Content nav_item_color="#01016e">
+      <bnuz_content_paragraph hint_text="Student leader">
+        <h4>Student leader</h4>
+        <b>Luxuan Liu</b>: Team leader, experimental group leader, indolepopionic acid biosynthesis module,
+          β-galactosidase module, glucose dehydrogenase overexpressing module and biosafety module designer, builder
+        and tester, quorum sensing module designer. Participate in the design of mathematical modeling.<br>
+
+        <b>Yunxi Du</b>: co-team leader, experiment arrangement and job division, TnaA knock-off module design, GDH
+          primer design, participate in plasmid (fld, PMF, GDH, and LacZ) construction, participate in poster and wiki design, participate in communication with other groups.<br>
+
       </bnuz_content_paragraph>
 
-      <bnuz_content_paragraph hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
-        <h4>Second Heading</h4>
-        Degradation of Cas9 at a proper rate
-        In order to verify the function of Clb2 (N124aa) as a degradation tag, we constructed the plasmids for an
-        experimental and a control group. We hoped to characterize the protein degradation by determining the
-        fluorescence intensity curve.
-        1.The two plasmids were constructed with pYES2, containing GAL1 galactose inducible promoter and URA3 marker
-        gene. The vector in the experimental group contains CLB2 (N124aa)- Linker-GFP, while the control group only
-        contains GFP. The successfully constructed vectors were transformed into E.coli DH5α strain.
-        2.After the plasmids were extracted and linearized, they were transformed into Saccharomyces cerevisiae
-        BY4741. We used the fluorescence microscope and differential interference microscope to verify the
-        transformants.
-        3.Both experimental and control groups were cultured in SC medium at 30 ℃ until OD600 value reached about
-        3.000, and then the expression was induced by galactose with a final concentration of 2%. After induction,
-        the fluorescence intensity was measured by flow cytometry at half an hour interval.
-        4.Cells were then inoculated into the medium containing glucose instead of galactose. In addition to being a
-        carbon source, glucose also inhibits the expression of GFP by inhibiting the GAL1 promoter. Within 7 hours
-        after inoculation, the fluorescence intensity was measured by flow cytometry at the same interval of half an
-        hour.
-        5.We used SPSS26.0 to process the data and determined the relationship between fluorescence intensity and
-        time, as well as the protein concentration and time. Finally, we calculated the degradation rate of protein
-        modified by Clb2 N124aa through modeling.
+      <bnuz_content_paragraph hint_text="Experimental group">
+        <h4>Experimental group</h4>
+        <b>Yu Huang</b>: Experimental group member, participate in project designing (indolepopionic acid biosynthesis
+            module), participate in several experiments (PMF, GDH plasmid construction), preparation of safety form.<br>
+        <b>Shudan Ye</b>: experimental group member, participate in project designing and some experiments.<br>
+        <b>Jixiao Li</b>: Experimental group member, participate in project designing (TnaA knock-off), participate in
+                several experiments (GDH, PMF plasmid construction), participate in HP interview, preparation of human practice manuscript.<br>
+        <b>Bi-Ying Yan</b>: Experimental group member, Gene function verification experiment designer (PMF, GDH, and
+          lacZ), Experiments in construction of plasmid fld and PMF, and PMF module, GDH module and lacZ module functional test.<br>
+        <b>Jiayang Lu</b>: Experimental group member, participate in the experiment process, participate in the design of quorum sensing module, preparation of the safety form and parts section of Wiki.<br>
+        <b>Jialun Tan</b>: Experimental group member, glucose dehydrogenase overexpressing module designer.<br>
+        <b>Zinan Su</b>: Experimental group member, participate in experiments in fld plasmid construction, several PCR
+        for target DNA, participate in HP interview.<br>
+        <b>Wenjing Yang</b>: Experimental group member, Participating in project selection, Looking for papers about the growth-promoting effect of GDH, Experiments (several PCR for target DNA, plasmid extraction, et.al), HP interview, and preparation of the Human Practice part of Wiki.<br>
       </bnuz_content_paragraph>
 
-      <bnuz_content_paragraph hint_text="333">
-        <h4>Third Heading</h4>
-        Degradation of Cas9 at a proper rate
-        In order to verify the function of Clb2 (N124aa) as a degradation tag, we constructed the plasmids for an
-        experimental and a control group. We hoped to characterize the protein degradation by determining the
-        fluorescence intensity curve.
-        1.The two plasmids were constructed with pYES2, containing GAL1 galactose inducible promoter and URA3 marker
-        gene. The vector in the experimental group contains CLB2 (N124aa)- Linker-GFP, while the control group only
-        contains GFP. The successfully constructed vectors were transformed into E.coli DH5α strain.
-        2.After the plasmids were extracted and linearized, they were transformed into Saccharomyces cerevisiae
-        BY4741. We used the fluorescence microscope and differential interference microscope to verify the
-        transformants.
-        3.Both experimental and control groups were cultured in SC medium at 30 ℃ until OD600 value reached about
-        3.000, and then the expression was induced by galactose with a final concentration of 2%. After induction,
-        the fluorescence intensity was measured by flow cytometry at half an hour interval.
-        4.Cells were then inoculated into the medium containing glucose instead of galactose. In addition to being a
-        carbon source, glucose also inhibits the expression of GFP by inhibiting the GAL1 promoter. Within 7 hours
-        after inoculation, the fluorescence intensity was measured by flow cytometry at the same interval of half an
-        hour.
-        5.We used SPSS26.0 to process the data and determined the relationship between fluorescence intensity and
-        time, as well as the protein concentration and time. Finally, we calculated the degradation rate of protein
-        modified by Clb2 N124aa through modeling.
+      <bnuz_content_paragraph hint_text="Wiki & art group">
+        <h4>Wiki & art group</h4>
+        <b>Si-Ting Fan</b>: Wiki&art group leader. The promotion video designer (the storyboard). The poster designer 
+          (the background picture). The wiki designer (home page).<br>
+        <b>Hao Li</b>: Wiki & art team member. Website builder, webpack4 "igem-webpack-plugin" maker.<br>
+        <b>Yingjia Deng</b>: Wiki & art team member. Animation & poster maker, illustrator<br>
+        <b>Tianyu Gao</b>: Wiki & art team member. Animation & poster maker, illustrator<br>
+
       </bnuz_content_paragraph>
 
-      <bnuz_content_paragraph hint_text="444">
-        <h4>Forth Heading</h4>
-        Degradation of Cas9 at a proper rate
-        In order to verify the function of Clb2 (N124aa) as a degradation tag, we constructed the plasmids for an
-        experimental and a control group. We hoped to characterize the protein degradation by determining the
-        fluorescence intensity curve.
-        1.The two plasmids were constructed with pYES2, containing GAL1 galactose inducible promoter and URA3 marker
-        gene. The vector in the experimental group contains CLB2 (N124aa)- Linker-GFP, while the control group only
-        contains GFP. The successfully constructed vectors were transformed into E.coli DH5α strain.
-        2.After the plasmids were extracted and linearized, they were transformed into Saccharomyces cerevisiae
-        BY4741. We used the fluorescence microscope and differential interference microscope to verify the
-        transformants.
-        3.Both experimental and control groups were cultured in SC medium at 30 ℃ until OD600 value reached about
-        3.000, and then the expression was induced by galactose with a final concentration of 2%. After induction,
-        the fluorescence intensity was measured by flow cytometry at half an hour interval.
-        4.Cells were then inoculated into the medium containing glucose instead of galactose. In addition to being a
-        carbon source, glucose also inhibits the expression of GFP by inhibiting the GAL1 promoter. Within 7 hours
-        after inoculation, the fluorescence intensity was measured by flow cytometry at the same interval of half an
-        hour.
-        5.We used SPSS26.0 to process the data and determined the relationship between fluorescence intensity and
-        time, as well as the protein concentration and time. Finally, we calculated the degradation rate of protein
-        modified by Clb2 N124aa through modeling.
+      <bnuz_content_paragraph hint_text="Model group">
+        <h4>Model group</h4>
+        <b>Feiyang Lu</b>, Modeling Group Leader,  Project&Parts Design, Collaboration, Software<br>
+        <b>Wanying Xue</b>,  Modeling Group Member, Literature Research, Software<br>
+        <b>Jingyi Wu</b>, Modeling Group Member, Literature Research, Collaboration<br>
+        <b>Liqi Liang</b>, Modeling Group Member, Literature Research<br>
       </bnuz_content_paragraph>
     </BNUZ_Content>
     <Bottom></Bottom>
@@ -104,6 +64,9 @@ import bnuz_content_paragraph from "@/components/bnuz-content-paragraph";
 import AppRoot from "@/AppRoot";
 
 import head_image from '@/assets/head_images/team/team1.png'
+import conf from "@/wiki_config";
+import himg1 from "@/assets/head_images/team/team1.png";
+import himg2 from "@/assets/head_images/team/team2.png";
 
 export default {
   name: 'App',
@@ -116,7 +79,20 @@ export default {
   },
   data() {
     return {
-      head_image
+      head_image,
+      himg1: conf.isDev ? himg1 : '',
+      himg2: conf.isDev ? himg2 : '',
+      isHeadImage1: true
+    }
+  },
+  methods: {
+    headImageMouseOver: function () {
+      this.$refs.himg1.classList = ['image-fade-out bnuz-switch-header-image']
+      this.$refs.himg2.classList = ['image-fade-in bnuz-switch-header-image']
+    },
+    headImageMouseOut: function () {
+      this.$refs.himg1.classList = ['image-fade-in bnuz-switch-header-image']
+      this.$refs.himg2.classList = ['image-fade-out bnuz-switch-header-image bnuz-team-head-image-2']
     }
   }
 }
@@ -130,8 +106,61 @@ export default {
 
 .roundRect {
   padding: 20px;
-  background-color: rgb(220, 230, 237);
   border-radius: 20px;
-  margin: 16px 0;
+  margin: 32px 0;
+  border: 2px solid rgba(0,0,115,0.79)
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.image-fade-in {
+  animation: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.image-fade-out {
+  animation: fade-out;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.bnuz-header-image-container {
+  width: 100%;
+  height: calc(100vw / 2.7826086956521739130434782608696);
+}
+
+.bnuz-switch-header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vw / 2.7826086956521739130434782608696);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bnuz-team-head-image-1 {
+  opacity: 1;
+}
+
+.bnuz-team-head-image-2 {
+  opacity: 0;
 }
 </style>

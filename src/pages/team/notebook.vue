@@ -235,7 +235,7 @@ import Bottom from "@/components/bottom";
 import AppRoot from "@/AppRoot";
 import BNUZ_notebook_item from '@/components/bnuz_notebook_item';
 
-import head_image from '@/assets/head_images/human_practice.png'
+import head_image from '@/assets/head_images/project.png'
 
 export default {
   name: 'App',
@@ -263,8 +263,9 @@ export default {
 
 .roundRect {
   padding: 20px;
-  background-color: rgb(220, 230, 237);
   border-radius: 20px;
-  margin: 16px 0;
+  margin: 32px 0;
+  border: 2px solid #ed8555;
 }
+
 </style>

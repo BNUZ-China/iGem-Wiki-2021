@@ -12,7 +12,7 @@
         of predictive properties. Through this suggestion, our Lotka-Volterra competition model joins the comparison
         before and after the addition of GDH, which is manifested in the change of the competition coefficient of
         engineering bacteria.
-        <div class="image-container">
+        <div class="bnuz-table-container">
           <div>
             <img :src="pic0" width="800px">
             <p>
@@ -40,7 +40,7 @@
         concluding of information, and it’s a share of ideas and experiences.
         <!-- TODO Links  -->
 
-        <div class="image-container">
+        <div class="bnuz-table-container">
           <div>
             <img :src="handbook" width="800px">
             <p>
@@ -58,7 +58,7 @@
         are also a number of top experts from academia, industry and social science.
         <!-- TODO 链接到肠道手册 -->
 
-        <div class="image-container">
+        <div class="bnuz-table-container">
           <div>
             <img :src="pic2" width="800px">
             <p>
@@ -177,22 +177,22 @@ export default {
   color: black;
 }
 
-.image-container {
+.bnuz-table-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 24px;
 }
 
-.image-container > div > img {
+.bnuz-table-container > div > img {
   display: block;
 }
 
-.image-container > div {
+.bnuz-table-container > div {
   text-align: center;
 }
 
-.image-container > div > p {
+.bnuz-table-container > div > p {
   font-size: 18px;
   color: #5e615a;
 }
