@@ -4,20 +4,18 @@
     <top-navigation-bar/>
     <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678">
     <BNUZ_Content>
-      <bnuz_content_paragraph hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
-        <h4>First Heading</h4>
-        Build a periodic expression module of Cas9
-        To verify that our design enables Cas9 to be expressed periodically, we built a module for the periodic
-        expression of Cas9, and the experiments were carried out as follows.
-        1. Construct the recombinant plasmid pRH003-URA3-CLB2 promoter-Cas9 by in-fusion cloning. Then transform it
-        into E. coli DH5α. Extract plasmids from transformants. The recombinant plasmids were confirmed by colony
-        PCR and sequencing, then transformed into S. cerevisiae BY4741. Screen for transformants by SD-ura culture
-        medium.
-        2.Synchronize the cell cycle of S. cerevisiae population to G1 phase.
-        3.Release yeast cells from synchronization. Remove a time-zero fraction. Collect fractions of culture every
-        10 min for 150 min. Extract total protein for Western Blot. Strain without being transformed was used as a
-        negative control. GAPDH was chosen as an internal reference.
-        4.Obtain and analyze data. Draw the image of Cas9 protein levels over time.
+      <bnuz_content_paragraph hint_text="The structure of Indole propionic acid(IPA) metabolic pathway in E.coli.">
+        <h4>The structure of Indole propionic acid(IPA) metabolic pathway in E.coli.</h4>
+        The tryptophan metabolic pathway of E. coli is of great value in production. Many research reform this
+        pathway. The USAS-China team in 2018 knocked-out the tnaA gene which coding the tryptophan enzyme of E.
+        coli<sup>[1]</sup>. At 2019, the CRISPR-Cas9 technique was used in the knock-out of tnaA<sup>[2]</sup>. This
+        year, the TnaA gene was knocked out by Red recombination.
+        After knocking out the pathway of tryptophan metabolism to produce indole, in order to eliminate accumulated tryptophan and achieve the purpose of repairing intestinal mucosal barrier, Our team successfully structured the IPA metabolic pathway by cloned and linked multiple genes from Arabidopsis thaliana and Clostridium sporogenes(Figure 1). The fld plasmid was transformed into E.coli BL21(DE3) and achieved the production of IPA from tryptophan(Figure 2).
+        Through this metabolic pathway, the accumulated tryptophan after tnaA gene deletion can be changed into IPA,
+        which is good for health. Our result provides programme and reference for the research of tryptophan metabolic pathway.
+        <bnuz_image_container>
+
+        </bnuz_image_container>
       </bnuz_content_paragraph>
 
       <bnuz_content_paragraph hint_text="Degradation of Cas9 at a proper rate In order to verify the function">
@@ -102,8 +100,9 @@ import BNUZ_Content from "@/components/bnuz_content";
 import Bottom from "@/components/bottom";
 import bnuz_content_paragraph from "@/components/bnuz-content-paragraph";
 import AppRoot from "@/AppRoot";
+import bnuz_image_container from "@/components/bnuz_image_container";
 
-import head_image from '@/assets/head_images/human_practice.png'
+import head_image from '@/assets/head_images/PARTS/bannerPARTS-contribution.png'
 
 export default {
   name: 'App',
@@ -112,7 +111,8 @@ export default {
     Bottom,
     TopNavigationBar,
     BNUZ_Content,
-    bnuz_content_paragraph
+    bnuz_content_paragraph,
+    bnuz_image_container
   },
   data() {
     return {

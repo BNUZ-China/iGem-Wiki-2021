@@ -150,7 +150,7 @@ import bnuz_image_container from "@/components/bnuz_image_container";
 import AppRoot from "@/AppRoot";
 import conf from '@/wiki_config';
 
-import head_image from '@/assets/head_images/safety.png'
+import head_image from '@/assets/head_images/safety/bannerSAFETY.png'
 import pic1 from '@/assets/safety/pic1.png'
 import pic2 from '@/assets/safety/pic2.jpg'
 import pic3 from '@/assets/safety/pic3.png'

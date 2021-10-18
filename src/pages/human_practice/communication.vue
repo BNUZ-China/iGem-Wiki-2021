@@ -162,7 +162,7 @@ import AppRoot from "@/AppRoot";
 
 import bnuz_image_container from "@/components/bnuz_image_container";
 
-import head_image from '@/assets/head_images/human_practice.png'
+import head_image from '@/assets/head_images/HUMANPRACTICE/bannerhumanp-education.png'
 import conf from '@/wiki_config';
 import pic1 from '@/assets/hp/communication/pic1.jpg'
 import pic2 from '@/assets/hp/communication/pic2.jpg'

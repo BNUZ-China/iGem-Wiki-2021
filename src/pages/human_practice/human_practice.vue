@@ -50,9 +50,9 @@
                   decided to focus our project on the treatment of CKD. We also investigated people’s understanding
                   of synthetic biology, which encouraged us to do more with the methods people are more willing to
                   accept to raise the public’s knowledge (Fig. 4), which can be found in
-<!--                 TODO 链接到communication -->
+                  <!--                 TODO 链接到communication -->
                   <a href="communication"> our
-                  science communication </a>.
+                    science communication </a>.
                 </p>
                 <img :src="p1_pic1">
                 <img :src="p1_pic2">
@@ -111,7 +111,9 @@
                   </p>
                 </div>
 
-                <img :src="p2_pic2">
+                <div class="left-right-div">
+                  <img :src="p2_pic2" width="65%">
+                </div>
                 <p>
 
                   Prof. Zhiwei Qin
@@ -137,7 +139,10 @@
                   Editor of Chinese Journal of Biotechnology, Research Fields & Emphasis: Fungal secondary metabolism
                   and Synthetic Biology, Studies on RNAi and endogenous siRNA biology of fungi.
                 </p>
-                <img :src="p2_pic5">
+                <div class="left-right-div">
+                  <img :src="p2_pic5">
+
+                </div>
                 <p>
                   When we first started to design our project, we were so confused and couldn’t work out quite a few
                   questions. Prof. Xudong Zhu offered us a lot of help. After listening the initial design of our
@@ -548,7 +553,7 @@ import BNUZ_hp_modal_content_left from "@/components/bnuz_hp_modal_content_left"
 import BNUZ_hp_modal_content_right from "@/components/bnuz_hp_modal_content_right";
 import BNUZ_content_modal from '@/components/bnuz_content_modal';
 
-import head_image from '@/assets/head_images/human_practice.png'
+import head_image from '@/assets/head_images/HUMANPRACTICE/bannerhumanp.png'
 import p1_pic1 from '@/assets/hp/general_hp/part1/pic1.png'
 import p1_pic2 from '@/assets/hp/general_hp/part1/pic2.png'
 import p1_pic3 from '@/assets/hp/general_hp/part1/pic3.png'

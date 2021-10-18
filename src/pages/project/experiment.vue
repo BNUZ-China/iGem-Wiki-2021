@@ -105,7 +105,7 @@ import bnuz_content_paragraph from "@/components/bnuz-content-paragraph";
 import AppRoot from "@/AppRoot";
 import BNUZ_content_modal from "@/components/bnuz_content_modal";
 
-import head_image from '@/assets/head_images/human_practice.png'
+import head_image from '@/assets/head_images/PROJECT/bannerproject-experiment.png'
 
 export default {
   name: 'App',

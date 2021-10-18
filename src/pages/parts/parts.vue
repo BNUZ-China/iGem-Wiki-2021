@@ -202,7 +202,7 @@ import AppRoot from "@/AppRoot";
 import conf from '@/wiki_config';
 import pic1 from '@/assets/parts/pic1.png'
 
-import head_image from '@/assets/head_images/parts.png'
+import head_image from '@/assets/head_images/PARTS/bannerPARTS.png'
 
 export default {
   name: 'App',

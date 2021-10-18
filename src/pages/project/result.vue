@@ -103,7 +103,7 @@ import Bottom from "@/components/bottom";
 import bnuz_content_paragraph from "@/components/bnuz-content-paragraph";
 import AppRoot from "@/AppRoot";
 
-import head_image from '@/assets/head_images/project.png'
+import head_image from '@/assets/head_images/PROJECT/bannerproject-result.png'
 
 export default {
   name: 'App',

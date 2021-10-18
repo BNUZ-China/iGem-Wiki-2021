@@ -121,7 +121,7 @@ import bnuz_content_paragraph from "@/components/bnuz-content-paragraph";
 import bnuz_image_container from "@/components/bnuz_image_container";
 import AppRoot from "@/AppRoot";
 
-import head_image from '@/assets/head_images/human_practice.png'
+import head_image from '@/assets/head_images/HUMANPRACTICE/bannerhumanp-collaboration.png'
 import pic0 from '@/assets/hp/collaboration/pic0.png'
 import pic1 from '@/assets/hp/collaboration/pic1.jpg'
 import pic2 from '@/assets/hp/collaboration/pic2.jpg'

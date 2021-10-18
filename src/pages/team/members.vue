@@ -2,7 +2,10 @@
   <AppRoot id="app">
     <!--    <Background_picture src="assets/homepage_hospital.png"></Background_picture>-->
     <top-navigation-bar/>
-    <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678">
+    <div class="bnuz-header-image-container" @mouseover="headImageMouseOver" @mouseout="headImageMouseOut">
+      <img :src="himg2" class="bnuz-switch-header-image" ref="himg1">
+      <img :src="himg1" class="bnuz-switch-header-image bnuz-team-head-image-2" ref="himg2">
+    </div>
     <BNUZ_content>
       <bnuz_content_paragraph hint_text="PI">
         <b-container>
@@ -215,6 +218,9 @@ import yby from '@/assets/members/yby.png'
 import ysd from '@/assets/members/ysd.png'
 import ywj from '@/assets/members/ywj.png'
 
+import himg1 from '@/assets/head_images/team/team1.png';
+import himg2 from '@/assets/head_images/team/team2.png';
+
 export default {
   name: 'App',
   components: {
@@ -247,7 +253,20 @@ export default {
       xwy: conf.isDev ? xwy : '',
       yby: conf.isDev ? yby : '',
       ysd: conf.isDev ? ysd : '',
-      ywj: conf.isDev ? ywj : ''
+      ywj: conf.isDev ? ywj : '',
+      himg1: conf.isDev ? himg1 : '',
+      himg2: conf.isDev ? himg2 : '',
+      isHeadImage1: true
+    }
+  },
+  methods: {
+    headImageMouseOver: function () {
+      this.$refs.himg1.classList = ['image-fade-out bnuz-switch-header-image']
+      this.$refs.himg2.classList = ['image-fade-in bnuz-switch-header-image']
+    },
+    headImageMouseOut: function () {
+      this.$refs.himg1.classList = ['image-fade-in bnuz-switch-header-image']
+      this.$refs.himg2.classList = ['image-fade-out bnuz-switch-header-image bnuz-team-head-image-2']
     }
   }
 }
@@ -257,6 +276,10 @@ export default {
 .bnuz-header-image {
   width: 100%;
   height: 40%;
+}
+
+.bnuz-header-image:hover {
+  height: 60%;
 }
 
 .roundRect {
@@ -269,6 +292,10 @@ export default {
 .members-title {
   text-align: center;
   margin: 12px auto;
+  width: 22vw;
+  padding: 20px;
+  border-top: 2px solid #deddde;
+  border-bottom: 2px solid #deddde;
 }
 
 .card-text {
@@ -292,5 +319,58 @@ export default {
 .card {
   border: none;
   align-items: center;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.image-fade-in {
+  animation: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.image-fade-out {
+  animation: fade-out;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.bnuz-header-image-container {
+  width: 100%;
+  height: calc(100vw / 2.7826086956521739130434782608696);
+}
+
+.bnuz-switch-header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vw / 2.7826086956521739130434782608696);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bnuz-team-head-image-1 {
+  opacity: 1;
+}
+
+.bnuz-team-head-image-2 {
+  opacity: 0;
 }
 </style>

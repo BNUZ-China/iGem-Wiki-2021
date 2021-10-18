@@ -6706,7 +6706,7 @@ import AppRoot from "@/AppRoot";
 import bnuz_image_container from "@/components/bnuz_image_container";
 import conf from '@/wiki_config';
 
-import head_image from '@/assets/head_images/model.png'
+import head_image from '@/assets/head_images/model/bannermodel.png'
 import fig1_1 from '@/assets/model/fig1.1.svg'
 import fig1_2 from '@/assets/model/fig1.2.svg'
 import fig2_1 from '@/assets/model/fig2.1.png'
