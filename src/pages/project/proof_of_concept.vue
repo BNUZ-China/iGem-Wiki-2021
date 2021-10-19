@@ -6,12 +6,21 @@
     <BNUZ_Content nav_item_color="#ffd89f" top_distance="10">
       <bnuz_content_paragraph hint_text="Overview">
         <h4>Overview</h4>
-        <p>We successfully constructed a metabolic pathway for metabolizing tryptophan to produce indolepropionic acid. Indolepropionic acid has been proved to have a good role in repairing the intestinal mucosal barrier and can play a certain role in delaying the progression of chronic kidney disease. Meanwhile, <em>GDH</em> was overexpressed to enhance the intestinal colonization ability of engineered bacteria. Its function is verified by mathematical modeling. At the same time, we established a mathematical model of quorum sensing process, which provided a theoretical basis for subsequent regulation of intestinal colony structure and metabolism of engineered bacteria. We also successfully built the kill switch and anti-escape system, which created conditions for the practical application of our products.</p>
-        </bnuz_content_paragraph>
+        <p>We successfully constructed a metabolic pathway for metabolizing tryptophan to produce indolepropionic acid.
+          Indolepropionic acid has been proved to have a good role in repairing the intestinal mucosal barrier and can
+          play a certain role in delaying the progression of chronic kidney disease. Meanwhile, <em>GDH</em> was
+          overexpressed to enhance the intestinal colonization ability of engineered bacteria. Its function is verified
+          by mathematical modeling. At the same time, we established a mathematical model of quorum sensing process,
+          which provided a theoretical basis for subsequent regulation of intestinal colony structure and metabolism of
+          engineered bacteria. We also successfully built the kill switch and anti-escape system, which created
+          conditions for the practical application of our products.</p>
+      </bnuz_content_paragraph>
 
       <bnuz_content_paragraph hint_text="Gibson assembly construct Indole-3-Propionic Acid Metabolism Pathway">
         <h4>Gibson assembly construct Indole-3-Propionic Acid Metabolism Pathway</h4>
-        <p>We successfully constructed plasmids contained <em>TAA1, fldH, fldB, fldC, and acdA. TAA1, fldH and fldBC</em> are each initiated by a T7 promoter. <em>acdA</em> is transcribed by a self-contained promoter cloned from <em>Clostridium sporogenes.</em></p>
+        <p>We successfully constructed plasmids contained <em>TAA1, fldH, fldB, fldC, and acdA. TAA1, fldH and
+          fldBC</em> are each initiated by a T7 promoter. <em>acdA</em> is transcribed by a self-contained promoter
+          cloned from <em>Clostridium sporogenes.</em></p>
         <bnuz_image_container>
           <template v-slot:caption>
             Fig.1 IPA synthesis plasmid map
@@ -20,19 +29,37 @@
             <img :src="pic1" width="45%">
           </template>
         </bnuz_image_container>
-        <p>We transformed the plasmid into <em>E. coli</em> BL21(DE3) and induced it to express. After extracting total RNA, we obtained its cDNA by reverse transcription. We used cDNA as a template to amplify each fragment, then checked it by agarose gel electrophoresis. We chose <em>rsmA</em> (16S rRNA m(6)2A1518, m(6)2A1519 dimethyltransferase) as the internal reference gene and set a negative control. Five genes in the IPA metabolic pathway had been well expressed (Fig.2) and the corresponding mRNAs have been successfully transcribed. The expression levels of internal reference genes in the experimental group (<em>rsmAE</em>) and the control group (<em>rsmAC</em>) were consistent.</p>
+        <p>We transformed the plasmid into <em>E. coli</em> BL21(DE3) and induced it to express. After extracting total
+          RNA, we obtained its cDNA by reverse transcription. We used cDNA as a template to amplify each fragment, then
+          checked it by agarose gel electrophoresis. We chose <em>rsmA</em> (16S rRNA m(6)2A1518, m(6)2A1519
+          dimethyltransferase) as the internal reference gene and set a negative control. Five genes in the IPA
+          metabolic pathway had been well expressed (Fig.2) and the corresponding mRNAs have been successfully
+          transcribed. The expression levels of internal reference genes in the experimental group (<em>rsmAE</em>) and
+          the control group (<em>rsmAC</em>) were consistent.</p>
         <bnuz_image_container>
           <template v-slot:caption>
-            Fig.2 Gene expression level verification (<em>TAA1</em>: Tryptophan aminotransferase 1, 1176bp, 1176bp; <em>fldH:</em> phenyllactate dehydrogenase, 996bp; <em>fldB:</em> 2-hydroxyacyl-CoA dehydratase protein family,1224bp; <em>fldC</em>: 2-hydroxyacyl-CoA dehydratase protein family, 1125bp; <em>acdA</em>: 3-(aryl) acrylate reductase, 1134bp. <em>rsmAE</em>: 16S rRNA m(6)2A1518, m(6)2A1519 dimethyltransferase, 664bp, cloned from engineered <em>E. coli</em>. <em>rsmAC</em>: 16S rRNA m(6)2A1518, m(6)2A1519 dimethyltransferase, 664bp, cloned from control <em>E. coli</em>. NC: negative control)
+            Fig.2 Gene expression level verification (<em>TAA1</em>: Tryptophan aminotransferase 1, 1176bp, 1176bp; <em>fldH:</em>
+            phenyllactate dehydrogenase, 996bp; <em>fldB:</em> 2-hydroxyacyl-CoA dehydratase protein family,1224bp; <em>fldC</em>:
+            2-hydroxyacyl-CoA dehydratase protein family, 1125bp; <em>acdA</em>: 3-(aryl) acrylate reductase, 1134bp.
+            <em>rsmAE</em>: 16S rRNA m(6)2A1518, m(6)2A1519 dimethyltransferase, 664bp, cloned from engineered <em>E.
+            coli</em>. <em>rsmAC</em>: 16S rRNA m(6)2A1518, m(6)2A1519 dimethyltransferase, 664bp, cloned from control
+            <em>E. coli</em>. NC: negative control)
           </template>
           <template v-slot:image>
             <img :src="pic2" width="65%">
           </template>
         </bnuz_image_container>
-        <p>To test whether our engineered bacteria can metabolize tryptophan to produce indolepropionic acid, we used HPLC (High performance liquid chromatography) to detect the content of HPLC in the fermentation supernatant. We set up three biological replicates, namely IPA1, IPA2, and IPA3, as well as a control and a standard BZP1. We can learn that the experimental group and the standard have a peak at the same retention time (Fig.3), which proves the presence of Indole-3-propionic acid in the experimental group. Meanwhile, there was no peak in control group, which proved that <em>E. coli</em> could not metabolize tryptophan to produce indole propionic acid.</p>
+        <p>To test whether our engineered bacteria can metabolize tryptophan to produce indolepropionic acid, we used
+          HPLC (High performance liquid chromatography) to detect the content of HPLC in the fermentation supernatant.
+          We set up three biological replicates, namely IPA1, IPA2, and IPA3, as well as a control and a standard BZP1.
+          We can learn that the experimental group and the standard have a peak at the same retention time (Fig.3),
+          which proves the presence of Indole-3-propionic acid in the experimental group. Meanwhile, there was no peak
+          in control group, which proved that <em>E. coli</em> could not metabolize tryptophan to produce indole
+          propionic acid.</p>
         <bnuz_image_container>
           <template v-slot:caption>
-            Fig. 3 Determination of indole propionic acid in supernatant by HPLC (IPA1, IPA2, IPA3 are experimental groups，BZP1 is positive control，Control is negative control)
+            Fig. 3 Determination of indole propionic acid in supernatant by HPLC (IPA1, IPA2, IPA3 are experimental
+            groups，BZP1 is positive control，Control is negative control)
           </template>
           <template v-slot:image>
             <img :src="pic3" width="35%">
@@ -43,7 +70,12 @@
       <bnuz_content_paragraph hint_text="Overexpression of GDH">
         <h4>Overexpression of <em>GDH</em></h4>
         <p>To explore whether <em>GDH</em> can effectively promote the proliferation of engineered bacteria without
-          IPTG induction, we have drawn the growth curve of engineered bacteria and normal bacteria. From the growth curve (Fig.4) we can learn that compared with <em>E. coli</em> that had not overexpressed <em>GDH</em>, our engineered bacteria had a certain proliferation advantage, although the effect is not obvious. We subsequently established a mathematical model of intestinal colony competition. The results showed that although <em>GDH</em> slightly enhanced the colonization advantage of engineered bacteria, it could be eventually well colonized in the intestinal tract.</p>
+          IPTG induction, we have drawn the growth curve of engineered bacteria and normal bacteria. From the growth
+          curve (Fig.4) we can learn that compared with <em>E. coli</em> that had not overexpressed <em>GDH</em>, our
+          engineered bacteria had a certain proliferation advantage, although the effect is not obvious. We subsequently
+          established a mathematical model of intestinal colony competition. The results showed that although
+          <em>GDH</em> slightly enhanced the colonization advantage of engineered bacteria, it could be eventually well
+          colonized in the intestinal tract.</p>
         <bnuz_image_container>
           <template v-slot:caption>
             Fig.4 <em>GDH</em> overexpression promotes cell growth
@@ -90,7 +122,8 @@
         </p>
         <p>Because the intestinal environment is complex, the interaction between multiple bacteria should also be
           included
-          in our model, so we tried to include intestinal <em>Escherichia coli</em> (which will be replaced in part by our
+          in our model, so we tried to include intestinal <em>Escherichia coli</em> (which will be replaced in part by
+          our
           engineered bacteria) and pathogenic bacteria which is directly related to CKD in the model. </p>
         <p>
           <mjx-container class="MathJax" jax="SVG" style="position: relative;">
@@ -626,7 +659,8 @@
           physical and chemical properties, and the model of pathogenic bacteria in the middle is a complex reaction
           relationship), we will expand this equation to three species competition, based on the experimental data and
           the
-          Lotka - on the model of three species competition (include 1 engineering <em>E. coli</em> ; 2. primary <em>E. coli</em> ; 3.
+          Lotka - on the model of three species competition (include 1 engineering <em>E. coli</em> ; 2. primary <em>E.
+            coli</em> ; 3.
           Pathogenic bacteria. As the probiotics content in the intestinal tract of CDK patients is close to 0, it is
           not
           considered here). </p>
@@ -1506,7 +1540,8 @@
           <script type="math/tex">\left( i\ne j \right) </script>
           —— the coefficient of interspecific competition
         </p>
-        <p>In addition, the concentration-time image and the concentration-concentration image of original <em>E. coli</em> and
+        <p>In addition, the concentration-time image and the concentration-concentration image of original <em>E.
+          coli</em> and
           engineered <em>E. coli</em> was shown below:</p>
         <bnuz_image_container>
           <template v-slot:caption>
@@ -1524,13 +1559,17 @@
             <img :src="fig1_2">
           </template>
         </bnuz_image_container>
-        <p>Compared with image 1, <em>GDH</em> was added into image 2, which improved the competitiveness of engineered bacteria
+        <p>Compared with image 1, <em>GDH</em> was added into image 2, which improved the competitiveness of engineered
+          bacteria
           compared with original <em>E. coli</em>.</p>
-        <p>Through the figures, we can see that after the expression of <em>GDH</em>, the population density of engineered
+        <p>Through the figures, we can see that after the expression of <em>GDH</em>, the population density of
+          engineered
           bacteria
-          increased rapidly due to its enhanced competitiveness. In the absence of <em>GDH</em> expression, the engineered
+          increased rapidly due to its enhanced competitiveness. In the absence of <em>GDH</em> expression, the
+          engineered
           bacteria
-          maintained a relatively stable quantitative structure with the original <em>E. coli</em>. This conclusion also provides
+          maintained a relatively stable quantitative structure with the original <em>E. coli</em>. This conclusion also
+          provides
           a
           theoretical basis for the setting of quorum sensing in our subsequent experiments.</p>
       </bnuz_content_paragraph>
@@ -1550,7 +1589,8 @@
           intestinal colony structure. </p>
         <p>When the proportion of engineered bacteria in the environment is low, the concentration of released AHL is
           not
-          high enough, and there is just a weak combination between AHL and LuxR. At this time, <em>GDH</em> expressed, enhancing
+          high enough, and there is just a weak combination between AHL and LuxR. At this time, <em>GDH</em> expressed,
+          enhancing
           the engineered bacteria&#39;s competitiveness.</p>
         <bnuz_image_container>
           <template v-slot:caption>
@@ -1563,12 +1603,14 @@
 
         <p>As time goes on, due to the stronger competitiveness, our engineered bacteria have an advantage in
           competition
-          with native <em>E. coli</em>. And when they reach a certain proportion, so as to the concentration of AHL reaches the
+          with native <em>E. coli</em>. And when they reach a certain proportion, so as to the concentration of AHL
+          reaches the
           threshold, there will be a strong combination between AHL and LuxR, at which time tetR and bga2 begin to
           express. At the same time, <em>GDH</em> will no longer express actively, which reduces the competitiveness of
           engineered
           bacteria, which also protects the intestinal microbiota to a certain extent. </p>
-        <p>Through this quorum sensing system, part of the native <em>E. coli</em> in this environment can be retained. And also,
+        <p>Through this quorum sensing system, part of the native <em>E. coli</em> in this environment can be retained.
+          And also,
           indoles produced by tryptophan play an important role in the formation of <em>E. coli</em> cell membrane. </p>
         <bnuz_image_container>
           <template v-slot:caption>
@@ -1585,9 +1627,8 @@
           $$
 
 
-
           \begin{split}&\rightarrow LuxR\\AHL+LuxR &\leftrightarrow AHL\text{-}LuxR\\AHL\text{-}LuxR+P_{luxOFF}
-          &\leftrightarrow P_{luxON}\\P_{luxON} &\rightarrow P_{luxON}+mRNA_{lazZ}\\mRNA_{bga2} &\rightarrow
+          &\leftrightarrow P_{luxON}\\P_{luxON} &\rightarrow P_{luxON}+mRNA_{bga2}\\mRNA_{bga2} &\rightarrow
           bga2\\AHL&\rightarrow \\LuxR&\rightarrow \\AHL\text{-}LuxR&\rightarrow \\mRNA_{bga2}&\rightarrow
           \\bga2&\rightarrow\end{split}
           $$
@@ -1668,7 +1709,15 @@
         </div>
         <p>According to the Law of mass action, the following differential equation can be obtained:</p>
         <p>
-          $$\begin{align}\frac{d\left[ AHL \right]}{dt}&=-d_{AHL}\left[ AHL \right] \\\frac{d\left[ LuxR \right]}{dt}&=\alpha _{LuxR}-k_{AHL\text{-}LuxR}\left[ AHL \right] \left[ LuxR \right] +k_{-AHL\text{-}LuxR}\left[ AHL\text{-}LuxR \right] -d_{LuxR}\left[ LuxR \right] \\\frac{d\left[ AHL\text{-}LuxR \right]}{dt}&=k_{AHL\text{-}LuxR}\left[ AHL \right] \left[ LuxR \right] -k_{-AHL\text{-}LuxR}\left[ AHL\text{-}LuxR \right] \\\frac{d\left[ P_{LuxON} \right]}{dt}&=k_{PLuxON}\left[ P_{LuxOFF} \right] \left[ AHL\text{-}LuxR \right] -k_{-P_{LuxON}}\left[ P_{LuxON} \right] \\\frac{d\left[ mRNA_{bga2} \right]}{dt}&=L_{P_{Lux}}+k_{mRNA_{bga2}}\left[ P_{luxON} \right]-d_{mRNA_{bga2}}\left[ mRNA_{bga2} \right]\\\frac{d\left[ bga2 \right]}{dt}&=k_{bga2}\left[ mRNA_{bga2} \right] -d_{bga2}\left[ bga2 \right]\end{align}
+          $$\begin{align}\frac{d\left[ AHL \right]}{dt}&=-d_{AHL}\left[ AHL \right] \\\frac{d\left[ LuxR
+          \right]}{dt}&=\alpha _{LuxR}-k_{AHL\text{-}LuxR}\left[ AHL \right] \left[ LuxR \right]
+          +k_{-AHL\text{-}LuxR}\left[ AHL\text{-}LuxR \right] -d_{LuxR}\left[ LuxR \right] \\\frac{d\left[
+          AHL\text{-}LuxR \right]}{dt}&=k_{AHL\text{-}LuxR}\left[ AHL \right] \left[ LuxR \right]
+          -k_{-AHL\text{-}LuxR}\left[ AHL\text{-}LuxR \right] \\\frac{d\left[ P_{LuxON} \right]}{dt}&=k_{PLuxON}\left[
+          P_{LuxOFF} \right] \left[ AHL\text{-}LuxR \right] -k_{-P_{LuxON}}\left[ P_{LuxON} \right] \\\frac{d\left[
+          mRNA_{bga2} \right]}{dt}&=L_{P_{Lux}}+k_{mRNA_{bga2}}\left[ P_{luxON} \right]-d_{mRNA_{bga2}}\left[
+          mRNA_{bga2} \right]\\\frac{d\left[ bga2 \right]}{dt}&=k_{bga2}\left[ mRNA_{bga2} \right] -d_{bga2}\left[ bga2
+          \right]\end{align}
           $$
         </p>
       </bnuz_content_paragraph>
@@ -1678,13 +1727,17 @@
         <h5>Red recombination knocks out <em>Can</em> gene</h5>
         <p>
 
-        We successfully knocked out the <em>Can</em> gene of the engineered bacteria through Red recombination. We used pBR322 plasmid as a template and amplified it with Pfu DNA Polymerase.
+          We successfully knocked out the <em>Can</em> gene of the engineered bacteria through Red recombination. We
+          used pBR322 plasmid as a template and amplified it with Pfu DNA Polymerase.
         </p>
         The product length was 1092bp.The concentration of the purified product in the gel slice: 20ng/μl.
         <bnuz_image_container>
           <template v-slot:caption>
             Fig.10 Gel electrophoresis of the knockout fragment (CanB: Can gene knockout fragment, 1092bp)
-            PCR detection was performed with a pair of primers outside the homology arm on the genome, and the length of the amplified product of the original strain was 911 bp. When Can is replaced by the ampicillin resistance gene, the length of the amplified product of primers is shortened to 1270bp. The PCR amplification results showed that all 10 clones were positive clones.
+            PCR detection was performed with a pair of primers outside the homology arm on the genome, and the length of
+            the amplified product of the original strain was 911 bp. When Can is replaced by the ampicillin resistance
+            gene, the length of the amplified product of primers is shortened to 1270bp. The PCR amplification results
+            showed that all 10 clones were positive clones.
           </template>
           <template v-slot:image>
             <img :src="pic10" width="35%">
@@ -1693,34 +1746,46 @@
         <bnuz_image_container>
           <template v-slot:caption>
             Fig.11 Gel electrophoretogram of positive clones
-            Selected the first clone for sequencing verification. The sequencing results were the same as the design. We designated it as the <em>Can</em> knockout strain, named: BL21(DE3)/Δcan::Ap
+            Selected the first clone for sequencing verification. The sequencing results were the same as the design. We
+            designated it as the <em>Can</em> knockout strain, named: BL21(DE3)/Δcan::Ap
           </template>
           <template v-slot:image>
             <img :src="pic11" width="65%">
           </template>
-          <p>
-
-          To further confirm knocking out Can gene works as a kill switch, we did a phenotype test by coating our bacteria on different plates and placing them in different conditions.
-          </p>
-          <bnuz_image_container>
-            <template v-slot:caption>
-              Fig.12 Confirmation of can knockout in engineered bacteria
-            </template>
-            <template v-slot:image>
-              <img :src="pic12" width="65%">
-            </template>
-          </bnuz_image_container>
         </bnuz_image_container>
-          <p>
-            As shown in Fig. 12, Δcan::Ap requires a higher CO2 level to survive. In doing so, we have proved that we have successfully knocked out the can gene.
-          </p>
-        <h5>L-arabinose induces the expression of transcription inhibitors</h5>
         <p>
-          The purpose of the suicide induction module is to use L-arabinose to induce engineered bacteria in the intestine to stop proliferation when needed. We used two different concentrations of arabinose in our experiment. After induction, the survival rate of engineered bacteria in the experimental group decreased significantly (Fig.13). Meanwhile, the OD600 of the culture also decreased, indicating that high concentrations of arabinose induced bacterial lysis.
+
+          To further confirm knocking out Can gene works as a kill switch, we did a phenotype test by coating our
+          bacteria on different plates and placing them in different conditions.
         </p>
         <bnuz_image_container>
           <template v-slot:caption>
-            Fig.13 Bacterial suicide induced by L-arabinose. A: Live cells are counted over time after induction, and the number is significantly reduced under the effect of MazF expression. B: The OD600 of the experimental group decreased significantly, which proved that suicide induced by a high concentration of arabinose would cause cell lysis.
+            Fig.12 Confirmation of can knockout in engineered bacteria
+          </template>
+          <template v-slot:image>
+            <img :src="pic12" width="65%">
+          </template>
+        </bnuz_image_container>
+        <p>
+          As shown in Fig. 12, Δcan::Ap requires a higher CO2 level to survive. In doing so, we have proved that we have
+          successfully knocked out the can gene.
+        </p>
+        <h5>L-arabinose induces the expression of transcription inhibitors</h5>
+        <p>
+          The purpose of the suicide induction module is to use L-arabinose to induce engineered bacteria in the
+          intestine to stop proliferation when needed. We used two different concentrations of arabinose in our
+          experiment. After induction, the survival rate of engineered bacteria in the experimental group decreased
+          significantly (Fig.13). Meanwhile, the OD600 of the culture also decreased, indicating that high
+          concentrations of arabinose induced bacterial lysis.
+        </p>
+        <p>
+          Live cells are counted over time after induction, and the number is significantly reduced under the effect of
+          MazF expression (Figure 13). The OD600 of the experimental group decreased significantly, which proved that
+          suicide induced by high concentration of arabinose would cause cell lysis (Figure 14).
+        </p>
+        <bnuz_image_container>
+          <template v-slot:caption>
+            Fig.13 Viable cell count changes over time
           </template>
           <template v-slot:image>
             <img :src="pic13" width="65%">
@@ -1760,7 +1825,7 @@ import fig2_1 from "@/assets/model/fig2.1.png";
 import fig2_2 from "@/assets/model/fig2.2.png";
 import fig3 from "@/assets/model/fig3.png";
 
-import head_image from '@/assets/head_images/PROJECT/bannerproject-result.png'
+import head_image from '@/assets/head_images/PROJECT/proof_of_concept.png'
 
 export default {
   name: 'App',

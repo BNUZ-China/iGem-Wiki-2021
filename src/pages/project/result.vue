@@ -72,6 +72,7 @@
       </bnuz_content_paragraph>
 
       <bnuz_content_paragraph hint_text="Overexpression of GDH">
+        <h4>Overexpression of GDH</h4>
         <p>
           To explore whether GDH can effectively promote the proliferation of engineered bacteria without IPTG induction, we have drawn the growth curve of engineered bacteria and normal bacteria. For more detailed characterization process, see <a
           href="proof_of_concept.vue">proof of

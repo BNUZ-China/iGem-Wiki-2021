@@ -3,8 +3,8 @@
     <!--    <Background_picture src="assets/homepage_hospital.png"></Background_picture>-->
     <top-navigation-bar/>
     <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678">
-    <BNUZ_Content_No_Nav>
-      <bnuz_experiment name="p1">
+    <BNUZ_Content nav_item_color="#ffd89f" top_distance="10">
+      <bnuz_experiment name="p1" hint_text="Red recombination knockout TnaA gene">
         <template v-slot:text>
           <h3>Red recombination knockout TnaA gene</h3>
           <p>
@@ -367,33 +367,13 @@
           </div>
         </template>
       </bnuz_experiment>
-      <bnuz_experiment name="p2">
+      <bnuz_experiment name="p2" hint_text="Gibson recombinant construction of indole propionic acid metabolic pathway">
         <template v-slot:text>
           <h3>Gibson recombinant construction of indole propionic acid metabolic pathway</h3>
-          <p>
+          <p>In order to make engineered bacteria metabolize tryptophan to produce indole propionic acid and repair intestinal mucosal barrier, we reconstructed a five-step metabolic pathway. Tryptophan is first catalyzed by tryptophan aminotransferase encoded by <em>TAA1</em> to produce indole pyruvate, and then indole pyruvate is catalyzed by phenyllactate dehydrogenase encoded by <em>fldH</em> to produce indole lactic acid. The enzyme is also the rate limiting enzyme of the whole reaction. Then, indole lactic acid is catalyzed to produce indole acrylic acid by 2-hydroxyacyl-CoA dehydrase protein family encoded by <em>fldBC</em>, and finally indole acrylic acid is catalyzed to produce indole propionic acid by 3 - (aryl) acylate reduce acdA encoded by <em>acdA**.</em></p>
+          <p>Firstly, we cloned the tryptophan aminotransferase <em>TAA1</em> from <em>Arabidopsis thaliana</em> cDNA, which can catalyze tryptophan to indole pyruvate. Then, four enzymes <em>fldB, fldC, fldH</em> and <em>acdA</em> in its fld gene cluster were cloned from the genome of <em>Clostridium</em> <em>perfringens <strong>sporogenes</strong>.</em></p>
+          <p>By Gibson recombination method, five genes were connected to His-6p-MBP-RSFD plasmid in the order of <em>TAA1-fldH-fldBC-acdA</em>. After successfully constructing the plasmid, we transferred it into <em>E.coli</em> BL21 (DE3). First, we extracted the total RNA of the engineered bacteria after induction of IPTG, and then obtained cDNA by reverse transcription. Then we detected whether our target bands were obtained by PCR and gel electrophoresis. For fermentation supernatant, we cooperated with BNU-China to carry out HPLC experiment to verify whether it is produced by indole propionic acid.</p>
 
-            In order to make engineering bacteria metabolize tryptophan to produce indole propionic acid and repair
-            intestinal mucosal barrier, we reconstructed a five-step metabolic pathway. Tryptophan is first catalyzed by
-            tryptophan aminotransferase encoded by TAA1 to produce indole pyruvate, and then indole pyruvate is
-            catalyzed by phenyllactate dehydrogenase encoded by fldH to produce indole lactic acid. The enzyme is also
-            the rate limiting enzyme of the whole reaction. Then, indole lactic acid is catalyzed to produce indole
-            acrylic acid by 2-hydroxyacyl-CoA dehydrase protein family encoded by fldBC, and finally indole acrylic acid
-            is catalyzed to produce indole propionic acid by 3 - (aryl) acylate reduce acdA encoded by acdA.
-          </p>
-          <p>
-
-            Firstly, we cloned the tryptophan aminotransferase TAA1 from Arabidopsis thaliana cDNA, which can catalyze
-            tryptophan to indole pyruvate. Then, four enzymes fldB, fldC, fldH and acdA in its FLD gene cluster were
-            cloned from the genome of Clostridium perfringens.
-          </p>
-          <p>
-            By Gibson recombination method, five genes were connected to his-6p-mbp-rsfd plasmid in the order of
-            TAA1-fldH-fldBC-acdA. After successfully constructing the plasmid, we transferred it into E.coli BL21
-            (DE3). First, we extracted the total RNA of the engineered bacteria after induction of IPTG, and then
-            obtained cDNA by reverse transcription. Then we detected whether our target bands were obtained by PCR and
-            gel electrophoresis. For fermentation supernatant, we cooperated with BNU-China to carry out HPLC
-            experiment to verify whether it is produced by indole propionic acid.
-          </p>
 
         </template>
         <template v-slot:modal-body>
@@ -771,7 +751,7 @@
         </template>
       </bnuz_experiment>
 
-      <bnuz_experiment name="p3">
+      <bnuz_experiment name="p3" hint_text="Overexpression of glucose dehydrogenase GDH">
         <template v-slot:text>
           <h3>Overexpression of glucose dehydrogenase GDH</h3>
           <p>
@@ -802,7 +782,7 @@
           </ol>
         </template>
       </bnuz_experiment>
-      <bnuz_experiment name="p4">
+      <bnuz_experiment name="p4" hint_text="Express Klebsiella oxytoca strain ZJUH1705beta-galactosidase (bga2) gene">
         <template v-slot:text>
           <h3>Express Klebsiella oxytoca strain ZJUH1705beta-galactosidase (bga2) gene</h3>
           <p>
@@ -1108,7 +1088,7 @@
           </ol>
         </template>
       </bnuz_experiment>
-      <bnuz_experiment name="p5">
+      <bnuz_experiment name="p5" hint_text="Can gene knockout by Red homologous recombination">
         <template v-slot:text>
           <h3>Can gene knockout by Red homologous recombination</h3>
           <p>
@@ -1313,7 +1293,7 @@
           <p>12. Then positive clones above were sent for sequencing.</p>
         </template>
       </bnuz_experiment>
-      <bnuz_experiment name="p6">
+      <bnuz_experiment name="p6" hint_text="Arabinose induced expression of translation inhibitor (MazF)">
         <template v-slot:text>
           <h3>Arabinose induced expression of translation inhibitor (MazF)</h3>
           <p>
@@ -1339,25 +1319,25 @@
           </ol>
         </template>
       </bnuz_experiment>
-    </BNUZ_Content_No_Nav>
+    </BNUZ_Content>
     <Bottom></Bottom>
   </AppRoot>
 </template>
 
 <script>
 import TopNavigationBar from "@/components/top_navigation_bar";
-import Bottom from "@/components/bottom_center";
+import Bottom from "@/components/bottom";
 import bnuz_experiment from "@/components/bnuz_experiment";
 import AppRoot from "@/AppRoot";
 import bnuz_table_container from "@/components/bnuz_table_container";
 
 import head_image from '@/assets/head_images/PROJECT/bannerproject-experiment.png'
-import BNUZ_Content_No_Nav from "@/components/bnuz_content_no_nav";
+import BNUZ_Content from "@/components/bnuz_content";
 
 export default {
   name: 'App',
   components: {
-    BNUZ_Content_No_Nav,
+    BNUZ_Content,
     AppRoot,
     Bottom,
     TopNavigationBar,

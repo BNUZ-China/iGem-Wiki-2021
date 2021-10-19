@@ -167,8 +167,8 @@ const pages_conf = {
   human_practice_page: {
     entry: 'src/human_practice.js',
     template: 'public/human_practice/human_practice.html',
-    filename: 'Human_practice.html',
-    title: 'Human_practice'
+    filename: 'Human_Practices.html',
+    title: 'Human_Practices'
   },
   partnership_page: {
     entry: 'src/partnership.js',

@@ -64,7 +64,8 @@
           enzyme in the pentose phosphate pathway and was defined to be positive enlarging the ability for bacteria
           proliferation, making the engineered bacteria be able to colonize in the gut.<br>
           <!--         TODO link -->
-          Detailed information can be found at: <a href="experiment.html">experiment</a>
+          Detailed information can be found at: <a href="https://2021.igem.org/Team:BNUZ-China/Experiment">experiment
+        </a>
         </template>
       </bnuz_engineer>
       <bnuz_engineer>
@@ -80,9 +81,7 @@
           that <em>GDH</em> is positive during the colonization of engineereded bacteria. However, the effect is not significant
           without the induction of IPTG. But we used our mathematical model to show that a little bit of added
           competitiveness allows engineered bacteria to colonize well
-          Detailed information can be found at: <a href="">Model</a>
-<!--         TODO link -->
-
+          Detailed information can be found at: <a href="https://2021.igem.org/Team:BNUZ-China/Model">Model</a>
         </template>
       </bnuz_engineer>
       <bnuz_engineer>
@@ -139,7 +138,8 @@
         <template v-slot:description>
           Our team structured a pathway by the Gibson recombination method of producing indolepopionic acid from
           tryptophan. The genes came from clostridium sporogenes and the cDNA of Arabidopsis thaliana. Due to the time
-          limitation, the part of quorum sensing is out of experiment. Detailed information can be found at: Experiment.
+          limitation, the part of quorum sensing is out of experiment. Detailed information can be found at: <a href="https://2021.igem.org/Team:BNUZ-China/Experiment">experiment
+        </a>.
         </template>
       </bnuz_engineer>
       <bnuz_engineer>

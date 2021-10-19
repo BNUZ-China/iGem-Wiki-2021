@@ -1,7 +1,7 @@
 <template>
   <div class="bnuz-footer roundRect" id="bnuz-footer">
     <div class="container bnuz-footer-container">
-      <div class="align-items-center row">
+      <div class="align-items-center row" style="justify-content: space-evenly">
         <div class="bnuz-contact-title col-2">
           <img :src="team_logo" class="team-logo">
         </div>
@@ -11,8 +11,8 @@
           Email: bnuz_china@163.com<br>
           ©2021. All Rights Reserved. Designed by BNUZ-China.
         </div>
-        <div class="col-5 bnuz-friends">
-
+        <div class="col-4 bnuz-friends">
+          <img :src="friends" width="100%">
         </div>
       </div>
     </div>
@@ -21,14 +21,16 @@
 
 <script>
 import conf from '@/wiki_config';
-import team_logo from '@/assets/team_logo.png'
+import team_logo from '@/assets/team_logo.png';
+import friends from '@/assets/bnuz_friends.png'
 
 export default {
   name: "bottom",
   data() {
     return {
       // TODO: set image URI
-      team_logo: conf.isDev ? team_logo : ''
+      team_logo: conf.isDev ? team_logo : '',
+      friends: conf.isDev ? friends : '',
     }
   }
 }
@@ -39,7 +41,7 @@ export default {
   margin-top: 16px !important;
   margin-bottom: 16px !important;
   margin-left: 14.5833vw !important;
-  width: 77.9166vw;
+  width: 76.5vw;
   padding: 24px 0 !important;
   /*border: 2px solid rgb(0 41 113);*/
   /*background-color: #eed6d6d9; !*eed6d6d9*!*/

@@ -165,7 +165,7 @@
           </tr>
           <tr>
             <td>
-              <p>BBa_K3036005</p>
+              <p><a href="http://parts.igem.org/Part:BBa_K3036005">BBa_K3036005</a></p>
             </td>
             <td>
               <p>Arabinose-induced suicide switch</p>
@@ -176,7 +176,7 @@
           </tr>
           <tr>
             <td>
-              <p>BBa_K3784006</p>
+              <p><a href="http://parts.igem.org/Part:BBa_K3784006">BBa_K3784006</a></p>
             </td>
             <td>
               <p>Using tryptophan as a metabolic material to produce IPA</p>
@@ -196,7 +196,7 @@
 <script>
 import TopNavigationBar from "@/components/top_navigation_bar";
 import BNUZ_Content_no_nav from "@/components/bnuz_content_no_nav";
-import Bottom from "@/components/bottom";
+import Bottom from "@/components/bottom_center";
 import bnuz_content_paragraph from "@/components/bnuz-content-paragraph";
 import AppRoot from "@/AppRoot";
 import conf from '@/wiki_config';
@@ -260,5 +260,24 @@ th, td {
 
 .table th {
   border-top: none;
+}
+
+@font-face {
+  font-family: text_font;
+  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+}
+
+@font-face {
+  font-family: Title_font;
+  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+}
+
+p {
+  font-size: 20px;
+  font-family: text_font, serif;
+}
+
+h4 {
+  font-family: Title_font, serif;
 }
 </style>

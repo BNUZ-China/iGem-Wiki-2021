@@ -53,6 +53,25 @@
         <b> Wu Jingyi</b>: Modeling Group Member, Literature Research, Collaboration<br>
         <b>Liang Liqi </b>: Modeling Group Member, Literature Research<br>
       </bnuz_content_paragraph>
+      <bnuz_content_paragraph hint_text="Thanks">
+        <h4>Thanks</h4>
+        <p><strong>General support</strong></p>
+        <p>Thanks for the great support from College of Education for the Future and Center for Biological Science and Technology, Beijing Normal University at Zhuhai.</p>
+        <p><strong>Project support and advice</strong></p>
+        <p>Thanks to Profs. Genfa Zhang, Benqiong Xiang, Zhiwei Qin, Xudong Zhu, Xiaoyan Wang, and Zhong Guo, for their important guidance and detailed advices on our project. We appreciate them sincerely.</p>
+        <p><strong>Fundraising help and advice</strong></p>
+        <p>Thanks for the great fundraising support from Beijing Normal University at Zhuhai .</p>
+        <p><strong>Lab support</strong></p>
+        <p>Thanks for the lab support from College of Education for the Future, Beijing Normal University at Zhuhai and Center for Biological Science and Technology, Beijing Normal University. Our supervisor Prof. Genfa Zhang, our principal investigator Prof. Benqiong Xiang and Prof. Bo Wang helped us to maintain a great environment.</p>
+        <p><strong>Difficult Technical support</strong></p>
+        <p>Thanks for the technical support from BGI Geonomics and Center for Biological Science and Technology, Beijing Normal University.</p>
+        <p><strong>Project advisor support</strong></p>
+        <p>We appreciate our advisors Yihao Li, Weijia Wu, and Kangwen Lao for their assistance during our experiments. Many thanks to the team BNU-China for their sharing of experiences.</p>
+        <p><strong>Presentation coaching</strong></p>
+        <p>Thanks for our supervisor Prof. Genfa Zhang for training us to accomplish an impressive presentation, and Profs. Benqiong Xiang, Bo Wang, Xudong Zhu, Zhiwei Qin, Xiaoyan Wang, and Zhong Guo for their valuable advices. Thanks a lot to them!</p>
+        <p><strong>Human practices support</strong></p>
+        <p>Thanks for the great support from Beijing Normal University. Thanks to BYHEALTH, Anzhen Hospital, Drs. Ban Zhao and Qiang Qiu, Profs. Benqiong Xiang, Xudong Zhu, Mingzhang Wen and other members of Center for Biological Science and Technology, Beijing Normal University for helping us performing a human practice. Thanks to all the people who help us accomplish our questionnaire. We have learned a lot and detailed our project in this process.</p>
+      </bnuz_content_paragraph>
     </BNUZ_Content>
     <Bottom></Bottom>
   </AppRoot>
@@ -164,5 +183,24 @@ export default {
 
 .bnuz-team-head-image-2 {
   opacity: 0;
+}
+
+@font-face {
+  font-family: text_font;
+  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+}
+
+@font-face {
+  font-family: Title_font;
+  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+}
+
+p {
+  font-size: 20px;
+  font-family: text_font, serif;
+}
+
+h4 {
+  font-family: Title_font, serif;
 }
 </style>

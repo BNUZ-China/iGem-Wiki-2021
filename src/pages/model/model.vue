@@ -1566,7 +1566,7 @@
 
 
           \begin{split}&\rightarrow LuxR\\AHL+LuxR &\leftrightarrow AHL\text{-}LuxR\\AHL\text{-}LuxR+P_{luxOFF}
-          &\leftrightarrow P_{luxON}\\P_{luxON} &\rightarrow P_{luxON}+mRNA_{lazZ}\\mRNA_{bga2} &\rightarrow
+          &\leftrightarrow P_{luxON}\\P_{luxON} &\rightarrow P_{luxON}+mRNA_{bga2}\\mRNA_{bga2} &\rightarrow
           bga2\\AHL&\rightarrow \\LuxR&\rightarrow \\AHL\text{-}LuxR&\rightarrow \\mRNA_{bga2}&\rightarrow
           \\bga2&\rightarrow\end{split}
           $$

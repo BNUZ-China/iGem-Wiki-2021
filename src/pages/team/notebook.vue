@@ -191,7 +191,7 @@
         </template>
         <template v-slot:text>
           <h5>IPA metabolic pathway(fld)</h5>
-          HPLC-MS
+          HPLC
           <h5>Overexpression β-Galactosidase</h5>
           LacZ plasmid sequenced by the company; Transformed to E.coli BL21(DE3); Colony PCR.
 
@@ -209,20 +209,15 @@
 
         </template>
       </BNUZ_notebook_item>
-
-
       <BNUZ_notebook_item name="Line12">
         <template v-slot:time>
           9.23-9.30
         </template>
         <template v-slot:text>
           <h5>Overexpression β-Galactosidase</h5>
-          Western blot
 
         </template>
       </BNUZ_notebook_item>
-
-
     </b-container>
 
     <Bottom></Bottom>
@@ -235,7 +230,7 @@ import Bottom from "@/components/bottom";
 import AppRoot from "@/AppRoot";
 import BNUZ_notebook_item from '@/components/bnuz_notebook_item';
 
-import head_image from '@/assets/head_images/project.png'
+import head_image from '@/assets/head_images/PROJECT/notebook.png'
 
 export default {
   name: 'App',

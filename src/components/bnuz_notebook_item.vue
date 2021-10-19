@@ -13,7 +13,10 @@
           <b-card-header header-tag="header" class="p-1" role="tab" header-class="card-header-invisible">
             <b-button block v-b-toggle="`bnuz-notebook-item-${name}-bt7hvqfe`" variant="info"
                       class="notebook_button_style">
+              <div style="color: black">
+
               <slot name="time"></slot>
+              </div>
             </b-button>
           </b-card-header>
           <b-collapse :id="`bnuz-notebook-item-${name}-bt7hvqfe`" accordion="my-accordion" role="tabpanel">
@@ -54,8 +57,8 @@ export default {
 
 .notebook_button_style {
   height: 1.5cm;
-  background-color: #b3c9ed;
-  border-color: #b3c9ed;
+  background-color: #ffeaca;
+  border-color: #ffeaca;
 }
 
 .card-header-invisible {

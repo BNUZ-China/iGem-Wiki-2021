@@ -113,7 +113,7 @@
                   A
                 </template>
                 <template v-slot:image>
-                  <img :src="pic4" width="95%">
+                  <img :src="pic4" height="250px">
                 </template>
               </bnuz_image_container>
               <bnuz_image_container>
@@ -121,7 +121,7 @@
                   B
                 </template>
                 <template v-slot:image>
-                  <img :src="pic5" width="95%">
+                  <img :src="pic5" height="250px">
                 </template>
               </bnuz_image_container>
             </div>
