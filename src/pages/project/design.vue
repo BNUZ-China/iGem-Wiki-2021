@@ -30,8 +30,8 @@
         </bnuz_image_container>
       </bnuz_content_paragraph>
 
-      <bnuz_content_paragraph hint_text="Determination of colonization advantage">
-        <h4>Determination of colonization advantage</h4>
+      <bnuz_content_paragraph hint_text="Enhance their ability to proliferate">
+        <h4>Enhance their ability to proliferate</h4>
         For our engineered bacteria to successfully colonize the intestinal tract, we must not allow our immune system
         to reject us, but we also need to have a certain degree of competitiveness to compete with the intestinal flora.
         So, we chose nissle1917 as our chassis creature. This strain is a strain derived from the human intestinal
@@ -169,6 +169,14 @@
           translation inhibitor, MazF does not cause bacterial cell lysis. Therefore, activating this "death switch"
           will not cause harm to native microorganisms.
         </p>
+        <bnuz_image_container>
+          <template v-slot:caption>
+            Fig. 8 Arabinose induces expression of translation inhibitor to kill engineered bacteria
+          </template>
+          <template v-slot:image>
+            <img :src="pic8" width="65%">
+          </template>
+        </bnuz_image_container>
         <h5><em>Can</em> defective engineered bacteria prevent escape</h5>
         <p>βcarbonic anhydrase is the key enzyme of Escherichia coli that rapidly metabolizes carbon dioxide and water
           into carbonic acid, hydrogen ion, and bicarbonate ion, which is encoded by the can gene. When the can gene
@@ -190,6 +198,16 @@
             <img :src="pic9" width="65%">
           </template>
         </bnuz_image_container>
+      </bnuz_content_paragraph>
+      <bnuz_content_paragraph hint_text="Reference">
+        <h4>Reference</h4>
+        <p>[1]Roager, H.M., Licht, T.R. Microbial tryptophan catabolites in health and disease. <em>Nat Commun</em> <strong>9,</strong> 3294 (2018).</p>
+        <p>[2] Dodd D, Spitzer MH, Van Treuren W, Merrill BD, Hryckowian AJ, Higginbottom SK, Le A, Cowan TM, Nolan GP, Fischbach MA, Sonnenburg JL. A gut bacterial pathway metabolizes aromatic amino acids into nine circulating metabolites. Nature. 2017.</p>
+        <p>[3] Vaziri ND, Zhao YY, Pahl MV. Altered intestinal microbial flora and impaired epithelial barrier structure and function in CKD: the nature, mechanisms, consequences and potential treatment [J]. Nephrol Dial Transplant, 2016, 31: 737-746</p>
+        <p>[4] Vaziri ND, Wong J, Pahl M, et al. Chronic kidney disease alters intestinal microbial flora [J]. Kidney Int, 2013, 83: 308-315. </p>
+        <p>[5] Zhang P, Wei M, Jiang HL, et al. Gut bacterial translocation contributes to microinflammationin experimental uremia [J]. Chin J Nephrol, 2013, 29: 611-615.</p>
+        <p>[6] Zhu S Q. Preparation of oligomeric galactose by biocatalytic method [D]. Zhejiang University of Technology,2020. </p>
+        <p>[7]Merlin, C., Masters, M., Mcateer, S., &amp; Coulson, A. (2003). Why is carbonic anhydrase essential to Escherichia coli. Journal of Bacteriology, 185(21), 6415–6424. </p>
       </bnuz_content_paragraph>
     </BNUZ_Content>
     <Bottom></Bottom>

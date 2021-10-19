@@ -3,7 +3,7 @@
     <!--    <Background_picture src="assets/homepage_hospital.png"></Background_picture>-->
     <top-navigation-bar/>
     <img :src="head_image" alt="head image" class="bnuz-header-image" width="1920" height="678">
-    <BNUZ_Content nav_item_color="#ffd89f" top_distance="15">
+    <BNUZ_Content nav_item_color="#0E4993" top_distance="15">
       <bnuz_content_paragraph hint_text="Overview">
         <p>
           In the context of globalization, many tasks are difficult to be accomplished by an individual or a small
@@ -209,7 +209,7 @@ export default {
 
 .roundRect {
   padding: 20px;
-  background-color: rgb(220, 230, 237);
+  border: 2px solid #002971;
   border-radius: 20px;
   margin: 16px 0;
 }

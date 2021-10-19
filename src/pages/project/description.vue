@@ -65,7 +65,7 @@
 
 
       <bnuz_content_paragraph hint_text="E.Coli Keen Doctor">
-        <h4>Reference</h4>
+        <h4>E.Coli Keen Doctor</h4>
         <p>With <i>Escherichia coli</i> Nissle 1917 as the template organism, BNUZ-China team developed a new type
         of intestinal colonization engineered bacteria, which knocked out the gene <i>TnaA</i> of the original
           <i>Escherichia coli</i> metabolizing tryptophan to produce indole, and overexpressed the engineered

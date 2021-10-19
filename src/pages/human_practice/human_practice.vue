@@ -41,10 +41,7 @@
               </template>
               <template slot="modal-body">
                 <p class="modal-text">
-                  As one of our team member’s grandma is suffering from CKD, we paid our attention to CKD. After conducting a survey, we surprisingly found that many people knew little about CKD(Fig. 1) even though its prevalence is getting higher and higher. In our survey, people with CKD are not aware of their CKD staging, which indicates that the “slient killer” has not attracted enough attention yet. In fact, CKD is the 6th fastest growing cause of death globally, causing at least 2.4 milion deaths per year. We also learned that there is still no cure for CKD and no means to revert it. Therefore, we decided to focus our project on the treatment of CKD. We also investigated people’s understanding of synthetic biology(Fig. 2), which encouraged us to do more with the methods people are more willing to accept to raise the public’s knowledge (Fig. 3), which can be found in
-                  <!--                 TODO 链接到communication -->
-                  <a href="communication"> our
-                    science communication </a>.
+                  As one of our team member’s grandma is suffering from CKD, we paid our attention to CKD. After conducting a survey, we surprisingly found that many people knew little about CKD(Fig.1) even though its prevalence is getting higher and higher. In our survey, people with CKD are not aware of their CKD staging, which indicates that the “slient killer” has not attracted enough attention yet. In fact, CKD is the 6th fastest growing cause of death globally, causing at least 2.4 milion deaths per year. We also learned that there is still no cure for CKD and no means to revert it. Therefore, we decided to focus our project on the treatment of CKD. We also investigated people’s understanding of synthetic biology(Fig.2), which encouraged us to do more with the methods people are more willing to accept to raise the public’s knowledge (Fig.3).
                 </p>
                 <img :src="p1_pic1">
                 <img :src="p1_pic2">

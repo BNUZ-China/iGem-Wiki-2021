@@ -7,7 +7,10 @@
       <bnuz_content_paragraph hint_text="Overview">
         <h4>Overview</h4>
         <p>
-          As the students of Beijing Normal University, we believe it is our duty to conduct science education. In regards to our survey results(问卷页面的链接) that people are more receptive to the popular science methods, we made many efforts in education, such as lectures, academic salons, online teaching for pupils, lab open day, brochures and posters. One of the most impressive activities is to discuss the ethical issues of synthetic biology with people. The views from different fields and professions also inspired us to think deeply. Because our school is a new campus of BNU, it is the first year of our school to participate in iGEM. Most younger siblings are not familiar with iGEM yet and shown great interest in it. So we hope to deepen people’s understanding of synthetic biology, iGEM, and our team's projects by educating, so as to let our team pass on next year. The following is a detailed description of the events.
+          As the students of Beijing Normal University, we believe it is our duty to conduct science education. In
+          regards to our <a href="https://www.wjx.cn/vm/PdBJYo3.aspx">survey results</a> that people are more receptive
+          to the popular science methods,
+          we made many efforts in education, such as lectures, academic salons, online teaching for pupils, lab open day, brochures and posters. One of the most impressive activities is to discuss the ethical issues of synthetic biology with people. The views from different fields and professions also inspired us to think deeply. Because our school is a new campus of BNU, it is the first year of our school to participate in iGEM. Most younger siblings are not familiar with iGEM yet and shown great interest in it. So we hope to deepen people’s understanding of synthetic biology, iGEM, and our team's projects by educating, so as to let our team pass on next year. The following is a detailed description of the events.
         </p>
       </bnuz_content_paragraph>
 
@@ -82,7 +85,7 @@
         </p>
         <bnuz_image_container>
           <template v-slot:caption>
-            The instructor is listening carefully to the lecture
+            Fig.5 The instructor is listening carefully to the lecture
           </template>
           <template v-slot:image>
             <img :src="pic5" width="65%">
@@ -101,7 +104,7 @@
         </p>
         <bnuz_image_container>
           <template v-slot:caption>
-            Students are listening carefully to the lecture
+            Fig.7 Students are listening carefully to the lecture
           </template>
           <template v-slot:image>
             <img :src="pic7" width="65%">

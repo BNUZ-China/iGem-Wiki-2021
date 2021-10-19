@@ -9,47 +9,49 @@
     <BNUZ_Content nav_item_color="#01016e">
       <bnuz_content_paragraph hint_text="Student leader">
         <h4>Student leader</h4>
-        <b>Luxuan Liu</b>: Team leader, experimental group leader, indolepopionic acid biosynthesis module,
+        <b>Liu Luxuan </b>: Team leader, experimental group leader, indolepopionic acid biosynthesis module,
           β-galactosidase module, glucose dehydrogenase overexpressing module and biosafety module designer, builder
         and tester, quorum sensing module designer. Participate in the design of mathematical modeling.<br>
 
-        <b>Yunxi Du</b>: co-team leader, experiment arrangement and job division, TnaA knock-off module design, GDH
+        <b>Du Yunxi </b>: co-team leader, experiment arrangement and job division, TnaA knock-off module design, GDH
           primer design, participate in plasmid (fld, PMF, GDH, and LacZ) construction, participate in poster and wiki design, participate in communication with other groups.<br>
 
       </bnuz_content_paragraph>
 
       <bnuz_content_paragraph hint_text="Experimental group">
         <h4>Experimental group</h4>
-        <b>Yu Huang</b>: Experimental group member, participate in project designing (indolepopionic acid biosynthesis
+        <b>Huang Yu </b>: Experimental group member, participate in project designing (indolepopionic acid biosynthesis
             module), participate in several experiments (PMF, GDH plasmid construction), preparation of safety form.<br>
-        <b>Shudan Ye</b>: experimental group member, participate in project designing and some experiments.<br>
-        <b>Jixiao Li</b>: Experimental group member, participate in project designing (TnaA knock-off), participate in
+        <b>Ye Shudan </b>: experimental group member, participate in project designing and some experiments.<br>
+        <b>Li Jixiao </b>: Experimental group member, participate in project designing (TnaA knock-off), participate in
                 several experiments (GDH, PMF plasmid construction), participate in HP interview, preparation of human practice manuscript.<br>
-        <b>Bi-Ying Yan</b>: Experimental group member, Gene function verification experiment designer (PMF, GDH, and
+        <b>Yan Bi-Ying </b>: Experimental group member, Gene function verification experiment designer (PMF, GDH, and
           lacZ), Experiments in construction of plasmid fld and PMF, and PMF module, GDH module and lacZ module functional test.<br>
-        <b>Jiayang Lu</b>: Experimental group member, participate in the experiment process, participate in the design of quorum sensing module, preparation of the safety form and parts section of Wiki.<br>
-        <b>Jialun Tan</b>: Experimental group member, glucose dehydrogenase overexpressing module designer.<br>
-        <b>Zinan Su</b>: Experimental group member, participate in experiments in fld plasmid construction, several PCR
+        <b>Lu Jiayang </b>: Experimental group member, participate in the experiment process, participate in the design of
+        quorum sensing module, preparation of the safety form and parts section of Wiki.<br>
+        <b>Tan Jialun </b>: Experimental group member, glucose dehydrogenase overexpressing module designer.<br>
+        <b>Su Zinan </b>: Experimental group member, participate in experiments in fld plasmid construction, several PCR
         for target DNA, participate in HP interview.<br>
-        <b>Wenjing Yang</b>: Experimental group member, Participating in project selection, Looking for papers about the growth-promoting effect of GDH, Experiments (several PCR for target DNA, plasmid extraction, et.al), HP interview, and preparation of the Human Practice part of Wiki.<br>
+        <b>Yang Wenjing </b>: Experimental group member, Participating in project selection, Looking for papers about the
+        growth-promoting effect of GDH, Experiments (several PCR for target DNA, plasmid extraction, et.al), HP interview, and preparation of the Human Practice part of Wiki.<br>
       </bnuz_content_paragraph>
 
       <bnuz_content_paragraph hint_text="Wiki & art group">
         <h4>Wiki & art group</h4>
-        <b>Si-Ting Fan</b>: Wiki&art group leader. The promotion video designer (the storyboard). The poster designer 
+        <b>Fan Si-Ting</b>: Wiki&art group leader. The promotion video designer (the storyboard). The poster designer
           (the background picture). The wiki designer (home page).<br>
-        <b>Hao Li</b>: Wiki & art team member. Website builder, webpack4 "igem-webpack-plugin" maker.<br>
-        <b>Yingjia Deng</b>: Wiki & art team member. Animation & poster maker, illustrator<br>
-        <b>Tianyu Gao</b>: Wiki & art team member. Animation & poster maker, illustrator<br>
+        <b>Li Hao</b>: Wiki & art team member. Website builder, webpack4 "igem-webpack-plugin" maker.<br>
+        <b>Deng Yingjia</b>: Wiki & art team member. Animation & poster maker, illustrator<br>
+        <b>Gao Tianyu</b>: Wiki & art team member. Animation & poster maker, illustrator<br>
 
       </bnuz_content_paragraph>
 
       <bnuz_content_paragraph hint_text="Model group">
         <h4>Model group</h4>
-        <b>Feiyang Lu</b>, Modeling Group Leader,  Project&Parts Design, Collaboration, Software<br>
-        <b>Wanying Xue</b>,  Modeling Group Member, Literature Research, Software<br>
-        <b>Jingyi Wu</b>, Modeling Group Member, Literature Research, Collaboration<br>
-        <b>Liqi Liang</b>, Modeling Group Member, Literature Research<br>
+        <b>Lu Feiyang</b>: Modeling Group Leader,  Project&Parts Design, Collaboration, Software<br>
+        <b> Xue Wanying</b>:  Modeling Group Member, Literature Research, Software<br>
+        <b> Wu Jingyi</b>: Modeling Group Member, Literature Research, Collaboration<br>
+        <b>Liang Liqi </b>: Modeling Group Member, Literature Research<br>
       </bnuz_content_paragraph>
     </BNUZ_Content>
     <Bottom></Bottom>

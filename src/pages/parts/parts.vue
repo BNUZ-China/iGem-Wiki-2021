@@ -16,20 +16,20 @@
           </thead>
           <tbody>
           <tr>
-            <td>BBa_K3784000</td>
+            <td><a href="http://parts.igem.org/Part:BBa_K3784000">BBa_K3784000</a></td>
             <td>coding</td>
             <td>acdA</td>
             <td>Encoding 3-(aryl) acrylate reductase</td>
           </tr>
           <tr>
-            <td>BBa_K3784001</td>
+            <td><a href="http://parts.igem.org/Part:BBa_K3784001">BBa_K3784001</a></td>
             <td>coding</td>
             <td>fldB</td>
             <td>Encoding 2-hydroxyacyl-CoA dehydratase protein family</td>
           </tr>
           <tr>
             <td>
-              <p>BBa_K3784002</p>
+              <p><a href="http://parts.igem.org/Part:BBa_K3784002">BBa_K3784002</a></p>
             </td>
             <td>
               <p>coding</p>
@@ -43,7 +43,7 @@
           </tr>
           <tr>
             <td>
-              <p>BBa_K3784003</p>
+              <p><a href="http://parts.igem.org/Part:BBa_K3784003">BBa_K3784003</a></p>
             </td>
             <td>
               <p>coding</p>
@@ -57,7 +57,7 @@
           </tr>
           <tr>
             <td>
-              <p>BBa_K3784004</p>
+              <p><a href="http://parts.igem.org/Part:BBa_K3784004">BBa_K3784004</a></p>
             </td>
             <td>
               <p>coding</p>
@@ -71,7 +71,7 @@
           </tr>
           <tr>
             <td>
-              <p>BBa_K206000</p>
+              <p><a href="http://parts.igem.org/Part:BBa_K206000">BBa_K206000</a></p>
             </td>
             <td>
               <p>promoter</p>
@@ -85,7 +85,7 @@
           </tr>
           <tr>
             <td>
-              <p>BBa_K302033</p>
+              <p><a href="http://parts.igem.org/Part:BBa_K302033">BBa_K302033</a></p>
             </td>
             <td>
               <p>coding</p>
@@ -99,7 +99,7 @@
           </tr>
           <tr>
             <td>
-              <p>BBa_K2717000</p>
+              <p><a href="http://parts.igem.org/Part:BBa_K2717000">BBa_K2717000</a></p>
             </td>
             <td>
               <p>coding</p>
@@ -113,7 +113,7 @@
           </tr>
           <tr>
             <td>
-              <p>BBa_K3784005</p>
+              <p><a href="http://parts.igem.org/Part:BBa_K3784005">BBa_K3784005</a></p>
             </td>
             <td>
               <p>coding</p>

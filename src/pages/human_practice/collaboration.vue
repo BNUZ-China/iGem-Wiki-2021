@@ -16,7 +16,7 @@
           <div>
             <img :src="pic0" width="800px">
             <p>
-              Figure1. Online Southern China Regional Meeting
+              Fig.1 Online Southern China Regional Meeting
             </p>
           </div>
         </div>
@@ -44,7 +44,7 @@
           <div>
             <img :src="handbook" width="800px">
             <p>
-              Figure2. Intestinal Program Reference Manual
+              Fig.2 Intestinal Program Reference Manual
             </p>
           </div>
         </div>
@@ -62,7 +62,7 @@
           <div>
             <img :src="pic2" width="800px">
             <p>
-              Figure3. Eighth Conference of China iGEMer Community (CCIC)
+              Fig.3 Eighth Conference of China iGEMer Community (CCIC)
             </p>
           </div>
         </div>
@@ -74,7 +74,7 @@
         experiences of parameter values in the model workshop, and read the papers recommended by CCIC.<br>
         <bnuz_image_container>
           <template v-slot:caption>
-              Figure4. Receive the Active Participation Award
+              Fig.4 Receive the Active Participation Award
           </template>
           <template v-slot:image>
             <img :src="pic1" width="800px">

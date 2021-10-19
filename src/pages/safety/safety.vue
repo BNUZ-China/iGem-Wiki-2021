@@ -47,7 +47,7 @@
 
       <bnuz_content_paragraph hint_text="Security module">
         <h4>Security module</h4>
-        <h5>[Arabinose]</h5>
+        <h5>[Arabinose induced suside system]</h5>
         <p>
           Our project intends to partly treat chronic kidney disease by colonizing relatively complete engineered
           bacteria in the intestines. During the colonization of engineered bacteria, patients may wish to terminate
@@ -63,7 +63,7 @@
             <img :src="pic3" width="45%">
           </template>
         </bnuz_image_container>
-        <h5>[CO2 induced suicide system]</h5>
+        <h5>[CO2 suicide switch]</h5>
         <p>From the related literature, we learned that the human intestinal environment is a high CO2 concentration environment, so we decided to use this feature to prevent the escape of engineered <em>E. coli</em>.</p>
         <p>The engineered <em>E. coli</em> we designed uses the Crisp-Cas9 technique to achieve the knockdown of <em>
           Can</em>, making the <em>E. coli</em> unable to survive after leaving the human intestinal environment. The

@@ -6,7 +6,7 @@
     <BNUZ_Content_No_Nav>
       <bnuz_experiment name="p1">
         <template v-slot:text>
-          <h3>Red homologous recombination knockout TnaA gene</h3>
+          <h3>Red recombination knockout TnaA gene</h3>
           <p>
             In order to eliminate indole sulfate from the source and delay the progress of chronic kidney disease, we
             used red homologous recombination technology to knock out the TnaA gene of engineering bacteria that

@@ -149,11 +149,11 @@
       <bnuz_content_paragraph hint_text="Reference">
         <h4>References</h4>
         <p>
-          [1]http://2018.igem.org/Team:UCAS-China
+          [1]http://2018.igem.org/Team:UCAS-China<br>
           [2]HE Jing-hua, LE Ke-yi. (2019). CRISPR/Cas9-mediated tnaA knockout in Escherichia coli. Journal of biology.
-          36(6), 17-19.
-          [3]http://2018.igem.org/Team:BNU-China
-          [4]http://2019.igem.org/Team:BNU-China
+          36(6), 17-19.<br>
+          [3]http://2018.igem.org/Team:BNU-China<br>
+          [4]http://2019.igem.org/Team:BNU-China<br>
         </p>
       </bnuz_content_paragraph>
     </BNUZ_Content>
