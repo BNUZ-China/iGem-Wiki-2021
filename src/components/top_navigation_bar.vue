@@ -26,10 +26,11 @@
           <a class="nav-link" href="https://2021.igem.org/Team:BNUZ-China/Safety">SAFETY</a>
         </div>
         <top_navigation_bar_dropdown title="HUMAN PRACTICE" :contents="[
-        {text: 'Human practice', link: 'https://2021.igem.org/Team:BNUZ-China/Human_practice'},
+        {text: 'Human practice', link: 'https://2021.igem.org/Team:BNUZ-China/Human_Practices'},
         {text: 'Partnership', link: 'https://2021.igem.org/Team:BNUZ-China/Partnership'},
         {text: 'Communication', link: 'https://2021.igem.org/Team:BNUZ-China/Communication'},
-        {text: 'Collaboration', link: 'https://2021.igem.org/Team:BNUZ-China/Collaboration'}
+        {text: 'Collaboration', link: 'https://2021.igem.org/Team:BNUZ-China/Collaborations'},
+        {text: 'Webpack Plugin', link: 'https://2021.igem.org/Team:BNUZ-China/webpack_plugin'}
       ]"></top_navigation_bar_dropdown>
         <top_navigation_bar_dropdown title="PARTS" :contents="[
         {text: 'Parts', link: 'https://2021.igem.org/Team:BNUZ-China/Parts'},

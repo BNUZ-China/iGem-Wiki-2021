@@ -26,7 +26,7 @@ export default {
 .left-right-div {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .engineer-icon > img {
@@ -52,11 +52,11 @@ export default {
 }
 
 p {
-  font-size: 20px;
-  font-family: text_font, serif;
+  font-size: 20px !important;
+  font-family: text_font, serif !important;
 }
 
 h3 {
-  font-family: Title_font, serif;
+  font-family: Title_font, serif !important;
 }
 </style>

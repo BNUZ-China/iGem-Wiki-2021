@@ -61,12 +61,15 @@
             <img :src="pic2" width="25%">
           </template>
         </bnuz_image_container>
+        <p>
+          At the same time, the number of probiotics in the gut has greatly decreased, and the number of pathogenic bacteria has greatly increased. The intestinal mucosal barrier was severely damaged [9].
+        </p>
       </bnuz_content_paragraph>
 
 
       <bnuz_content_paragraph hint_text="E.Coli Keen Doctor">
         <h4>E.Coli Keen Doctor</h4>
-        <p>With <i>Escherichia coli</i> Nissle 1917 as the template organism, BNUZ-China team developed a new type
+        <p>With <i>Escherichia coli</i> Nissle 1917 as the chassis, BNUZ-China team developed a new type
         of intestinal colonization engineered bacteria, which knocked out the gene <i>TnaA</i> of the original
           <i>Escherichia coli</i> metabolizing tryptophan to produce indole, and overexpressed the engineered
             bacteria glucose dehydrogenase to enhance its competitiveness, thus achieving the purpose of replacing
@@ -146,15 +149,15 @@ export default {
 
 @font-face {
   font-family: Title_font;
-  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+  src: url("https://2021.igem.org/wiki/images/9/94/T--BNUZ-China--title_font.woff");
 }
 
 p {
-  font-size: 20px;
-  font-family: text_font, serif;
+  font-size: 20px !important;
+  font-family: text_font, serif !important;
 }
 
-h4 {
-  font-family: Title_font, serif;
+h1, h2, h3, h4, h5 {
+  font-family: Title_font, serif !important;
 }
 </style>

@@ -59,7 +59,7 @@
         <p>We successfully constructed plasmids contained <em>TAA1, fldH, fldB, fldC, and acdA. TAA1, fldH and
           fldBC</em> are each initiated by a T7 promoter. <em>acdA</em> is transcribed by a self-contained promoter
           cloned from <em>Clostridium sporogenes.</em> For more detailed characterization process, see <a
-            href="proof_of_concept.vue">proof of
+            href="https://2021.igem.org/Team:BNUZ-China/Proof_Of_Concept">proof of
             concept</a></p>
         <bnuz_image_container>
           <template v-slot:caption>
@@ -75,7 +75,7 @@
         <h4>Overexpression of GDH</h4>
         <p>
           To explore whether GDH can effectively promote the proliferation of engineered bacteria without IPTG induction, we have drawn the growth curve of engineered bacteria and normal bacteria. For more detailed characterization process, see <a
-          href="proof_of_concept.vue">proof of
+          href="https://2021.igem.org/Team:BNUZ-China/Proof_Of_Concept">proof of
           concept</a>
         </p>
       </bnuz_content_paragraph>
@@ -100,14 +100,14 @@
         <h5>Red recombination knocks out Can gene</h5>
         <p>
           We successfully knocked out the Can gene of the engineered bacteria through Red recombination. For more detailed characterization process, see <a
-          href="proof_of_concept.vue">proof of
+          href="https://2021.igem.org/Team:BNUZ-China/Proof_Of_Concept">proof of
           concept</a>
         </p>
         <h5>L-arabinose induces the expression of transcription inhibitors</h5>
         <p>
           The purpose of the suicide induction module is to use L-arabinose to induce engineered bacteria in the
           intestine to stop proliferation when needed. We used two different concentrations of arabinose in our experiment. After induction, the survival rate of engineered bacteria in the experimental group decreased significantly. For more detailed characterization process, see <a
-            href="proof_of_concept.vue">proof of
+            href="https://2021.igem.org/Team:BNUZ-China/Proof_Of_Concept">proof of
             concept</a>
         </p>
       </bnuz_content_paragraph>
@@ -178,15 +178,15 @@ export default {
 
 @font-face {
   font-family: Title_font;
-  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+  src: url("https://2021.igem.org/wiki/images/9/94/T--BNUZ-China--title_font.woff");
 }
 
 p {
-  font-size: 20px;
-  font-family: text_font, serif;
+  font-size: 20px !important;
+  font-family: text_font, serif !important;
 }
 
-h4 {
-  font-family: Title_font, serif;
+h1, h2, h3, h4, h5 {
+  font-family: Title_font, serif !important;
 }
 </style>

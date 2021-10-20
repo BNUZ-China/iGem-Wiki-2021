@@ -43,6 +43,7 @@
         <b>Li Hao</b>: Wiki & art team member. Website builder, webpack4 "igem-webpack-plugin" maker.<br>
         <b>Deng Yingjia</b>: Wiki & art team member. Animation & poster maker, illustrator<br>
         <b>Gao Tianyu</b>: Wiki & art team member. Animation & poster maker, illustrator<br>
+        <b>Li Jianzhong</b>: wiki＆art team member, animation &poster maker, illustrator
 
       </bnuz_content_paragraph>
 
@@ -192,15 +193,15 @@ export default {
 
 @font-face {
   font-family: Title_font;
-  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+  src: url("https://2021.igem.org/wiki/images/9/94/T--BNUZ-China--title_font.woff");
 }
 
 p {
-  font-size: 20px;
-  font-family: text_font, serif;
+  font-size: 20px !important;
+  font-family: text_font, serif !important;
 }
 
-h4 {
-  font-family: Title_font, serif;
+h1, h2, h3, h4, h5 {
+  font-family: Title_font, serif !important;
 }
 </style>

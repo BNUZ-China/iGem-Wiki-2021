@@ -140,11 +140,6 @@ export default {
 </script>
 
 <style scoped>
-@font-face {
-  font-family: text_font;
-  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
-}
-
 .bnuz-header-image {
   width: 100%;
   height: 40%;
@@ -158,9 +153,23 @@ export default {
   border: 2px solid #a62420;
 }
 
+@font-face {
+  font-family: text_font;
+  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+}
+
+@font-face {
+  font-family: Title_font;
+  src: url("https://2021.igem.org/wiki/images/9/94/T--BNUZ-China--title_font.woff");
+}
+
 p {
-  font-size: 20px;
-  font-family: text_font, serif;
+  font-size: 20px !important;
+  font-family: text_font, serif !important;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Title_font, serif !important;
 }
 
 p > a {

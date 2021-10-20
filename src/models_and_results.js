@@ -3,7 +3,7 @@ import Vue from 'vue'
     import 'bootstrap/dist/css/bootstrap.min.css';
     import 'bootstrap-vue/dist/bootstrap-vue.min.css';
 
-    import App from './pages/model/models_and_results';
+    import App from './pages/team/webpack_plugin';
 
     Vue.use(BootstrapVue);
 

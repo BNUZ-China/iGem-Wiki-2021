@@ -209,15 +209,6 @@
 
         </template>
       </BNUZ_notebook_item>
-      <BNUZ_notebook_item name="Line12">
-        <template v-slot:time>
-          9.23-9.30
-        </template>
-        <template v-slot:text>
-          <h5>Overexpression β-Galactosidase</h5>
-
-        </template>
-      </BNUZ_notebook_item>
     </b-container>
 
     <Bottom></Bottom>
@@ -264,4 +255,22 @@ export default {
   border: 2px solid #ed8555;
 }
 
+@font-face {
+  font-family: text_font;
+  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+}
+
+@font-face {
+  font-family: Title_font;
+  src: url("https://2021.igem.org/wiki/images/9/94/T--BNUZ-China--title_font.woff");
+}
+
+p {
+  font-size: 20px !important;
+  font-family: text_font, serif !important;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Title_font, serif !important;
+}
 </style>

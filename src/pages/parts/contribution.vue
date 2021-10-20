@@ -145,6 +145,13 @@
             <img :src="handbook" width="65%">
           </template>
         </bnuz_image_container>
+        <p>
+          This reference manual makes a detailed and objective description from the design of the project to the
+          optimization. An implementation guide for intestinal related projects has been formed, which summarizes a
+          series of questions when design and carry out the project related to intestine while list multiple options
+          as references for other teams.<a
+          href="https://2021.igem.org/wiki/images/5/5b/T--BNUZ-China--Intestinal_Program_Reference_Manual.pdf">Intestinal Program Reference Manual</a>
+        </p>
       </bnuz_content_paragraph>
       <bnuz_content_paragraph hint_text="Reference">
         <h4>References</h4>
@@ -194,12 +201,12 @@ export default {
       // TODO: set image URI
       head_image: conf.isDev ? head_image : 'https://2021.igem.org/wiki/images/e/e2/T--BNUZ-China--bannerPARTS-contribution.26b0aef1.png\n',
       // TODO: set image URI
-      pic1: conf.isDev ? pic1 : '',
-      pic2: conf.isDev ? pic2 : '',
-      pic3: conf.isDev ? pic3 : '',
-      pic4: conf.isDev ? pic4 : '',
-      pic5: conf.isDev ? pic5 : '',
-      handbook: conf.isDev ? handbook : ''
+      pic1: conf.isDev ? pic1 : "https://2021.igem.org/wiki/images/1/13/T--BNUZ-China--pic1.ce481408.png",
+      pic2: conf.isDev ? pic2 : "https://2021.igem.org/wiki/images/4/4e/T--BNUZ-China--pic2.77b9ba5a.png",
+      pic3: conf.isDev ? pic3 : "https://2021.igem.org/wiki/images/4/4c/T--BNUZ-China--pic3.36b30878.png",
+      pic4: conf.isDev ? pic4 : "https://2021.igem.org/wiki/images/2/28/T--BNUZ-China--pic4.7ffbb613.png",
+      pic5: conf.isDev ? pic5 : "https://2021.igem.org/wiki/images/d/d0/T--BNUZ-China--pic5.ccb7191a.png",
+      handbook: conf.isDev ? handbook : "https://2021.igem.org/wiki/images/d/de/T--BNUZ-China--handbook.6ed76699.jpg",
     }
   }
 }
@@ -232,15 +239,15 @@ export default {
 
 @font-face {
   font-family: Title_font;
-  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+  src: url("https://2021.igem.org/wiki/images/9/94/T--BNUZ-China--title_font.woff");
 }
 
 p {
-  font-size: 20px;
-  font-family: text_font, serif;
+  font-size: 20px !important;
+  font-family: text_font, serif !important;
 }
 
-h4 {
-  font-family: Title_font, serif;
+h1, h2, h3, h4, h5 {
+  font-family: Title_font, serif !important;
 }
 </style>

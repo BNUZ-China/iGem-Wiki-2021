@@ -14,7 +14,7 @@
           which is the precursor of indophenol sulfate (IS), and the IS is a key intestinal toxin that promotes the
           progression of CKD. At the same time, engineered bacteria also has the effects of repairing intestinal
           mucosal barrier and promoting the proliferation of probiotics. This can adjust the patient's bowel back to
-          normal. Click <a href="design.html">here</a> to learn more about our project.  To enable engineering bacteria
+          normal. Click <a href="https://2021.igem.org/Team:BNUZ-China/Design">here</a> to learn more about our project.  To enable engineering bacteria
           to
           perform its
                               function, we need to colonize engineering bacteria in the intestine and competitively replace original <em>E. coli</em>.</p>
@@ -79,5 +79,22 @@ export default {
   margin: 32px 0;
   border: 2px solid #ed8555;
 }
+@font-face {
+  font-family: text_font;
+  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+}
 
+@font-face {
+  font-family: Title_font;
+  src: url("https://2021.igem.org/wiki/images/9/94/T--BNUZ-China--title_font.woff");
+}
+
+p {
+  font-size: 20px !important;
+  font-family: text_font, serif !important;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Title_font, serif !important;
+}
 </style>

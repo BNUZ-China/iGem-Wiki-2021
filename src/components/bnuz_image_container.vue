@@ -27,9 +27,9 @@ export default {
 }
 
 .bnuz-table-container >  p {
-  font-size: 18px;
+  font-size: 18px !important;
   color: #5e615a;
   width: 60%;
-  text-align: center;
+  text-align: center !important;
 }
 </style>

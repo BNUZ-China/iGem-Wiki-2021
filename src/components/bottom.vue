@@ -39,7 +39,7 @@ export default {
 .bnuz-footer {
   margin-top: 16px !important;
   margin-bottom: 16px !important;
-  margin-left: 14.5833vw !important;
+  margin-left: 15.1vw !important;
   width: 76.5vw;
   padding: 24px 0 !important;
   /*border: 2px solid rgb(0 41 113);*/

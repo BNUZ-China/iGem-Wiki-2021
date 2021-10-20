@@ -145,9 +145,7 @@
         <p>
           First, the BNU-China team shared the harvest during the preparation of the lecture and the possible application prospect of their project in intestinal flora. Then, our team (BNUZ-China) introduced our progress in gene knockout and high-performance liquid chromatography experiments. We are looking for solutions on how to simultaneously isolate and purify five proteins with similar molecular weight. BNU-China suggests that the separation can be performed by constructing different specific tags, such as his-tag. BUCT pointed out the experimental difficulties of building a suicide system and asked other teams for advice on the logic and rationality of HP. SZU-China team mentioned the LL37 antibacterial peptide used in the closed loop of their project, which was difficult to be characterized by SDS electrophoresis due to its small protein content. In the early bacteriostatic zone experiment, the effect was not ideal, and it is hoped that part of the verification can be carried out through the interaction of cell experiments in the future. Some data are difficult to obtain from the experimental group, and further literature analysis is required. At the same time, SZU-China shared the inspiration and process of developing a small game "Synthesis of large protein", which aroused great interest of everyone in the lecture. Later, HZAU-China pointed out that it was difficult for their small proteins to be characterized by SDS electrophoresis. At the same time, there are some difficulties in the purification and functional verification of small proteins. More complicate experiments are needed to verify protein function. It is too pressing for the time available. In the aspect of numerical modeling, the parameters are many and difficult to obtain. The quality of the parameters has a great influence on the model, so we want to estimate the parameters through a more appropriate parameter estimation method.
         </p>
-        <p>
-          You can click <a href="https://2021.igem.org/Team:BNUZ-China/Human_Practices">this link</a> to know more about the lecture.
-        </p>
+
       </bnuz_content_paragraph>
     </BNUZ_Content>
     <Bottom></Bottom>
@@ -252,15 +250,15 @@ export default {
 
 @font-face {
   font-family: Title_font;
-  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+  src: url("https://2021.igem.org/wiki/images/9/94/T--BNUZ-China--title_font.woff");
 }
 
 p {
-  font-size: 20px;
-  font-family: text_font, serif;
+  font-size: 20px !important;
+  font-family: text_font, serif !important;
 }
 
 h4 {
-  font-family: Title_font, serif;
+  font-family: Title_font, serif !important;
 }
 </style>

@@ -45,14 +45,15 @@
               Previous studies have shown that indoxyl sulfate(IS), whose content is positively correlated with the
               amount
               of indole, is a key urinary toxin that promotes the progression of CKD. Tryptophan in food is first
-              metabolized into indoles under the action of enteric E. coli. After indoles enter host cells, under the
+              metabolized into indoles under the action of enteric <em>E. coli</em>. After indoles enter host cells, under the
               action of cytochrome P450 enzyme and sulfotransferase, they are metabolized into IS in liver cells.
             </p>
             <div class="article-image-container">
               <img :src="pic3" class="article-image">
             </div>
             <p>
-              Aiming at the metabolic pathway of IS, our team knocked out the tnaa gene of E. coli that metabolizes
+              Aiming at the metabolic pathway of IS, our team knocked out the <em>TnaA</em> gene of <em>E. coli</em> that
+              metabolizes
               tryptophan to produce indole, blocking the generation of IS from the source. In order to repair the
               intestinal mucosal barrier and consume the remaining tryptophan, we reconstructed a pathway to metabolize
               tryptophan to produce indole propionic acid. To promote the proliferation of probiotics and delay and
@@ -79,7 +80,6 @@ import AppRoot from "@/AppRoot";
 import conf from "@/wiki_config"
 import Bottom from "@/components/bottom"
 import ScrollReveal from "scrollreveal";
-import font from '@/assets/IndieFlower-Regular.ttf'
 
 import pic1 from '@/assets/homepage/pic1.png';
 import pic2 from '@/assets/homepage/pic2.png';
@@ -97,8 +97,6 @@ export default {
       scrollReveal: ScrollReveal(),
       homepage_hospital: conf.isDev ? homepage_hospital :
         'https://2021.igem.org/wiki/images/8/8e/T--BNUZ-China--homepage.63801aff.png',
-      // TODO: set image URI
-      font: conf.isDev ? font : 'https://2021.igem.org/wiki/images/1/1c/T--BNUZ-China--Homapage_font.ttf',
 
       // TODO: set image URI
       pic1: conf.isDev ? pic1 : 'https://2021.igem.org/wiki/images/e/e6/T--BNUZ-China--pic1.aca53bc3.png\n',
@@ -192,9 +190,9 @@ p {
 
 .roundRect {
   padding: 20px;
-  background-color: rgb(220, 230, 237);
   border-radius: 20px;
   margin: 16px 0;
+  border: 2px solid #FFFFFF;
 }
 
 .homepage_hospital {
@@ -214,4 +212,22 @@ p {
   margin: 40vh 8vw 0;
 }
 
+@font-face {
+  font-family: text_font;
+  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+}
+
+@font-face {
+  font-family: Title_font;
+  src: url("https://2021.igem.org/wiki/images/9/94/T--BNUZ-China--title_font.woff");
+}
+
+p {
+  font-size: 20px !important;
+  font-family: text_font, serif !important;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Title_font, serif !important;
+}
 </style>

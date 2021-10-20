@@ -147,10 +147,10 @@ const pages_conf = {
     title: 'Model'
   },
   models_and_results_page: {
-    entry: 'src/models_and_results.js',
-    template: 'public/models_and_results.html',
-    filename: 'Models_and_results.html',
-    title: 'models_and_results'
+    entry: 'src/webpack_plugin.js',
+    template: 'public/webpack_plugin.html',
+    filename: 'webpack_plugin.html',
+    title: 'Webpack Plugin'
   },
   discussion_page: {
     entry: 'src/discussion.js',
@@ -165,8 +165,8 @@ const pages_conf = {
     title: 'safety'
   },
   human_practice_page: {
-    entry: 'src/human_practice.js',
-    template: 'public/human_practice.html',
+    entry: 'src/human_practices.js',
+    template: 'public/human_practices.html',
     filename: 'Human_Practices.html',
     title: 'Human_Practices'
   },
@@ -212,11 +212,11 @@ const pages_conf = {
     filename: 'Notebook.html',
     title: 'notebook'
   },
-  collaboration_page: {
-    entry: 'src/collaboration.js',
-    template: 'public/collaboration.html',
-    filename: 'Collaboration.html',
-    title: 'collaboration'
+  collaborations_page: {
+    entry: 'src/collaborations.js',
+    template: 'public/collaborations.html',
+    filename: 'Collaborations.html',
+    title: 'collaborations'
   }
 };
 
@@ -231,22 +231,25 @@ let prod_config = igemWikiWebpackPluginConfigGenerator({
       sample: './src/main.js',
       safety: './src/safety.js',
       attributions: './src/attributions.js',
-      collaboration: './src/collaboration.js',
+      collaborations: './src/collaborations.js',
       communication: './src/communication.js',
+      contribution: './src/contribution.js',
       description: './src/description.js',
       design: './src/design.js',
       discussion: './src/discussion.js',
       engineering: './src/engineering.js',
       experiment: './src/experiment.js',
       future: './src/future.js',
-      human_practice: './src/human_practice.js',
+      human_practices: './src/human_practices.js',
       implementation: './src/implementation.js',
       members: './src/members.js',
       model: './src/model.js',
       notebook: './src/notebook.js',
       partnership: './src/partnership.js',
       proof_of_concept: './src/proof_of_concept.js',
-      result: './src/result.js'
+      result: './src/result.js',
+      parts: './src/parts.js',
+      webpack_plugin: './src/webpack_plugin.js'
     },
     plugins: [
       // new Ug

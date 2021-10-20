@@ -370,9 +370,10 @@
       <bnuz_experiment name="p2" hint_text="Gibson recombinant construction of indole propionic acid metabolic pathway">
         <template v-slot:text>
           <h3>Gibson recombinant construction of indole propionic acid metabolic pathway</h3>
-          <p>In order to make engineered bacteria metabolize tryptophan to produce indole propionic acid and repair intestinal mucosal barrier, we reconstructed a five-step metabolic pathway. Tryptophan is first catalyzed by tryptophan aminotransferase encoded by <em>TAA1</em> to produce indole pyruvate, and then indole pyruvate is catalyzed by phenyllactate dehydrogenase encoded by <em>fldH</em> to produce indole lactic acid. The enzyme is also the rate limiting enzyme of the whole reaction. Then, indole lactic acid is catalyzed to produce indole acrylic acid by 2-hydroxyacyl-CoA dehydrase protein family encoded by <em>fldBC</em>, and finally indole acrylic acid is catalyzed to produce indole propionic acid by 3 - (aryl) acylate reduce acdA encoded by <em>acdA**.</em></p>
-          <p>Firstly, we cloned the tryptophan aminotransferase <em>TAA1</em> from <em>Arabidopsis thaliana</em> cDNA, which can catalyze tryptophan to indole pyruvate. Then, four enzymes <em>fldB, fldC, fldH</em> and <em>acdA</em> in its fld gene cluster were cloned from the genome of <em>Clostridium</em> <em>perfringens <strong>sporogenes</strong>.</em></p>
-          <p>By Gibson recombination method, five genes were connected to His-6p-MBP-RSFD plasmid in the order of <em>TAA1-fldH-fldBC-acdA</em>. After successfully constructing the plasmid, we transferred it into <em>E.coli</em> BL21 (DE3). First, we extracted the total RNA of the engineered bacteria after induction of IPTG, and then obtained cDNA by reverse transcription. Then we detected whether our target bands were obtained by PCR and gel electrophoresis. For fermentation supernatant, we cooperated with BNU-China to carry out HPLC experiment to verify whether it is produced by indole propionic acid.</p>
+          <p>In order to make engineered bacteria metabolize tryptophan to produce indole propionic acid and repair intestinal mucosal barrier, we reconstructed a five-step metabolic pathway. Tryptophan is first catalyzed by tryptophan aminotransferase encoded by <em>TAA1</em> to produce indole pyruvate, and then indole pyruvate is catalyzed by phenyllactate dehydrogenase encoded by <em>fldH</em> to produce indole lactic acid. The enzyme is also the rate limiting enzyme of the whole reaction. Then, indole lactic acid is catalyzed to produce indole acrylic acid by 2-hydroxyacyl-CoA dehydrase protein family encoded by <em>fldBC</em>, and finally indole acrylic acid is catalyzed to produce indole propionic acid by 3 - (aryl) acylate encoded by <em>acdA.</em></p>
+          <p>Firstly, we cloned the tryptophan aminotransferase <em>TAA1</em> from <em>Arabidopsis thaliana</em> cDNA, which can catalyze tryptophan to indole pyruvate. Then, four enzymes <em>fldB, fldC, fldH</em> and <em>acdA</em> in its fld gene cluster were cloned from the genome of <em>Clostridium</em> <em>sporogenes.</em></p>
+          <p>By Gibson recombination method, five genes were connected to His-6p-MBP-RSFD plasmid in the order of
+            <em>TAA1-fldH-fldBC-acdA</em>. After successfully constructing the plasmid, we transferred it into <em>E. coli</em> BL21 (DE3). First, we extracted the total RNA of the engineered bacteria after induction of IPTG, and then obtained cDNA by reverse transcription. Then we detected whether our target bands were obtained by PCR and gel electrophoresis. For fermentation supernatant, we cooperated with BNU-China to carry out HPLC experiment to verify whether it is produced by indole propionic acid.</p>
 
 
         </template>
@@ -1389,5 +1390,24 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@font-face {
+  font-family: text_font;
+  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+}
+
+@font-face {
+  font-family: Title_font;
+  src: url("https://2021.igem.org/wiki/images/9/94/T--BNUZ-China--title_font.woff");
+}
+
+p, li {
+  font-size: 20px !important;
+  font-family: text_font, serif !important;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Title_font, serif !important;
 }
 </style>

@@ -134,4 +134,5 @@ export default {
   border-radius: 20px;
   margin: 16px 0;
 }
+
 </style>

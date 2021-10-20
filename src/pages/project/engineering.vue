@@ -151,7 +151,7 @@
         </template>
         <template v-slot:description>
           Our team verified the level of gene expression and the final production though pathways IPA and GOS. Detailed
-          information can be found at: Result.
+          information can be found at: <a href="https://2021.igem.org/Team:BNUZ-China/Result">Result</a>.
         </template>
       </bnuz_engineer>
       <bnuz_engineer>
@@ -231,5 +231,24 @@ export default {
   border-radius: 20px;
   margin: 32px 0;
   border: 2px solid #ed8555
+}
+
+@font-face {
+  font-family: text_font;
+  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+}
+
+@font-face {
+  font-family: Title_font;
+  src: url("https://2021.igem.org/wiki/images/9/94/T--BNUZ-China--title_font.woff");
+}
+
+p, li {
+  font-size: 20px !important;
+  font-family: text_font, serif !important;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Title_font, serif !important;
 }
 </style>

@@ -1781,11 +1781,11 @@
         <p>
           Live cells are counted over time after induction, and the number is significantly reduced under the effect of
           MazF expression (Figure 13). The OD600 of the experimental group decreased significantly, which proved that
-          suicide induced by high concentration of arabinose would cause cell lysis (Figure 14).
+          suicide induced by high concentration of arabinose would cause cell lysis.
         </p>
         <bnuz_image_container>
           <template v-slot:caption>
-            Fig.13 Viable cell count changes over time
+            Fig.13 A: Viable cell count changes over time B: OD600 of the experimental group and control
           </template>
           <template v-slot:image>
             <img :src="pic13" width="65%">
@@ -1883,15 +1883,15 @@ export default {
 
 @font-face {
   font-family: Title_font;
-  src: url("https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--text_font.woff");
+  src: url("https://2021.igem.org/wiki/images/9/94/T--BNUZ-China--title_font.woff");
 }
 
 p {
-  font-size: 20px;
-  font-family: text_font, serif;
+  font-size: 20px !important;
+  font-family: text_font, serif !important;
 }
 
-h4 {
-  font-family: Title_font, serif;
+h1, h2, h3, h4, h5 {
+  font-family: Title_font, serif !important;
 }
 </style>
