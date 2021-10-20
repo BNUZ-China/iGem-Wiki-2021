@@ -101,8 +101,8 @@ export default {
   data() {
     return {
       head_image,
-      himg1: conf.isDev ? himg1 : '',
-      himg2: conf.isDev ? himg2 : '',
+      himg1: conf.isDev ? himg1 : 'https://2021.igem.org/wiki/images/1/1b/T--BNUZ-China--team1.3c1b1d5f.png\n',
+      himg2: conf.isDev ? himg2 : 'https://2021.igem.org/wiki/images/4/4b/T--BNUZ-China--team2.041ed994.png\n',
       isHeadImage1: true
     }
   },

@@ -116,10 +116,11 @@ export default {
   },
   data() {
     return {
-      head_image,
       // TODO: set image URI
-      pic1: conf.isDev ? pic1 : '',
-      pic2: conf.isDev ? pic2 : '',
+      head_image: conf.isDev ? head_image : 'https://2021.igem.org/wiki/images/7/7a/T--BNUZ-China--bannerproject-DES.9cbc2de4.png\n',
+      // TODO: set image URI
+      pic1: conf.isDev ? pic1 : "https://2021.igem.org/wiki/images/d/d3/T--BNUZ-China--pic1.3fb567e7.png",
+      pic2: conf.isDev ? pic2 : "https://2021.igem.org/wiki/images/9/9f/T--BNUZ-China--pic2.d70e511d.png",
     }
   }
 }

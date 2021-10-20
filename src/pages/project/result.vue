@@ -146,12 +146,13 @@ export default {
   },
   data() {
     return {
-      head_image,
-      pic1: conf.isDev ? pic1 : '',
-      pic2: conf.isDev ? pic2 : '',
-      pic3: conf.isDev ? pic3 : '',
-      pic4: conf.isDev ? pic4 : '',
-      pic5: conf.isDev ? pic5 : ''
+      head_image: conf.isDev ? head_image : 'https://2021.igem.org/wiki/images/6/6c/T--BNUZ-China--bannerproject-result.ee4ff87a.png\n',
+      pic1: conf.isDev ? pic1 : "https://2021.igem.org/wiki/images/b/b7/T--BNUZ-China--pic1.ce471efd.png",
+      pic2: conf.isDev ? pic2 : "https://2021.igem.org/wiki/images/c/c0/T--BNUZ-China--pic2.8d1ca7e2.png",
+      pic3: conf.isDev ? pic3 : "https://2021.igem.org/wiki/images/2/2c/T--BNUZ-China--pic3.f33eff8b.png",
+      pic4: conf.isDev ? pic4 : "https://2021.igem.org/wiki/images/e/ea/T--BNUZ-China--pic4.8cfb27cd.png",
+      pic5: conf.isDev ? pic5 : "https://2021.igem.org/wiki/images/3/36/T--BNUZ-China--pic5.ed0346a6.png",
+
     }
   }
 }

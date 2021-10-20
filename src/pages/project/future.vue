@@ -44,6 +44,7 @@ import bnuz_content_paragraph from "@/components/bnuz-content-paragraph";
 import AppRoot from "@/AppRoot";
 
 import head_image from '@/assets/head_images/PROJECT/future.png'
+import conf from '@/wiki_config';
 
 export default {
   name: 'App',
@@ -56,7 +57,7 @@ export default {
   },
   data() {
     return {
-      head_image
+      head_image: conf.isDev ? head_image : 'https://2021.igem.org/wiki/images/6/67/T--BNUZ-China--future.44de9395.png\n'
     }
   }
 }

@@ -191,7 +191,8 @@ export default {
   },
   data() {
     return {
-      head_image,
+      // TODO: set image URI
+      head_image: conf.isDev ? head_image : 'https://2021.igem.org/wiki/images/e/e2/T--BNUZ-China--bannerPARTS-contribution.26b0aef1.png\n',
       // TODO: set image URI
       pic1: conf.isDev ? pic1 : '',
       pic2: conf.isDev ? pic2 : '',

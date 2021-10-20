@@ -28,9 +28,8 @@ export default {
   name: "bottom",
   data() {
     return {
-      // TODO: set image URI
-      team_logo: conf.isDev ? team_logo : '',
-      friends: conf.isDev ? friends : '',
+      team_logo: conf.isDev ? team_logo : 'https://2021.igem.org/wiki/images/7/79/T--BNUZ-China--team_logo.3e9078b7.png',
+      friends: conf.isDev ? friends : 'https://2021.igem.org/wiki/images/3/39/T--BNUZ-China--bnuz_friends.e8f165c9.png',
     }
   }
 }

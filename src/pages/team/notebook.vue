@@ -231,6 +231,7 @@ import AppRoot from "@/AppRoot";
 import BNUZ_notebook_item from '@/components/bnuz_notebook_item';
 
 import head_image from '@/assets/head_images/PROJECT/notebook.png'
+import conf from '@/wiki_config';
 
 export default {
   name: 'App',
@@ -244,7 +245,7 @@ export default {
   data() {
     return {
       text: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      head_image
+      head_image: conf.isDev ? head_image : 'https://2021.igem.org/wiki/images/9/9d/T--BNUZ-China--notebook.8cbaec0d.png\n'
     }
   }
 }

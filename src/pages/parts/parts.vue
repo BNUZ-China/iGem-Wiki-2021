@@ -216,8 +216,8 @@ export default {
   data() {
     return {
       // TODO: set image URI
-      head_image: conf.isDev ? head_image : '',
-      pic1: conf.isDev ? pic1 : ''
+      head_image: conf.isDev ? head_image : 'https://2021.igem.org/wiki/images/5/5f/T--BNUZ-China--bannerPARTS.5cee26e0.png\n',
+      pic1: conf.isDev ? pic1 : "https://2021.igem.org/wiki/images/1/13/T--BNUZ-China--pic1.ce481408.png",
     }
   }
 }

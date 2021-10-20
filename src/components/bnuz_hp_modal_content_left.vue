@@ -61,8 +61,7 @@ export default {
 
 @font-face {
   font-family: "General_hp_title";
-  /*TODO change url*/
-  src: url('https://fonts.gstatic.com/s/merienda/v9/gNMAW3x8Qoy5_mf8uWu-FZ-13MY.woff2');
+  src: url('https://2021.igem.org/wiki/images/d/de/T--BNUZ-China--general_hp_titlefont.woff');
 }
 
 .bnuz-hp-content-modal-item-text {

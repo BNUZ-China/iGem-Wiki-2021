@@ -4845,13 +4845,12 @@ export default {
   data() {
     return {
       // TODO: set image URI
-      head_image: conf.isDev ? head_image : '',
-      // TODO: set image URI
-      fig1_1: conf.isDev ? fig1_1 : '',
-      fig1_2: conf.isDev ? fig1_2 : '',
-      fig2_1: conf.isDev ? fig2_1 : '',
-      fig2_2: conf.isDev ? fig2_2 : '',
-      fig3: conf.isDev ? fig3 : '',
+      head_image: conf.isDev ? head_image : 'https://2021.igem.org/wiki/images/5/58/T--BNUZ-China--bannermodel.bf62775a.png\n',
+      fig1_1: conf.isDev ? fig1_1 : 'https://2021.igem.org/wiki/images/b/b3/T--BNUZ-China--fig1.1.335eb27e.svg\n',
+      fig1_2: conf.isDev ? fig1_2 : 'https://2021.igem.org/wiki/images/6/63/T--BNUZ-China--fig1.2.76e973eb.svg\n',
+      fig2_1: conf.isDev ? fig2_1 : 'https://2021.igem.org/wiki/images/d/dc/T--BNUZ-China--fig2.1.f9610e7b.png\n',
+      fig2_2: conf.isDev ? fig2_2 : 'https://2021.igem.org/wiki/images/e/ef/T--BNUZ-China--fig2.2.c6633e56.png\n',
+      fig3: conf.isDev ? fig3 : 'https://2021.igem.org/wiki/images/8/80/T--BNUZ-China--fig3.216e7e5f.png\n',
     }
   }
 }

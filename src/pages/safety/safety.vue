@@ -128,11 +128,12 @@ export default {
   data() {
     return {
       // TODO: set image URI
-      head_image: conf.isDev ? head_image : '',
-      pic1: conf.isDev ? pic1 : '',
-      pic2: conf.isDev ? pic2 : '',
-      pic3: conf.isDev ? pic3 : '',
-      pic4: conf.isDev ? pic4 : ''
+      head_image: conf.isDev ? head_image : 'https://2021.igem.org/wiki/images/0/0a/T--BNUZ-China--bannerSAFETY.9968a521.png\n',
+      pic1: conf.isDev ? pic1 : "https://2021.igem.org/wiki/images/f/ff/T--BNUZ-China--pic1.45e6a79b.png",
+      pic2: conf.isDev ? pic2 : "https://2021.igem.org/wiki/images/c/ce/T--BNUZ-China--pic2.e8576251.jpg",
+      pic3: conf.isDev ? pic3 : "https://2021.igem.org/wiki/images/a/a0/T--BNUZ-China--pic3.2c9b2011.png",
+      pic4: conf.isDev ? pic4 : "https://2021.igem.org/wiki/images/0/08/T--BNUZ-China--pic4.8803da74.png",
+
     }
   }
 }

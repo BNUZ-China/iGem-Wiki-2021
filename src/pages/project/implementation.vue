@@ -46,6 +46,7 @@ import BNUZ_Content from "@/components/bnuz_content";
 import Bottom from "@/components/bottom";
 import bnuz_content_paragraph from "@/components/bnuz-content-paragraph";
 import AppRoot from "@/AppRoot";
+import conf from '@/wiki_config';
 
 import head_image from '@/assets/head_images/PROJECT/bannerproject-implementation.png'
 
@@ -60,7 +61,7 @@ export default {
   },
   data() {
     return {
-      head_image
+      head_image: conf.isDev ? head_image : 'https://2021.igem.org/wiki/images/a/ad/T--BNUZ-China--bannerproject-implementation.7956f581.png\n'
     }
   }
 }

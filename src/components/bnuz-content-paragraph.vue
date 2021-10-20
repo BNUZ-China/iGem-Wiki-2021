@@ -18,10 +18,10 @@ export default {
 }
 
 .bnuz_content_paragraph {
-  margin-top: 32px;
-  line-height: 32px;
-  font-size: 20px;
-  font-family: text_font, serif;
+  margin-top: 32px !important;
+  line-height: 32px !important;
+  font-size: 20px !important;
+  font-family: text_font, serif !important;
 }
 
 
@@ -31,6 +31,7 @@ export default {
 }
 
 h3, h4, h5 {
-  font-family: Title_font, serif;
+  font-family: Title_font, serif !important;
+  font-weight: bold !important;
 }
 </style>

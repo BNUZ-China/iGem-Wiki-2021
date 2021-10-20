@@ -12,7 +12,7 @@
       >
       </Content_navigation_item>
         <div class="bnuz-cursor" :style="{
-        maskImage: `url('${require('../assets/content_navigation/cursor.png')}')`,
+        maskImage: `url('https://2021.igem.org/wiki/images/3/36/T--BNUZ-China--cursor.c441b80b.png')`,
         backgroundColor: nav_item_color,
         transform: `translateY(calc(-62px * ${hint_text_array.length - active_item_index} - 10px)) translateX(-50px)`
       }">
@@ -35,9 +35,8 @@ export default {
   components: {Content_navigation_item},
   data() {
     return {
-      // TODO: set image URI
       Nav_background: conf.isDev ? Nav_background : '',
-      cursor: conf.isDev ? cursor : ''
+      cursor: conf.isDev ? cursor : 'https://2021.igem.org/wiki/images/3/36/T--BNUZ-China--cursor.c441b80b.png'
     }
   },
   props: {
@@ -73,7 +72,7 @@ export default {
   --width: 220px;
   /*background-image: url("~@/assets/content_navigation/nav_background.jpg");*/
   width: var(--width);
-  height: 418px; /* TODO 这里填写电梯背景图高度 */
+  height: 418px;
   background-size: var(--width);
   background-repeat: no-repeat;
 
@@ -81,7 +80,6 @@ export default {
   padding-top: 130px;
 }
 
-/* TODO 在这里调整按钮的边距等数据 */
 .navigation_style {
   margin: 0 auto;
 }

@@ -96,18 +96,18 @@ export default {
       scrollbarSpace: true,
       scrollReveal: ScrollReveal(),
       homepage_hospital: conf.isDev ? homepage_hospital :
-        'https://2021.igem.org/wiki/images/2/2e/T--BNUZ-China--homepage_hospital.png',
+        'https://2021.igem.org/wiki/images/8/8e/T--BNUZ-China--homepage.63801aff.png',
       // TODO: set image URI
-      font: conf.isDev ? font : '',
+      font: conf.isDev ? font : 'https://2021.igem.org/wiki/images/1/1c/T--BNUZ-China--Homapage_font.ttf',
 
       // TODO: set image URI
-      pic1: conf.isDev ? pic1 : '',
+      pic1: conf.isDev ? pic1 : 'https://2021.igem.org/wiki/images/e/e6/T--BNUZ-China--pic1.aca53bc3.png\n',
       // TODO: set image URI
-      pic2: conf.isDev ? pic2 : '',
+      pic2: conf.isDev ? pic2 : 'https://2021.igem.org/wiki/images/5/5d/T--BNUZ-China--pic2.56917586.png\n',
       // TODO: set image URI
-      pic3: conf.isDev ? pic3 : '',
+      pic3: conf.isDev ? pic3 : 'https://2021.igem.org/wiki/images/a/a7/T--BNUZ-China--pic3.f2bb7a73.png\n',
       // TODO: set image URI
-      pic4: conf.isDev ? pic4 : ''
+      pic4: conf.isDev ? pic4 : 'https://2021.igem.org/wiki/images/b/b7/T--BNUZ-China--pic4.bf944ec2.png\n'
     }
   },
   beforeCreate() {
@@ -199,10 +199,11 @@ p {
 
 .homepage_hospital {
   width: 100vw;
-  position: sticky;
   /*top: -100px;*/
   /*left: 8vw;*/
   position: absolute;
+  top: 18px;
+  left: 0;
   /*top: -100px;*/
   /*left: 8vw;*/
   z-index: -1;
@@ -212,4 +213,5 @@ p {
   margin: -400px 8vw 0;
   margin: 40vh 8vw 0;
 }
+
 </style>

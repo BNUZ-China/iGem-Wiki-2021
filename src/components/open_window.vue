@@ -44,8 +44,7 @@ export default {
       zoom_scale: 10,
       isWindowClicked: false,
 
-      // TODO set img url
-      wall: conf.isDev ? wall_pic : ''
+      wall: conf.isDev ? wall_pic : 'https://2021.igem.org/wiki/images/1/1a/T--BNUZ-China--wall3.16fdf0a0.png\n'
     }
   },
   mounted() {
@@ -97,7 +96,7 @@ export default {
 }
 
 .zoom_container {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   /*background-image: url("~@/assets/wall.png");*/
@@ -117,7 +116,8 @@ export default {
   display: flex;
   flex-wrap: nowrap;
   border: 30px solid transparent;
-  border-image: url("~@/assets/framework.png") 47;
+  /*border-image: url("~@/assets/framework.png") 47;*/
+  border-image: url("https://2021.igem.org/wiki/images/a/a0/T--BNUZ-China--framework.12dc2082.png") 47;
   z-index: 700;
 }
 

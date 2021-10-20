@@ -9,15 +9,14 @@
 <script>
 // import window_p from '@/assets/window.png';
 import window_pic from '@/assets/window.png';
-// import conf from '@/wiki_config'
+import conf from '@/wiki_config'
 
 export default {
   name: "window",
   data() {
     return {
       isLeft: this.window_side.toLowerCase() === 'left',
-      // TODO: window URI
-      window_pic: window_pic
+      window_pic: conf.isDev ? window_pic : 'https://2021.igem.org/wiki/images/0/0f/T--BNUZ-China--window.9449fa31.png',
     }
   },
   mounted() {
@@ -52,7 +51,6 @@ export default {
 
 <style scoped>
 .rorateWindow-left {
-  /* FIXME rotate time set to 3s. only for debug */
   animation: rotateWindowLeft 3s;
   transform-origin: left;
 }
@@ -67,7 +65,6 @@ export default {
 }
 
 .rorateWindow-right {
-  /* FIXME rotate time set to 3s. only for debug */
   animation: rotateWindowRight 3s;
   transform-origin: right;
 }

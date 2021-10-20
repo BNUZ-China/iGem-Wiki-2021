@@ -1333,6 +1333,7 @@ import bnuz_table_container from "@/components/bnuz_table_container";
 
 import head_image from '@/assets/head_images/PROJECT/bannerproject-experiment.png'
 import BNUZ_Content from "@/components/bnuz_content";
+import conf from '@/wiki_config';
 
 export default {
   name: 'App',
@@ -1346,7 +1347,7 @@ export default {
   },
   data() {
     return {
-      head_image
+      head_image: conf.isDev ? head_image : 'https://2021.igem.org/wiki/images/a/a9/T--BNUZ-China--bannerproject-experiment.0ae7b715.png\n'
     }
   }
 }

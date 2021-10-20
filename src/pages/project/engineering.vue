@@ -201,19 +201,20 @@ export default {
   },
   data() {
     return {
-      head_image,
       // TODO: set image URI
-      building: conf.isDev ? building : '',
+      head_image: conf.isDev ? head_image : 'https://2021.igem.org/wiki/images/e/e2/T--BNUZ-China--bannerproject-engineering.460b791e.png\n',
       // TODO: set image URI
-      design: conf.isDev ? design : '',
+      building: conf.isDev ? building : 'https://2021.igem.org/wiki/images/b/b9/T--BNUZ-China--building.9f560cf0.png\n',
       // TODO: set image URI
-      imagine: conf.isDev ? imagine : '',
+      design: conf.isDev ? design : 'https://2021.igem.org/wiki/images/e/ed/T--BNUZ-China--design.fa587bd5.png\n',
       // TODO: set image URI
-      learn: conf.isDev ? learn : '',
+      imagine: conf.isDev ? imagine : 'https://2021.igem.org/wiki/images/2/2d/T--BNUZ-China--imagine.3f90d4fc.png\n',
       // TODO: set image URI
-      research: conf.isDev ? research : '',
+      learn: conf.isDev ? learn : 'https://2021.igem.org/wiki/images/3/3b/T--BNUZ-China--learn.2dbf6348.png\n',
       // TODO: set image URI
-      test: conf.isDev ? test : '',
+      research: conf.isDev ? research : 'https://2021.igem.org/wiki/images/e/e1/T--BNUZ-China--research.387fa756.png\n',
+      // TODO: set image URI
+      test: conf.isDev ? test : 'https://2021.igem.org/wiki/images/0/03/T--BNUZ-China--test.8a46607b.png\n',
     }
   }
 }

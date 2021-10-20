@@ -94,127 +94,127 @@ const pages_conf = {
   },
   description_page: {
     entry: 'src/description.js',
-    template: 'public/project/description.html',
+    template: 'public/description.html',
     filename: 'Description.html',
     title: 'description'
   },
   design_page: {
     entry: 'src/design.js',
-    template: 'public/project/design.html',
+    template: 'public/design.html',
     filename: 'Design.html',
     title: 'design'
   },
   experiment_page: {
     entry: 'src/experiment.js',
-    template: 'public/project/experiment.html',
+    template: 'public/experiment.html',
     filename: 'Experiment.html',
     title: 'experiment'
   },
   result_page: {
     entry: 'src/result.js',
-    template: 'public/project/result.html',
+    template: 'public/result.html',
     filename: 'Result.html',
     title: 'result'
   },
   proof_of_concept_page: {
     entry: 'src/proof_of_concept.js',
-    template: 'public/project/proof_of_concept.html',
+    template: 'public/proof_of_concept.html',
     filename: 'Proof_Of_Concept.html',
     title: 'result'
   },
   future_page: {
     entry: 'src/future.js',
-    template: 'public/project/future.html',
+    template: 'public/future.html',
     filename: 'Future.html',
     title: 'future'
   },
   engineering_page: {
     entry: 'src/engineering.js',
-    template: 'public/project/engineering.html',
+    template: 'public/engineering.html',
     filename: 'Engineering.html',
     title: 'engineering'
   },
   implementation_page: {
     entry: 'src/implementation.js',
-    template: 'public/project/implementation.html',
+    template: 'public/implementation.html',
     filename: 'Implementation.html',
     title: 'implementation'
   },
   model_page: {
     entry: 'src/model.js',
-    template: 'public/model/model.html',
+    template: 'public/model.html',
     filename: 'Model.html',
     title: 'Model'
   },
   models_and_results_page: {
     entry: 'src/models_and_results.js',
-    template: 'public/model/models_and_results.html',
+    template: 'public/models_and_results.html',
     filename: 'Models_and_results.html',
     title: 'models_and_results'
   },
   discussion_page: {
     entry: 'src/discussion.js',
-    template: 'public/model/discussion.html',
+    template: 'public/discussion.html',
     filename: 'Discussion.html',
     title: 'discussion'
   },
   safety_page: {
     entry: 'src/safety.js',
-    template: 'public/safety/safety.html',
+    template: 'public/safety.html',
     filename: 'Safety.html',
     title: 'safety'
   },
   human_practice_page: {
     entry: 'src/human_practice.js',
-    template: 'public/human_practice/human_practice.html',
+    template: 'public/human_practice.html',
     filename: 'Human_Practices.html',
     title: 'Human_Practices'
   },
   partnership_page: {
     entry: 'src/partnership.js',
-    template: 'public/human_practice/partnership.html',
+    template: 'public/partnership.html',
     filename: 'Partnership.html',
     title: 'partnership'
   },
   communication_page: {
     entry: 'src/communication.js',
-    template: 'public/human_practice/communication.html',
+    template: 'public/communication.html',
     filename: 'Communication.html',
     title: 'communication'
   },
   parts_page: {
     entry: 'src/parts.js',
-    template: 'public/parts/parts.html',
+    template: 'public/parts.html',
     filename: 'Parts.html',
     title: 'parts'
   },
   contribution_page: {
     entry: 'src/contribution.js',
-    template: 'public/parts/contribution.html',
+    template: 'public/contribution.html',
     filename: 'Contribution.html',
     title: 'contribution'
   },
   members_page: {
     entry: 'src/members.js',
-    template: 'public/team/members.html',
+    template: 'public/members.html',
     filename: 'Members.html',
     title: 'members'
   },
   attributions_page: {
     entry: 'src/attributions.js',
-    template: 'public/team/attributions.html',
+    template: 'public/attributions.html',
     filename: 'Attributions.html',
     title: 'Attributions'
   },
   notebook_page: {
     entry: 'src/notebook.js',
-    template: 'public/team/notebook.html',
+    template: 'public/notebook.html',
     filename: 'Notebook.html',
     title: 'notebook'
   },
   collaboration_page: {
     entry: 'src/collaboration.js',
-    template: 'public/human_practice/collaboration.html',
+    template: 'public/collaboration.html',
     filename: 'Collaboration.html',
     title: 'collaboration'
   }
@@ -228,7 +228,25 @@ let prod_config = igemWikiWebpackPluginConfigGenerator({
   configureWebpack: {
     entry: {
       index: './src/index.js',
-      sample: './src/main.js'
+      sample: './src/main.js',
+      safety: './src/safety.js',
+      attributions: './src/attributions.js',
+      collaboration: './src/collaboration.js',
+      communication: './src/communication.js',
+      description: './src/description.js',
+      design: './src/design.js',
+      discussion: './src/discussion.js',
+      engineering: './src/engineering.js',
+      experiment: './src/experiment.js',
+      future: './src/future.js',
+      human_practice: './src/human_practice.js',
+      implementation: './src/implementation.js',
+      members: './src/members.js',
+      model: './src/model.js',
+      notebook: './src/notebook.js',
+      partnership: './src/partnership.js',
+      proof_of_concept: './src/proof_of_concept.js',
+      result: './src/result.js'
     },
     plugins: [
       // new Ug

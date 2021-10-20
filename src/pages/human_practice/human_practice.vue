@@ -43,9 +43,9 @@
                 <p class="modal-text">
                   As one of our team member’s grandma is suffering from CKD, we paid our attention to CKD. After conducting a survey, we surprisingly found that many people knew little about CKD(Fig.1) even though its prevalence is getting higher and higher. In our survey, people with CKD are not aware of their CKD staging, which indicates that the “slient killer” has not attracted enough attention yet. In fact, CKD is the 6th fastest growing cause of death globally, causing at least 2.4 milion deaths per year. We also learned that there is still no cure for CKD and no means to revert it. Therefore, we decided to focus our project on the treatment of CKD. We also investigated people’s understanding of synthetic biology(Fig.2), which encouraged us to do more with the methods people are more willing to accept to raise the public’s knowledge (Fig.3).
                 </p>
-                <img :src="p1_pic1">
-                <img :src="p1_pic2">
-                <img :src="p1_pic3">
+                <img :src="pic1">
+                <img :src="pic2">
+                <img :src="pic3">
               </template>
             </BNUZ_content_modal>
           </template>
@@ -531,9 +531,9 @@ import BNUZ_hp_modal_content_right from "@/components/bnuz_hp_modal_content_righ
 import BNUZ_content_modal from '@/components/bnuz_content_modal';
 
 import head_image from '@/assets/head_images/HUMANPRACTICE/bannerhumanp.png'
-import p1_pic1 from '@/assets/hp/general_hp/part1/pic1.png'
-import p1_pic2 from '@/assets/hp/general_hp/part1/pic2.png'
-import p1_pic3 from '@/assets/hp/general_hp/part1/pic3.png'
+import pic1 from '@/assets/hp/general_hp/part1/pic1.png'
+import pic2 from '@/assets/hp/general_hp/part1/pic2.png'
+import pic3 from '@/assets/hp/general_hp/part1/pic3.png'
 import p2_pic1 from '@/assets/hp/general_hp/part2/p2_pic1.jpg'
 import p2_pic2 from '@/assets/hp/general_hp/part2/p2_pic2.jpg'
 import p2_pic3 from '@/assets/hp/general_hp/part2/p2_pic3.jpg'
@@ -576,35 +576,35 @@ export default {
   data() {
     return {
       // TODO: set image URI
-      head_image: conf.isDev ? head_image : '',
-      p1_pic1: conf.isDev ? p1_pic1 : '',
-      p1_pic2: conf.isDev ? p1_pic2 : '',
-      p1_pic3: conf.isDev ? p1_pic3 : '',
-      p2_pic1: conf.isDev ? p2_pic1 : '',
-      p2_pic2: conf.isDev ? p2_pic2 : '',
-      p2_pic3: conf.isDev ? p2_pic3 : '',
-      p2_pic4: conf.isDev ? p2_pic4 : '',
-      p2_pic5: conf.isDev ? p2_pic5 : '',
-      p2_pic6: conf.isDev ? p2_pic6 : '',
-      p2_pic7: conf.isDev ? p2_pic7 : '',
+      head_image: conf.isDev ? head_image : 'https://2021.igem.org/wiki/images/1/17/T--BNUZ-China--bannerhumanp.f8d783a1.png\n',
+      pic1: conf.isDev ? pic1 : "https://2021.igem.org/wiki/images/2/26/T--BNUZ-China--pic1.9ec8507e.png",
+      pic2: conf.isDev ? pic2 : "https://2021.igem.org/wiki/images/5/58/T--BNUZ-China--pic2.49210c00.png",
+      pic3: conf.isDev ? pic3 : "https://2021.igem.org/wiki/images/b/b5/T--BNUZ-China--pic3.bced50c7.png",
+      p2_pic1: conf.isDev ? p2_pic1 : "https://2021.igem.org/wiki/images/0/0f/T--BNUZ-China--p2_pic1.f37da8ee.jpg",
+      p2_pic2: conf.isDev ? p2_pic2 : "https://2021.igem.org/wiki/images/e/e1/T--BNUZ-China--p2_pic2.16cb56c7.jpg",
+      p2_pic3: conf.isDev ? p2_pic3 : "https://2021.igem.org/wiki/images/0/02/T--BNUZ-China--p2_pic3.10a15310.jpg",
+      p2_pic4: conf.isDev ? p2_pic4 : "https://2021.igem.org/wiki/images/7/72/T--BNUZ-China--p2_pic4.02dc9c24.jpg",
+      p2_pic5: conf.isDev ? p2_pic5 : "https://2021.igem.org/wiki/images/b/b2/T--BNUZ-China--p2_pic5.0313480b.jpg",
+      p2_pic6: conf.isDev ? p2_pic6 : "https://2021.igem.org/wiki/images/0/0f/T--BNUZ-China--p2_pic6.09b376c6.jpg",
+      p2_pic7: conf.isDev ? p2_pic7 : "https://2021.igem.org/wiki/images/c/c6/T--BNUZ-China--p2_pic7.5699e734.jpg",
+      p3_pic1: conf.isDev ? p3_pic1 : "https://2021.igem.org/wiki/images/7/78/T--BNUZ-China--p3_pic1.1ea9df37.png",
+      p3_pic2: conf.isDev ? p3_pic2 : "https://2021.igem.org/wiki/images/1/12/T--BNUZ-China--p3_pic2.9632ca7c.png",
+      p3_pic3: conf.isDev ? p3_pic3 : "https://2021.igem.org/wiki/images/b/b3/T--BNUZ-China--p3_pic3.7d54deb0.png",
+      p4_pic1: conf.isDev ? p4_pic1 : "https://2021.igem.org/wiki/images/7/7b/T--BNUZ-China--p4_pic1.0cb5aad9.jpg",
+      p4_pic2: conf.isDev ? p4_pic2 : "https://2021.igem.org/wiki/images/c/cd/T--BNUZ-China--p4_pic2.3a37a530.jpg",
+      p4_pic3: conf.isDev ? p4_pic3 : "https://2021.igem.org/wiki/images/a/ac/T--BNUZ-China--p4_pic3.3e19fd81.jpg",
+      p5_pic1: conf.isDev ? p5_pic1 : "https://2021.igem.org/wiki/images/d/d9/T--BNUZ-China--p5_pic1.d2c79724.jpg",
+      p5_pic2: conf.isDev ? p5_pic2 : "https://2021.igem.org/wiki/images/6/6f/T--BNUZ-China--p5_pic2.71a25784.jpg",
+      p6_pic1: conf.isDev ? p6_pic1 : "https://2021.igem.org/wiki/images/9/90/T--BNUZ-China--p6_pic1.36c81dc8.jpg",
+      p7_pic1: conf.isDev ? p7_pic1 : "https://2021.igem.org/wiki/images/f/fa/T--BNUZ-China--p7_pic1.adc368a8.png",
+      p7_pic2: conf.isDev ? p7_pic2 : "https://2021.igem.org/wiki/images/3/3b/T--BNUZ-China--p7_pic2.7103b091.png",
+      p7_pic3: conf.isDev ? p7_pic3 : "https://2021.igem.org/wiki/images/3/39/T--BNUZ-China--p7_pic3.214af5d7.png",
+      p7_pic4: conf.isDev ? p7_pic4 : "https://2021.igem.org/wiki/images/7/74/T--BNUZ-China--p7_pic4.b779f88f.png",
+      p7_pic5: conf.isDev ? p7_pic5 : "https://2021.igem.org/wiki/images/b/b4/T--BNUZ-China--p7_pic5.bf4d2d5b.png",
+      p7_pic6: conf.isDev ? p7_pic6 : "https://2021.igem.org/wiki/images/e/eb/T--BNUZ-China--p7_pic6.d14fc0f2.png",
+      p8_pic1: conf.isDev ? p8_pic1 : "https://2021.igem.org/wiki/images/c/cb/T--BNUZ-China--p8_pic1.5baff1a4.jpg",
+      p8_pic2: conf.isDev ? p8_pic2 : "https://2021.igem.org/wiki/images/7/7f/T--BNUZ-China--p8_pic2.989d641a.jpg",
 
-      p3_pic1: conf.isDev ? p3_pic1 : '',
-      p3_pic2: conf.isDev ? p3_pic2 : '',
-      p3_pic3: conf.isDev ? p3_pic3 : '',
-      p4_pic1: conf.isDev ? p4_pic1 : '',
-      p4_pic2: conf.isDev ? p4_pic2 : '',
-      p4_pic3: conf.isDev ? p4_pic3 : '',
-      p5_pic1: conf.isDev ? p5_pic1 : '',
-      p5_pic2: conf.isDev ? p5_pic2 : '',
-      p6_pic1: conf.isDev ? p6_pic1 : '',
-      p7_pic1: conf.isDev ? p7_pic1 : '',
-      p7_pic2: conf.isDev ? p7_pic2 : '',
-      p7_pic3: conf.isDev ? p7_pic3 : '',
-      p7_pic4: conf.isDev ? p7_pic4 : '',
-      p7_pic5: conf.isDev ? p7_pic5 : '',
-      p7_pic6: conf.isDev ? p7_pic6 : '',
-      p8_pic1: conf.isDev ? p8_pic1 : '',
-      p8_pic2: conf.isDev ? p8_pic2 : '',
     }
   }
 }

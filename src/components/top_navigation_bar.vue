@@ -6,38 +6,38 @@
       </div>
       <div class="nav justify-content-end">
         <div class="nav-item">
-          <a class="nav-link" href="/">HOME</a>
+          <a class="nav-link" href="https://2021.igem.org/Team:BNUZ-China">HOME</a>
         </div>
         <top_navigation_bar_dropdown title="PROJECT" :contents="[
-        {text: 'Description', link: '/Description.html'},
-        {text: 'Design', link: '/Design.html'},
-        {text: 'Engineering', link: '/Engineering.html'},
-        {text: 'Experiment', link: '/Experiment.html'},
-        {text: 'Result', link: '/Result.html'},
-        {text: 'Proof of Concept', link: '/Proof_Of_Concept.html'},
-        {text: 'Implementation', link: '/Implementation.html'},
-        {text: 'Notebook', link: 'Notebook.html'},
-        {text: 'Future', link: 'Future.html'}
+        {text: 'Description', link: 'https://2021.igem.org/Team:BNUZ-China/Description'},
+        {text: 'Design', link: 'https://2021.igem.org/Team:BNUZ-China/Design'},
+        {text: 'Engineering', link: 'https://2021.igem.org/Team:BNUZ-China/Engineering'},
+        {text: 'Experiment', link: 'https://2021.igem.org/Team:BNUZ-China/Experiment'},
+        {text: 'Result', link: 'https://2021.igem.org/Team:BNUZ-China/Result'},
+        {text: 'Proof of Concept', link: 'https://2021.igem.org/Team:BNUZ-China/Proof_Of_Concept'},
+        {text: 'Implementation', link: 'https://2021.igem.org/Team:BNUZ-China/Implementation'},
+        {text: 'Notebook', link: 'https://2021.igem.org/Team:BNUZ-China/Notebook'},
+        {text: 'Future', link: 'https://2021.igem.org/Team:BNUZ-China/Future'}
       ]"></top_navigation_bar_dropdown>
         <div class="nav-item">
-          <a class="nav-link" href="/Model.html">MODEL</a>
+          <a class="nav-link" href="https://2021.igem.org/Team:BNUZ-China/Model">MODEL</a>
         </div>
         <div class="nav-item">
-          <a class="nav-link" href="/Safety.html">SAFETY</a>
+          <a class="nav-link" href="https://2021.igem.org/Team:BNUZ-China/Safety">SAFETY</a>
         </div>
         <top_navigation_bar_dropdown title="HUMAN PRACTICE" :contents="[
-        {text: 'Human practice', link: 'Human_practice.html'},
-        {text: 'Partnership', link: 'Partnership.html'},
-        {text: 'Communication', link: 'Communication.html'},
-        {text: 'Collaboration', link: 'Collaboration.html'}
+        {text: 'Human practice', link: 'https://2021.igem.org/Team:BNUZ-China/Human_practice'},
+        {text: 'Partnership', link: 'https://2021.igem.org/Team:BNUZ-China/Partnership'},
+        {text: 'Communication', link: 'https://2021.igem.org/Team:BNUZ-China/Communication'},
+        {text: 'Collaboration', link: 'https://2021.igem.org/Team:BNUZ-China/Collaboration'}
       ]"></top_navigation_bar_dropdown>
         <top_navigation_bar_dropdown title="PARTS" :contents="[
-        {text: 'Parts', link: 'Parts.html'},
-        {text: 'Contribution', link: 'Contribution.html'}
+        {text: 'Parts', link: 'https://2021.igem.org/Team:BNUZ-China/Parts'},
+        {text: 'Contribution', link: 'https://2021.igem.org/Team:BNUZ-China/Contribution'}
       ]"></top_navigation_bar_dropdown>
         <top_navigation_bar_dropdown title="TEAM" :contents="[
-        {text: 'Members', link: 'Members.html'},
-        {text: 'Attributions', link: 'Attributions.html'}
+        {text: 'Members', link: 'https://2021.igem.org/Team:BNUZ-China/Members'},
+        {text: 'Attributions', link: 'https://2021.igem.org/Team:BNUZ-China/Attributions'}
       ]"></top_navigation_bar_dropdown>
       </div>
     </div>
@@ -55,7 +55,7 @@ export default {
   components: {top_navigation_bar_dropdown},
   data() {
     return {
-      logo_src: conf.isDev ? logo_src : ''
+      logo_src: conf.isDev ? logo_src : 'https://2021.igem.org/wiki/images/c/c0/T--BNUZ-China--logo.71811b93.png'
     }
   },
   props: {

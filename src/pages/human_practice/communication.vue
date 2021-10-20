@@ -287,18 +287,17 @@ export default {
   },
   data() {
     return {
-      head_image,
-      // TODO: set image URI
-      pic1: conf.isDev ? pic1 : '',
-      pic2: conf.isDev ? pic2 : '',
-      pic3: conf.isDev ? pic3 : '',
-      pic4: conf.isDev ? pic4 : '',
-      pic5: conf.isDev ? pic5 : '',
-      pic6: conf.isDev ? pic6 : '',
-      pic7: conf.isDev ? pic7 : '',
-      pic8: conf.isDev ? pic8 : '',
-      pic9: conf.isDev ? pic9 : '',
-      pic10: conf.isDev ? pic10 : '',
+      head_image: conf.isDev ? head_image : 'https://2021.igem.org/wiki/images/a/a5/T--BNUZ-China--communication.e2d6dfec.png\n',
+      pic1: conf.isDev ? pic1 : "https://2021.igem.org/wiki/images/8/8e/T--BNUZ-China--pic1.01088884.jpg",
+      pic10: conf.isDev ? pic10 : "https://2021.igem.org/wiki/images/2/2f/T--BNUZ-China--pic10.08e20762.jpg",
+      pic2: conf.isDev ? pic2 : "https://2021.igem.org/wiki/images/a/ac/T--BNUZ-China--pic2.67543b9d.jpg",
+      pic3: conf.isDev ? pic3 : "https://2021.igem.org/wiki/images/8/84/T--BNUZ-China--pic3.9434f94f.jpg",
+      pic4: conf.isDev ? pic4 : "https://2021.igem.org/wiki/images/8/83/T--BNUZ-China--pic4.ac9affc4.png",
+      pic5: conf.isDev ? pic5 : "https://2021.igem.org/wiki/images/0/0e/T--BNUZ-China--pic5.1878c340.png",
+      pic6: conf.isDev ? pic6 : "https://2021.igem.org/wiki/images/2/2e/T--BNUZ-China--pic6.7c507733.png",
+      pic7: conf.isDev ? pic7 : "https://2021.igem.org/wiki/images/4/42/T--BNUZ-China--pic7.f406f646.png",
+      pic8: conf.isDev ? pic8 : "https://2021.igem.org/wiki/images/4/49/T--BNUZ-China--pic8.af0c4cbf.png",
+      pic9: conf.isDev ? pic9 : "https://2021.igem.org/wiki/images/5/56/T--BNUZ-China--pic9.1f4df59b.png",
     }
   }
 }
