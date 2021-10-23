@@ -44,7 +44,7 @@
           concluding of information, and it’s a share of ideas and experiences.
         </p>
         <p>
-          <a href="https://2021.igem.org/wiki/images/5/5b/T--BNUZ-China--Intestinal_Program_Reference_Manual.pdf">CLick
+          <a href="https://2021.igem.org/wiki/images/5/5b/T--BNUZ-China--Intestinal_Program_Reference_Manual.pdf">Click
             here to download the Intestinal Program Reference Manual.
         </a>
         </p>
@@ -97,10 +97,7 @@
       <bnuz_content_paragraph hint_text="Host lecture and seminar on synthetic biology">
         <h4>Host lecture and seminar on synthetic biology</h4>
         <p>
-          Our team hosted an on-line lecture and a seminar on synthetic biology with the theme of “Synthetic biology with
-          unlimited potential” in Sep. 12, 2021. The teams of BNU-China, BUCT, SZU-China and HZAU-China attended this
-          meeting. We made a communication about the progresses of the project to better prepare for the upcoming wiki
-          freeze.
+          Our team hosted an online lecture with the theme of “Synthetic biology with unlimited potential”. We invited team BNU-China, BUCT, SZU-China and HZAU-China to participate in this lecture. Each team shared a knowledge of synthetic biology.
         </p>
         <bnuz_image_container>
           <template v-slot:caption>
@@ -143,9 +140,27 @@
           </template>
         </bnuz_image_container>
         <p>
+          After the lecture, many students were discussing the contents of the lecture. Therefore, we believe that the lecture was very success. We believe that in the near future, more and more students will participate in iGEM competition and synthetic biology research.
+        </p>
+      </bnuz_content_paragraph>
+      <bnuz_content_paragraph hint_text="Host a meetup with BNU-China, BUCT, SZU-China and HZAU-China">
+        <h4>Host a meetup with BNU-China, BUCT, SZU-China and HZAU-China</h4>
+        <p>
+          After the lecture, we made a communication about the progresses of the project to better prepare for the upcoming wiki freeze.
+        </p>
+        <p>
           First, the BNU-China team shared the harvest during the preparation of the lecture and the possible application prospect of their project in intestinal flora. Then, our team (BNUZ-China) introduced our progress in gene knockout and high-performance liquid chromatography experiments. We are looking for solutions on how to simultaneously isolate and purify five proteins with similar molecular weight. BNU-China suggests that the separation can be performed by constructing different specific tags, such as his-tag. BUCT pointed out the experimental difficulties of building a suicide system and asked other teams for advice on the logic and rationality of HP. SZU-China team mentioned the LL37 antibacterial peptide used in the closed loop of their project, which was difficult to be characterized by SDS electrophoresis due to its small protein content. In the early bacteriostatic zone experiment, the effect was not ideal, and it is hoped that part of the verification can be carried out through the interaction of cell experiments in the future. Some data are difficult to obtain from the experimental group, and further literature analysis is required. At the same time, SZU-China shared the inspiration and process of developing a small game "Synthesis of large protein", which aroused great interest of everyone in the lecture. Later, HZAU-China pointed out that it was difficult for their small proteins to be characterized by SDS electrophoresis. At the same time, there are some difficulties in the purification and functional verification of small proteins. More complicate experiments are needed to verify protein function. It is too pressing for the time available. In the aspect of numerical modeling, the parameters are many and difficult to obtain. The quality of the parameters has a great influence on the model, so we want to estimate the parameters through a more appropriate parameter estimation method.
         </p>
+      </bnuz_content_paragraph>
 
+      <bnuz_content_paragraph hint_text="Provide some guidance for the BUCT team's endonuclease connection experiment">
+        <h4>Provide some guidance for the BUCT team's endonuclease connection experiment</h4>
+        <p>
+          Team BUCT used T4 ligase to connect the vector with the target gene early in the experiment. However, the
+          linkage experiment continued to fail. We heard about it during an online meeting, and we said they could
+          try a Gateway assembly or Gibson assembly. BUCT chose to use Gibson assembly, which eventually led to
+          successful subsequent experiments. <a href="https://2021.igem.org/Team:BUCT/Collaborations">https://2021.igem.org/Team:BUCT/Collaborations</a>
+        </p>
       </bnuz_content_paragraph>
     </BNUZ_Content>
     <Bottom></Bottom>
@@ -260,5 +275,29 @@ p {
 
 h4 {
   font-family: Title_font, serif !important;
+}
+
+.bnuz-table-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bnuz-table-container > img {
+  display: block;
+}
+
+.bnuz-table-container >  p {
+  font-size: 18px !important;
+  color: #5e615a;
+  width: 60%;
+  text-align: center !important;
+}
+
+table {
+  width: 70%;
 }
 </style>

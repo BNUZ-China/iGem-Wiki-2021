@@ -20,6 +20,10 @@
           <li>To promote cooperation in biological research and product developing in different fields</li>
 
         </ul>
+        <p>
+          If you want to know more about the partnership, please see
+          <a href="https://2021.igem.org/Team:BNU-China/Partnership">https://2021.igem.org/Team:BNU-China/Partnership</a>
+        </p>
       </bnuz_content_paragraph>
 
       <bnuz_content_paragraph hint_text="Project Design-Build-Test-Learn">

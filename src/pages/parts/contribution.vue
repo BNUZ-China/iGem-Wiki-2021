@@ -24,6 +24,9 @@
           which is good for health. Our result provides programme and reference for the research of tryptophan metabolic
           pathway.
         </p>
+        <p>
+          <a href="http://parts.igem.org/Part:BBa_K3784006">http://parts.igem.org/Part:BBa_K3784006</a>
+        </p>
         <div class="left-right-div">
           <bnuz_image_container>
             <template v-slot:caption>
@@ -79,6 +82,9 @@
             <img :src="pic3" width="65%">
           </template>
         </bnuz_image_container>
+        <p>
+          <a href="http://parts.igem.org/Part:BBa_K2717000">http://parts.igem.org/Part:BBa_K2717000</a>
+        </p>
       </bnuz_content_paragraph>
 
       <bnuz_content_paragraph
@@ -127,7 +133,9 @@
             </div>
           </template>
         </bnuz_image_container>
-
+        <p>
+          <a href="http://parts.igem.org/Part:BBa_K3036005">http://parts.igem.org/Part:BBa_K3036005</a>
+        </p>
       </bnuz_content_paragraph>
 
       <bnuz_content_paragraph hint_text="Compile the 2021 Intestinal Program Reference Manual">
